@@ -6,7 +6,7 @@
   "start_url": "index.html",
   "background_color": "#fdfdfd",
   "theme_color": "#000000",
-  "orientation": "landscape",
+  "orientation": "natural",
   "scope": "/the-ten-readings/",
   "icons": [
     {
