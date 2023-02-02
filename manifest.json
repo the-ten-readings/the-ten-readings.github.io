@@ -1,12 +1,12 @@
 {
-  "name": "The Ten Readings",
+  "name": "القراءات العشر",
   "dir": "rtl",
   "display": "fullscreen",
-  "short_name": "TheTenTeadings",
+  "short_name": "القراءات العشر",
   "start_url": "index.html",
   "background_color": "#fdfdfd",
   "theme_color": "#000000",
-  "orientation": "natural",
+  "orientation": "portrait-primary",
   "scope": "/the-ten-readings/",
   "icons": [
     {
