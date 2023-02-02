@@ -1,17 +1,19 @@
 {
   "name": "The Ten Readings",
+  "dir": "rtl",
+  "display": "fullscreen",
   "short_name": "TheTenTeadings",
   "start_url": "index.html",
-  "display": "standalone",
   "background_color": "#fdfdfd",
   "theme_color": "#000000",
-  "orientation": "portrait-primary",
+  "orientation": "landscape",
+  "scope": "/the-ten-readings/",
   "icons": [
     {
-    "src": "src/assets/icons/logo.svg",
-    "sizes": "48x48 72x72 96x96 128x128 256x256 512x512",
-    "type": "image/svg+xml",
-    "purpose": "any"
-}
+      "src": "/the-ten-readings/src/assets/icons/logo.svg",
+      "sizes": "48x48 72x72 96x96 128x128 256x256 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
   ]
 }

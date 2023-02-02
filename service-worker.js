@@ -2,13 +2,13 @@ var APP_PREFIX = 'thethenreadings_';
 var VERSION = 'version_06';
 var CACHE_NAME = APP_PREFIX + VERSION
 var URLS = [    
-  "/",
-  "/index.html",
-  "/src/assets/css/main.css",
-  "/src/assets/fonts/Noto_Sans_Arabic.woff2",
-  "/src/scripts.js",
-  "/src/assets/images/be-patient.jpg",
-  "/src/assets/images/peace-be-upon-him.jpg",
+  "/the-ten-readings/",
+  "/the-ten-readings/index.html",
+  "/the-ten-readings/src/assets/css/main.css",
+  "/the-ten-readings/src/assets/fonts/Noto_Sans_Arabic.woff2",
+  "/the-ten-readings/src/scripts.js",
+  "/the-ten-readings/src/assets/images/be-patient.jpg",
+  "/the-ten-readings/src/assets/images/peace-be-upon-him.jpg",
 ]
 
 self.addEventListener('fetch', function (e) {
