@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="src/assets/css/main.css" rel="stylesheet" type="text/css" />
+    <link rel="manifest" href="manifest.json" />
     <title>متصفح السلسلة الفراتية</title>
   </head>
   <body>
@@ -220,7 +221,7 @@
                       <button id="R81" class="raw">ر.ابن وردان</button>
                     </div>
                     <div class="imam-sub">
-                      <button id="R82" class="raw raw-selected">ر.ابن جماز</button>
+                      <button id="R82" class="raw">ر.ابن جماز</button>
                     </div>
                   </div>
                 </div>
@@ -270,7 +271,8 @@
       <main class="main">
         <div class="quran-container">
           <div class="quran-wrapper">
-            <img id="imge" src="./src/assets/images/peace-be-upon-him.jpg">
+            <div id="loading" class="loading-layer">جاري تحميل الوجه</div>
+            <canvas id="imge"></canvas>
           </div>
         </div>
         <div class="main-navigation">

@@ -124819,7 +124819,7 @@ var arabicNormChar = {
 };
 
 // root folder for rawis folders
-const rootSource = 'https:\\\\github.com\\ayoubnaceur\\dataset\\tree\\data\\data\\qurans';
+const rootSource = 'https:\\\\raw.githubusercontent.com\\ayoubnaceur\\dataset\\data\\data\\qurans';
 
 // Availaible Quran Versions (Riwaiat or Torok) : Configurations
 const rawis = {
@@ -125061,13 +125061,32 @@ window.addEventListener("DOMContentLoaded", (e) => {
 // MODULE 02 : Quran page  ////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////
 
-// VARIABLES  /////////////////////////////////////////////////////////////////
-
 // METHODS  ///////////////////////////////////////////////////////////////////
 
-const updateImgDisplay = () => {
-  updateElement(imge, "src", getPath());
+const imageLoaded = () => {
+  const width = currentImage.naturalWidth
+  const height = currentImage.naturalHeight
+  // ctx.canvas.width = width - 170
+  ctx.canvas.width = width
+  ctx.canvas.height = height
+  ctx.drawImage(currentImage, 0, 0, width, height);
+
+  // close the loading block
+  loading.classList.remove("loading-on")
 };
+
+
+const updateImgDisplay = (type = null) => {
+  if (type == "404") {
+    currentImage.src = ".\\assets\\images\\peace-be-upon-him.jpg"
+    loading.classList.add("loading-on")
+    return;
+  }
+  loading.classList.add("loading-on")
+  currentImage.src = getPath();
+};
+
+
 
 const getLastPageForRawiOrCurrentOne = (rawi = null) => {
   if (rawi != null){
@@ -125144,7 +125163,7 @@ const goToPageCmd = (e) => {
   }
   // if the input is empty told the user
   else if (isNaN(value) || value == "" || value == "-"){
-    updateElement(imge, "src", "404.jpg");
+    updateImgDisplay("404")
     selectedPage = -3;
     updateGridDisplay()
     return;
@@ -125220,6 +125239,15 @@ next.addEventListener("click", nextCB);
 
 // when write new page in buttom page bar
 page.addEventListener("keyup", goToPageCmd);
+
+// VARIABLES  /////////////////////////////////////////////////////////////////
+const loading = document.getElementById("loading");
+const currentImage = new Image();
+currentImage.onload = imageLoaded;
+const ctx = document.getElementById("imge").getContext("2d");
+
+
+
 
 ///////////////////////////////////////////////////////////////////////////////
 // MODULE 03 : Search & Filter search request  ////////////////////////////////
