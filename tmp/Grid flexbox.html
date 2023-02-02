@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+
+      .raws{
+        display: grid;
+        grid-auto-rows: auto;
+        gap: 1px;
+      }
+      .parent {
+        display: grid;
+        grid-template-columns: 1fr auto auto;
+        grid-template-rows: repeat(4, 30px);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        align-items: center;
+        justify-items: end;
+        gap: 1px
+      }
+
+      .div1 {
+        grid-area: 1 / 3 / 5 / 4;
+      }
+      .div2 {
+        grid-area: 1 / 2 / 3 / 3;
+      }
+      .div3 {
+        grid-area: 1 / 1 / 2 / 2;
+      }
+      .div4 {
+        grid-area: 2 / 1 / 3 / 2;
+      }
+      .div5 {
+        grid-area: 3 / 2 / 5 / 3;
+      }
+      .div6 {
+        grid-area: 3 / 1 / 4 / 2;
+      }
+      .div7 {
+        grid-area: 4 / 1 / 5 / 2;
+      }
+
+      button {
+        height: 100%;
+        width: 100%;
+        border: 0;
+      }
+      .parent div {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="raws">
+      <div class="parent">
+        <div class="div1"><button id="raw" data-raw-name="" data-raw-active>نافِع</button></div>
+        <div class="div2"><button id="raw" data-raw-name="" data-raw-active>قَالُون</button></div>
+        <div class="div3"><button id="raw" data-raw-name="" data-raw-active>أَبُو نَشِيط</button></div>
+        <div class="div4"><button id="raw" data-raw-name="" data-raw-active>الحُلوَانِيّ</button></div>
+        <div class="div5"><button id="raw" data-raw-name="" data-raw-active>وَرْش</button></div>
+        <div class="div6"><button id="raw" data-raw-name="" data-raw-active>الأَزْرَق</button></div>
+        <div class="div7"><button id="raw" data-raw-name="" data-raw-active>الأَصْبَهَانِيّ</button></div>
+      </div>
+      <div class="parent">
+        <div class="div1"><button id="raw" data-raw-name="" data-raw-active>نافِع</button></div>
+        <div class="div2"><button id="raw" data-raw-name="" data-raw-active>قَالُون</button></div>
+        <div class="div3"><button id="raw" data-raw-name="" data-raw-active>أَبُو نَشِيط</button></div>
+        <div class="div4"><button id="raw" data-raw-name="" data-raw-active>الحُلوَانِيّ</button></div>
+        <div class="div5"><button id="raw" data-raw-name="" data-raw-active>وَرْش</button></div>
+        <div class="div6"><button id="raw" data-raw-name="" data-raw-active>الأَزْرَق</button></div>
+        <div class="div7"><button id="raw" data-raw-name="" data-raw-active>الأَصْبَهَانِيّ</button></div>
+      </div>
+    </div>
+
+  </body>
+</html>

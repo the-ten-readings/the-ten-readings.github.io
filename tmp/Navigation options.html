@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <style>
+      option[data-part="juza"] {
+        /* padding-right: 15px; */
+      }
+      option[data-part="hizb"] {
+        padding-right: 10px;
+      }
+      option[data-part="sura"] {
+        padding-right: 20px;
+      }
+    </style>
+  </head>
+  <body style="background-color: #000">
+    <select multiple="multiple" name="cars" id="filterAndSelector" style="direction: rtl; height: calc(100vh - 20px); width: 900px; background-color: #000; color: #ddd">
+      <option value="001" data-part="juza">- الجزء 01 | الحمد (الفاتحة)</option><span>aaaa</span>
+      <option value="001" data-part="hizb">- الحزب 01</option><span>aaaa</span>
+      <option value="001" data-part="sura">- سورة 001 | الفاتحة</option><span>aaaa</span>
+      <option value="002" data-part="sura">- سورة 002 | البقرة</option><span>aaaa</span>
+      <option value="011" data-part="hizb">- الحزب 02</option><span>aaaa</span>
+      <option value="022" data-part="juza">- الجزء 02 | سيقول (البقرة)</option><span>aaaa</span>
+      <option value="022" data-part="hizb">- الحزب 03</option><span>aaaa</span>
+      <option value="032" data-part="hizb">- الحزب 04</option><span>aaaa</span>
+      <option value="042" data-part="juza">- الجزء 03 | تلك الرسل (البقرة)</option><span>aaaa</span>
+      <option value="042" data-part="hizb">- الحزب 05</option><span>aaaa</span>
+      <option value="050" data-part="sura">- سورة 003 | آل عمران</option><span>aaaa</span>
+      <option value="051" data-part="hizb">- الحزب 06</option><span>aaaa</span>
+      <option value="062" data-part="juza">- الجزء 04 | كل الطعام (آل عمران)</option><span>aaaa</span>
+      <option value="062" data-part="hizb">- الحزب 07</option><span>aaaa</span>
+      <option value="072" data-part="hizb">- الحزب 08</option><span>aaaa</span>
+      <option value="077" data-part="sura">- سورة 004 | النساء</option><span>aaaa</span>
+      <option value="082" data-part="juza">- الجزء 05 | والمحصنات (النساء)</option><span>aaaa</span>
+      <option value="082" data-part="hizb">- الحزب 09</option><span>aaaa</span>
+      <option value="092" data-part="hizb">- الحزب 10</option><span>aaaa</span>
+      <option value="102" data-part="juza">- الجزء 06 | لا يحب الله (النساء)</option><span>aaaa</span>
+      <option value="102" data-part="hizb">- الحزب 11</option><span>aaaa</span>
+      <option value="106" data-part="sura">- سورة 005 | المائدة</option><span>aaaa</span>
+      <option value="112" data-part="hizb">- الحزب 12</option><span>aaaa</span>
+      <option value="121" data-part="juza">- الجزء 07 | لتجدن (المائدة)</option><span>aaaa</span>
+      <option value="121" data-part="hizb">- الحزب 13</option><span>aaaa</span>
+      <option value="128" data-part="sura">- سورة 006 | الأنعام</option><span>aaaa</span>
+      <option value="132" data-part="hizb">- الحزب 14</option><span>aaaa</span>
+      <option value="142" data-part="juza">- الجزء 08 | و لو أنا أنزلنا (الأنعام)</option><span>aaaa</span>
+      <option value="142" data-part="hizb">- الحزب 15</option><span>aaaa</span>
+      <option value="151" data-part="hizb">- الحزب 16</option><span>aaaa</span>
+      <option value="151" data-part="sura">- سورة 007 | الأعراف</option><span>aaaa</span>
+      <option value="162" data-part="juza">- الجزء 09 | قال الملأ (الأعراف)</option><span>aaaa</span>
+      <option value="162" data-part="hizb">- الحزب 17</option><span>aaaa</span>
+      <option value="173" data-part="hizb">- الحزب 18</option><span>aaaa</span>
+      <option value="177" data-part="sura">- سورة 008 | الأنفال</option><span>aaaa</span>
+      <option value="182" data-part="juza">- الجزء 10 | و اعلموا (الأنفال)</option><span>aaaa</span>
+      <option value="182" data-part="hizb">- الحزب 19</option><span>aaaa</span>
+      <option value="187" data-part="sura">- سورة 009 | التوبة</option><span>aaaa</span>
+      <option value="192" data-part="hizb">- الحزب 20</option><span>aaaa</span>
+      <option value="201" data-part="juza">- الجزء 11 | إنما السبيل (التوبة)</option><span>aaaa</span>
+      <option value="201" data-part="hizb">- الحزب 21</option><span>aaaa</span>
+      <option value="208" data-part="sura">- سورة 010 | يونس</option><span>aaaa</span>
+      <option value="212" data-part="hizb">- الحزب 22</option><span>aaaa</span>
+      <option value="221" data-part="sura">- سورة 011 | هود</option><span>aaaa</span>
+      <option value="222" data-part="juza">- الجزء 12 | وما من دابة (هود)</option><span>aaaa</span>
+      <option value="222" data-part="hizb">- الحزب 23</option><span>aaaa</span>
+      <option value="231" data-part="hizb">- الحزب 24</option><span>aaaa</span>
+      <option value="235" data-part="sura">- سورة 012 | يوسف</option><span>aaaa</span>
+      <option value="242" data-part="juza">- الجزء 13 | وما أبرئ نفسي (يوسف)</option><span>aaaa</span>
+      <option value="242" data-part="hizb">- الحزب 25</option><span>aaaa</span>
+      <option value="249" data-part="sura">- سورة 013 | الرعد</option><span>aaaa</span>
+      <option value="252" data-part="hizb">- الحزب 26</option><span>aaaa</span>
+      <option value="255" data-part="sura">- سورة 014 | ابراهيم</option><span>aaaa</span>
+      <option value="262" data-part="juza">- الجزء 14 | الر (الحجر)</option><span>aaaa</span>
+      <option value="262" data-part="hizb">- الحزب 27</option><span>aaaa</span>
+      <option value="262" data-part="sura">- سورة 015 | الحجر</option><span>aaaa</span>
+      <option value="267" data-part="sura">- سورة 016 | النحل</option><span>aaaa</span>
+      <option value="272" data-part="hizb">- الحزب 28</option><span>aaaa</span>
+      <option value="282" data-part="juza">- الجزء 15 | سبحان الذي (الإسراء)</option><span>aaaa</span>
+      <option value="282" data-part="hizb">- الحزب 29</option><span>aaaa</span>
+      <option value="282" data-part="sura">- سورة 017 | الإسراء</option><span>aaaa</span>
+      <option value="292" data-part="hizb">- الحزب 30</option><span>aaaa</span>
+      <option value="293" data-part="sura">- سورة 018 | الكهف</option><span>aaaa</span>
+      <option value="302" data-part="juza">- الجزء 16 | قال ألم (الكهف)</option><span>aaaa</span>
+      <option value="302" data-part="hizb">- الحزب 31</option><span>aaaa</span>
+      <option value="305" data-part="sura">- سورة 019 | مريم</option><span>aaaa</span>
+      <option value="312" data-part="hizb">- الحزب 32</option><span>aaaa</span>
+      <option value="312" data-part="sura">- سورة 020 | طه</option><span>aaaa</span>
+      <option value="322" data-part="juza">- الجزء 17 | اقترب للناس (الأنبياء)</option><span>aaaa</span>
+      <option value="322" data-part="hizb">- الحزب 33</option><span>aaaa</span>
+      <option value="322" data-part="sura">- سورة 021 | الأنبياء</option><span>aaaa</span>
+      <option value="332" data-part="hizb">- الحزب 34</option><span>aaaa</span>
+      <option value="332" data-part="sura">- سورة 022 | الحج</option><span>aaaa</span>
+      <option value="342" data-part="juza">- الجزء 18 | قد أفلح (المؤمنون)</option><span>aaaa</span>
+      <option value="342" data-part="hizb">- الحزب 35</option><span>aaaa</span>
+      <option value="342" data-part="sura">- سورة 023 | المؤمنون</option><span>aaaa</span>
+      <option value="350" data-part="sura">- سورة 024 | النور</option><span>aaaa</span>
+      <option value="352" data-part="hizb">- الحزب 36</option><span>aaaa</span>
+      <option value="359" data-part="sura">- سورة 025 | الفرقان</option><span>aaaa</span>
+      <option value="362" data-part="juza">- الجزء 19 | وقال الذين (الفرقان)</option><span>aaaa</span>
+      <option value="362" data-part="hizb">- الحزب 37</option><span>aaaa</span>
+      <option value="367" data-part="sura">- سورة 026 | الشعراء</option><span>aaaa</span>
+      <option value="371" data-part="hizb">- الحزب 38</option><span>aaaa</span>
+      <option value="377" data-part="sura">- سورة 027 | النمل</option><span>aaaa</span>
+      <option value="382" data-part="juza">- الجزء 20 | فما كان (النمل)</option><span>aaaa</span>
+      <option value="382" data-part="hizb">- الحزب 39</option><span>aaaa</span>
+      <option value="385" data-part="sura">- سورة 028 | القصص</option><span>aaaa</span>
+      <option value="392" data-part="hizb">- الحزب 40</option><span>aaaa</span>
+      <option value="396" data-part="sura">- سورة 029 | العنكبوت</option><span>aaaa</span>
+      <option value="402" data-part="juza">- الجزء 21 | ولا تجادلوا (العنكبوت)</option><span>aaaa</span>
+      <option value="402" data-part="hizb">- الحزب 41</option><span>aaaa</span>
+      <option value="404" data-part="sura">- سورة 030 | الروم</option><span>aaaa</span>
+      <option value="411" data-part="sura">- سورة 031 | لقمان</option><span>aaaa</span>
+      <option value="413" data-part="hizb">- الحزب 42</option><span>aaaa</span>
+      <option value="415" data-part="sura">- سورة 032 | السجدة</option><span>aaaa</span>
+      <option value="418" data-part="sura">- سورة 033 | الأحزاب</option><span>aaaa</span>
+      <option value="422" data-part="juza">- الجزء 22 | ومن يقنت (الأحزاب)</option><span>aaaa</span>
+      <option value="422" data-part="hizb">- الحزب 43</option><span>aaaa</span>
+      <option value="428" data-part="sura">- سورة 034 | سبأ</option><span>aaaa</span>
+      <option value="431" data-part="hizb">- الحزب 44</option><span>aaaa</span>
+      <option value="434" data-part="sura">- سورة 035 | فاطر</option><span>aaaa</span>
+      <option value="440" data-part="sura">- سورة 036 | يس</option><span>aaaa</span>
+      <option value="442" data-part="juza">- الجزء 23 | وما أنزلنا على قومه (يس)</option><span>aaaa</span>
+      <option value="442" data-part="hizb">- الحزب 45</option><span>aaaa</span>
+      <option value="446" data-part="sura">- سورة 037 | الصافات</option><span>aaaa</span>
+      <option value="451" data-part="hizb">- الحزب 46</option><span>aaaa</span>
+      <option value="453" data-part="sura">- سورة 038 | سورة ص</option><span>aaaa</span>
+      <option value="458" data-part="sura">- سورة 039 | الزمر</option><span>aaaa</span>
+      <option value="462" data-part="juza">- الجزء 24 | فمن أظلم (الزمر)</option><span>aaaa</span>
+      <option value="462" data-part="hizb">- الحزب 47</option><span>aaaa</span>
+      <option value="467" data-part="sura">- سورة 040 | غافر</option><span>aaaa</span>
+      <option value="472" data-part="hizb">- الحزب 48</option><span>aaaa</span>
+      <option value="477" data-part="sura">- سورة 041 | فصلت</option><span>aaaa</span>
+      <option value="482" data-part="juza">- الجزء 25 | إليه يرد (فصلت)</option><span>aaaa</span>
+      <option value="482" data-part="hizb">- الحزب 49</option><span>aaaa</span>
+      <option value="483" data-part="sura">- سورة 042 | الشورى</option><span>aaaa</span>
+      <option value="489" data-part="sura">- سورة 043 | الزخرف</option><span>aaaa</span>
+      <option value="491" data-part="hizb">- الحزب 50</option><span>aaaa</span>
+      <option value="496" data-part="sura">- سورة 044 | الدخان</option><span>aaaa</span>
+      <option value="499" data-part="sura">- سورة 045 | الجاثية</option><span>aaaa</span>
+      <option value="502" data-part="juza">- الجزء 26 | حم تنزيل (الأحقاف)</option><span>aaaa</span>
+      <option value="502" data-part="hizb">- الحزب 51</option><span>aaaa</span>
+      <option value="502" data-part="sura">- سورة 046 | الأحقاف</option><span>aaaa</span>
+      <option value="507" data-part="sura">- سورة 047 | محمد</option><span>aaaa</span>
+      <option value="511" data-part="sura">- سورة 048 | الفتح</option><span>aaaa</span>
+      <option value="513" data-part="hizb">- الحزب 52</option><span>aaaa</span>
+      <option value="515" data-part="sura">- سورة 049 | الحجرات</option><span>aaaa</span>
+      <option value="518" data-part="sura">- سورة 050 | سورة ق</option><span>aaaa</span>
+      <option value="520" data-part="sura">- سورة 051 | الذاريات</option><span>aaaa</span>
+      <option value="522" data-part="juza">- الجزء 27 | قال فما خطبكم (الذاريات)</option><span>aaaa</span>
+      <option value="522" data-part="hizb">- الحزب 53</option><span>aaaa</span>
+      <option value="523" data-part="sura">- سورة 052 | الطور</option><span>aaaa</span>
+      <option value="526" data-part="sura">- سورة 053 | النجم</option><span>aaaa</span>
+      <option value="528" data-part="sura">- سورة 054 | القمر</option><span>aaaa</span>
+      <option value="531" data-part="hizb">- الحزب 54</option><span>aaaa</span>
+      <option value="531" data-part="sura">- سورة 055 | الرحمن</option><span>aaaa</span>
+      <option value="534" data-part="sura">- سورة 056 | الواقعة</option><span>aaaa</span>
+      <option value="537" data-part="sura">- سورة 057 | الحديد</option><span>aaaa</span>
+      <option value="542" data-part="juza">- الجزء 28 | قد سمع (المجادلة)</option><span>aaaa</span>
+      <option value="542" data-part="hizb">- الحزب 55</option><span>aaaa</span>
+      <option value="542" data-part="sura">- سورة 058 | المجادلة</option><span>aaaa</span>
+      <option value="545" data-part="sura">- سورة 059 | الحشر</option><span>aaaa</span>
+      <option value="549" data-part="sura">- سورة 060 | الممتحنة</option><span>aaaa</span>
+      <option value="551" data-part="sura">- سورة 061 | الصف</option><span>aaaa</span>
+      <option value="553" data-part="hizb">- الحزب 56</option><span>aaaa</span>
+      <option value="553" data-part="sura">- سورة 062 | الجمعة</option><span>aaaa</span>
+      <option value="554" data-part="sura">- سورة 063 | المنافقون</option><span>aaaa</span>
+      <option value="556" data-part="sura">- سورة 064 | التغابن</option><span>aaaa</span>
+      <option value="558" data-part="sura">- سورة 065 | الطلاق</option><span>aaaa</span>
+      <option value="560" data-part="sura">- سورة 066 | التحريم</option><span>aaaa</span>
+      <option value="562" data-part="juza">- الجزء 29 | تبارك (الملك)</option><span>aaaa</span>
+      <option value="562" data-part="hizb">- الحزب 57</option><span>aaaa</span>
+      <option value="562" data-part="sura">- سورة 067 | الملك</option><span>aaaa</span>
+      <option value="564" data-part="sura">- سورة 068 | القلم</option><span>aaaa</span>
+      <option value="566" data-part="sura">- سورة 069 | الحاقة</option><span>aaaa</span>
+      <option value="568" data-part="sura">- سورة 070 | المعارج</option><span>aaaa</span>
+      <option value="570" data-part="sura">- سورة 071 | نوح</option><span>aaaa</span>
+      <option value="572" data-part="hizb">- الحزب 58</option><span>aaaa</span>
+      <option value="572" data-part="sura">- سورة 072 | الجن</option><span>aaaa</span>
+      <option value="574" data-part="sura">- سورة 073 | المزمل</option><span>aaaa</span>
+      <option value="575" data-part="sura">- سورة 074 | المدثر</option><span>aaaa</span>
+      <option value="577" data-part="sura">- سورة 075 | القيامة</option><span>aaaa</span>
+      <option value="578" data-part="sura">- سورة 076 | الإنسان</option><span>aaaa</span>
+      <option value="580" data-part="sura">- سورة 077 | المرسلات</option><span>aaaa</span>
+      <option value="582" data-part="juza">- الجزء 30 | عمّ يتساءلون (النبأ)</option><span>aaaa</span>
+      <option value="582" data-part="hizb">- الحزب 59</option><span>aaaa</span>
+      <option value="582" data-part="sura">- سورة 078 | النبأ</option><span>aaaa</span>
+      <option value="583" data-part="sura">- سورة 079 | النازعات</option><span>aaaa</span>
+      <option value="585" data-part="sura">- سورة 080 | عبس</option><span>aaaa</span>
+      <option value="586" data-part="sura">- سورة 081 | التكوير</option><span>aaaa</span>
+      <option value="587" data-part="sura">- سورة 082 | الإنفطار</option><span>aaaa</span>
+      <option value="587" data-part="sura">- سورة 083 | المطففين</option><span>aaaa</span>
+      <option value="589" data-part="sura">- سورة 084 | الانشقاق</option><span>aaaa</span>
+      <option value="590" data-part="sura">- سورة 085 | البروج</option><span>aaaa</span>
+      <option value="591" data-part="hizb">- الحزب 60</option><span>aaaa</span>
+      <option value="591" data-part="sura">- سورة 086 | الطارق</option><span>aaaa</span>
+      <option value="591" data-part="sura">- سورة 087 | الأعلى</option><span>aaaa</span>
+      <option value="592" data-part="sura">- سورة 088 | الغاشية</option><span>aaaa</span>
+      <option value="593" data-part="sura">- سورة 089 | الفجر</option><span>aaaa</span>
+      <option value="594" data-part="sura">- سورة 090 | البلد</option><span>aaaa</span>
+      <option value="595" data-part="sura">- سورة 091 | الشمس</option><span>aaaa</span>
+      <option value="595" data-part="sura">- سورة 092 | الليل</option><span>aaaa</span>
+      <option value="596" data-part="sura">- سورة 093 | الضحى</option><span>aaaa</span>
+      <option value="596" data-part="sura">- سورة 094 | الشرح</option><span>aaaa</span>
+      <option value="597" data-part="sura">- سورة 095 | التين</option><span>aaaa</span>
+      <option value="597" data-part="sura">- سورة 096 | العلق</option><span>aaaa</span>
+      <option value="598" data-part="sura">- سورة 097 | القدر</option><span>aaaa</span>
+      <option value="598" data-part="sura">- سورة 098 | البينة</option><span>aaaa</span>
+      <option value="599" data-part="sura">- سورة 099 | الزلزلة</option><span>aaaa</span>
+      <option value="599" data-part="sura">- سورة 100 | العاديات</option><span>aaaa</span>
+      <option value="600" data-part="sura">- سورة 101 | القارعة</option><span>aaaa</span>
+      <option value="600" data-part="sura">- سورة 102 | التكاثر</option><span>aaaa</span>
+      <option value="601" data-part="sura">- سورة 103 | العصر</option><span>aaaa</span>
+      <option value="601" data-part="sura">- سورة 104 | الهمزة</option><span>aaaa</span>
+      <option value="601" data-part="sura">- سورة 105 | الفيل</option><span>aaaa</span>
+      <option value="602" data-part="sura">- سورة 106 | قريش</option><span>aaaa</span>
+      <option value="602" data-part="sura">- سورة 107 | الماعون</option><span>aaaa</span>
+      <option value="602" data-part="sura">- سورة 108 | الكوثر</option><span>aaaa</span>
+      <option value="603" data-part="sura">- سورة 109 | الكافرون</option><span>aaaa</span>
+      <option value="603" data-part="sura">- سورة 110 | النصر</option><span>aaaa</span>
+      <option value="603" data-part="sura">- سورة 111 | المسد</option><span>aaaa</span>
+      <option value="604" data-part="sura">- سورة 112 | الإخلاص</option><span>aaaa</span>
+      <option value="604" data-part="sura">- سورة 113 | الفلق</option><span>aaaa</span>
+      <option value="604" data-part="sura">- سورة 114 | الناس</option><span>aaaa</span>
+    </select>
+  </body>
+</html>

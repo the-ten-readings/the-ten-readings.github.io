@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="src/assets/css/main.css" rel="stylesheet" type="text/css" />
+    <title>متصفح السلسلة الفراتية</title>
+  </head>
+  <body>
+    <div class="global-container">
+      <div class="main-menu">
+        <div class="main-menu-tools">
+          <div class="main-menu-tool">الأدوات</div>
+        </div>
+        <div class="main-menu-settings">
+          <div class="main-menu-setting">تحميلات</div>
+          <div class="main-menu-setting">إعدادات</div>
+        </div>
+      </div>
+      <div class="right-sidebar">
+        <div class="tools">
+          <div class="tool" style="height: 100%;">
+            <div class="tool-header">
+              <div class="tool-title">القراء العشرة</div>
+              <div class="tool-actions">
+                <!-- <div class="tool-collapse"></div> -->
+              </div>
+            </div>
+            <div class="tool-body" style="padding: 0;">
+              
+              <div id="imams-list" class="imams-list">
+      
+                <!-- نافع -->
+                <div class="imam">
+                  <div class="imam-self"><button disabled="">ق.نافع المدني</button></div>
+                  <div class="imam-subs">
+                    <div class="imam-sub">
+                      <div class="imam">
+                        <div class="imam-self"><button disabled="">ر.قالون</button></div>
+                        <div class="imam-subs">
+                          <div class="imam-sub">
+                            <button id="R111" class="raw">قصر المنفصل وإسكان الميم</button>
+                          </div>
+                          <div class="imam-sub">
+                            <button id="R112" class="raw">قصر المنفصل وصلة ميم الجمع</button>
+                          </div>
+                          <div class="imam-sub">
+                            <button id="R113" class="raw">توسط المنفصل وإسكان الميم</button>
+                          </div>
+                          <div class="imam-sub">
+                            <button id="R114" class="raw">توسط المنفصل وصلة ميم الجمع</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+      
+                    <div class="imam-sub">
+                      <div class="imam">
+                        <div class="imam-self"><button disabled="">ر.ورش</button></div>
+                        <div class="imam-subs">
+                          <div class="imam-sub">
+                            <button id="R121" class="raw">طريق الأزرق</button>
+                          </div>
+                          <div class="imam-sub">
+                            <button id="R122" class="raw">طريق الأصبهاني</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+      
+                <!-- ابن-كثير -->
+                <div class="imam">
+                  <div class="imam-self"><button id="R2" class="raw">ق.ابن كثير</button></div>
+                  <div class="imam-subs">
+                    <div class="imam-sub">
+                      <button id="R21" class="raw">ر.البزي</button>
+                    </div>
+                    <div class="imam-sub">
+                      <button id="R22" class="raw">ر.قنبل</button>
+                    </div>
+                  </div>
+                </div>
+      
+                <!-- أبي عمرو البصري -->
+                <div class="imam">
+                  <div class="imam-self"><button id="R3" class="raw">ق.أبي عمرو البصري</button></div>
+                  <div class="imam-subs">
+                    <div class="imam-sub">
+                      <div class="imam">
+                        <div class="imam-self"><button disabled="">ر.الدوري</button></div>
+                        <div class="imam-subs">
+                          <div class="imam-sub">
+                            <button id="R311" class="raw">بتوسط المنفصل</button>
+                          </div>
+                          <div class="imam-sub">
+                            <button id="R312" class="raw">بقصر المنفصل</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+      
+                    <div class="imam-sub">
+                      <button id="R32" class="raw">ر.السوسي</button>
+                    </div>
+                  </div>
+                </div>
+      
+                <!-- ابن عامر الشامي -->
+                <div class="imam">
+                  <div class="imam-self"><button id="R4" class="raw">ق.ابن عامر</button></div>
+                  <div class="imam-subs">
+                    <div class="imam-sub">
+                      <button id="R41" class="raw">ر.هشام عن ابن عامر</button>
+                    </div>
+                    <div class="imam-sub">
+                      <button id="R42" class="raw">ر.ذاكون عن ابن عامر</button>
+                    </div>
+                  </div>
+                </div>
+      
+                <!-- الإمام عاصم الكوفي -->
+                <div class="imam">
+                  <div class="imam-self"><button id="R5" class="raw">ق.الإمام عاصم الكوفي</button></div>
+                  <div class="imam-subs">
+                    <div class="imam-sub">
+                      <button id="R51" class="raw">ر.شعبة</button>
+                    </div>
+                    <div class="imam-sub">
+                      <div class="imam">
+                        <div class="imam-self"><button disabled="">ر.حفص</button></div>
+                        <div class="imam-subs">
+                          <div class="imam-sub">
+                            <button id="R521" class="raw">ر.حفص دون حاشية</button>
+                          </div>
+                          <div class="imam-sub">
+                            <button id="R522" class="raw">ر.حفص بحاشية سفلى</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+      
+                <!-- حمزة الكوفي -->
+                <div class="imam">
+                  <div class="imam-self"><button id="R6" class="raw">ق.حمزة الكوفي</button></div>
+                  <div class="imam-subs">
+                    <div class="imam-sub">
+                      <div class="imam">
+                        <div class="imam-self"><button disabled="">ر.خلف</button></div>
+                        <div class="imam-subs">
+                          <div class="imam-sub">
+                            <button id="R611" class="raw">بترك السكت على الساكن المفصول</button>
+                          </div>
+                          <div class="imam-sub">
+                            <button id="R612" class="raw">بالسكت على الساكن المفصول</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+      
+                    <div class="imam-sub">
+                      <div class="imam">
+                        <div class="imam-self"><button disabled="">ر.خلاد</button></div>
+                        <div class="imam-subs">
+                          <div class="imam-sub">
+                            <button id="R621" class="raw">بوجه ترك السكت مطلقاً</button>
+                          </div>
+                          <div class="imam-sub">
+                            <button id="R622" class="raw">بوجه السكت المعروف لخلاد</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+      
+                <!-- الإمام علي الكسائي -->
+                <div class="imam">
+                  <div class="imam-self"><button disabled="">ق.الإمام علي الكسائي</button></div>
+                  <div class="imam-subs">
+                    <div class="imam-sub">
+                      <div class="imam">
+                        <div class="imam-self"><button id="R71" class="raw">ق.المذهب الإجمالي</button></div>
+                        <div class="imam-subs">
+                          <div class="imam-sub">
+                            <button id="R711" class="raw">ر.الليث</button>
+                          </div>
+                          <div class="imam-sub">
+                            <button id="R712" class="raw">ر.الدوري</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+      
+                    <div class="imam-sub">
+                      <div class="imam">
+                        <div class="imam-self"><button id="R72" class="raw">ق.المذهب التفصيلي</button></div>
+                        <div class="imam-subs">
+                          <div class="imam-sub">
+                            <button id="R721" class="raw">ر.الليث</button>
+                          </div>
+                          <div class="imam-sub">
+                            <button id="R722" class="raw">ر.الدوري</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+      
+                <!-- ابي جعفر -->
+                <div class="imam">
+                  <div class="imam-self"><button id="R8" class="raw">ق.ابي جعفر</button></div>
+                  <div class="imam-subs">
+                    <div class="imam-sub">
+                      <button id="R81" class="raw">ر.ابن وردان</button>
+                    </div>
+                    <div class="imam-sub">
+                      <button id="R82" class="raw raw-selected">ر.ابن جماز</button>
+                    </div>
+                  </div>
+                </div>
+      
+                <!-- يعقوب البصري -->
+                <div class="imam">
+                  <div class="imam-self"><button id="R9" class="raw">ق.يعقوب البصري</button></div>
+                  <div class="imam-subs">
+                    <div class="imam-sub">
+                      <button id="R91" class="raw">ر.رويس</button>
+                    </div>
+                    <div class="imam-sub">
+                      <button id="R92" class="raw">ر.روح</button>
+                    </div>
+                  </div>
+                </div>
+      
+                <!-- خلف العاشر -->
+                <div class="imam">
+                  <div class="imam-self"><button id="R10" class="raw">ق.خلف العاشر</button></div>
+                  <div class="imam-subs">
+                    <div class="imam-sub">
+                      <button id="R101" class="raw">ر.إسحاق</button>
+                    </div>
+                    <div class="imam-sub">
+                      <div class="imam">
+                        <div class="imam-self"><button disabled="">ر.إدريس</button></div>
+                        <div class="imam-subs">
+                          <div class="imam-sub">
+                            <button id="R1021" class="raw">ر.إدريس</button>
+                          </div>
+                          <div class="imam-sub">
+                            <button id="R1022" class="raw">ر.إدريس بالسكت العام</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <main class="main">
+        <div class="quran-container">
+          <div class="quran-wrapper">
+            <img id="imge" src="./src/assets/images/peace-be-upon-him.jpg">
+          </div>
+        </div>
+        <div class="main-navigation">
+          <div class="as-b">
+            <div class="main-navigation-r-menu"><button >
+              <!--?xml version="1.0" ?--><svg height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" transform="translate(2 2)"><path d="m.5 8.5 8 4 8.017-4"></path><path d="m.5 12.5 8 4 8.017-4"></path><path d="m.5 4.657 8.008 3.843 8.009-3.843-8.009-4.157z"></path></g></svg>
+            </button></div>
+            <div></div>
+            <div><button id="privouos">➡️ السابقة</button></div>
+          </div>
+          <div class="as-m"><input inputmode="numeric" type="number"  placeholder="رقم الصفحة"min="-3" id="page"></div>
+          <div class="as-a">
+            <div class=""><button id="next">التالية ⬅️</button></div>
+            <div></div>
+            <div class="main-navigation-l-menu">
+
+              <button id="left-menu-button">
+                <!--?xml version="1.0" ?--><svg height="28" id="svg8" version="1.1" viewBox="0 0 12.7 12.7" width="28" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg"><defs id="defs2"></defs><g id="layer1" transform="translate(0,-284.29998)"><path d="m 4.9388885,287.12215 4.9388893,-2e-5 v 0.7056 H 4.9388885 Z" id="path4487" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.70555556px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"></path><path d="m 4.9388888,288.53327 4.9388892,-2e-5 v 0.7056 H 4.9388888 Z" id="path4507" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.70555556px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"></path><path d="m 4.9388888,289.94442 0.7055559,-5e-5 v 0.70557 l -0.7055559,8e-5 z" id="path4511" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.70555556px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"></path><path d="m 4.9388888,291.35554 h 0.7055559 v 0.70555 H 4.9388888 Z" id="path4513" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.70555556px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"></path><path d="m 4.9388888,292.76661 h 0.7055559 v 0.70557 H 4.9388888 Z" id="path4517" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.70555556px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"></path><path d="m 2.8222225,287.12213 h 1.4111108 v 0.70552 H 2.8222225 Z" id="rect4537" style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.70555556px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"></path><path d="m 2.8222225,288.53325 h 1.4111108 v 0.70554 H 2.8222225 Z" id="path4540" style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.70555556px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"></path><path d="m 2.8222225,289.94442 h 1.4111108 v 0.70552 H 2.8222225 Z" id="path4544" style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.70555556px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"></path><path d="m 2.8222225,291.35554 h 1.4111108 v 0.70552 H 2.8222225 Z" id="path4546" style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.70555556px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"></path><path d="m 2.8222225,292.76666 h 1.4111108 v 0.70552 H 2.8222225 Z" id="path4548" style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.70555556px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"></path><path d="M 10.301112,293.89583 9.1722226,292.7669" id="path4562" style="fill:none;stroke:#000000;stroke-width:0.70555556px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"></path><path d="m 8.1138888,289.94471 a 1.7638888,1.7638888 0 0 0 -1.7638887,1.76387 1.7638888,1.7638888 0 0 0 1.7638887,1.76389 1.7638888,1.7638888 0 0 0 1.7638892,-1.76389 1.7638888,1.7638888 0 0 0 -1.7638892,-1.76387 z m 0,0.70552 a 1.0583334,1.0583334 0 0 1 1.0583336,1.05835 1.0583334,1.0583334 0 0 1 -1.0583336,1.05832 1.0583334,1.0583334 0 0 1 -1.0583332,-1.05832 1.0583334,1.0583334 0 0 1 1.0583332,-1.05835 z" id="path4564" style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.70555556px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"></path><rect height="0.70555556" id="rect4599" style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.37647059;stroke:none;stroke-width:0.70555556px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" width="0.70555556" x="4.2333331" y="287.1221"></rect><rect height="0.70555556" id="rect4601" style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.37647059;stroke:none;stroke-width:0.70555556px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" width="0.70555556" x="4.2333331" y="288.53323"></rect><rect height="0.70555556" id="rect4605" style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.37647059;stroke:none;stroke-width:0.70555556px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" width="0.70555556" x="4.2333331" y="289.94437"></rect><rect height="0.70555556" id="rect4607" style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.37647059;stroke:none;stroke-width:0.70555556px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" width="0.70555556" x="4.2333331" y="291.3555"></rect><rect height="0.70555556" id="rect4609" style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.37647059;stroke:none;stroke-width:0.70555556px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" width="0.70555556" x="4.2333331" y="292.76663"></rect></g></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </main>
+      <div class="left-sidebar">
+        <div class="tools">
+          <div class="tool" style="height: 100%;">
+            <div class="tool-header">
+              <div class="tool-title">محرك البحث</div>
+              <div class="tool-actions">
+                <!-- <div class="tool-collapse"></div> -->
+              </div>
+            </div>
+            <div class="tool-body">
+
+
+              <div class="searchbox" id="searchbox">
+                <label hidden>searchbox-input</label>
+                <input placeholder="البحث في المصحف" id="searchbox-input" type="text" />
+                
+                <div class="filter" id="filter">
+                  <div class="f_part">
+                    <input type="checkbox" id="part-juza" name="part-juza" value="part-juza" />
+                    <label for="part-juza">الأجزاء</label>
+                    <input check="false" type="checkbox" id="part-hizb" name="part-hizb" value="part-hizb" />
+                    <label for="part-hizb">الأحزاب</label>
+                    <input checked type="checkbox" id="mart-sura" name="mart-sura" value="mart-sura" />
+                    <label for="mart-sura" style="place-self: flex-end">السور</label>
+                  </div>
+                  <div class="filter_filter">
+                    <div>
+                      <label for="filter_parts" hidden="">Choose your f_part from the list:</label>
+                      <input placeholder="البحث في الفهرس" name="part" id="filter-parts" />
+                    </div>
+                    <!-- <div class="f_aya">
+                      <label for="f_aya" hidden="">Choose your f_aya from the list:</label>
+                      <input placeholder="آية" list="f_ayas" name="f_aya" id="f_aya" />
+                      <datalist id="f_ayas">
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                        <option value="4"></option>
+                        <option value="5"></option>
+                        <option value="6"></option>
+                        <option value="7"></option>
+                      </datalist>
+                    </div> -->
+                  </div>
+    
+                  <select class="filterAndSelector" name="filterAndSelector" multiple="multiple" id="filterAndSelector">
+                    <option value="-3" data-part="fahrs">البداية</option>
+                    <option value="001" data-part="juza">01 جزء الحمد (الفاتحة)</option>
+                    <option value="001" data-part="hizb">حزب 01</option>
+                    <option value="001" data-part="sura">001 سورة الفاتحة</option>
+                    <option value="002" data-part="sura">002 سورة البقرة</option>
+                    <option value="011" data-part="hizb">حزب 02</option>
+                    <option value="022" data-part="juza">02 جزء سيقول (البقرة)</option>
+                    <option value="022" data-part="hizb">حزب 03</option>
+                    <option value="032" data-part="hizb">حزب 04</option>
+                    <option value="042" data-part="juza">03 جزء تلك الرسل (البقرة)</option>
+                    <option value="042" data-part="hizb">حزب 05</option>
+                    <option value="050" data-part="sura">003 سورة آل عمران</option>
+                    <option value="051" data-part="hizb">حزب 06</option>
+                    <option value="062" data-part="juza">04 جزء كل الطعام (آل عمران)</option>
+                    <option value="062" data-part="hizb">حزب 07</option>
+                    <option value="072" data-part="hizb">حزب 08</option>
+                    <option value="077" data-part="sura">004 سورة النساء</option>
+                    <option value="082" data-part="juza">05 جزء والمحصنات (النساء)</option>
+                    <option value="082" data-part="hizb">حزب 09</option>
+                    <option value="092" data-part="hizb">حزب 10</option>
+                    <option value="102" data-part="juza">06 جزء لا يحب الله (النساء)</option>
+                    <option value="102" data-part="hizb">حزب 11</option>
+                    <option value="106" data-part="sura">005 سورة المائدة</option>
+                    <option value="112" data-part="hizb">حزب 12</option>
+                    <option value="121" data-part="juza">07 جزء لتجدن (المائدة)</option>
+                    <option value="121" data-part="hizb">حزب 13</option>
+                    <option value="128" data-part="sura">006 سورة الأنعام</option>
+                    <option value="132" data-part="hizb">حزب 14</option>
+                    <option value="142" data-part="juza">08 جزء و لو أنا أنزلنا (الأنعام)</option>
+                    <option value="142" data-part="hizb">حزب 15</option>
+                    <option value="151" data-part="hizb">حزب 16</option>
+                    <option value="151" data-part="sura">007 سورة الأعراف</option>
+                    <option value="162" data-part="juza">09 جزء قال الملأ (الأعراف)</option>
+                    <option value="162" data-part="hizb">حزب 17</option>
+                    <option value="173" data-part="hizb">حزب 18</option>
+                    <option value="177" data-part="sura">008 سورة الأنفال</option>
+                    <option value="182" data-part="juza">10 جزء و اعلموا (الأنفال)</option>
+                    <option value="182" data-part="hizb">حزب 19</option>
+                    <option value="187" data-part="sura">009 سورة التوبة</option>
+                    <option value="192" data-part="hizb">حزب 20</option>
+                    <option value="201" data-part="juza">11 جزء إنما السبيل (التوبة)</option>
+                    <option value="201" data-part="hizb">حزب 21</option>
+                    <option value="208" data-part="sura">010 سورة يونس</option>
+                    <option value="212" data-part="hizb">حزب 22</option>
+                    <option value="221" data-part="sura">011 سورة هود</option>
+                    <option value="222" data-part="juza">12 جزء وما من دابة (هود)</option>
+                    <option value="222" data-part="hizb">حزب 23</option>
+                    <option value="231" data-part="hizb">حزب 24</option>
+                    <option value="235" data-part="sura">012 سورة يوسف</option>
+                    <option value="242" data-part="juza">13 جزء وما أبرئ نفسي (يوسف)</option>
+                    <option value="242" data-part="hizb">حزب 25</option>
+                    <option value="249" data-part="sura">013 سورة الرعد</option>
+                    <option value="252" data-part="hizb">حزب 26</option>
+                    <option value="255" data-part="sura">014 سورة ابراهيم</option>
+                    <option value="262" data-part="juza">14 جزء الر (الحجر)</option>
+                    <option value="262" data-part="hizb">حزب 27</option>
+                    <option value="262" data-part="sura">015 سورة الحجر</option>
+                    <option value="267" data-part="sura">016 سورة النحل</option>
+                    <option value="272" data-part="hizb">حزب 28</option>
+                    <option value="282" data-part="juza">15 جزء سبحان الذي (الإسراء)</option>
+                    <option value="282" data-part="hizb">حزب 29</option>
+                    <option value="282" data-part="sura">017 سورة الإسراء</option>
+                    <option value="292" data-part="hizb">حزب 30</option>
+                    <option value="293" data-part="sura">018 سورة الكهف</option>
+                    <option value="302" data-part="juza">16 جزء قال ألم (الكهف)</option>
+                    <option value="302" data-part="hizb">حزب 31</option>
+                    <option value="305" data-part="sura">019 سورة مريم</option>
+                    <option value="312" data-part="hizb">حزب 32</option>
+                    <option value="312" data-part="sura">020 سورة طه</option>
+                    <option value="322" data-part="juza">17 جزء اقترب للناس (الأنبياء)</option>
+                    <option value="322" data-part="hizb">حزب 33</option>
+                    <option value="322" data-part="sura">021 سورة الأنبياء</option>
+                    <option value="332" data-part="hizb">حزب 34</option>
+                    <option value="332" data-part="sura">022 سورة الحج</option>
+                    <option value="342" data-part="juza">18 جزء قد أفلح (المؤمنون)</option>
+                    <option value="342" data-part="hizb">حزب 35</option>
+                    <option value="342" data-part="sura">023 سورة المؤمنون</option>
+                    <option value="350" data-part="sura">024 سورة النور</option>
+                    <option value="352" data-part="hizb">حزب 36</option>
+                    <option value="359" data-part="sura">025 سورة الفرقان</option>
+                    <option value="362" data-part="juza">19 جزء وقال الذين (الفرقان)</option>
+                    <option value="362" data-part="hizb">حزب 37</option>
+                    <option value="367" data-part="sura">026 سورة الشعراء</option>
+                    <option value="371" data-part="hizb">حزب 38</option>
+                    <option value="377" data-part="sura">027 سورة النمل</option>
+                    <option value="382" data-part="juza">20 جزء فما كان (النمل)</option>
+                    <option value="382" data-part="hizb">حزب 39</option>
+                    <option value="385" data-part="sura">028 سورة القصص</option>
+                    <option value="392" data-part="hizb">حزب 40</option>
+                    <option value="396" data-part="sura">029 سورة العنكبوت</option>
+                    <option value="402" data-part="juza">21 جزء ولا تجادلوا (العنكبوت)</option>
+                    <option value="402" data-part="hizb">حزب 41</option>
+                    <option value="404" data-part="sura">030 سورة الروم</option>
+                    <option value="411" data-part="sura">031 سورة لقمان</option>
+                    <option value="413" data-part="hizb">حزب 42</option>
+                    <option value="415" data-part="sura">032 سورة السجدة</option>
+                    <option value="418" data-part="sura">033 سورة الأحزاب</option>
+                    <option value="422" data-part="juza">22 جزء ومن يقنت (الأحزاب)</option>
+                    <option value="422" data-part="hizb">حزب 43</option>
+                    <option value="428" data-part="sura">034 سورة سبأ</option>
+                    <option value="431" data-part="hizb">حزب 44</option>
+                    <option value="434" data-part="sura">035 سورة فاطر</option>
+                    <option value="440" data-part="sura">036 سورة يس</option>
+                    <option value="442" data-part="juza">23 جزء وما أنزلنا على قومه (يس)</option>
+                    <option value="442" data-part="hizb">حزب 45</option>
+                    <option value="446" data-part="sura">037 سورة الصافات</option>
+                    <option value="451" data-part="hizb">حزب 46</option>
+                    <option value="453" data-part="sura">038 سورة سورة ص</option>
+                    <option value="458" data-part="sura">039 سورة الزمر</option>
+                    <option value="462" data-part="juza">24 جزء فمن أظلم (الزمر)</option>
+                    <option value="462" data-part="hizb">حزب 47</option>
+                    <option value="467" data-part="sura">040 سورة غافر</option>
+                    <option value="472" data-part="hizb">حزب 48</option>
+                    <option value="477" data-part="sura">041 سورة فصلت</option>
+                    <option value="482" data-part="juza">25 جزء إليه يرد (فصلت)</option>
+                    <option value="482" data-part="hizb">حزب 49</option>
+                    <option value="483" data-part="sura">042 سورة الشورى</option>
+                    <option value="489" data-part="sura">043 سورة الزخرف</option>
+                    <option value="491" data-part="hizb">حزب 50</option>
+                    <option value="496" data-part="sura">044 سورة الدخان</option>
+                    <option value="499" data-part="sura">045 سورة الجاثية</option>
+                    <option value="502" data-part="juza">26 جزء حم تنزيل (الأحقاف)</option>
+                    <option value="502" data-part="hizb">حزب 51</option>
+                    <option value="502" data-part="sura">046 سورة الأحقاف</option>
+                    <option value="507" data-part="sura">047 سورة محمد</option>
+                    <option value="511" data-part="sura">048 سورة الفتح</option>
+                    <option value="513" data-part="hizb">حزب 52</option>
+                    <option value="515" data-part="sura">049 سورة الحجرات</option>
+                    <option value="518" data-part="sura">050 سورة سورة ق</option>
+                    <option value="520" data-part="sura">051 سورة الذاريات</option>
+                    <option value="522" data-part="juza">27 جزء قال فما خطبكم (الذاريات)</option>
+                    <option value="522" data-part="hizb">حزب 53</option>
+                    <option value="523" data-part="sura">052 سورة الطور</option>
+                    <option value="526" data-part="sura">053 سورة النجم</option>
+                    <option value="528" data-part="sura">054 سورة القمر</option>
+                    <option value="531" data-part="hizb">حزب 54</option>
+                    <option value="531" data-part="sura">055 سورة الرحمن</option>
+                    <option value="534" data-part="sura">056 سورة الواقعة</option>
+                    <option value="537" data-part="sura">057 سورة الحديد</option>
+                    <option value="542" data-part="juza">28 جزء قد سمع (المجادلة)</option>
+                    <option value="542" data-part="hizb">حزب 55</option>
+                    <option value="542" data-part="sura">058 سورة المجادلة</option>
+                    <option value="545" data-part="sura">059 سورة الحشر</option>
+                    <option value="549" data-part="sura">060 سورة الممتحنة</option>
+                    <option value="551" data-part="sura">061 سورة الصف</option>
+                    <option value="553" data-part="hizb">حزب 56</option>
+                    <option value="553" data-part="sura">062 سورة الجمعة</option>
+                    <option value="554" data-part="sura">063 سورة المنافقون</option>
+                    <option value="556" data-part="sura">064 سورة التغابن</option>
+                    <option value="558" data-part="sura">065 سورة الطلاق</option>
+                    <option value="560" data-part="sura">066 سورة التحريم</option>
+                    <option value="562" data-part="juza">29 جزء تبارك (الملك)</option>
+                    <option value="562" data-part="hizb">حزب 57</option>
+                    <option value="562" data-part="sura">067 سورة الملك</option>
+                    <option value="564" data-part="sura">068 سورة القلم</option>
+                    <option value="566" data-part="sura">069 سورة الحاقة</option>
+                    <option value="568" data-part="sura">070 سورة المعارج</option>
+                    <option value="570" data-part="sura">071 سورة نوح</option>
+                    <option value="572" data-part="hizb">حزب 58</option>
+                    <option value="572" data-part="sura">072 سورة الجن</option>
+                    <option value="574" data-part="sura">073 سورة المزمل</option>
+                    <option value="575" data-part="sura">074 سورة المدثر</option>
+                    <option value="577" data-part="sura">075 سورة القيامة</option>
+                    <option value="578" data-part="sura">076 سورة الإنسان</option>
+                    <option value="580" data-part="sura">077 سورة المرسلات</option>
+                    <option value="582" data-part="juza">30 جزء عمّ يتساءلون (النبأ)</option>
+                    <option value="582" data-part="hizb">حزب 59</option>
+                    <option value="582" data-part="sura">078 سورة النبأ</option>
+                    <option value="583" data-part="sura">079 سورة النازعات</option>
+                    <option value="585" data-part="sura">080 سورة عبس</option>
+                    <option value="586" data-part="sura">081 سورة التكوير</option>
+                    <option value="587" data-part="sura">082 سورة الإنفطار</option>
+                    <option value="587" data-part="sura">083 سورة المطففين</option>
+                    <option value="589" data-part="sura">084 سورة الانشقاق</option>
+                    <option value="590" data-part="sura">085 سورة البروج</option>
+                    <option value="591" data-part="hizb">حزب 60</option>
+                    <option value="591" data-part="sura">086 سورة الطارق</option>
+                    <option value="591" data-part="sura">087 سورة الأعلى</option>
+                    <option value="592" data-part="sura">088 سورة الغاشية</option>
+                    <option value="593" data-part="sura">089 سورة الفجر</option>
+                    <option value="594" data-part="sura">090 سورة البلد</option>
+                    <option value="595" data-part="sura">091 سورة الشمس</option>
+                    <option value="595" data-part="sura">092 سورة الليل</option>
+                    <option value="596" data-part="sura">093 سورة الضحى</option>
+                    <option value="596" data-part="sura">094 سورة الشرح</option>
+                    <option value="597" data-part="sura">095 سورة التين</option>
+                    <option value="597" data-part="sura">096 سورة العلق</option>
+                    <option value="598" data-part="sura">097 سورة القدر</option>
+                    <option value="598" data-part="sura">098 سورة البينة</option>
+                    <option value="599" data-part="sura">099 سورة الزلزلة</option>
+                    <option value="599" data-part="sura">100 سورة العاديات</option>
+                    <option value="600" data-part="sura">101 سورة القارعة</option>
+                    <option value="600" data-part="sura">102 سورة التكاثر</option>
+                    <option value="601" data-part="sura">103 سورة العصر</option>
+                    <option value="601" data-part="sura">104 سورة الهمزة</option>
+                    <option value="601" data-part="sura">105 سورة الفيل</option>
+                    <option value="602" data-part="sura">106 سورة قريش</option>
+                    <option value="602" data-part="sura">107 سورة الماعون</option>
+                    <option value="602" data-part="sura">108 سورة الكوثر</option>
+                    <option value="603" data-part="sura">109 سورة الكافرون</option>
+                    <option value="603" data-part="sura">110 سورة النصر</option>
+                    <option value="603" data-part="sura">111 سورة المسد</option>
+                    <option value="604" data-part="sura">112 سورة الإخلاص</option>
+                    <option value="604" data-part="sura">113 سورة الفلق</option>
+                    <option value="604" data-part="sura">114 سورة الناس</option>
+                    <option value="605" data-part="fahrs">فهرس المصحف</option>
+                    <option value="607" data-part="fahrs">دعاء الختم</option>
+                    <option value="608" data-part="fahrs">ضبط</option>
+                    <option value="615" data-part="fahrs">تعريف المصحف</option>
+                    <option value="616" data-part="fahrs">الأصول</option>
+                  </select>
+                </div>
+                <div class="results filter-closed" id="results"></div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./src/scripts.js" type="text/javascript"></script>
+  </body>
+</html>
