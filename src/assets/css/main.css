@@ -17,14 +17,24 @@
   font-family: 'Noto', sans-serif;
 }
 
-.loading-layer {
-  background-color: #000000bf;
+.loading-layer, .selected-rawi-label {
   position: absolute;
+  background-color: #000000bf;
   z-index: 1;
-  border-radius: 5px;
-  opacity: 0;
-  padding: 5px;
+  /* opacity: 0; */
   transition: 1s;
+}
+
+.loading-layer{
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.selected-rawi-label {
+  top: 0;
+  padding: 0px 10px;
+  border-radius: 0 0 10px 10px;
+  font-size: 12px;
 }
 
 .loading-on {
@@ -332,6 +342,10 @@ main.main {
     height: calc(100% - 45px);
     border-radius: 0 0 3px 3px;
     overflow: hidden;
+  }
+
+  .selected-rawi-label {
+    opacity: 1;
   }
   
 }

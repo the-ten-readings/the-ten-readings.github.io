@@ -151,120 +151,229 @@ var arabicNormChar = {
 };
 
 // root folder for rawis folders
-const rootSource = 'qurans';
+const rootSource = 'https:\\\\raw.githubusercontent.com\\ayoubnaceur\\dataset\\data\\data\\qurans';
 
 // Availaible Quran Versions (Riwaiat or Torok) : Configurations
+
 const rawis = {
-  R111: "NafiQalown1",
-  R112: "NafiQalown2",
-  R113: "NafiQalown3",
-  R114: "NafiQalown4",
-  R121: "NafiWarshALAzraq",
-  R122: "NafiWarshAspahani",
+  R111: {
+    label: "قالون - قصر المنفصل وإسكان الميم",
+    folder: "NafiQalown1",
+    lastPage: 630,
+  },
+  R112: {
+    label: "قالون - قصر المنفصل وصلة ميم الجمع",
+    folder: "NafiQalown2",
+    lastPage: 630,
+  },
+  R113: {
+    label: "قالون - توسط المنفصل وإسكان الميم",
+    folder: "NafiQalown3",
+    lastPage: 630,
+  },
+  R114: {
+    label: "قالون - توسط المنفصل وصلة ميم الجمع",
+    folder: "NafiQalown4",
+    lastPage: 630,
+  },
+  R121: {
+    label: "ورش - طريق الأزرق",
+    folder: "NafiWarshALAzraq",
+    lastPage: 635,
+  },
+  R122: {
+    label: "ورش - طريق الأصبهاني",
+    folder: "NafiWarshAspahani",
+    lastPage: 630,
+  },
 
-  R2: "IbnKatheer",
-  R21: "IbnKatheerAlBazzi",
-  R22: "IbnKatheerQunbol",
+  R2: {
+    label: "ق.ابن كثير",
+    folder: "IbnKatheer",
+    lastPage: 630,
+  },
+  R21: {
+    label: "البزي",
+    folder: "IbnKatheerAlBazzi",
+    lastPage: 630,
+  },
+  R22: {
+    label: "قنبل",
+    folder: "IbnKatheerQunbol",
+    lastPage: 630,
+  },
   
-  R3: "AlBasri",
-  R311: "AlBasriAlDoori1",
-  R312: "AlBasriAlDoori2",
-  R32: "AlBasriAlSoosi",
+  R3: {
+    label: "أبي عمرو البصري",
+    folder: "AlBasri",
+    lastPage: 636,
+  },
+  R311: {
+    label: "الدوري - بتوسط المنفصل",
+    folder: "AlBasriAlDoori1",
+    lastPage: 636,
+  },
+  R312: {
+    label: "الدوري - بقصر المنفصل",
+    folder: "AlBasriAlDoori2",
+    lastPage: 636,
+  },
+  R32: {
+    label: "السوسي",
+    folder: "AlBasriAlSoosi",
+    lastPage: 636,
+  },
 
-  R4: "IbnAmmer",
-  R41: "IbnAmmerHisham",
-  R42: "IbnAmmerIbnthkwan",
+  R4: {
+    label: "ابن عامر",
+    folder: "IbnAmmer",
+    lastPage: 631,
+  },
+  R41: {
+    label: "هشام عن ابن عامر",
+    folder: "IbnAmmerHisham",
+    lastPage: 631,
+  },
+  R42: {
+    label: "ذاكون عن ابن عامر",
+    folder: "IbnAmmerIbnthkwan",
+    lastPage: 631,
+  },
 
-  R5: "Aseem",
-  R51: "Aseem1Shouba",
-  R521: "AseemHafsa1",
-  R522: "AseemHafsa2",
+  R5: {
+    label: "عاصم",
+    folder: "Aseem",
+    lastPage: 630,
+  },
+  R51: {
+    label: "شعبة",
+    folder: "Aseem1Shouba",
+    lastPage: 626,
+  },
+  R521: {
+    label: "حفص دون حاشية",
+    folder: "AseemHafsa1",
+    lastPage: 624,
+  },
+  R522: {
+    label: "حفص بحاشية سفلى",
+    folder: "AseemHafsa2",
+    lastPage: 624,
+  },
 
-  R6: "Hamza",
-  R611: "HamzaKhalf1",
-  R612: "HamzaKhalf2",
-  R621: "HamzaKhallad1",
-  R622: "HamzaKhallad2",
+  R6: {
+    label: "حمزة الكوفي",
+    folder: "Hamza",
+    lastPage: 634,
+  },
+  R611: {
+    label: "خلف - بترك السكت على الساكن المفصول",
+    folder: "HamzaKhalf1",
+    lastPage: 634,
+  },
+  R612: {
+    label: "خلف - بالسكت على الساكن المفصول",
+    folder: "HamzaKhalf2",
+    lastPage: 634,
+  },
+  R621: {
+    label: "خلاد - بوجه ترك السكت مطلقاً",
+    folder: "HamzaKhallad1",
+    lastPage: 634,
+  },
+  R622: {
+    label: "خلاد - بوجه السكت المعروف له",
+    folder: "HamzaKhallad2",
+    lastPage: 634,
+  },
   
-  R71: "ALKisaai1",
-  R711: "ALKisaaiAlLayth1",
-  R712: "ALKisaaiAlDoori1",
-  R72: "ALKisaai2",
-  R721: "ALKisaaiAlLayth2",
-  R722: "ALKisaaiAlDoori2",
+  R71: {
+    label: "الكسائي بالمذهب الإجمالي",
+    folder: "ALKisaai1",
+    lastPage: 631,
+  },
+  R711: {
+    label: "الليث",
+    folder: "ALKisaaiAlLayth1",
+    lastPage: 631,
+  },
+  R712: {
+    label: "الدوري",
+    folder: "ALKisaaiAlDoori1",
+    lastPage: 631,
+  },
+  R72: {
+    label: "الكسائي بالمذهب التفصيلي",
+    folder: "ALKisaai2",
+    lastPage: 631,
+  },
+  R721: {
+    label: "الليث - بالمذهب التفصيلي",
+    folder: "ALKisaaiAlLayth2",
+    lastPage: 631,
+  },
+  R722: {
+    label: "الدوري - بالمذهب التفصيلي",
+    folder: "ALKisaaiAlDoori2",
+    lastPage: 631,
+  },
 
-  R8: "AbuJaafar",
-  R81: "AbuJaafarIbnWardan",
-  R82: "AbuJaafarIbnjamaz",
+  R8: {
+    label: "ابي جعفر",
+    folder: "AbuJaafar",
+    lastPage: 632,
+  },
+  R81: {
+    label: "ابن وردان",
+    folder: "AbuJaafarIbnWardan",
+    lastPage: 632,
+  },
+  R82: {
+    label: "ابن جماز",
+    folder: "AbuJaafarIbnjamaz",
+    lastPage: 632,
+  },
 
-  R9: "Yaqub",
-  R91: "YaqubRuways",
-  R92: "YaqubRooh",
+  R9: {
+    label: "يعقوب البصري",
+    folder: "Yaqub",
+    lastPage: 628,
+  },
+  R91: {
+    label: "رويس",
+    folder: "YaqubRuways",
+    lastPage: 628,
+  },
+  R92: {
+    label: "روح",
+    folder: "YaqubRooh",
+    lastPage: 628,
+  },
 
-  R10: "Khalaf10",
-  R101: "Khalaf10Eshaq",
-  R1021: "Khalaf10Idrees1",
-  R1022: "Khalaf10Idrees2",
-};
+  R10: {
+    label: "خلف العاشر",
+    folder: "Khalaf10",
+    lastPage: 626,
+  },
+  R101: {
+    label: "إسحاق",
+    folder: "Khalaf10Eshaq",
+    lastPage: 627,
+  },
+  R1021: {
+    label: "إدريس",
+    folder: "Khalaf10Idrees1",
+    lastPage: 626,
+  },
+  R1022: {
+    label: "إدريس بالسكت العام",
+    folder: "Khalaf10Idrees2",
+    lastPage: 627,
+  },
+}
 
 // Availaible Quran Versions (Riwaiat or Torok) : Configurations - Up/Down Navigations
 const rawArr = ["R111", "R112", "R113", "R114", "R121", "R122", "R2", "R21", "R22", "R3", "R311", "R312", "R32", "R4", "R41", "R42", "R5", "R51", "R521", "R522", "R6", "R611", "R612", "R621", "R622", "R71", "R711", "R712", "R72", "R721", "R722", "R8", "R81", "R82", "R9", "R91", "R92", "R10", "R101", "R1021", "R1022"];
-
-// Last page for each moshaf :
-// NEED TO BE ARRANGED IN ONE CONFIG OBJ
-const rawLastPageNumArr = {
-  R111: 630,
-  R112: 630,
-  R113: 630,
-  R114: 630,
-  R121: 635,
-  R122: 630,
-
-  R2: 630,
-  R21: 630,
-  R22: 630,
-
-  R3: 636,
-  R311: 636,
-  R312: 636,
-  R32: 636,
-
-  R4: 631,
-  R41: 631,
-  R42: 631,
-
-  R5: 630,
-  R51: 626,
-  R521: 624,
-  R522: 624,
-
-  R6: 634,
-  R611: 634,
-  R612: 634,
-  R621: 634,
-  R622: 634,
-
-  R71: 631,
-  R711: 631,
-  R712: 631,
-  R72: 631,
-  R721: 631,
-  R722: 631,
-
-  R8: 632,
-  R81: 632,
-  R82: 632,
-
-  R9: 628,
-  R91: 628,
-  R92: 628,
-
-  R10: 626,
-  R101: 627,
-  R1021: 626,
-  R1022: 627,
-};
-
 
 const linesCustomStyles = {
   p1l2: 'padding: 41.2% 23% 0 24%;',
@@ -310,8 +419,6 @@ const linesCustomStyles = {
 
 }
 
-
-
 // HTML DOM CONNECTION  ///////////////////////////////////////////////////////
 
 // page
@@ -342,8 +449,11 @@ const resultsButtons = document.getElementsByClassName("result_button");
 // riwaiat filter (right menu)
 const imamsList = document.getElementById("imams-list");
 
-//
+// advanced work
 const quranGrid = document.getElementById("quran");
+
+// advanced work
+const selectedRawiLabel = document.getElementById("selectedRawiLabel");
 
 ///////////////////////////////////////////////////////////////////////////////
 // MODULE 02 : Init App  //////////////////////////////////////////////////////
@@ -365,7 +475,7 @@ const updateElement = (element, prop, value) => {
 
 const getPath = () => {
   var decalage = parseInt(selectedPage) + 4;
-  return `${rootSource}\\${rawis[selectedRawi]}\\${("0000" + decalage).slice(-4)}.jpg`;
+  return `${rootSource}\\${rawis[selectedRawi].folder}\\${("0000" + decalage).slice(-4)}.jpg`;
 };
 
 // Adding Events Listeners  ///////////////////////////////////////////////////
@@ -386,6 +496,10 @@ window.addEventListener("DOMContentLoaded", (e) => {
   if (savedPage){
     selectedPage = savedPage
   }
+
+  // update the selected rawi label
+  selectedRawiLabel.innerHTML = rawis[selectedRawi].label
+
   updatePage();
 });
 
@@ -430,9 +544,9 @@ const imageCantBeLoaded = () => {
 
 const getLastPageForRawiOrCurrentOne = (rawi = null) => {
   if (rawi != null){
-    return rawLastPageNumArr[rawi] - 4
+    return rawis[rawi].lastPage - 4
   }
-  return rawLastPageNumArr[selectedRawi] - 4
+  return rawis[selectedRawi].lastPage - 4
 }
 
 var ab = []
@@ -566,6 +680,9 @@ const updateRawCmd = (e) => {
   // add selected effect
   raw[selectedRawi].classList.add("raw-selected");
 
+  // update the selected rawi label
+  selectedRawiLabel.innerHTML = rawis[selectedRawi].label
+
   // close the riht side bar where the rawi have been choosed
   if(right.classList.contains("open-right") && currentScreen == "right"){
     currentScreen = "main"
@@ -579,8 +696,11 @@ const updateRawCmd = (e) => {
 const updateRawArrICmd = (newRaw) => {
   raw[selectedRawi].classList.remove("raw-selected");
   selectedRawi = newRaw;
-  window.localStorage.setItem('rawi', newRawId)
+  window.localStorage.setItem('rawi', newRaw)
   raw[selectedRawi].classList.add("raw-selected");
+
+  // update the selected rawi label
+  selectedRawiLabel.innerHTML = rawis[selectedRawi].label
 
   updateImgDisplay();
 };
