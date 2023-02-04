@@ -21,7 +21,7 @@
   position: absolute;
   background-color: #000000bf;
   z-index: 1;
-  /* opacity: 0; */
+  opacity: 0;
   transition: 1s;
 }
 
