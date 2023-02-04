@@ -1,12 +1,13 @@
 var APP_PREFIX = 'thethenreadings_';
-var VERSION = 'version_07';
+var VERSION = 'version_02_04_2023';
 var CACHE_NAME = APP_PREFIX + VERSION
 var URLS = [    
   "/the-ten-readings/",
   "/the-ten-readings/index.html",
   "/the-ten-readings/src/assets/css/main.css",
   "/the-ten-readings/src/assets/fonts/Noto_Sans_Arabic.woff2",
-  "/the-ten-readings/src/scripts.js",
+  "/the-ten-readings/src/quran.js",
+  "/the-ten-readings/src/main.js",
   "/the-ten-readings/src/assets/images/be-patient.jpg",
   "/the-ten-readings/src/assets/images/peace-be-upon-him.jpg",
 ]
