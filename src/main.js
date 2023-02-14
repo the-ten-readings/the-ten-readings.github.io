@@ -510,12 +510,16 @@ window.addEventListener("DOMContentLoaded", (e) => {
 // METHODS  ///////////////////////////////////////////////////////////////////
 
 const imageLoaded = () => {
-  const width = currentImage.naturalWidth
-  const height = currentImage.naturalHeight
-  // ctx.canvas.width = width - 170
-  ctx.canvas.width = width
-  ctx.canvas.height = height
-  ctx.drawImage(currentImage, 0, 0, width, height);
+  const isMobile = false;
+  const sWidth = isMobile ? 776 : 1025
+  const sHeight = isMobile ? 1264 : 1305
+  ctx.canvas.width = sWidth
+  ctx.canvas.height = sHeight
+  //
+  quranGrid.style.sHeight = sHeight
+  quranGrid.style.sWidth = sWidth
+  // ctx.drawImage(currentImage, 0, 0, sWidth, sHeight);
+  ctx.drawImage(currentImage,isMobile ? 40 : 0, 0, sWidth, sHeight, 0,0, sWidth,sHeight);
 
   // close the loading block
   loading.classList.remove("loading-on")
@@ -582,7 +586,7 @@ const updatePage = (updateDisplay = true) => {
   }
 
   // gridQuran managment :
-  // updateGridDisplay();
+  updateGridDisplay();
 };
 
 const nextCB = () => {

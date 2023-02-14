@@ -1,3 +1,4 @@
 # New-Item -ItemType Junction -Path "C:\xampp\htdocs\test" -Target "C:\Users\root\Desktop\quran soft browser\src"
 # moving data to data branch so it will be ignore here
 data
+docs

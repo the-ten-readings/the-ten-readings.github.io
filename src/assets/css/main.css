@@ -28,6 +28,8 @@
 .loading-layer{
   border-radius: 5px;
   padding: 5px;
+  opacity: 0;
+
 }
 
 .selected-rawi-label {
@@ -35,6 +37,8 @@
   padding: 0px 10px;
   border-radius: 0 0 10px 10px;
   font-size: 12px;
+  opacity: 0;
+
 }
 
 .loading-on {
@@ -76,8 +80,8 @@
   overflow: hidden;
   display: flex;
   position: relative;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .main-menu {
@@ -630,3 +634,183 @@ option:checked {
 .hide {
   display: none;
 }
+
+/* /////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////// */
+
+
+/* *** moshaf image grid *** */
+
+.quran {
+  display: flex;
+  z-index: 1;
+  background-color: #120e0e70;
+  width: calc(100% - 23.7%);
+  max-width: calc(100% - 23.7%);
+  left: 3.6%;
+  aspect-ratio: 2 / 3.13;
+  position: absolute;
+  flex-direction: column;
+  display: none;
+}
+
+.quran>div {
+  width: 100%;
+  height: -webkit-fill-available;
+  display: flex;
+  background-color: transparent;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.quran>div>div {
+  background-color: transparent;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+
+/**/
+[data-ayaEndPosition='1'] { width: 1%; }
+[data-ayaEndPosition='2'] { width: 2%; }
+[data-ayaEndPosition='3'] { width: 3%; }
+[data-ayaEndPosition='4'] { width: 4%; }
+[data-ayaEndPosition='5'] { width: 5%; }
+[data-ayaEndPosition='6'] { width: 6%; }
+[data-ayaEndPosition='7'] { width: 7%; }
+[data-ayaEndPosition='8'] { width: 8%; }
+[data-ayaEndPosition='9'] { width: 9%; }
+[data-ayaEndPosition='10'] { width: 10%; }
+[data-ayaEndPosition='11'] { width: 11%; }
+[data-ayaEndPosition='12'] { width: 12%; }
+[data-ayaEndPosition='13'] { width: 13%; }
+[data-ayaEndPosition='14'] { width: 14%; }
+[data-ayaEndPosition='15'] { width: 15%; }
+[data-ayaEndPosition='16'] { width: 16%; }
+[data-ayaEndPosition='17'] { width: 17%; }
+[data-ayaEndPosition='18'] { width: 18%; }
+[data-ayaEndPosition='19'] { width: 19%; }
+[data-ayaEndPosition='20'] { width: 20%; }
+[data-ayaEndPosition='21'] { width: 21%; }
+[data-ayaEndPosition='22'] { width: 22%; }
+[data-ayaEndPosition='23'] { width: 23%; }
+[data-ayaEndPosition='24'] { width: 24%; }
+[data-ayaEndPosition='25'] { width: 25%; }
+[data-ayaEndPosition='26'] { width: 26%; }
+[data-ayaEndPosition='27'] { width: 27%; }
+[data-ayaEndPosition='28'] { width: 28%; }
+[data-ayaEndPosition='29'] { width: 29%; }
+[data-ayaEndPosition='30'] { width: 30%; }
+[data-ayaEndPosition='31'] { width: 31%; }
+[data-ayaEndPosition='32'] { width: 32%; }
+[data-ayaEndPosition='33'] { width: 33%; }
+[data-ayaEndPosition='34'] { width: 34%; }
+[data-ayaEndPosition='35'] { width: 35%; }
+[data-ayaEndPosition='36'] { width: 36%; }
+[data-ayaEndPosition='37'] { width: 37%; }
+[data-ayaEndPosition='38'] { width: 38%; }
+[data-ayaEndPosition='39'] { width: 39%; }
+[data-ayaEndPosition='40'] { width: 40%; }
+[data-ayaEndPosition='41'] { width: 41%; }
+[data-ayaEndPosition='42'] { width: 42%; }
+[data-ayaEndPosition='43'] { width: 43%; }
+[data-ayaEndPosition='44'] { width: 44%; }
+[data-ayaEndPosition='45'] { width: 45%; }
+[data-ayaEndPosition='46'] { width: 46%; }
+[data-ayaEndPosition='47'] { width: 47%; }
+[data-ayaEndPosition='48'] { width: 48%; }
+[data-ayaEndPosition='49'] { width: 49%; }
+[data-ayaEndPosition='50'] { width: 50%; }
+[data-ayaEndPosition='51'] { width: 51%; }
+[data-ayaEndPosition='52'] { width: 52%; }
+[data-ayaEndPosition='53'] { width: 53%; }
+[data-ayaEndPosition='54'] { width: 54%; }
+[data-ayaEndPosition='55'] { width: 55%; }
+[data-ayaEndPosition='56'] { width: 56%; }
+[data-ayaEndPosition='57'] { width: 57%; }
+[data-ayaEndPosition='58'] { width: 58%; }
+[data-ayaEndPosition='59'] { width: 59%; }
+[data-ayaEndPosition='60'] { width: 60%; }
+[data-ayaEndPosition='61'] { width: 61%; }
+[data-ayaEndPosition='62'] { width: 62%; }
+[data-ayaEndPosition='63'] { width: 63%; }
+[data-ayaEndPosition='64'] { width: 64%; }
+[data-ayaEndPosition='65'] { width: 65%; }
+[data-ayaEndPosition='66'] { width: 66%; }
+[data-ayaEndPosition='67'] { width: 67%; }
+[data-ayaEndPosition='68'] { width: 68%; }
+[data-ayaEndPosition='69'] { width: 69%; }
+[data-ayaEndPosition='70'] { width: 70%; }
+[data-ayaEndPosition='71'] { width: 71%; }
+[data-ayaEndPosition='72'] { width: 72%; }
+[data-ayaEndPosition='73'] { width: 73%; }
+[data-ayaEndPosition='74'] { width: 74%; }
+[data-ayaEndPosition='75'] { width: 75%; }
+[data-ayaEndPosition='76'] { width: 76%; }
+[data-ayaEndPosition='77'] { width: 77%; }
+[data-ayaEndPosition='78'] { width: 78%; }
+[data-ayaEndPosition='79'] { width: 79%; }
+[data-ayaEndPosition='80'] { width: 80%; }
+[data-ayaEndPosition='81'] { width: 81%; }
+[data-ayaEndPosition='82'] { width: 82%; }
+[data-ayaEndPosition='83'] { width: 83%; }
+[data-ayaEndPosition='84'] { width: 84%; }
+[data-ayaEndPosition='85'] { width: 85%; }
+[data-ayaEndPosition='86'] { width: 86%; }
+[data-ayaEndPosition='87'] { width: 87%; }
+[data-ayaEndPosition='88'] { width: 88%; }
+[data-ayaEndPosition='89'] { width: 89%; }
+[data-ayaEndPosition='90'] { width: 90%; }
+[data-ayaEndPosition='91'] { width: 91%; }
+[data-ayaEndPosition='92'] { width: 92%; }
+[data-ayaEndPosition='93'] { width: 93%; }
+[data-ayaEndPosition='94'] { width: 94%; }
+[data-ayaEndPosition='95'] { width: 95%; }
+[data-ayaEndPosition='96'] { width: 96%; }
+[data-ayaEndPosition='97'] { width: 97%; }
+[data-ayaEndPosition='98'] { width: 98%; }
+[data-ayaEndPosition='99'] { width: 99%; }
+[data-ayaEndPosition='100'] { width: 100%; }
+
+.line-selected {
+  background-color:#86fff561 !important
+}
+
+.aya-hovered {
+  /* background-color:#ff8a2b61 !important */
+}
+[data-aya]{
+  background-color:#ff8a2b61 !important
+}
+.aya-selected {
+  background-color: #43d50059 !important;
+} 
+
+.quranGrid-closed {
+  display: none;
+}
+
+.meter{
+  display: flex;
+  background-color: transparent;
+  height: 100%;
+}
+
+.meter .range{
+  width: 100%;
+  border: 0;
+  outline: 0;
+  height: 100%;
+  background-color: #d3d3d34f;
+  text-align: center;
+  font-weight: bold;
+  box-sizing: border-box;
+  min-width: 0;
+  box-shadow: inset 1px 1px 1px #000;
+}
+
+div#quran > div > div:first-child .meter {
+
+}
+
+/* *** moshaf image grid end *** */

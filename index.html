@@ -273,6 +273,7 @@
       <main class="main">
         <div class="quran-container">
           <div class="quran-wrapper">
+            <div id="quran" class="quran"></div>
             <div id="selectedRawiLabel" class="selected-rawi-label"></div>
             <div id="loading" class="loading-layer">جاري تحميل الوجه</div>
             <canvas id="imge"></canvas>
@@ -286,9 +287,9 @@
             <div></div>
             <div><button id="privouos">➡️ السابقة</button></div>
           </div>
-          <div class="as-m"><input inputmode="numeric" type="number"  placeholder="رقم الصفحة"min="-3" id="page"></div>
+          <div class="as-m"><input inputmode="numeric" type="search" placeholder="رقم الصفحة"min="-3" id="page"></div>
           <div class="as-a">
-            <div class=""><button id="next">التالية ⬅️</button></div>
+            <div><button id="next">التالـيـة ⬅️</button></div>
             <div></div>
             <div class="main-navigation-l-menu">
 
@@ -301,6 +302,8 @@
       </main>
       <div class="left-sidebar">
         <div class="tools">
+
+          <!-- finder (search tool) -->
           <div class="tool" style="height: 100%;">
             <div class="tool-header">
               <div class="tool-title">محرك البحث</div>
@@ -309,13 +312,14 @@
               </div>
             </div>
             <div class="tool-body">
-
-
               <div class="searchbox" id="searchbox">
+                <!-- search input  -->
                 <label hidden>searchbox-input</label>
                 <input placeholder="البحث في المصحف" id="searchbox-input" type="search" />
                 
+                <!-- fahrass + filter -->
                 <div class="filter" id="filter">
+                  <!-- checkboxes -->
                   <div class="f_part">
                     <input type="checkbox" id="part-juza" name="part-juza" value="part-juza" />
                     <label for="part-juza">الأجزاء</label>
@@ -324,6 +328,7 @@
                     <input checked type="checkbox" id="mart-sura" name="mart-sura" value="mart-sura" />
                     <label for="mart-sura" style="place-self: flex-end">السور</label>
                   </div>
+                  <!-- fahrass search boxe -->
                   <div class="filter_filter">
                     <div>
                       <label for="filter_parts" hidden="">Choose your f_part from the list:</label>
@@ -343,7 +348,7 @@
                       </datalist>
                     </div> -->
                   </div>
-    
+                  <!-- result (list to selected from) -->
                   <select class="filterAndSelector" name="filterAndSelector" multiple="multiple" id="filterAndSelector">
                     <option value="-3" data-part="fahrs">البداية</option>
                     <option value="001" data-part="juza">01 جزء الحمد (الفاتحة)</option>
@@ -557,6 +562,7 @@
                     <option value="616" data-part="fahrs">الأصول</option>
                   </select>
                 </div>
+                <!-- Search result -->
                 <div class="results filter-closed" id="results"></div>
               </div>
 
