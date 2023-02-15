@@ -384,15 +384,16 @@ const linesCustomStyles = {
   p1l7: 'padding: 0 21% ;',
   p1l8: 'padding: 0 34% 44% 34%',
 
-  p2l3: 'padding: 53% 15% 0;',
-  p2l4: 'padding: 2% 11% 0 ;',
+  p2l3: 'padding: 50% 15% 0;',
+  p2l4: 'padding: 0 11% 0 ;',
   p2l5: 'padding: 0 10% ;',
   p2l6: 'padding: 0 13% ;',
   p2l7: 'padding: 0 22% ;',
-  p2l8: 'padding: 0 35% 44% 35%',
+  p2l8: 'padding: 0 35% 42% 35%',
   
   p50l3: 'padding-top: 28.5%;',
   
+  p76l14: 'padding-bottom: 15%',
   p77l2: 'padding-top: 15.5%;',
   p106l8: 'padding-top: 25.3%;', // middle sura + basmala
   
@@ -400,7 +401,7 @@ const linesCustomStyles = {
 
   p151l3: 'padding-top: 28.5%;',
 
-  p177l3: 'padding-top: 27.5%; padding-bottom: 1%;',
+  p177l3: 'padding-top: 27.5%;',
 
   p187l2: 'padding-top: 15.5%;',
 
@@ -416,7 +417,161 @@ const linesCustomStyles = {
   p235l11 : 'padding-top: 8.5%;', 
 
   p249l3: 'padding-top: 28%;',
+  
+  p255l5: 'padding-top: 26%;',
+  
+  p262l3: 'padding-top: 27%;',
+  
+  p267l9: 'padding-top: 25%;',
 
+  p282l3: 'padding-top: 28%;',
+
+  p293l9: 'padding-bottom: 26%;',
+
+  p305l3: 'padding-top: 27%;',
+  
+  p312l7: 'padding-top: 27%;',
+  
+  p322l3: 'padding-top: 28%;',
+
+  p331l14: 'padding-bottom: 15%;',
+  p332l2: 'padding-top: 15%;',
+  
+  p341l14: 'padding-bottom: 15%;',
+  p342l2: 'padding-top: 15%;',
+
+  p349l14: 'padding-bottom: 15%;',
+  p350l2: 'padding-top: 15%;',
+
+  p352l2: 'padding-top: 15%;',
+  
+  p359l13: 'padding-top: 25%;',
+
+  p366l14: 'padding-bottom: 15%;',
+  p367l2: 'padding-top: 15%;',
+  
+  p376l14: 'padding-bottom: 15%;',
+  p377l2: 'padding-top: 15%;',
+  
+  p385l10: 'padding-top: 27%;',
+  
+  p396l10: 'padding-top: 27%;',
+
+  p404l12: 'padding-top: 27%;',
+  
+  p411l3: 'padding-top: 28%;',
+  
+  p414l14: 'padding-bottom: 15%;',
+  p415l2: 'padding-top: 15%;',
+  
+  p417l14: 'padding-bottom: 13.7%;',
+  p418l2: 'padding-top: 15%;',
+  
+  p428l3: 'padding-top: 27%;',
+
+  p434l10: 'padding-top: 27%;',
+
+  p440l6: 'padding-top: 27%;',
+
+  p445l14: 'padding-bottom: 15%;',
+  p446l2: 'padding-top: 15%;',
+
+  p452l14: 'padding-bottom: 15%;',
+  p453l2: 'padding-top: 15%;',
+
+  p458l6: 'padding-top: 26%;',
+  
+  p467l5: 'padding-top: 27%;',
+
+  p477l3: 'padding-top: 28%;',
+
+  p483l3: 'padding-top: 28%;',
+  
+  p489l7: 'padding-top: 27.4%;',
+
+  p496l3: 'padding-top: 28%;',
+
+  p498l14: 'padding-bottom: 15%;',
+  p499l2: 'padding-top: 15%;',
+
+  p502l9: 'padding-top: 27.4%;',
+
+  p506l14: 'padding-bottom: 15%;',
+  p507l2: 'padding-top: 15%;',
+
+  p511l3: 'padding-top: 28%;',
+
+  p515l9: 'padding-top: 26%;',
+
+  p518l3: 'padding-top: 28%;',
+  
+  p520l14: 'padding-top: 28%;',
+  
+  p523l10: 'padding-top: 25%;',
+
+  p525l14: 'padding-bottom: 15%;',
+  p526l2: 'padding-top: 15%;',
+
+  p528l11: 'padding-top: 26%;',
+
+  p531l7: 'padding-top: 26%;',
+  
+  p534l9: 'padding-top: 26%;',
+  
+  p537l13: 'padding-top: 26%;',
+
+  p542l3: 'padding-top: 27%;',
+
+  p545l9: 'padding-top: 25%;',
+
+  p548l14: 'padding-bottom: 15%;',
+  p549l2: 'padding-top: 15%;',
+
+  p551l9: 'padding-top: 26%;',
+
+  p553l3: 'padding-top: 27%;',
+
+  p554l9: 'padding-top: 24%;',
+
+  p555l14: 'padding-bottom: 15%;',
+  p556l2: 'padding-top: 15%;',
+
+  p557l14: 'padding-bottom: 15%;',
+  p558l2: 'padding-top: 14%;',
+
+  p560l3: 'padding-top: 27%;',
+  
+  p562l3: 'padding-top: 26%;',
+
+  p564l8: 'padding-top: 25%;',
+
+  p566l11: 'padding-top: 25%;',
+
+  p570l7: 'padding-top: 25%;',
+  
+  p572l3: 'padding-top: 26%;',
+  
+  p574l3: 'padding-top: 26%;',
+  
+  p575l10: 'padding-top: 25%;',
+
+  p577l8: 'padding-top: 26%;',
+  
+  p578l11: 'padding-top: 25%;',
+  
+  p580l9: 'padding-top: 25%;',
+
+  // p520l14: 'padding-top: 28%;',
+
+  // p520l14: 'padding-top: 28%;',
+
+  // p520l14: 'padding-top: 28%;',
+
+  // p520l14: 'padding-top: 28%;',
+
+  // p520l14: 'padding-top: 28%;',
+
+  // p520l14: 'padding-top: 28%;',
 }
 
 // HTML DOM CONNECTION  ///////////////////////////////////////////////////////
@@ -515,9 +670,10 @@ const imageLoaded = () => {
   const sHeight = isMobile ? 1264 : 1305
   ctx.canvas.width = sWidth
   ctx.canvas.height = sHeight
-  //
-  quranGrid.style.sHeight = sHeight
-  quranGrid.style.sWidth = sWidth
+
+  // quranGrid.style.height = sHeight / 100 + "px"
+  // quranGrid.style.width = sWidth / 100 + "px"
+
   // ctx.drawImage(currentImage, 0, 0, sWidth, sHeight);
   ctx.drawImage(currentImage,isMobile ? 40 : 0, 0, sWidth, sHeight, 0,0, sWidth,sHeight);
 
@@ -587,6 +743,16 @@ const updatePage = (updateDisplay = true) => {
 
   // gridQuran managment :
   updateGridDisplay();
+
+  // update fahras selections according the current page
+  for (option of filterAndSelector.options) {
+    if(option.selected && option.value != selectedPage) {
+      option.selected = false;
+    }
+    if(!option.selected && option.value == selectedPage) {
+      option.selected = true;
+    }
+  }
 };
 
 const nextCB = () => {
