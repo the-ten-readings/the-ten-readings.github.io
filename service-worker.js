@@ -6,6 +6,7 @@ var URLS = [
   "/the-ten-readings/index.html",
   "/the-ten-readings/src/assets/css/main.css",
   "/the-ten-readings/src/assets/fonts/Noto_Sans_Arabic.woff2",
+  "/the-ten-readings/src/swiped-events.min.js",
   "/the-ten-readings/src/quran.js",
   "/the-ten-readings/src/main.js",
   "/the-ten-readings/src/assets/images/be-patient.jpg",
