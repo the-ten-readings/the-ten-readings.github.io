@@ -36,6 +36,7 @@
   border-radius: 5px;
   padding: 5px;
   opacity: 0;
+  display: none;
 }
 
 .selected-rawi-label {
@@ -44,12 +45,12 @@
   border-radius: 0 0 10px 10px;
   font-size: 12px;
   opacity: 0;
-
 }
 
 .loading-on {
   opacity: 1;
   padding: 10;
+  display: inherit;
 }
 
 .global-container {
@@ -787,12 +788,11 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
 }
 
 .aya-hovered {
-  /* background-color:#ff8a2b61 !important */
+  background-color:#ff8a2b61 !important
 }
-[data-aya]{
+/* [data-aya]{
   background-color:#ff8a2b61 !important;
-  /* background-color: transparent !important; */
-}
+} */
 .aya-selected {
   background-color: #43d50059 !important;
 } 

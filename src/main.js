@@ -675,16 +675,16 @@ const imageLoaded = () => {
 
   // TODO: to be cleaned later: pnly for test  
 
-  // setTimeout(() => {
-  //   ctx.drawImage(currentImage,isMobile ? 40 : 0, 0, sWidth, sHeight, 0,0, sWidth,sHeight);
-  //   // close the loading block
-  //   toggleLoading(false)
-  // }, 1000)
+  setTimeout(() => {
+    ctx.drawImage(currentImage,isMobile ? 40 : 0, 0, sWidth, sHeight, 0,0, sWidth,sHeight);
+    // close the loading block
+    toggleLoading(false)
+  }, 1000)
 
-  ctx.drawImage(currentImage,isMobile ? 40 : 0, 0, sWidth, sHeight, 0,0, sWidth,sHeight);
+  // ctx.drawImage(currentImage,isMobile ? 40 : 0, 0, sWidth, sHeight, 0,0, sWidth,sHeight);
 
-  // close the loading block
-  toggleLoading(false)
+  // // close the loading block
+  // toggleLoading(false)
 };
 
 
@@ -1193,11 +1193,11 @@ const handelAyaPart = (element) => {
     });
   });
 
-  element.children[0].children[0].addEventListener('input', e => {
-    element.children[0].children[0].value = e.target.value
-    // element.children[0].children[1].max = e.target.value
-    element.dataset.ayaendposition = e.target.value// element.children[0].children[2]. = e.target.value
-  })
+  // element.children[0].children[0].addEventListener('input', e => {
+  //   element.children[0].children[0].value = e.target.value
+  //   // element.children[0].children[1].max = e.target.value
+  //   element.dataset.ayaendposition = e.target.value// element.children[0].children[2]. = e.target.value
+  // })
 };
 
 // const hamish = document.getElementById("hamish").addEventListener("click", ()=>{
@@ -1214,10 +1214,11 @@ const lineTemplate = (lineNumber, ayaParts) => {
 
 // ayaPart template
 const linePartTemplate = (data) => `<div ${(selectedAya && data.ayaNumber == selectedAya) && "class='aya-selected'"} id="${data.ayaId}-${data.ayaNumber}-${data.lineNumber}" data-aya data-ayaId="${data.ayaId}" data-ayaNumber="${data.ayaNumber}" data-ayaSuraNumber="${data.suraNumber}" data-ayaLineNumber="${data.lineNumber}"  data-ayaEndPosition="${data.lineWidth}">
-  <div class="meter">
-    <input class="range" type='number' min="0" max="100" value="${data.lineWidth}">
-  </div>
+
 </div>`;
+// <div class="meter">
+//   <input class="range" type='number' min="0" max="100" value="${data.lineWidth}">
+// </div>
 
 // update the Grid UI
 const updateGrid = (ayat) => {
