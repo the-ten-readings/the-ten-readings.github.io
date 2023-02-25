@@ -603,6 +603,7 @@ const selectedRawiLabel = document.getElementById("selectedRawiLabel");
 var isPageLoaded = false;
 var selectedRawi = "R111";
 var selectedPage = -3//;79; // -3
+var selectedSuran = null;
 var isSearchOpen = true;
 
 // METHODS  ///////////////////////////////////////////////////////////////////
@@ -723,13 +724,13 @@ const updatePage = (updateDisplay = true) => {
 
   // only for div /////////////////////////
 
-  for (a of document.getElementsByClassName("range")){
-    ab.push(a.value)
-  }
+  // for (a of document.getElementsByClassName("range")){
+  //   ab.push(a.value)
+  // }
 
-  bc.push({page: selectedPage - 1, width : ab })
-  ab = []
-  console.log(bc)
+  // bc.push({page: selectedPage - 1, width : ab })
+  // ab = []
+  // console.log(bc)
 
   // only for dev ended ///////////////////
   
@@ -938,6 +939,7 @@ const searchAya = (text) => {
   QURAN.find((line) => {
     let r = line.contentSimple.search(normalized);
     if (r != -1) {
+      // console.log(line)
       results.insertAdjacentHTML(
         "beforeend",
         `
@@ -946,7 +948,7 @@ const searchAya = (text) => {
         <span>صفحة <b>${line.pageNumber}</b></span>  
         <span>سورة <b>${line.suraName}</b></span>  
         <span>آية <b>${line.number}</b></span>  
-        <button class="result_button" data-page="${line.pageNumber}" data-targetAya="${line.number}">إنتقل</button>
+        <button class="result_button" data-page="${line.pageNumber}" data-targetAya="${line.id}">إنتقل</button>
       </div>
       `
       );
@@ -1148,7 +1150,8 @@ const handelAyaPart = (element) => {
   // better to add all event listents in one loop
   element.addEventListener("mouseenter", (e) => {
     currentPageAyats.forEach((aya) => {
-      if (aya.dataset.ayanumber == e.target.dataset.ayanumber) {
+      // console.log(aya)
+      if (aya.dataset.ayaid == e.target.dataset.ayaid) {
         aya.classList.add("aya-hovered");
       }
     });
@@ -1156,7 +1159,7 @@ const handelAyaPart = (element) => {
 
   element.addEventListener("mouseleave", (e) => {
     currentPageAyats.forEach((aya) => {
-      if (aya.dataset.ayanumber == e.target.dataset.ayanumber) {
+      if (aya.dataset.ayaid == e.target.dataset.ayaid) {
         aya.classList.remove("aya-hovered");
       }
     });
@@ -1164,11 +1167,11 @@ const handelAyaPart = (element) => {
 
   element.addEventListener("click", (e) => {
     currentPageAyats.forEach((aya) => {
-      if (aya.dataset.ayanumber == e.target.dataset.ayanumber) {
+      if (aya.dataset.ayaid == e.target.dataset.ayaid) {
         if (selectedAya) {
           // clear the privous selection
           currentPageAyats.forEach((aya) => {
-            if (aya.dataset.ayanumber == selectedAya) {
+            if (aya.dataset.ayaid == selectedAya) {
               aya.classList.remove("aya-selected");
             }
           });
@@ -1185,11 +1188,11 @@ const handelAyaPart = (element) => {
           selectedLine = null;
         }*/
         currentPageAyats.forEach((aya) => {
-          if (aya.dataset.ayanumber == e.target.dataset.ayanumber) {
+          if (aya.dataset.ayaid == e.target.dataset.ayaid) {
             aya.classList.add("aya-selected");
           }
         });
-        selectedAya = aya.dataset.ayanumber;
+        selectedAya = aya.dataset.ayaid;
       }
     });
   });
@@ -1214,8 +1217,15 @@ const lineTemplate = (lineNumber, ayaParts) => {
 }
 
 // ayaPart template
-const linePartTemplate = (data) => `<div ${(selectedAya && data.ayaNumber == selectedAya) && "class='aya-selected'"} id="${data.ayaId}-${data.ayaNumber}-${data.lineNumber}" data-aya data-ayaId="${data.ayaId}" data-ayaNumber="${data.ayaNumber}" data-ayaSuraNumber="${data.suraNumber}" data-ayaLineNumber="${data.lineNumber}"  data-ayaEndPosition="${data.lineWidth}">
-
+const linePartTemplate = (data) => `<div  
+  id="${data.ayaId}-${data.ayaNumber}-${data.lineNumber}" 
+  ${(selectedAya && data.ayaNumber == selectedAya) && "class='aya-selected'"}
+  data-aya
+  data-ayaId="${data.ayaId}" 
+  data-ayaNumber="${data.ayaNumber}"
+  data-ayaSuraNumber="${data.suraNumber}" 
+  data-ayaLineNumber="${data.lineNumber}"
+  data-ayaEndPosition="${data.lineWidth}">
 </div>`;
 // <div class="meter">
 //   <input class="range" type='number' min="0" max="100" value="${data.lineWidth}">
