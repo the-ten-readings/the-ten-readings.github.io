@@ -588,8 +588,8 @@ const resultsButtons = document.getElementsByClassName("result_button");
 // riwaiat filter (right menu)
 const imamsList = document.getElementById("imams-list");
 
-// advanced work
-const quranGrid = document.getElementById("quran");
+// quran grid layout
+const quranGrid = document.getElementById("quran-grid");
 
 // advanced work
 const selectedRawiLabel = document.getElementById("selectedRawiLabel");
@@ -648,6 +648,21 @@ window.addEventListener("DOMContentLoaded", (e) => {
 
 // METHODS  ///////////////////////////////////////////////////////////////////
 
+const toggleLoading = (status) => {
+  // loading on
+  if (status == true){
+    // loading tag :
+    loading.classList.add("loading-on")
+    quranGrid.classList.add("quranGrid-closed");
+  }
+  // loading off
+  else{
+    // loading tag :
+    loading.classList.remove("loading-on")
+    quranGrid.classList.remove("quranGrid-closed");
+  }
+}
+
 const imageLoaded = () => {
   const isMobile = false;
   const sWidth = isMobile ? 776 : 1025
@@ -658,11 +673,18 @@ const imageLoaded = () => {
   // quranGrid.style.height = sHeight / 100 + "px"
   // quranGrid.style.width = sWidth / 100 + "px"
 
-  // ctx.drawImage(currentImage, 0, 0, sWidth, sHeight);
+  // TODO: to be cleaned later: pnly for test  
+
+  // setTimeout(() => {
+  //   ctx.drawImage(currentImage,isMobile ? 40 : 0, 0, sWidth, sHeight, 0,0, sWidth,sHeight);
+  //   // close the loading block
+  //   toggleLoading(false)
+  // }, 1000)
+
   ctx.drawImage(currentImage,isMobile ? 40 : 0, 0, sWidth, sHeight, 0,0, sWidth,sHeight);
 
   // close the loading block
-  loading.classList.remove("loading-on")
+  toggleLoading(false)
 };
 
 
@@ -671,16 +693,16 @@ const imageCantBeLoaded = () => {
   updateImgDisplay('404')
 
   // close the loading block
-  loading.classList.remove("loading-on")
+  toggleLoading(false)
 };
 
-  const updateImgDisplay = (type = null) => {
+const updateImgDisplay = (type = null) => {
   if (type == "404") {
     currentImage.src = ".\\src\\assets\\images\\peace-be-upon-him.jpg"
-    loading.classList.add("loading-on")
+    toggleLoading(true)
     return;
   }
-  loading.classList.add("loading-on")
+  toggleLoading(true)
   currentImage.src = getPath();
 };
 
@@ -1251,26 +1273,23 @@ const updateGrid = (ayat) => {
 
 // updating the grid logic
 const updateGridDisplay = () => {
-  // show the grid
-  if (quranGrid.classList.contains("quranGrid-closed")) {
-    quranGrid.classList.remove("quranGrid-closed");
+  
+  // by default : no grid (turn the light off, nothing to select) 
+  if (!quranGrid.classList.contains("quranGrid-closed")) {
+    quranGrid.classList.add("quranGrid-closed");
   }
-
+  
   // update the grid layout for the current page ayat
   const ayat = QURAN.filter((aya) => {
     return aya.pageNumber == selectedPage;
   });
 
-
-  if (!ayat || ayat == []) {
-    if (!quranGrid.classList.contains("quranGrid-closed")) {
-      quranGrid.classList.add("quranGrid-closed");
-    }
-  } else {
-    updateGrid(ayat);
-    currentPageAyats = document.querySelectorAll("[data-aya]");
-    for (ayaOrAyaPart of currentPageAyats) {
-      handelAyaPart(ayaOrAyaPart);
-    }
+  // remove the check on ayat number in order to reset the content only one time in one place 
+  // also in case of ayat.lenght is 0 loops will turn on 0 ! 
+  // the grid display is handeled by the toggleLoading func
+  updateGrid(ayat);
+  currentPageAyats = document.querySelectorAll("[data-aya]");
+  for (ayaOrAyaPart of currentPageAyats) {
+    handelAyaPart(ayaOrAyaPart);
   }
 };
