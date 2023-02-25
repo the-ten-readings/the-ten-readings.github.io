@@ -525,6 +525,43 @@ const linesCustomStyles = {
   // p520l14: 'padding-top: 28%;',
 
   // p520l14: 'padding-top: 28%;',
+
+  p592l5: 'padding-top: 25%;',
+  p593l3: 'padding-top: 25%;',
+  p594l6: 'padding-top: 24%;',
+  p594l14: 'padding-bottom: 13%;',
+  p595l2: 'padding-top: 13%;',
+  p595l11: 'padding-top: 23%;',
+  p596l6: 'padding-top: 22%;',
+  p596l13: 'padding-top: 22%;',
+  p597l3: 'padding-top: 25%;',
+  p597l9: 'padding-top: 25%;',
+  
+  p598l3: 'padding-top: 27%;',
+  p598l8: 'padding-top: 24%;',
+
+  p599l5: 'padding-top: 23%;',
+  p599l12: 'padding-top: 24%;',
+
+  p600l4: 'padding-top: 23%;',
+  p600l12: 'padding-top: 23%;',
+
+  p601l3: 'padding-top: 24%;',
+  p601l7: 'padding-top: 22%;',
+  p601l13: 'padding-top: 22%;',
+
+  p602l3: 'padding-top: 24%;',
+  p602l8: 'padding-top: 22%;',
+  p602l14: 'padding-top: 22%;',
+
+  p603l3: 'padding-top: 23%;',
+  p603l8: 'padding-top: 22%;',
+  p603l13: 'padding-top: 22%;',
+  
+  p604l3: 'padding-top: 25%;',
+  p604l7: 'padding-top: 22%;',
+  p604l12: 'padding-top: 22%;',
+  
 }
 
 // HTML DOM CONNECTION  ///////////////////////////////////////////////////////

@@ -108176,7 +108176,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 1,
-        width: 0,
+        width: 54,
       },
     ],
     content: "فَمَا تَنفَعُهُمْ شَفَـٰعَةُ ٱلشَّـٰفِعِينَ",
@@ -108186,16 +108186,16 @@ const QURAN = [
     id: 5544,
     number: 49,
     suraNumber: 74,
-    suraName: "الملك",
+    suraName: "المدثر",
     pageNumber: 577,
     coveredLines: [
       {
         lineId: 1,
-        width: 0,
+        width: 46,
       },
       {
         lineId: 2,
-        width: 0,
+        width: 11,
       },
     ],
     content: "فَمَا لَهُمْ عَنِ ٱلتَّذْكِرَةِ مُعْرِضِينَ",
@@ -108205,12 +108205,12 @@ const QURAN = [
     id: 5545,
     number: 50,
     suraNumber: 74,
-    suraName: "الملك",
+    suraName: "المدثر",
     pageNumber: 577,
     coveredLines: [
       {
         lineId: 2,
-        width: 0,
+        width: 41,
       },
     ],
     content: "كَأَنَّهُمْ حُمُرٌ مُّسْتَنفِرَةٌ",
@@ -108220,12 +108220,12 @@ const QURAN = [
     id: 5546,
     number: 51,
     suraNumber: 74,
-    suraName: "الملك",
+    suraName: "المدثر",
     pageNumber: 577,
     coveredLines: [
       {
         lineId: 2,
-        width: 0,
+        width: 33,
       },
     ],
     content: "فَرَّتْ مِن قَسْوَرَةٍۭ",
@@ -108235,16 +108235,16 @@ const QURAN = [
     id: 5547,
     number: 52,
     suraNumber: 74,
-    suraName: "الملك",
+    suraName: "المدثر",
     pageNumber: 577,
     coveredLines: [
       {
         lineId: 2,
-        width: 0,
+        width: 15,
       },
       {
         lineId: 3,
-        width: 0,
+        width: 67,
       },
     ],
     content: "بَلْ يُرِيدُ كُلُّ ٱمْرِئٍ مِّنْهُمْ أَن يُؤْتَىٰ صُحُفًا مُّنَشَّرَةً",
@@ -108254,16 +108254,16 @@ const QURAN = [
     id: 5548,
     number: 53,
     suraNumber: 74,
-    suraName: "الملك",
+    suraName: "المدثر",
     pageNumber: 577,
     coveredLines: [
       {
         lineId: 3,
-        width: 0,
+        width: 33,
       },
       {
         lineId: 4,
-        width: 0,
+        width: 23,
       },
     ],
     content: "كَلَّا ۖ بَل لَّا يَخَافُونَ ٱلْـَٔاخِرَةَ",
@@ -108273,12 +108273,12 @@ const QURAN = [
     id: 5549,
     number: 54,
     suraNumber: 74,
-    suraName: "الملك",
+    suraName: "المدثر",
     pageNumber: 577,
     coveredLines: [
       {
         lineId: 4,
-        width: 0,
+        width: 37,
       },
     ],
     content: "كَلَّآ إِنَّهُۥ تَذْكِرَةٌ",
@@ -108288,12 +108288,12 @@ const QURAN = [
     id: 5550,
     number: 55,
     suraNumber: 74,
-    suraName: "الملك",
+    suraName: "المدثر",
     pageNumber: 577,
     coveredLines: [
       {
         lineId: 4,
-        width: 0,
+        width: 40,
       },
     ],
     content: "فَمَن شَآءَ ذَكَرَهُۥ",
@@ -108303,12 +108303,12 @@ const QURAN = [
     id: 5551,
     number: 56,
     suraNumber: 74,
-    suraName: "الملك",
+    suraName: "المدثر",
     pageNumber: 577,
     coveredLines: [
       {
         lineId: 5,
-        width: 0,
+        width: 100,
       },
     ],
     content: "وَمَا يَذْكُرُونَ إِلَّآ أَن يَشَآءَ ٱللَّهُ ۚ هُوَ أَهْلُ ٱلتَّقْوَىٰ وَأَهْلُ ٱلْمَغْفِرَةِ",
@@ -108323,7 +108323,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 8,
-        width: 0,
+        width: 41,
       },
     ],
     content: " لَآ أُقْسِمُ بِيَوْمِ ٱلْقِيَـٰمَةِ",
@@ -108338,7 +108338,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 8,
-        width: 0,
+        width: 44,
       },
     ],
     content: "وَلَآ أُقْسِمُ بِٱلنَّفْسِ ٱللَّوَّامَةِ",
@@ -108353,11 +108353,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 8,
-        width: 0,
+        width: 15,
       },
       {
         lineId: 9,
-        width: 0,
+        width: 44,
       },
     ],
     content: "أَيَحْسَبُ ٱلْإِنسَـٰنُ أَلَّن نَّجْمَعَ عِظَامَهُۥ",
@@ -108372,7 +108372,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 9,
-        width: 0,
+        width: 49,
       },
     ],
     content: "بَلَىٰ قَـٰدِرِينَ عَلَىٰٓ أَن نُّسَوِّىَ بَنَانَهُۥ",
@@ -108387,11 +108387,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 9,
-        width: 0,
+        width: 7,
       },
       {
         lineId: 10,
-        width: 0,
+        width: 45,
       },
     ],
     content: "بَلْ يُرِيدُ ٱلْإِنسَـٰنُ لِيَفْجُرَ أَمَامَهُۥ",
@@ -108406,7 +108406,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 10,
-        width: 0,
+        width: 35,
       },
     ],
     content: "يَسْـَٔلُ أَيَّانَ يَوْمُ ٱلْقِيَـٰمَةِ",
@@ -108421,11 +108421,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 10,
-        width: 0,
+        width: 20,
       },
       {
         lineId: 11,
-        width: 0,
+        width: 10,
       },
     ],
     content: "فَإِذَا بَرِقَ ٱلْبَصَرُ",
@@ -108440,7 +108440,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 11,
-        width: 0,
+        width: 29,
       },
     ],
     content: "وَخَسَفَ ٱلْقَمَرُ",
@@ -108455,7 +108455,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 11,
-        width: 0,
+        width: 34,
       },
     ],
     content: "وَجُمِعَ ٱلشَّمْسُ وَٱلْقَمَرُ",
@@ -108470,11 +108470,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 11,
-        width: 0,
+        width: 27,
       },
       {
         lineId: 12,
-        width: 0,
+        width: 21,
       },
     ],
     content: "يَقُولُ ٱلْإِنسَـٰنُ يَوْمَئِذٍ أَيْنَ ٱلْمَفَرُّ",
@@ -108489,7 +108489,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 12,
-        width: 0,
+        width: 24,
       },
     ],
     content: "كَلَّا لَا وَزَرَ",
@@ -108504,7 +108504,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 12,
-        width: 0,
+        width: 36,
       },
     ],
     content: "إِلَىٰ رَبِّكَ يَوْمَئِذٍ ٱلْمُسْتَقَرُّ",
@@ -108519,11 +108519,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 12,
-        width: 0,
+        width: 19,
       },
       {
         lineId: 13,
-        width: 0,
+        width: 38,
       },
     ],
     content: "يُنَبَّؤُا۟ ٱلْإِنسَـٰنُ يَوْمَئِذٍۭ بِمَا قَدَّمَ وَأَخَّرَ",
@@ -108538,7 +108538,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 13,
-        width: 0,
+        width: 47,
       },
     ],
     content: "بَلِ ٱلْإِنسَـٰنُ عَلَىٰ نَفْسِهِۦ بَصِيرَةٌ",
@@ -108553,11 +108553,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 13,
-        width: 0,
+        width: 15,
       },
       {
         lineId: 14,
-        width: 0,
+        width: 23,
       },
     ],
     content: "وَلَوْ أَلْقَىٰ مَعَاذِيرَهُۥ",
@@ -108572,7 +108572,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 14,
-        width: 0,
+        width: 52,
       },
     ],
     content: "لَا تُحَرِّكْ بِهِۦ لِسَانَكَ لِتَعْجَلَ بِهِۦٓ",
@@ -108587,11 +108587,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 14,
-        width: 0,
+        width: 25,
       },
       {
         lineId: 15,
-        width: 0,
+        width: 22,
       },
     ],
     content: "إِنَّ عَلَيْنَا جَمْعَهُۥ وَقُرْءَانَهُۥ",
@@ -108606,7 +108606,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 15,
-        width: 0,
+        width: 40,
       },
     ],
     content: "فَإِذَا قَرَأْنَـٰهُ فَٱتَّبِعْ قُرْءَانَهُۥ",
@@ -108621,7 +108621,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 15,
-        width: 0,
+        width: 38,
       },
     ],
     content: "ثُمَّ إِنَّ عَلَيْنَا بَيَانَهُۥ",
@@ -108636,7 +108636,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 1,
-        width: 0,
+        width: 36,
       },
     ],
     content: "كَلَّا بَلْ تُحِبُّونَ ٱلْعَاجِلَةَ",
@@ -108651,7 +108651,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 1,
-        width: 0,
+        width: 29,
       },
     ],
     content: "وَتَذَرُونَ ٱلْـَٔاخِرَةَ",
@@ -108666,7 +108666,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 1,
-        width: 0,
+        width: 35,
       },
     ],
     content: "وُجُوهٌ يَوْمَئِذٍ نَّاضِرَةٌ",
@@ -108681,7 +108681,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 2,
-        width: 0,
+        width: 28,
       },
     ],
     content: "إِلَىٰ رَبِّهَا نَاظِرَةٌ",
@@ -108696,7 +108696,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 2,
-        width: 0,
+        width: 34,
       },
     ],
     content: "وَوُجُوهٌ يَوْمَئِذٍۭ بَاسِرَةٌ",
@@ -108711,7 +108711,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 2,
-        width: 0,
+        width: 38,
       },
     ],
     content: "تَظُنُّ أَن يُفْعَلَ بِهَا فَاقِرَةٌ",
@@ -108726,7 +108726,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 3,
-        width: 0,
+        width: 35,
       },
     ],
     content: "كَلَّآ إِذَا بَلَغَتِ ٱلتَّرَاقِىَ",
@@ -108741,7 +108741,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 3,
-        width: 0,
+        width: 26,
       },
     ],
     content: "وَقِيلَ مَنْ ۜ رَاقٍ",
@@ -108756,7 +108756,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 3,
-        width: 0,
+        width: 27,
       },
     ],
     content: "وَظَنَّ أَنَّهُ ٱلْفِرَاقُ",
@@ -108771,11 +108771,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 3,
-        width: 0,
+        width: 12,
       },
       {
         lineId: 4,
-        width: 0,
+        width: 30,
       },
     ],
     content: "وَٱلْتَفَّتِ ٱلسَّاقُ بِٱلسَّاقِ",
@@ -108790,7 +108790,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 4,
-        width: 0,
+        width: 44,
       },
     ],
     content: "إِلَىٰ رَبِّكَ يَوْمَئِذٍ ٱلْمَسَاقُ",
@@ -108805,11 +108805,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 4,
-        width: 0,
+        width: 26,
       },
       {
         lineId: 5,
-        width: 0,
+        width: 11,
       },
     ],
     content: "فَلَا صَدَّقَ وَلَا صَلَّىٰ",
@@ -108824,7 +108824,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 5,
-        width: 0,
+        width: 33,
       },
     ],
     content: "وَلَـٰكِن كَذَّبَ وَتَوَلَّىٰ",
@@ -108839,7 +108839,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 5,
-        width: 0,
+        width: 42,
       },
     ],
     content: "ثُمَّ ذَهَبَ إِلَىٰٓ أَهْلِهِۦ يَتَمَطَّىٰٓ",
@@ -108854,11 +108854,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 5,
-        width: 0,
+        width: 14,
       },
       {
         lineId: 6,
-        width: 0,
+        width: 18,
       },
     ],
     content: "أَوْلَىٰ لَكَ فَأَوْلَىٰ",
@@ -108873,7 +108873,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 6,
-        width: 0,
+        width: 31,
       },
     ],
     content: "ثُمَّ أَوْلَىٰ لَكَ فَأَوْلَىٰٓ",
@@ -108888,7 +108888,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 6,
-        width: 0,
+        width: 51,
       },
     ],
     content: "أَيَحْسَبُ ٱلْإِنسَـٰنُ أَن يُتْرَكَ سُدًى",
@@ -108903,7 +108903,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 7,
-        width: 0,
+        width: 43,
       },
     ],
     content: "أَلَمْ يَكُ نُطْفَةً مِّن مَّنِىٍّ يُمْنَىٰ",
@@ -108918,7 +108918,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 7,
-        width: 0,
+        width: 42,
       },
     ],
     content: "ثُمَّ كَانَ عَلَقَةً فَخَلَقَ فَسَوَّىٰ",
@@ -108933,11 +108933,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 7,
-        width: 0,
+        width: 15,
       },
       {
         lineId: 8,
-        width: 0,
+        width: 42,
       },
     ],
     content: "فَجَعَلَ مِنْهُ ٱلزَّوْجَيْنِ ٱلذَّكَرَ وَٱلْأُنثَىٰٓ",
@@ -108952,7 +108952,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 8,
-        width: 0,
+        width: 58,
       },
     ],
     content: "أَلَيْسَ ذَٰلِكَ بِقَـٰدِرٍ عَلَىٰٓ أَن يُحْـِۧىَ ٱلْمَوْتَىٰ",
@@ -108967,7 +108967,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 11,
-        width: 0,
+        width: 100,
       },
     ],
     content: " هَلْ أَتَىٰ عَلَى ٱلْإِنسَـٰنِ حِينٌ مِّنَ ٱلدَّهْرِ لَمْ يَكُن شَيْـًٔا مَّذْكُورًا",
@@ -108982,11 +108982,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 12,
-        width: 0,
+        width: 100,
       },
       {
         lineId: 13,
-        width: 0,
+        width: 20,
       },
     ],
     content: "إِنَّا خَلَقْنَا ٱلْإِنسَـٰنَ مِن نُّطْفَةٍ أَمْشَاجٍ نَّبْتَلِيهِ فَجَعَلْنَـٰهُ سَمِيعًۢا بَصِيرًا",
@@ -109001,7 +109001,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 13,
-        width: 0,
+        width: 80,
       },
     ],
     content: "إِنَّا هَدَيْنَـٰهُ ٱلسَّبِيلَ إِمَّا شَاكِرًا وَإِمَّا كَفُورًا",
@@ -109016,7 +109016,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 14,
-        width: 0,
+        width: 93,
       },
     ],
     content: "إِنَّآ أَعْتَدْنَا لِلْكَـٰفِرِينَ سَلَـٰسِلَا۟ وَأَغْلَـٰلًا وَسَعِيرًا",
@@ -109031,11 +109031,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 14,
-        width: 0,
+        width: 7,
       },
       {
         lineId: 15,
-        width: 0,
+        width: 100,
       },
     ],
     content: "إِنَّ ٱلْأَبْرَارَ يَشْرَبُونَ مِن كَأْسٍ كَانَ مِزَاجُهَا كَافُورًا",
@@ -109050,7 +109050,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 1,
-        width: 0,
+        width: 69,
       },
     ],
     content: "عَيْنًا يَشْرَبُ بِهَا عِبَادُ ٱللَّهِ يُفَجِّرُونَهَا تَفْجِيرًا",
@@ -109065,11 +109065,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 1,
-        width: 0,
+        width: 31,
       },
       {
         lineId: 2,
-        width: 0,
+        width: 44,
       },
     ],
     content: "يُوفُونَ بِٱلنَّذْرِ وَيَخَافُونَ يَوْمًا كَانَ شَرُّهُۥ مُسْتَطِيرًا",
@@ -109084,11 +109084,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 2,
-        width: 0,
+        width: 56,
       },
       {
         lineId: 3,
-        width: 0,
+        width: 29,
       },
     ],
     content: "وَيُطْعِمُونَ ٱلطَّعَامَ عَلَىٰ حُبِّهِۦ مِسْكِينًا وَيَتِيمًا وَأَسِيرًا",
@@ -109103,11 +109103,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 3,
-        width: 0,
+        width: 71,
       },
       {
         lineId: 4,
-        width: 0,
+        width: 11,
       },
     ],
     content: "إِنَّمَا نُطْعِمُكُمْ لِوَجْهِ ٱللَّهِ لَا نُرِيدُ مِنكُمْ جَزَآءً وَلَا شُكُورًا",
@@ -109122,7 +109122,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 4,
-        width: 0,
+        width: 58,
       },
     ],
     content: "إِنَّا نَخَافُ مِن رَّبِّنَا يَوْمًا عَبُوسًا قَمْطَرِيرًا",
@@ -109137,11 +109137,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 4,
-        width: 0,
+        width: 31,
       },
       {
         lineId: 5,
-        width: 0,
+        width: 51,
       },
     ],
     content: "فَوَقَىٰهُمُ ٱللَّهُ شَرَّ ذَٰلِكَ ٱلْيَوْمِ وَلَقَّىٰهُمْ نَضْرَةً وَسُرُورًا",
@@ -109156,11 +109156,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 5,
-        width: 0,
+        width: 49,
       },
       {
         lineId: 6,
-        width: 0,
+        width: 11,
       },
     ],
     content: "وَجَزَىٰهُم بِمَا صَبَرُوا۟ جَنَّةً وَحَرِيرًا",
@@ -109175,7 +109175,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 6,
-        width: 0,
+        width: 89,
       },
     ],
     content: "مُّتَّكِـِٔينَ فِيهَا عَلَى ٱلْأَرَآئِكِ ۖ لَا يَرَوْنَ فِيهَا شَمْسًا وَلَا زَمْهَرِيرًا",
@@ -109190,7 +109190,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 7,
-        width: 0,
+        width: 71,
       },
     ],
     content: "وَدَانِيَةً عَلَيْهِمْ ظِلَـٰلُهَا وَذُلِّلَتْ قُطُوفُهَا تَذْلِيلًا",
@@ -109205,11 +109205,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 7,
-        width: 0,
+        width: 29,
       },
       {
         lineId: 8,
-        width: 0,
+        width: 51,
       },
     ],
     content: "وَيُطَافُ عَلَيْهِم بِـَٔانِيَةٍ مِّن فِضَّةٍ وَأَكْوَابٍ كَانَتْ قَوَارِيرَا۠",
@@ -109224,7 +109224,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 8,
-        width: 0,
+        width: 49,
       },
     ],
     content: "قَوَارِيرَا۟ مِن فِضَّةٍ قَدَّرُوهَا تَقْدِيرًا",
@@ -109239,7 +109239,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 9,
-        width: 0,
+        width: 65,
       },
     ],
     content: "وَيُسْقَوْنَ فِيهَا كَأْسًا كَانَ مِزَاجُهَا زَنجَبِيلًا",
@@ -109254,11 +109254,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 9,
-        width: 0,
+        width: 35,
       },
       {
         lineId: 10,
-        width: 0,
+        width: 11,
       },
     ],
     content: "عَيْنًا فِيهَا تُسَمَّىٰ سَلْسَبِيلًا",
@@ -109273,11 +109273,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 10,
-        width: 0,
+        width: 89,
       },
       {
         lineId: 11,
-        width: 0,
+        width: 11,
       },
     ],
     content: "۞ وَيَطُوفُ عَلَيْهِمْ وِلْدَٰنٌ مُّخَلَّدُونَ إِذَا رَأَيْتَهُمْ حَسِبْتَهُمْ لُؤْلُؤًا مَّنثُورًا",
@@ -109292,7 +109292,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 11,
-        width: 0,
+        width: 59,
       },
     ],
     content: "وَإِذَا رَأَيْتَ ثَمَّ رَأَيْتَ نَعِيمًا وَمُلْكًا كَبِيرًا",
@@ -109307,15 +109307,15 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 11,
-        width: 0,
+        width: 30,
       },
       {
         lineId: 12,
-        width: 0,
+        width: 100,
       },
       {
         lineId: 13,
-        width: 0,
+        width: 21,
       },
     ],
     content: "عَـٰلِيَهُمْ ثِيَابُ سُندُسٍ خُضْرٌ وَإِسْتَبْرَقٌ ۖ وَحُلُّوٓا۟ أَسَاوِرَ مِن فِضَّةٍ وَسَقَىٰهُمْ رَبُّهُمْ شَرَابًا طَهُورًا",
@@ -109330,7 +109330,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 13,
-        width: 0,
+        width: 72,
       },
     ],
     content: "إِنَّ هَـٰذَا كَانَ لَكُمْ جَزَآءً وَكَانَ سَعْيُكُم مَّشْكُورًا",
@@ -109345,11 +109345,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 13,
-        width: 0,
+        width: 7,
       },
       {
         lineId: 14,
-        width: 0,
+        width: 58,
       },
     ],
     content: "إِنَّا نَحْنُ نَزَّلْنَا عَلَيْكَ ٱلْقُرْءَانَ تَنزِيلًا",
@@ -109364,11 +109364,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 14,
-        width: 0,
+        width: 42,
       },
       {
         lineId: 15,
-        width: 0,
+        width: 40,
       },
     ],
     content: "فَٱصْبِرْ لِحُكْمِ رَبِّكَ وَلَا تُطِعْ مِنْهُمْ ءَاثِمًا أَوْ كَفُورًا",
@@ -109383,7 +109383,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 15,
-        width: 0,
+        width: 60,
       },
     ],
     content: "وَٱذْكُرِ ٱسْمَ رَبِّكَ بُكْرَةً وَأَصِيلًا",
@@ -109398,7 +109398,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 1,
-        width: 0,
+        width: 87,
       },
     ],
     content: "وَمِنَ ٱلَّيْلِ فَٱسْجُدْ لَهُۥ وَسَبِّحْهُ لَيْلًا طَوِيلًا",
@@ -109413,11 +109413,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 1,
-        width: 0,
+        width: 13,
       },
       {
         lineId: 2,
-        width: 0,
+        width: 90,
       },
     ],
     content: "إِنَّ هَـٰٓؤُلَآءِ يُحِبُّونَ ٱلْعَاجِلَةَ وَيَذَرُونَ وَرَآءَهُمْ يَوْمًا ثَقِيلًا",
@@ -109432,15 +109432,15 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 2,
-        width: 0,
+        width: 10,
       },
       {
         lineId: 3,
-        width: 0,
+        width: 100,
       },
       {
         lineId: 4,
-        width: 0,
+        width: 11,
       },
     ],
     content: "نَّحْنُ خَلَقْنَـٰهُمْ وَشَدَدْنَآ أَسْرَهُمْ ۖ وَإِذَا شِئْنَا بَدَّلْنَآ أَمْثَـٰلَهُمْ تَبْدِيلًا",
@@ -109455,7 +109455,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 4,
-        width: 0,
+        width: 89,
       },
     ],
     content: "إِنَّ هَـٰذِهِۦ تَذْكِرَةٌ ۖ فَمَن شَآءَ ٱتَّخَذَ إِلَىٰ رَبِّهِۦ سَبِيلًا",
@@ -109470,7 +109470,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 5,
-        width: 0,
+        width: 100,
       },
     ],
     content: "وَمَا تَشَآءُونَ إِلَّآ أَن يَشَآءَ ٱللَّهُ ۚ إِنَّ ٱللَّهَ كَانَ عَلِيمًا حَكِيمًا",
@@ -109485,7 +109485,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 6,
-        width: 0,
+        width: 100,
       },
     ],
     content: "يُدْخِلُ مَن يَشَآءُ فِى رَحْمَتِهِۦ ۚ وَٱلظَّـٰلِمِينَ أَعَدَّ لَهُمْ عَذَابًا أَلِيمًۢا",
@@ -109500,7 +109500,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 9,
-        width: 0,
+        width: 34,
       },
     ],
     content: " وَٱلْمُرْسَلَـٰتِ عُرْفًا",
@@ -109515,7 +109515,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 9,
-        width: 0,
+        width: 34,
       },
     ],
     content: "فَٱلْعَـٰصِفَـٰتِ عَصْفًا",
@@ -109530,7 +109530,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 9,
-        width: 0,
+        width: 32,
       },
     ],
     content: "وَٱلنَّـٰشِرَٰتِ نَشْرًا",
@@ -109545,7 +109545,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 10,
-        width: 0,
+        width: 31,
       },
     ],
     content: "فَٱلْفَـٰرِقَـٰتِ فَرْقًا",
@@ -109560,7 +109560,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 10,
-        width: 0,
+        width: 31,
       },
     ],
     content: "فَٱلْمُلْقِيَـٰتِ ذِكْرًا",
@@ -109575,7 +109575,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 10,
-        width: 0,
+        width: 28,
       },
     ],
     content: "عُذْرًا أَوْ نُذْرًا",
@@ -109590,11 +109590,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 10,
-        width: 0,
+        width: 10,
       },
       {
         lineId: 11,
-        width: 0,
+        width: 31,
       },
     ],
     content: "إِنَّمَا تُوعَدُونَ لَوَٰقِعٌ",
@@ -109609,7 +109609,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 11,
-        width: 0,
+        width: 39,
       },
     ],
     content: "فَإِذَا ٱلنُّجُومُ طُمِسَتْ",
@@ -109624,11 +109624,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 11,
-        width: 0,
+        width: 30,
       },
       {
         lineId: 12,
-        width: 0,
+        width: 11,
       },
     ],
     content: "وَإِذَا ٱلسَّمَآءُ فُرِجَتْ",
@@ -109643,7 +109643,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 12,
-        width: 0,
+        width: 34,
       },
     ],
     content: "وَإِذَا ٱلْجِبَالُ نُسِفَتْ",
@@ -109658,7 +109658,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 12,
-        width: 0,
+        width: 32,
       },
     ],
     content: "وَإِذَا ٱلرُّسُلُ أُقِّتَتْ",
@@ -109673,11 +109673,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 12,
-        width: 0,
+        width: 23,
       },
       {
         lineId: 13,
-        width: 0,
+        width: 11,
       },
     ],
     content: "لِأَىِّ يَوْمٍ أُجِّلَتْ",
@@ -109692,7 +109692,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 13,
-        width: 0,
+        width: 27,
       },
     ],
     content: "لِيَوْمِ ٱلْفَصْلِ",
@@ -109707,7 +109707,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 13,
-        width: 0,
+        width: 46,
       },
     ],
     content: "وَمَآ أَدْرَىٰكَ مَا يَوْمُ ٱلْفَصْلِ",
@@ -109722,11 +109722,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 13,
-        width: 0,
+        width: 16,
       },
       {
         lineId: 14,
-        width: 0,
+        width: 28,
       },
     ],
     content: "وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ",
@@ -109741,7 +109741,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 14,
-        width: 0,
+        width: 37,
       },
     ],
     content: "أَلَمْ نُهْلِكِ ٱلْأَوَّلِينَ",
@@ -109756,11 +109756,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 14,
-        width: 0,
+        width: 35,
       },
       {
         lineId: 15,
-        width: 0,
+        width: 11,
       },
     ],
     content: "ثُمَّ نُتْبِعُهُمُ ٱلْـَٔاخِرِينَ",
@@ -109775,7 +109775,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 15,
-        width: 0,
+        width: 47,
       },
     ],
     content: "كَذَٰلِكَ نَفْعَلُ بِٱلْمُجْرِمِينَ",
@@ -109790,7 +109790,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 15,
-        width: 0,
+        width: 42,
       },
     ],
     content: "وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ",
@@ -109805,7 +109805,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 1,
-        width: 0,
+        width: 46,
       },
     ],
     content: "أَلَمْ نَخْلُقكُّم مِّن مَّآءٍ مَّهِينٍ",
@@ -109820,7 +109820,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 1,
-        width: 0,
+        width: 41,
       },
     ],
     content: "فَجَعَلْنَـٰهُ فِى قَرَارٍ مَّكِينٍ",
@@ -109835,11 +109835,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 1,
-        width: 0,
+        width: 13,
       },
       {
         lineId: 2,
-        width: 0,
+        width: 21,
       },
     ],
     content: "إِلَىٰ قَدَرٍ مَّعْلُومٍ",
@@ -109854,7 +109854,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 2,
-        width: 0,
+        width: 39,
       },
     ],
     content: "فَقَدَرْنَا فَنِعْمَ ٱلْقَـٰدِرُونَ",
@@ -109869,7 +109869,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 2,
-        width: 0,
+        width: 40,
       },
     ],
     content: "وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ",
@@ -109884,7 +109884,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 3,
-        width: 0,
+        width: 42,
       },
     ],
     content: "أَلَمْ نَجْعَلِ ٱلْأَرْضَ كِفَاتًا",
@@ -109899,7 +109899,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 3,
-        width: 0,
+        width: 29,
       },
     ],
     content: "أَحْيَآءً وَأَمْوَٰتًا",
@@ -109914,11 +109914,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 3,
-        width: 0,
+        width: 29,
       },
       {
         lineId: 4,
-        width: 0,
+        width: 56,
       },
     ],
     content: "وَجَعَلْنَا فِيهَا رَوَٰسِىَ شَـٰمِخَـٰتٍ وَأَسْقَيْنَـٰكُم مَّآءً فُرَاتًا",
@@ -109933,7 +109933,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 4,
-        width: 0,
+        width: 44,
       },
     ],
     content: "وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ",
@@ -109948,7 +109948,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 5,
-        width: 0,
+        width: 58,
       },
     ],
     content: "ٱنطَلِقُوٓا۟ إِلَىٰ مَا كُنتُم بِهِۦ تُكَذِّبُونَ",
@@ -109963,11 +109963,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 5,
-        width: 0,
+        width: 42,
       },
       {
         lineId: 6,
-        width: 0,
+        width: 20,
       },
     ],
     content: "ٱنطَلِقُوٓا۟ إِلَىٰ ظِلٍّ ذِى ثَلَـٰثِ شُعَبٍ",
@@ -109982,7 +109982,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 6,
-        width: 0,
+        width: 50,
       },
     ],
     content: "لَّا ظَلِيلٍ وَلَا يُغْنِى مِنَ ٱللَّهَبِ",
@@ -109997,11 +109997,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 6,
-        width: 0,
+        width: 30,
       },
       {
         lineId: 7,
-        width: 0,
+        width: 22,
       },
     ],
     content: "إِنَّهَا تَرْمِى بِشَرَرٍ كَٱلْقَصْرِ",
@@ -110016,7 +110016,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 7,
-        width: 0,
+        width: 36,
       },
     ],
     content: "كَأَنَّهُۥ جِمَـٰلَتٌ صُفْرٌ",
@@ -110031,7 +110031,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 7,
-        width: 0,
+        width: 42,
       },
     ],
     content: "وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ",
@@ -110046,7 +110046,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 8,
-        width: 0,
+        width: 39,
       },
     ],
     content: "هَـٰذَا يَوْمُ لَا يَنطِقُونَ",
@@ -110061,7 +110061,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 8,
-        width: 0,
+        width: 44,
       },
     ],
     content: "وَلَا يُؤْذَنُ لَهُمْ فَيَعْتَذِرُونَ",
@@ -110076,11 +110076,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 8,
-        width: 0,
+        width: 17,
       },
       {
         lineId: 9,
-        width: 0,
+        width: 26,
       },
     ],
     content: "وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ",
@@ -110095,7 +110095,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 9,
-        width: 0,
+        width: 60,
       },
     ],
     content: "هَـٰذَا يَوْمُ ٱلْفَصْلِ ۖ جَمَعْنَـٰكُمْ وَٱلْأَوَّلِينَ",
@@ -110110,11 +110110,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 9,
-        width: 0,
+        width: 14,
       },
       {
         lineId: 10,
-        width: 0,
+        width: 37,
       },
     ],
     content: "فَإِن كَانَ لَكُمْ كَيْدٌ فَكِيدُونِ",
@@ -110129,7 +110129,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 10,
-        width: 0,
+        width: 38,
       },
     ],
     content: "وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ",
@@ -110144,11 +110144,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 10,
-        width: 0,
+        width: 25,
       },
       {
         lineId: 11,
-        width: 0,
+        width: 31,
       },
     ],
     content: "إِنَّ ٱلْمُتَّقِينَ فِى ظِلَـٰلٍ وَعُيُونٍ",
@@ -110163,7 +110163,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 11,
-        width: 0,
+        width: 38,
       },
     ],
     content: "وَفَوَٰكِهَ مِمَّا يَشْتَهُونَ",
@@ -110178,11 +110178,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 11,
-        width: 0,
+        width: 31,
       },
       {
         lineId: 12,
-        width: 0,
+        width: 36,
       },
     ],
     content: "كُلُوا۟ وَٱشْرَبُوا۟ هَنِيٓـًٔۢا بِمَا كُنتُمْ تَعْمَلُونَ",
@@ -110197,7 +110197,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 12,
-        width: 0,
+        width: 47,
       },
     ],
     content: "إِنَّا كَذَٰلِكَ نَجْزِى ٱلْمُحْسِنِينَ",
@@ -110212,11 +110212,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 12,
-        width: 0,
+        width: 17,
       },
       {
         lineId: 13,
-        width: 0,
+        width: 26,
       },
     ],
     content: "وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ",
@@ -110231,7 +110231,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 13,
-        width: 0,
+        width: 55,
       },
     ],
     content: "كُلُوا۟ وَتَمَتَّعُوا۟ قَلِيلًا إِنَّكُم مُّجْرِمُونَ",
@@ -110246,11 +110246,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 13,
-        width: 0,
+        width: 19,
       },
       {
         lineId: 14,
-        width: 0,
+        width: 31,
       },
     ],
     content: "وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ",
@@ -110265,7 +110265,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 14,
-        width: 0,
+        width: 59,
       },
     ],
     content: "وَإِذَا قِيلَ لَهُمُ ٱرْكَعُوا۟ لَا يَرْكَعُونَ",
@@ -110280,11 +110280,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 14,
-        width: 0,
+        width: 10,
       },
       {
         lineId: 15,
-        width: 0,
+        width: 37,
       },
     ],
     content: "وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ",
@@ -110299,7 +110299,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 15,
-        width: 0,
+        width: 63,
       },
     ],
     content: "فَبِأَىِّ حَدِيثٍۭ بَعْدَهُۥ يُؤْمِنُونَ",
@@ -120261,7 +120261,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 1,
-        width: 0,
+        width: 52,
       },
     ],
     content: "بَلْ تُؤْثِرُونَ ٱلْحَيَوٰةَ ٱلدُّنْيَا",
@@ -120276,7 +120276,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 1,
-        width: 0,
+        width: 40,
       },
     ],
     content: "وَٱلْـَٔاخِرَةُ خَيْرٌ وَأَبْقَىٰٓ",
@@ -120291,11 +120291,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 1,
-        width: 0,
+        width: 8,
       },
       {
         lineId: 2,
-        width: 0,
+        width: 55,
       },
     ],
     content: "إِنَّ هَـٰذَا لَفِى ٱلصُّحُفِ ٱلْأُولَىٰ",
@@ -120310,7 +120310,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 2,
-        width: 0,
+        width: 45,
       },
     ],
     content: "صُحُفِ إِبْرَٰهِيمَ وَمُوسَىٰ",
@@ -120325,7 +120325,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 5,
-        width: 0,
+        width: 54,
       },
     ],
     content: " هَلْ أَتَىٰكَ حَدِيثُ ٱلْغَـٰشِيَةِ",
@@ -120340,7 +120340,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 5,
-        width: 0,
+        width: 46,
       },
     ],
     content: "وُجُوهٌ يَوْمَئِذٍ خَـٰشِعَةٌ",
@@ -120355,7 +120355,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 6,
-        width: 0,
+        width: 30,
       },
     ],
     content: "عَامِلَةٌ نَّاصِبَةٌ",
@@ -120370,7 +120370,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 6,
-        width: 0,
+        width: 31,
       },
     ],
     content: "تَصْلَىٰ نَارًا حَامِيَةً",
@@ -120385,7 +120385,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 6,
-        width: 0,
+        width: 39,
       },
     ],
     content: "تُسْقَىٰ مِنْ عَيْنٍ ءَانِيَةٍ",
@@ -120400,7 +120400,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 7,
-        width: 0,
+        width: 52,
       },
     ],
     content: "لَّيْسَ لَهُمْ طَعَامٌ إِلَّا مِن ضَرِيعٍ",
@@ -120415,7 +120415,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 7,
-        width: 0,
+        width: 48,
       },
     ],
     content: "لَّا يُسْمِنُ وَلَا يُغْنِى مِن جُوعٍ",
@@ -120430,7 +120430,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 8,
-        width: 0,
+        width: 38,
       },
     ],
     content: "وُجُوهٌ يَوْمَئِذٍ نَّاعِمَةٌ",
@@ -120445,7 +120445,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 8,
-        width: 0,
+        width: 31,
       },
     ],
     content: "لِّسَعْيِهَا رَاضِيَةٌ",
@@ -120460,7 +120460,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 8,
-        width: 0,
+        width: 31,
       },
     ],
     content: "فِى جَنَّةٍ عَالِيَةٍ",
@@ -120475,7 +120475,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 9,
-        width: 0,
+        width: 37,
       },
     ],
     content: "لَّا تَسْمَعُ فِيهَا لَـٰغِيَةً",
@@ -120490,7 +120490,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 9,
-        width: 0,
+        width: 30,
       },
     ],
     content: "فِيهَا عَيْنٌ جَارِيَةٌ",
@@ -120505,7 +120505,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 9,
-        width: 0,
+        width: 33,
       },
     ],
     content: "فِيهَا سُرُرٌ مَّرْفُوعَةٌ",
@@ -120520,7 +120520,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 10,
-        width: 0,
+        width: 35,
       },
     ],
     content: "وَأَكْوَابٌ مَّوْضُوعَةٌ",
@@ -120535,7 +120535,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 10,
-        width: 0,
+        width: 33,
       },
     ],
     content: "وَنَمَارِقُ مَصْفُوفَةٌ",
@@ -120550,7 +120550,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 10,
-        width: 0,
+        width: 32,
       },
     ],
     content: "وَزَرَابِىُّ مَبْثُوثَةٌ",
@@ -120565,7 +120565,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 11,
-        width: 0,
+        width: 71,
       },
     ],
     content: "أَفَلَا يَنظُرُونَ إِلَى ٱلْإِبِلِ كَيْفَ خُلِقَتْ",
@@ -120580,11 +120580,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 11,
-        width: 0,
+        width: 29,
       },
       {
         lineId: 12,
-        width: 0,
+        width: 20,
       },
     ],
     content: "وَإِلَى ٱلسَّمَآءِ كَيْفَ رُفِعَتْ",
@@ -120599,7 +120599,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 12,
-        width: 0,
+        width: 49,
       },
     ],
     content: "وَإِلَى ٱلْجِبَالِ كَيْفَ نُصِبَتْ",
@@ -120614,11 +120614,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 12,
-        width: 0,
+        width: 31,
       },
       {
         lineId: 13,
-        width: 0,
+        width: 25,
       },
     ],
     content: "وَإِلَى ٱلْأَرْضِ كَيْفَ سُطِحَتْ",
@@ -120633,7 +120633,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 13,
-        width: 0,
+        width: 50,
       },
     ],
     content: "فَذَكِّرْ إِنَّمَآ أَنتَ مُذَكِّرٌ",
@@ -120648,11 +120648,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 13,
-        width: 0,
+        width: 25,
       },
       {
         lineId: 14,
-        width: 0,
+        width: 26,
       },
     ],
     content: "لَّسْتَ عَلَيْهِم بِمُصَيْطِرٍ",
@@ -120667,7 +120667,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 14,
-        width: 0,
+        width: 40,
       },
     ],
     content: "إِلَّا مَن تَوَلَّىٰ وَكَفَرَ",
@@ -120682,11 +120682,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 14,
-        width: 0,
+        width: 34,
       },
       {
         lineId: 15,
-        width: 0,
+        width: 23,
       },
     ],
     content: "فَيُعَذِّبُهُ ٱللَّهُ ٱلْعَذَابَ ٱلْأَكْبَرَ",
@@ -120701,7 +120701,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 15,
-        width: 0,
+        width: 33,
       },
     ],
     content: "إِنَّ إِلَيْنَآ إِيَابَهُمْ",
@@ -120716,7 +120716,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 15,
-        width: 0,
+        width: 44,
       },
     ],
     content: "ثُمَّ إِنَّ عَلَيْنَا حِسَابَهُم",
@@ -120731,7 +120731,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 3,
-        width: 0,
+        width: 21,
       },
     ],
     content: " وَٱلْفَجْرِ",
@@ -120746,7 +120746,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 3,
-        width: 0,
+        width: 26,
       },
     ],
     content: "وَلَيَالٍ عَشْرٍ",
@@ -120761,7 +120761,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 3,
-        width: 0,
+        width: 30,
       },
     ],
     content: "وَٱلشَّفْعِ وَٱلْوَتْرِ",
@@ -120776,11 +120776,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 3,
-        width: 0,
+        width: 23,
       },
       {
         lineId: 4,
-        width: 0,
+        width: 11,
       },
     ],
     content: "وَٱلَّيْلِ إِذَا يَسْرِ",
@@ -120795,7 +120795,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 4,
-        width: 0,
+        width: 49,
       },
     ],
     content: "هَلْ فِى ذَٰلِكَ قَسَمٌ لِّذِى حِجْرٍ",
@@ -120810,11 +120810,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 4,
-        width: 0,
+        width: 40,
       },
       {
         lineId: 5,
-        width: 0,
+        width: 11,
       },
     ],
     content: "أَلَمْ تَرَ كَيْفَ فَعَلَ رَبُّكَ بِعَادٍ",
@@ -120829,7 +120829,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 5,
-        width: 0,
+        width: 34,
       },
     ],
     content: "إِرَمَ ذَاتِ ٱلْعِمَادِ",
@@ -120844,7 +120844,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 5,
-        width: 0,
+        width: 55,
       },
     ],
     content: "ٱلَّتِى لَمْ يُخْلَقْ مِثْلُهَا فِى ٱلْبِلَـٰدِ",
@@ -120859,7 +120859,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 6,
-        width: 0,
+        width: 61,
       },
     ],
     content: "وَثَمُودَ ٱلَّذِينَ جَابُوا۟ ٱلصَّخْرَ بِٱلْوَادِ",
@@ -120874,7 +120874,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 6,
-        width: 0,
+        width: 39,
       },
     ],
     content: "وَفِرْعَوْنَ ذِى ٱلْأَوْتَادِ",
@@ -120889,7 +120889,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 7,
-        width: 0,
+        width: 44,
       },
     ],
     content: "ٱلَّذِينَ طَغَوْا۟ فِى ٱلْبِلَـٰدِ",
@@ -120904,7 +120904,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 7,
-        width: 0,
+        width: 42,
       },
     ],
     content: "فَأَكْثَرُوا۟ فِيهَا ٱلْفَسَادَ",
@@ -120919,11 +120919,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 7,
-        width: 0,
+        width: 14,
       },
       {
         lineId: 8,
-        width: 0,
+        width: 51,
       },
     ],
     content: "فَصَبَّ عَلَيْهِمْ رَبُّكَ سَوْطَ عَذَابٍ",
@@ -120938,7 +120938,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 8,
-        width: 0,
+        width: 40,
       },
     ],
     content: "إِنَّ رَبَّكَ لَبِٱلْمِرْصَادِ",
@@ -120953,15 +120953,15 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 8,
-        width: 0,
+        width: 9,
       },
       {
         lineId: 9,
-        width: 0,
+        width: 100,
       },
       {
         lineId: 10,
-        width: 0,
+        width: 11,
       },
     ],
     content: "فَأَمَّا ٱلْإِنسَـٰنُ إِذَا مَا ٱبْتَلَىٰهُ رَبُّهُۥ فَأَكْرَمَهُۥ وَنَعَّمَهُۥ فَيَقُولُ رَبِّىٓ أَكْرَمَنِ",
@@ -120976,7 +120976,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 10,
-        width: 0,
+        width: 89,
       },
     ],
     content: "وَأَمَّآ إِذَا مَا ٱبْتَلَىٰهُ فَقَدَرَ عَلَيْهِ رِزْقَهُۥ فَيَقُولُ رَبِّىٓ أَهَـٰنَنِ",
@@ -120991,7 +120991,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 11,
-        width: 0,
+        width: 52,
       },
     ],
     content: "كَلَّا ۖ بَل لَّا تُكْرِمُونَ ٱلْيَتِيمَ",
@@ -121006,11 +121006,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 11,
-        width: 0,
+        width: 48,
       },
       {
         lineId: 12,
-        width: 0,
+        width: 27,
       },
     ],
     content: "وَلَا تَحَـٰٓضُّونَ عَلَىٰ طَعَامِ ٱلْمِسْكِينِ",
@@ -121025,7 +121025,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 12,
-        width: 0,
+        width: 73,
       },
     ],
     content: "وَتَأْكُلُونَ ٱلتُّرَاثَ أَكْلًا لَّمًّا",
@@ -121040,7 +121040,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 13,
-        width: 0,
+        width: 54,
       },
     ],
     content: "وَتُحِبُّونَ ٱلْمَالَ حُبًّا جَمًّا",
@@ -121055,11 +121055,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 13,
-        width: 0,
+        width: 46,
       },
       {
         lineId: 14,
-        width: 0,
+        width: 16,
       },
     ],
     content: "كَلَّآ إِذَا دُكَّتِ ٱلْأَرْضُ دَكًّا دَكًّا",
@@ -121074,7 +121074,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 14,
-        width: 0,
+        width: 59,
       },
     ],
     content: "وَجَآءَ رَبُّكَ وَٱلْمَلَكُ صَفًّا صَفًّا",
@@ -121089,11 +121089,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 14,
-        width: 0,
+        width: 25,
       },
       {
         lineId: 15,
-        width: 0,
+        width: 100,
       },
     ],
     content: "وَجِا۟ىٓءَ يَوْمَئِذٍۭ بِجَهَنَّمَ ۚ يَوْمَئِذٍ يَتَذَكَّرُ ٱلْإِنسَـٰنُ وَأَنَّىٰ لَهُ ٱلذِّكْرَىٰ",
@@ -121108,7 +121108,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 1,
-        width: 0,
+        width: 49,
       },
     ],
     content: "يَقُولُ يَـٰلَيْتَنِى قَدَّمْتُ لِحَيَاتِى",
@@ -121123,7 +121123,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 1,
-        width: 0,
+        width: 51,
       },
     ],
     content: "فَيَوْمَئِذٍ لَّا يُعَذِّبُ عَذَابَهُۥٓ أَحَدٌ",
@@ -121138,7 +121138,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 2,
-        width: 0,
+        width: 41,
       },
     ],
     content: "وَلَا يُوثِقُ وَثَاقَهُۥٓ أَحَدٌ",
@@ -121153,7 +121153,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 2,
-        width: 0,
+        width: 46,
       },
     ],
     content: "يَـٰٓأَيَّتُهَا ٱلنَّفْسُ ٱلْمُطْمَئِنَّةُ",
@@ -121168,11 +121168,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 2,
-        width: 0,
+        width: 13,
       },
       {
         lineId: 3,
-        width: 0,
+        width: 41,
       },
     ],
     content: "ٱرْجِعِىٓ إِلَىٰ رَبِّكِ رَاضِيَةً مَّرْضِيَّةً",
@@ -121187,7 +121187,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 3,
-        width: 0,
+        width: 32,
       },
     ],
     content: "فَٱدْخُلِى فِى عِبَـٰدِى",
@@ -121202,7 +121202,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 3,
-        width: 0,
+        width: 27,
       },
     ],
     content: "وَٱدْخُلِى جَنَّتِى",
@@ -121217,7 +121217,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 6,
-        width: 0,
+        width: 40,
       },
     ],
     content: " لَآ أُقْسِمُ بِهَـٰذَا ٱلْبَلَدِ",
@@ -121232,7 +121232,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 6,
-        width: 0,
+        width: 38,
       },
     ],
     content: "وَأَنتَ حِلٌّۢ بِهَـٰذَا ٱلْبَلَدِ",
@@ -121247,11 +121247,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 6,
-        width: 0,
+        width: 22,
       },
       {
         lineId: 7,
-        width: 0,
+        width: 10,
       },
     ],
     content: "وَوَالِدٍ وَمَا وَلَدَ",
@@ -121266,7 +121266,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 7,
-        width: 0,
+        width: 50,
       },
     ],
     content: "لَقَدْ خَلَقْنَا ٱلْإِنسَـٰنَ فِى كَبَدٍ",
@@ -121281,11 +121281,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 7,
-        width: 0,
+        width: 40,
       },
       {
         lineId: 8,
-        width: 0,
+        width: 17,
       },
     ],
     content: "أَيَحْسَبُ أَن لَّن يَقْدِرَ عَلَيْهِ أَحَدٌ",
@@ -121300,7 +121300,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 8,
-        width: 0,
+        width: 47,
       },
     ],
     content: "يَقُولُ أَهْلَكْتُ مَالًا لُّبَدًا",
@@ -121315,11 +121315,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 8,
-        width: 0,
+        width: 36,
       },
       {
         lineId: 9,
-        width: 0,
+        width: 10,
       },
     ],
     content: "أَيَحْسَبُ أَن لَّمْ يَرَهُۥٓ أَحَدٌ",
@@ -121334,7 +121334,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 9,
-        width: 0,
+        width: 37,
       },
     ],
     content: "أَلَمْ نَجْعَل لَّهُۥ عَيْنَيْنِ",
@@ -121349,7 +121349,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 9,
-        width: 0,
+        width: 38,
       },
     ],
     content: "وَلِسَانًا وَشَفَتَيْنِ",
@@ -121364,11 +121364,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 9,
-        width: 0,
+        width: 15,
       },
       {
         lineId: 10,
-        width: 0,
+        width: 23,
       },
     ],
     content: "وَهَدَيْنَـٰهُ ٱلنَّجْدَيْنِ",
@@ -121383,7 +121383,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 10,
-        width: 0,
+        width: 35,
       },
     ],
     content: "فَلَا ٱقْتَحَمَ ٱلْعَقَبَةَ",
@@ -121398,7 +121398,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 10,
-        width: 0,
+        width: 42,
       },
     ],
     content: "وَمَآ أَدْرَىٰكَ مَا ٱلْعَقَبَةُ",
@@ -121413,7 +121413,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 11,
-        width: 0,
+        width: 23,
       },
     ],
     content: "فَكُّ رَقَبَةٍ",
@@ -121428,7 +121428,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 11,
-        width: 0,
+        width: 51,
       },
     ],
     content: "أَوْ إِطْعَـٰمٌ فِى يَوْمٍ ذِى مَسْغَبَةٍ",
@@ -121443,11 +121443,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 11,
-        width: 0,
+        width: 26,
       },
       {
         lineId: 12,
-        width: 0,
+        width: 10,
       },
     ],
     content: "يَتِيمًا ذَا مَقْرَبَةٍ",
@@ -121462,7 +121462,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 12,
-        width: 0,
+        width: 40,
       },
     ],
     content: "أَوْ مِسْكِينًا ذَا مَتْرَبَةٍ",
@@ -121477,11 +121477,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 12,
-        width: 0,
+        width: 50,
       },
       {
         lineId: 13,
-        width: 0,
+        width: 49,
       },
     ],
     content: "ثُمَّ كَانَ مِنَ ٱلَّذِينَ ءَامَنُوا۟ وَتَوَاصَوْا۟ بِٱلصَّبْرِ وَتَوَاصَوْا۟ بِٱلْمَرْحَمَةِ",
@@ -121496,7 +121496,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 13,
-        width: 0,
+        width: 39,
       },
     ],
     content: "أُو۟لَـٰٓئِكَ أَصْحَـٰبُ ٱلْمَيْمَنَةِ",
@@ -121511,11 +121511,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 13,
-        width: 0,
+        width: 12,
       },
       {
         lineId: 14,
-        width: 0,
+        width: 64,
       },
     ],
     content: "وَٱلَّذِينَ كَفَرُوا۟ بِـَٔايَـٰتِنَا هُمْ أَصْحَـٰبُ ٱلْمَشْـَٔمَةِ",
@@ -121530,7 +121530,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 14,
-        width: 0,
+        width: 36,
       },
     ],
     content: "عَلَيْهِمْ نَارٌ مُّؤْصَدَةٌۢ",
@@ -121545,7 +121545,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 2,
-        width: 0,
+        width: 36,
       },
     ],
     content: " وَٱلشَّمْسِ وَضُحَىٰهَا",
@@ -121560,7 +121560,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 2,
-        width: 0,
+        width: 31,
       },
     ],
     content: "وَٱلْقَمَرِ إِذَا تَلَىٰهَا",
@@ -121575,7 +121575,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 2,
-        width: 0,
+        width: 33,
       },
     ],
     content: "وَٱلنَّهَارِ إِذَا جَلَّىٰهَا",
@@ -121590,7 +121590,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 3,
-        width: 0,
+        width: 37,
       },
     ],
     content: "وَٱلَّيْلِ إِذَا يَغْشَىٰهَا",
@@ -121605,7 +121605,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 3,
-        width: 0,
+        width: 34,
       },
     ],
     content: "وَٱلسَّمَآءِ وَمَا بَنَىٰهَا",
@@ -121620,11 +121620,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 3,
-        width: 0,
+        width: 29,
       },
       {
         lineId: 4,
-        width: 0,
+        width: 11,
       },
     ],
     content: "وَٱلْأَرْضِ وَمَا طَحَىٰهَا",
@@ -121639,7 +121639,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 4,
-        width: 0,
+        width: 35,
       },
     ],
     content: "وَنَفْسٍ وَمَا سَوَّىٰهَا",
@@ -121654,7 +121654,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 4,
-        width: 0,
+        width: 46,
       },
     ],
     content: "فَأَلْهَمَهَا فُجُورَهَا وَتَقْوَىٰهَا",
@@ -121669,11 +121669,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 4,
-        width: 0,
+        width: 8,
       },
       {
         lineId: 5,
-        width: 0,
+        width: 35,
       },
     ],
     content: "قَدْ أَفْلَحَ مَن زَكَّىٰهَا",
@@ -121688,7 +121688,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 5,
-        width: 0,
+        width: 43,
       },
     ],
     content: "وَقَدْ خَابَ مَن دَسَّىٰهَا",
@@ -121703,11 +121703,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 5,
-        width: 0,
+        width: 22,
       },
       {
         lineId: 6,
-        width: 0,
+        width: 26,
       },
     ],
     content: "كَذَّبَتْ ثَمُودُ بِطَغْوَىٰهَآ",
@@ -121722,7 +121722,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 6,
-        width: 0,
+        width: 38,
       },
     ],
     content: "إِذِ ٱنۢبَعَثَ أَشْقَىٰهَا",
@@ -121737,11 +121737,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 6,
-        width: 0,
+        width: 36,
       },
       {
         lineId: 7,
-        width: 0,
+        width: 43,
       },
     ],
     content: "فَقَالَ لَهُمْ رَسُولُ ٱللَّهِ نَاقَةَ ٱللَّهِ وَسُقْيَـٰهَا",
@@ -121756,11 +121756,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 7,
-        width: 0,
+        width: 57,
       },
       {
         lineId: 8,
-        width: 0,
+        width: 62,
       },
     ],
     content: "فَكَذَّبُوهُ فَعَقَرُوهَا فَدَمْدَمَ عَلَيْهِمْ رَبُّهُم بِذَنۢبِهِمْ فَسَوَّىٰهَا",
@@ -121775,7 +121775,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 8,
-        width: 0,
+        width: 38,
       },
     ],
     content: "وَلَا يَخَافُ عُقْبَـٰهَا",
@@ -121790,7 +121790,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 11,
-        width: 0,
+        width: 31,
       },
     ],
     content: " وَٱلَّيْلِ إِذَا يَغْشَىٰ",
@@ -121805,7 +121805,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 11,
-        width: 0,
+        width: 29,
       },
     ],
     content: "وَٱلنَّهَارِ إِذَا تَجَلَّىٰ",
@@ -121820,7 +121820,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 11,
-        width: 0,
+        width: 40,
       },
     ],
     content: "وَمَا خَلَقَ ٱلذَّكَرَ وَٱلْأُنثَىٰٓ",
@@ -121835,7 +121835,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 12,
-        width: 0,
+        width: 31,
       },
     ],
     content: "إِنَّ سَعْيَكُمْ لَشَتَّىٰ",
@@ -121850,7 +121850,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 12,
-        width: 0,
+        width: 36,
       },
     ],
     content: "فَأَمَّا مَنْ أَعْطَىٰ وَٱتَّقَىٰ",
@@ -121865,7 +121865,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 12,
-        width: 0,
+        width: 33,
       },
     ],
     content: "وَصَدَّقَ بِٱلْحُسْنَىٰ",
@@ -121880,7 +121880,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 13,
-        width: 0,
+        width: 36,
       },
     ],
     content: "فَسَنُيَسِّرُهُۥ لِلْيُسْرَىٰ",
@@ -121895,7 +121895,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 13,
-        width: 0,
+        width: 41,
       },
     ],
     content: "وَأَمَّا مَنۢ بَخِلَ وَٱسْتَغْنَىٰ",
@@ -121910,11 +121910,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 13,
-        width: 0,
+        width: 23,
       },
       {
         lineId: 14,
-        width: 0,
+        width: 11,
       },
     ],
     content: "وَكَذَّبَ بِٱلْحُسْنَىٰ",
@@ -121929,7 +121929,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 14,
-        width: 0,
+        width: 33,
       },
     ],
     content: "فَسَنُيَسِّرُهُۥ لِلْعُسْرَىٰ",
@@ -121944,7 +121944,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 14,
-        width: 0,
+        width: 43,
       },
     ],
     content: "وَمَا يُغْنِى عَنْهُ مَالُهُۥٓ إِذَا تَرَدَّىٰٓ",
@@ -121959,11 +121959,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 14,
-        width: 0,
+        width: 13,
       },
       {
         lineId: 15,
-        width: 0,
+        width: 21,
       },
     ],
     content: "إِنَّ عَلَيْنَا لَلْهُدَىٰ",
@@ -121978,7 +121978,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 15,
-        width: 0,
+        width: 41,
       },
     ],
     content: "وَإِنَّ لَنَا لَلْـَٔاخِرَةَ وَٱلْأُولَىٰ",
@@ -121993,7 +121993,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 15,
-        width: 0,
+        width: 38,
       },
     ],
     content: "فَأَنذَرْتُكُمْ نَارًا تَلَظَّىٰ",
@@ -122008,7 +122008,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 1,
-        width: 0,
+        width: 43,
       },
     ],
     content: "لَا يَصْلَىٰهَآ إِلَّا ٱلْأَشْقَى",
@@ -122023,7 +122023,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 1,
-        width: 0,
+        width: 37,
       },
     ],
     content: "ٱلَّذِى كَذَّبَ وَتَوَلَّىٰ",
@@ -122038,11 +122038,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 1,
-        width: 0,
+        width: 20,
       },
       {
         lineId: 2,
-        width: 0,
+        width: 23,
       },
     ],
     content: "وَسَيُجَنَّبُهَا ٱلْأَتْقَى",
@@ -122057,7 +122057,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 2,
-        width: 0,
+        width: 44,
       },
     ],
     content: "ٱلَّذِى يُؤْتِى مَالَهُۥ يَتَزَكَّىٰ",
@@ -122072,11 +122072,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 2,
-        width: 0,
+        width: 33,
       },
       {
         lineId: 3,
-        width: 0,
+        width: 28,
       },
     ],
     content: "وَمَا لِأَحَدٍ عِندَهُۥ مِن نِّعْمَةٍ تُجْزَىٰٓ",
@@ -122091,7 +122091,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 3,
-        width: 0,
+        width: 43,
       },
     ],
     content: "إِلَّا ٱبْتِغَآءَ وَجْهِ رَبِّهِ ٱلْأَعْلَىٰ",
@@ -122106,7 +122106,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 3,
-        width: 0,
+        width: 29,
       },
     ],
     content: "وَلَسَوْفَ يَرْضَىٰ",
@@ -122121,7 +122121,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 6,
-        width: 0,
+        width: 26,
       },
     ],
     content: " وَٱلضُّحَىٰ",
@@ -122136,7 +122136,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 6,
-        width: 0,
+        width: 32,
       },
     ],
     content: "وَٱلَّيْلِ إِذَا سَجَىٰ",
@@ -122151,7 +122151,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 6,
-        width: 0,
+        width: 42,
       },
     ],
     content: "مَا وَدَّعَكَ رَبُّكَ وَمَا قَلَىٰ",
@@ -122166,7 +122166,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 7,
-        width: 0,
+        width: 58,
       },
     ],
     content: "وَلَلْـَٔاخِرَةُ خَيْرٌ لَّكَ مِنَ ٱلْأُولَىٰ",
@@ -122181,11 +122181,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 7,
-        width: 0,
+        width: 42,
       },
       {
         lineId: 8,
-        width: 0,
+        width: 23,
       },
     ],
     content: "وَلَسَوْفَ يُعْطِيكَ رَبُّكَ فَتَرْضَىٰٓ",
@@ -122200,7 +122200,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 8,
-        width: 0,
+        width: 50,
       },
     ],
     content: "أَلَمْ يَجِدْكَ يَتِيمًا فَـَٔاوَىٰ",
@@ -122215,11 +122215,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 8,
-        width: 0,
+        width: 27,
       },
       {
         lineId: 9,
-        width: 0,
+        width: 25,
       },
     ],
     content: "وَوَجَدَكَ ضَآلًّا فَهَدَىٰ",
@@ -122234,7 +122234,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 9,
-        width: 0,
+        width: 43,
       },
     ],
     content: "وَوَجَدَكَ عَآئِلًا فَأَغْنَىٰ",
@@ -122249,11 +122249,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 9,
-        width: 0,
+        width: 32,
       },
       {
         lineId: 10,
-        width: 0,
+        width: 11,
       },
     ],
     content: "فَأَمَّا ٱلْيَتِيمَ فَلَا تَقْهَرْ",
@@ -122268,7 +122268,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 10,
-        width: 0,
+        width: 42,
       },
     ],
     content: "وَأَمَّا ٱلسَّآئِلَ فَلَا تَنْهَرْ",
@@ -122283,7 +122283,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 10,
-        width: 0,
+        width: 47,
       },
     ],
     content: "وَأَمَّا بِنِعْمَةِ رَبِّكَ فَحَدِّثْ",
@@ -122298,7 +122298,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 13,
-        width: 0,
+        width: 44,
       },
     ],
     content: " أَلَمْ نَشْرَحْ لَكَ صَدْرَكَ",
@@ -122313,7 +122313,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 13,
-        width: 0,
+        width: 46,
       },
     ],
     content: "وَوَضَعْنَا عَنكَ وِزْرَكَ",
@@ -122328,11 +122328,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 13,
-        width: 0,
+        width: 10,
       },
       {
         lineId: 14,
-        width: 0,
+        width: 30,
       },
     ],
     content: "ٱلَّذِىٓ أَنقَضَ ظَهْرَكَ",
@@ -122347,7 +122347,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 14,
-        width: 0,
+        width: 31,
       },
     ],
     content: "وَرَفَعْنَا لَكَ ذِكْرَكَ",
@@ -122362,7 +122362,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 14,
-        width: 0,
+        width: 33,
       },
     ],
     content: "فَإِنَّ مَعَ ٱلْعُسْرِ يُسْرًا",
@@ -122377,11 +122377,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 14,
-        width: 0,
+        width: 6,
       },
       {
         lineId: 15,
-        width: 0,
+        width: 30,
       },
     ],
     content: "إِنَّ مَعَ ٱلْعُسْرِ يُسْرًا",
@@ -122396,7 +122396,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 15,
-        width: 0,
+        width: 35,
       },
     ],
     content: "فَإِذَا فَرَغْتَ فَٱنصَبْ",
@@ -122411,7 +122411,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 15,
-        width: 0,
+        width: 35,
       },
     ],
     content: "وَإِلَىٰ رَبِّكَ فَٱرْغَب",
@@ -122426,7 +122426,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 3,
-        width: 0,
+        width: 33,
       },
     ],
     content: "وَٱلتِّينِ وَٱلزَّيْتُونِ",
@@ -122441,7 +122441,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 3,
-        width: 0,
+        width: 26,
       },
     ],
     content: "وَطُورِ سِينِينَ",
@@ -122456,7 +122456,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 3,
-        width: 0,
+        width: 41,
       },
     ],
     content: "وَهَـٰذَا ٱلْبَلَدِ ٱلْأَمِينِ",
@@ -122471,7 +122471,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 4,
-        width: 0,
+        width: 61,
       },
     ],
     content: "لَقَدْ خَلَقْنَا ٱلْإِنسَـٰنَ فِىٓ أَحْسَنِ تَقْوِيمٍ",
@@ -122486,11 +122486,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 4,
-        width: 0,
+        width: 39,
       },
       {
         lineId: 5,
-        width: 0,
+        width: 11,
       },
     ],
     content: "ثُمَّ رَدَدْنَـٰهُ أَسْفَلَ سَـٰفِلِينَ",
@@ -122505,7 +122505,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 5,
-        width: 0,
+        width: 89,
       },
     ],
     content: "إِلَّا ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّـٰلِحَـٰتِ فَلَهُمْ أَجْرٌ غَيْرُ مَمْنُونٍ",
@@ -122520,7 +122520,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 6,
-        width: 0,
+        width: 48,
       },
     ],
     content: "فَمَا يُكَذِّبُكَ بَعْدُ بِٱلدِّينِ",
@@ -122535,7 +122535,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 6,
-        width: 0,
+        width: 52,
       },
     ],
     content: "أَلَيْسَ ٱللَّهُ بِأَحْكَمِ ٱلْحَـٰكِمِينَ",
@@ -122550,7 +122550,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 9,
-        width: 0,
+        width: 46,
       },
     ],
     content: " ٱقْرَأْ بِٱسْمِ رَبِّكَ ٱلَّذِى خَلَقَ",
@@ -122565,7 +122565,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 9,
-        width: 0,
+        width: 38,
       },
     ],
     content: "خَلَقَ ٱلْإِنسَـٰنَ مِنْ عَلَقٍ",
@@ -122580,11 +122580,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 9,
-        width: 0,
+        width: 16,
       },
       {
         lineId: 10,
-        width: 0,
+        width: 20,
       },
     ],
     content: "ٱقْرَأْ وَرَبُّكَ ٱلْأَكْرَمُ",
@@ -122599,7 +122599,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 10,
-        width: 0,
+        width: 30,
       },
     ],
     content: "ٱلَّذِى عَلَّمَ بِٱلْقَلَمِ",
@@ -122614,7 +122614,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 10,
-        width: 0,
+        width: 38,
       },
     ],
     content: "عَلَّمَ ٱلْإِنسَـٰنَ مَا لَمْ يَعْلَمْ",
@@ -122629,11 +122629,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 10,
-        width: 0,
+        width: 12,
       },
       {
         lineId: 11,
-        width: 0,
+        width: 30,
       },
     ],
     content: "كَلَّآ إِنَّ ٱلْإِنسَـٰنَ لَيَطْغَىٰٓ",
@@ -122648,7 +122648,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 11,
-        width: 0,
+        width: 27,
       },
     ],
     content: "أَن رَّءَاهُ ٱسْتَغْنَىٰٓ",
@@ -122663,7 +122663,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 11,
-        width: 0,
+        width: 32,
       },
     ],
     content: "إِنَّ إِلَىٰ رَبِّكَ ٱلرُّجْعَىٰٓ",
@@ -122678,11 +122678,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 11,
-        width: 0,
+        width: 11,
       },
       {
         lineId: 12,
-        width: 0,
+        width: 25,
       },
     ],
     content: "أَرَءَيْتَ ٱلَّذِى يَنْهَىٰ",
@@ -122697,7 +122697,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 12,
-        width: 0,
+        width: 16,
       },
     ],
     content: "عَبْدًا إِذَا صَلَّىٰٓ",
@@ -122712,7 +122712,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 12,
-        width: 0,
+        width: 48,
       },
     ],
     content: "أَرَءَيْتَ إِن كَانَ عَلَى ٱلْهُدَىٰٓ",
@@ -122727,11 +122727,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 12,
-        width: 0,
+        width: 11,
       },
       {
         lineId: 13,
-        width: 0,
+        width: 21,
       },
     ],
     content: "أَوْ أَمَرَ بِٱلتَّقْوَىٰٓ",
@@ -122746,7 +122746,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 13,
-        width: 0,
+        width: 37,
       },
     ],
     content: "أَرَءَيْتَ إِن كَذَّبَ وَتَوَلَّىٰٓ",
@@ -122761,7 +122761,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 13,
-        width: 0,
+        width: 31,
       },
     ],
     content: "أَلَمْ يَعْلَم بِأَنَّ ٱللَّهَ يَرَىٰ",
@@ -122776,11 +122776,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 13,
-        width: 0,
+        width: 11,
       },
       {
         lineId: 14,
-        width: 0,
+        width: 41,
       },
     ],
     content: "كَلَّا لَئِن لَّمْ يَنتَهِ لَنَسْفَعًۢا بِٱلنَّاصِيَةِ",
@@ -122795,7 +122795,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 14,
-        width: 0,
+        width: 37,
       },
     ],
     content: "نَاصِيَةٍ كَـٰذِبَةٍ خَاطِئَةٍ",
@@ -122810,11 +122810,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 14,
-        width: 0,
+        width: 22,
       },
       {
         lineId: 15,
-        width: 0,
+        width: 11,
       },
     ],
     content: "فَلْيَدْعُ نَادِيَهُۥ",
@@ -122829,7 +122829,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 15,
-        width: 0,
+        width: 29,
       },
     ],
     content: "سَنَدْعُ ٱلزَّبَانِيَةَ",
@@ -122844,7 +122844,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 15,
-        width: 0,
+        width: 60,
       },
     ],
     content: "كَلَّا لَا تُطِعْهُ وَٱسْجُدْ وَٱقْتَرِب ۩",
@@ -122859,7 +122859,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 3,
-        width: 0,
+        width: 51,
       },
     ],
     content: "إِنَّآ أَنزَلْنَـٰهُ فِى لَيْلَةِ ٱلْقَدْرِ",
@@ -122874,7 +122874,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 3,
-        width: 0,
+        width: 49,
       },
     ],
     content: "وَمَآ أَدْرَىٰكَ مَا لَيْلَةُ ٱلْقَدْرِ",
@@ -122889,7 +122889,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 4,
-        width: 0,
+        width: 60,
       },
     ],
     content: "لَيْلَةُ ٱلْقَدْرِ خَيْرٌ مِّنْ أَلْفِ شَهْرٍ",
@@ -122904,11 +122904,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 4,
-        width: 0,
+        width: 40,
       },
       {
         lineId: 5,
-        width: 0,
+        width: 51,
       },
     ],
     content: "تَنَزَّلُ ٱلْمَلَـٰٓئِكَةُ وَٱلرُّوحُ فِيهَا بِإِذْنِ رَبِّهِم مِّن كُلِّ أَمْرٍ",
@@ -122923,7 +122923,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 5,
-        width: 0,
+        width: 49,
       },
     ],
     content: "سَلَـٰمٌ هِىَ حَتَّىٰ مَطْلَعِ ٱلْفَجْرِ",
@@ -122938,11 +122938,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 8,
-        width: 0,
+        width: 100,
       },
       {
         lineId: 9,
-        width: 0,
+        width: 39,
       },
     ],
     content: " لَمْ يَكُنِ ٱلَّذِينَ كَفَرُوا۟ مِنْ أَهْلِ ٱلْكِتَـٰبِ وَٱلْمُشْرِكِينَ مُنفَكِّينَ حَتَّىٰ تَأْتِيَهُمُ ٱلْبَيِّنَةُ",
@@ -122957,7 +122957,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 9,
-        width: 0,
+        width: 61,
       },
     ],
     content: "رَسُولٌ مِّنَ ٱللَّهِ يَتْلُوا۟ صُحُفًا مُّطَهَّرَةً",
@@ -122972,7 +122972,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 10,
-        width: 0,
+        width: 37,
       },
     ],
     content: "فِيهَا كُتُبٌ قَيِّمَةٌ",
@@ -122987,11 +122987,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 10,
-        width: 0,
+        width: 63,
       },
       {
         lineId: 11,
-        width: 0,
+        width: 44,
       },
     ],
     content: "وَمَا تَفَرَّقَ ٱلَّذِينَ أُوتُوا۟ ٱلْكِتَـٰبَ إِلَّا مِنۢ بَعْدِ مَا جَآءَتْهُمُ ٱلْبَيِّنَةُ",
@@ -123006,15 +123006,15 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 11,
-        width: 0,
+        width: 56,
       },
       {
         lineId: 12,
-        width: 0,
+        width: 100,
       },
       {
         lineId: 13,
-        width: 0,
+        width: 23,
       },
     ],
     content: "وَمَآ أُمِرُوٓا۟ إِلَّا لِيَعْبُدُوا۟ ٱللَّهَ مُخْلِصِينَ لَهُ ٱلدِّينَ حُنَفَآءَ وَيُقِيمُوا۟ ٱلصَّلَوٰةَ وَيُؤْتُوا۟ ٱلزَّكَوٰةَ ۚ وَذَٰلِكَ دِينُ ٱلْقَيِّمَةِ",
@@ -123029,11 +123029,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 13,
-        width: 0,
+        width: 77,
       },
       {
         lineId: 14,
-        width: 0,
+        width: 88,
       },
     ],
     content: "إِنَّ ٱلَّذِينَ كَفَرُوا۟ مِنْ أَهْلِ ٱلْكِتَـٰبِ وَٱلْمُشْرِكِينَ فِى نَارِ جَهَنَّمَ خَـٰلِدِينَ فِيهَآ ۚ أُو۟لَـٰٓئِكَ هُمْ شَرُّ ٱلْبَرِيَّةِ",
@@ -123048,11 +123048,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 14,
-        width: 0,
+        width: 12,
       },
       {
         lineId: 15,
-        width: 0,
+        width: 100,
       },
     ],
     content: "إِنَّ ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّـٰلِحَـٰتِ أُو۟لَـٰٓئِكَ هُمْ خَيْرُ ٱلْبَرِيَّةِ",
@@ -123067,11 +123067,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 1,
-        width: 0,
+        width: 100,
       },
       {
         lineId: 2,
-        width: 0,
+        width: 100,
       },
     ],
     content: "جَزَآؤُهُمْ عِندَ رَبِّهِمْ جَنَّـٰتُ عَدْنٍ تَجْرِى مِن تَحْتِهَا ٱلْأَنْهَـٰرُ خَـٰلِدِينَ فِيهَآ أَبَدًا ۖ رَّضِىَ ٱللَّهُ عَنْهُمْ وَرَضُوا۟ عَنْهُ ۚ ذَٰلِكَ لِمَنْ خَشِىَ رَبَّهُۥ",
@@ -123086,7 +123086,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 5,
-        width: 0,
+        width: 53,
       },
     ],
     content: " إِذَا زُلْزِلَتِ ٱلْأَرْضُ زِلْزَالَهَا",
@@ -123101,11 +123101,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 5,
-        width: 0,
+        width: 47,
       },
       {
         lineId: 6,
-        width: 0,
+        width: 11,
       },
     ],
     content: "وَأَخْرَجَتِ ٱلْأَرْضُ أَثْقَالَهَا",
@@ -123120,7 +123120,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 6,
-        width: 0,
+        width: 40,
       },
     ],
     content: "وَقَالَ ٱلْإِنسَـٰنُ مَا لَهَا",
@@ -123135,7 +123135,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 6,
-        width: 0,
+        width: 49,
       },
     ],
     content: "يَوْمَئِذٍ تُحَدِّثُ أَخْبَارَهَا",
@@ -123150,7 +123150,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 7,
-        width: 0,
+        width: 45,
       },
     ],
     content: "بِأَنَّ رَبَّكَ أَوْحَىٰ لَهَا",
@@ -123165,11 +123165,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 7,
-        width: 0,
+        width: 55,
       },
       {
         lineId: 8,
-        width: 0,
+        width: 39,
       },
     ],
     content: "يَوْمَئِذٍ يَصْدُرُ ٱلنَّاسُ أَشْتَاتًا لِّيُرَوْا۟ أَعْمَـٰلَهُمْ",
@@ -123184,11 +123184,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 8,
-        width: 0,
+        width: 61,
       },
       {
         lineId: 9,
-        width: 0,
+        width: 21,
       },
     ],
     content: "فَمَن يَعْمَلْ مِثْقَالَ ذَرَّةٍ خَيْرًا يَرَهُۥ",
@@ -123203,7 +123203,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 9,
-        width: 0,
+        width: 79,
       },
     ],
     content: "وَمَن يَعْمَلْ مِثْقَالَ ذَرَّةٍ شَرًّا يَرَهُۥ",
@@ -123218,7 +123218,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 12,
-        width: 0,
+        width: 38,
       },
     ],
     content: " وَٱلْعَـٰدِيَـٰتِ ضَبْحًا",
@@ -123233,7 +123233,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 12,
-        width: 0,
+        width: 35,
       },
     ],
     content: "فَٱلْمُورِيَـٰتِ قَدْحًا",
@@ -123248,11 +123248,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 12,
-        width: 0,
+        width: 27,
       },
       {
         lineId: 13,
-        width: 0,
+        width: 11,
       },
     ],
     content: "فَٱلْمُغِيرَٰتِ صُبْحًا",
@@ -123267,7 +123267,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 13,
-        width: 0,
+        width: 30,
       },
     ],
     content: "فَأَثَرْنَ بِهِۦ نَقْعًا",
@@ -123282,7 +123282,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 13,
-        width: 0,
+        width: 34,
       },
     ],
     content: "فَوَسَطْنَ بِهِۦ جَمْعًا",
@@ -123297,11 +123297,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 13,
-        width: 0,
+        width: 25,
       },
       {
         lineId: 14,
-        width: 0,
+        width: 31,
       },
     ],
     content: "إِنَّ ٱلْإِنسَـٰنَ لِرَبِّهِۦ لَكَنُودٌ",
@@ -123316,7 +123316,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 14,
-        width: 0,
+        width: 46,
       },
     ],
     content: "وَإِنَّهُۥ عَلَىٰ ذَٰلِكَ لَشَهِيدٌ",
@@ -123331,11 +123331,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 14,
-        width: 0,
+        width: 23,
       },
       {
         lineId: 15,
-        width: 0,
+        width: 32,
       },
     ],
     content: "وَإِنَّهُۥ لِحُبِّ ٱلْخَيْرِ لَشَدِيدٌ",
@@ -123350,7 +123350,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 15,
-        width: 0,
+        width: 68,
       },
     ],
     content: "۞ أَفَلَا يَعْلَمُ إِذَا بُعْثِرَ مَا فِى ٱلْقُبُورِ",
@@ -123365,7 +123365,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 1,
-        width: 0,
+        width: 46,
       },
     ],
     content: "وَحُصِّلَ مَا فِى ٱلصُّدُورِ",
@@ -123380,7 +123380,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 1,
-        width: 0,
+        width: 54,
       },
     ],
     content: "إِنَّ رَبَّهُم بِهِمْ يَوْمَئِذٍ لَّخَبِيرٌۢ",
@@ -123395,7 +123395,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 4,
-        width: 0,
+        width: 31,
       },
     ],
     content: " ٱلْقَارِعَةُ",
@@ -123410,7 +123410,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 4,
-        width: 0,
+        width: 30,
       },
     ],
     content: "مَا ٱلْقَارِعَةُ",
@@ -123425,11 +123425,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 4,
-        width: 0,
+        width: 39,
       },
       {
         lineId: 5,
-        width: 0,
+        width: 11,
       },
     ],
     content: "وَمَآ أَدْرَىٰكَ مَا ٱلْقَارِعَةُ",
@@ -123444,7 +123444,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 5,
-        width: 0,
+        width: 89,
       },
     ],
     content: "يَوْمَ يَكُونُ ٱلنَّاسُ كَٱلْفَرَاشِ ٱلْمَبْثُوثِ",
@@ -123459,7 +123459,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 6,
-        width: 0,
+        width: 90,
       },
     ],
     content: "وَتَكُونُ ٱلْجِبَالُ كَٱلْعِهْنِ ٱلْمَنفُوشِ",
@@ -123474,11 +123474,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 6,
-        width: 0,
+        width: 10,
       },
       {
         lineId: 7,
-        width: 0,
+        width: 51,
       },
     ],
     content: "فَأَمَّا مَن ثَقُلَتْ مَوَٰزِينُهُۥ",
@@ -123493,11 +123493,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 7,
-        width: 0,
+        width: 49,
       },
       {
         lineId: 8,
-        width: 0,
+        width: 11,
       },
     ],
     content: "فَهُوَ فِى عِيشَةٍ رَّاضِيَةٍ",
@@ -123512,7 +123512,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 8,
-        width: 0,
+        width: 56,
       },
     ],
     content: "وَأَمَّا مَنْ خَفَّتْ مَوَٰزِينُهُۥ",
@@ -123527,11 +123527,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 8,
-        width: 0,
+        width: 33,
       },
       {
         lineId: 9,
-        width: 0,
+        width: 18,
       },
     ],
     content: "فَأُمُّهُۥ هَاوِيَةٌ",
@@ -123546,7 +123546,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 9,
-        width: 0,
+        width: 43,
       },
     ],
     content: "وَمَآ أَدْرَىٰكَ مَا هِيَهْ",
@@ -123561,7 +123561,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 9,
-        width: 0,
+        width: 39,
       },
     ],
     content: "نَارٌ حَامِيَةٌۢ",
@@ -123576,7 +123576,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 12,
-        width: 0,
+        width: 39,
       },
     ],
     content: " أَلْهَىٰكُمُ ٱلتَّكَاثُرُ",
@@ -123591,7 +123591,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 12,
-        width: 0,
+        width: 40,
       },
     ],
     content: "حَتَّىٰ زُرْتُمُ ٱلْمَقَابِرَ",
@@ -123606,11 +123606,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 12,
-        width: 0,
+        width: 21,
       },
       {
         lineId: 13,
-        width: 0,
+        width: 26,
       },
     ],
     content: "كَلَّا سَوْفَ تَعْلَمُونَ",
@@ -123625,7 +123625,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 13,
-        width: 0,
+        width: 46,
       },
     ],
     content: "ثُمَّ كَلَّا سَوْفَ تَعْلَمُونَ",
@@ -123640,11 +123640,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 13,
-        width: 0,
+        width: 28,
       },
       {
         lineId: 14,
-        width: 0,
+        width: 32,
       },
     ],
     content: "كَلَّا لَوْ تَعْلَمُونَ عِلْمَ ٱلْيَقِينِ",
@@ -123659,7 +123659,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 14,
-        width: 0,
+        width: 45,
       },
     ],
     content: "لَتَرَوُنَّ ٱلْجَحِيمَ",
@@ -123674,11 +123674,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 14,
-        width: 0,
+        width: 23,
       },
       {
         lineId: 15,
-        width: 0,
+        width: 36,
       },
     ],
     content: "ثُمَّ لَتَرَوُنَّهَا عَيْنَ ٱلْيَقِينِ",
@@ -123693,7 +123693,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 15,
-        width: 0,
+        width: 64,
       },
     ],
     content: "ثُمَّ لَتُسْـَٔلُنَّ يَوْمَئِذٍ عَنِ ٱلنَّعِيمِ",
@@ -123708,7 +123708,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 3,
-        width: 0,
+        width: 25,
       },
     ],
     content: " وَٱلْعَصْرِ",
@@ -123723,7 +123723,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 3,
-        width: 0,
+        width: 45,
       },
     ],
     content: "إِنَّ ٱلْإِنسَـٰنَ لَفِى خُسْرٍ",
@@ -123738,11 +123738,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 3,
-        width: 0,
+        width: 30,
       },
       {
         lineId: 4,
-        width: 0,
+        width: 100,
       },
     ],
     content: "إِلَّا ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّـٰلِحَـٰتِ وَتَوَاصَوْا۟ بِٱلْحَقِّ وَتَوَاصَوْا۟ بِٱلصَّبْرِ",
@@ -123757,7 +123757,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 7,
-        width: 0,
+        width: 51,
       },
     ],
     content: " وَيْلٌ لِّكُلِّ هُمَزَةٍ لُّمَزَةٍ",
@@ -123772,7 +123772,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 7,
-        width: 0,
+        width: 49,
       },
     ],
     content: "ٱلَّذِى جَمَعَ مَالًا وَعَدَّدَهُۥ",
@@ -123787,7 +123787,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 8,
-        width: 0,
+        width: 51,
       },
     ],
     content: "يَحْسَبُ أَنَّ مَالَهُۥٓ أَخْلَدَهُۥ",
@@ -123802,7 +123802,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 8,
-        width: 0,
+        width: 49,
       },
     ],
     content: "كَلَّا ۖ لَيُنۢبَذَنَّ فِى ٱلْحُطَمَةِ",
@@ -123817,7 +123817,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 9,
-        width: 0,
+        width: 47,
       },
     ],
     content: "وَمَآ أَدْرَىٰكَ مَا ٱلْحُطَمَةُ",
@@ -123832,7 +123832,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 9,
-        width: 0,
+        width: 36,
       },
     ],
     content: "نَارُ ٱللَّهِ ٱلْمُوقَدَةُ",
@@ -123847,11 +123847,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 9,
-        width: 0,
+        width: 17,
       },
       {
         lineId: 10,
-        width: 0,
+        width: 29,
       },
     ],
     content: "ٱلَّتِى تَطَّلِعُ عَلَى ٱلْأَفْـِٔدَةِ",
@@ -123866,7 +123866,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 10,
-        width: 0,
+        width: 38,
       },
     ],
     content: "إِنَّهَا عَلَيْهِم مُّؤْصَدَةٌ",
@@ -123881,7 +123881,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 10,
-        width: 0,
+        width: 33,
       },
     ],
     content: "فِى عَمَدٍ مُّمَدَّدَةٍۭ",
@@ -123896,7 +123896,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 13,
-        width: 0,
+        width: 72,
       },
     ],
     content: " أَلَمْ تَرَ كَيْفَ فَعَلَ رَبُّكَ بِأَصْحَـٰبِ ٱلْفِيلِ",
@@ -123911,11 +123911,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 13,
-        width: 0,
+        width: 28,
       },
       {
         lineId: 14,
-        width: 0,
+        width: 29,
       },
     ],
     content: "أَلَمْ يَجْعَلْ كَيْدَهُمْ فِى تَضْلِيلٍ",
@@ -123930,7 +123930,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 14,
-        width: 0,
+        width: 54,
       },
     ],
     content: "وَأَرْسَلَ عَلَيْهِمْ طَيْرًا أَبَابِيلَ",
@@ -123945,11 +123945,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 14,
-        width: 0,
+        width: 17,
       },
       {
         lineId: 15,
-        width: 0,
+        width: 44,
       },
     ],
     content: "تَرْمِيهِم بِحِجَارَةٍ مِّن سِجِّيلٍ",
@@ -123964,7 +123964,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 15,
-        width: 0,
+        width: 56,
       },
     ],
     content: "فَجَعَلَهُمْ كَعَصْفٍ مَّأْكُولٍۭ",
@@ -123979,7 +123979,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 3,
-        width: 0,
+        width: 41,
       },
     ],
     content: " لِإِيلَـٰفِ قُرَيْشٍ",
@@ -123994,11 +123994,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 3,
-        width: 0,
+        width: 59,
       },
       {
         lineId: 4,
-        width: 0,
+        width: 11,
       },
     ],
     content: "إِۦلَـٰفِهِمْ رِحْلَةَ ٱلشِّتَآءِ وَٱلصَّيْفِ",
@@ -124013,7 +124013,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 4,
-        width: 0,
+        width: 57,
       },
     ],
     content: "فَلْيَعْبُدُوا۟ رَبَّ هَـٰذَا ٱلْبَيْتِ",
@@ -124028,11 +124028,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 4,
-        width: 0,
+        width: 32,
       },
       {
         lineId: 5,
-        width: 0,
+        width: 100,
       },
     ],
     content: "ٱلَّذِىٓ أَطْعَمَهُم مِّن جُوعٍ وَءَامَنَهُم مِّنْ خَوْفٍۭ",
@@ -124047,7 +124047,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 8,
-        width: 0,
+        width: 67,
       },
     ],
     content: " أَرَءَيْتَ ٱلَّذِى يُكَذِّبُ بِٱلدِّينِ",
@@ -124062,11 +124062,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 8,
-        width: 0,
+        width: 33,
       },
       {
         lineId: 9,
-        width: 0,
+        width: 37,
       },
     ],
     content: "فَذَٰلِكَ ٱلَّذِى يَدُعُّ ٱلْيَتِيمَ",
@@ -124081,7 +124081,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 9,
-        width: 0,
+        width: 63,
       },
     ],
     content: "وَلَا يَحُضُّ عَلَىٰ طَعَامِ ٱلْمِسْكِينِ",
@@ -124096,7 +124096,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 10,
-        width: 0,
+        width: 45,
       },
     ],
     content: "فَوَيْلٌ لِّلْمُصَلِّينَ",
@@ -124111,11 +124111,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 10,
-        width: 0,
+        width: 55,
       },
       {
         lineId: 11,
-        width: 0,
+        width: 11,
       },
     ],
     content: "ٱلَّذِينَ هُمْ عَن صَلَاتِهِمْ سَاهُونَ",
@@ -124130,7 +124130,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 11,
-        width: 0,
+        width: 46,
       },
     ],
     content: "ٱلَّذِينَ هُمْ يُرَآءُونَ",
@@ -124145,7 +124145,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 11,
-        width: 0,
+        width: 43,
       },
     ],
     content: "وَيَمْنَعُونَ ٱلْمَاعُونَ",
@@ -124160,7 +124160,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 14,
-        width: 0,
+        width: 54,
       },
     ],
     content: " إِنَّآ أَعْطَيْنَـٰكَ ٱلْكَوْثَرَ",
@@ -124175,7 +124175,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 14,
-        width: 0,
+        width: 46,
       },
     ],
     content: "فَصَلِّ لِرَبِّكَ وَٱنْحَرْ",
@@ -124190,7 +124190,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 15,
-        width: 0,
+        width: 100,
       },
     ],
     content: "إِنَّ شَانِئَكَ هُوَ ٱلْأَبْتَرُ",
@@ -124205,7 +124205,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 3,
-        width: 0,
+        width: 54,
       },
     ],
     content: " قُلْ يَـٰٓأَيُّهَا ٱلْكَـٰفِرُونَ",
@@ -124220,7 +124220,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 3,
-        width: 0,
+        width: 46,
       },
     ],
     content: "لَآ أَعْبُدُ مَا تَعْبُدُونَ",
@@ -124235,7 +124235,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 4,
-        width: 0,
+        width: 54,
       },
     ],
     content: "وَلَآ أَنتُمْ عَـٰبِدُونَ مَآ أَعْبُدُ",
@@ -124250,7 +124250,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 4,
-        width: 0,
+        width: 46,
       },
     ],
     content: "وَلَآ أَنَا۠ عَابِدٌ مَّا عَبَدتُّمْ",
@@ -124265,7 +124265,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 5,
-        width: 0,
+        width: 54,
       },
     ],
     content: "وَلَآ أَنتُمْ عَـٰبِدُونَ مَآ أَعْبُدُ",
@@ -124280,7 +124280,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 5,
-        width: 0,
+        width: 46,
       },
     ],
     content: "لَكُمْ دِينُكُمْ وَلِىَ دِينِ",
@@ -124295,7 +124295,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 8,
-        width: 0,
+        width: 66,
       },
     ],
     content: " إِذَا جَآءَ نَصْرُ ٱللَّهِ وَٱلْفَتْحُ",
@@ -124310,11 +124310,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 8,
-        width: 0,
+        width: 34,
       },
       {
         lineId: 9,
-        width: 0,
+        width: 65,
       },
     ],
     content: "وَرَأَيْتَ ٱلنَّاسَ يَدْخُلُونَ فِى دِينِ ٱللَّهِ أَفْوَاجًا",
@@ -124329,11 +124329,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 9,
-        width: 0,
+        width: 35,
       },
       {
         lineId: 10,
-        width: 0,
+        width: 100,
       },
     ],
     content: "فَسَبِّحْ بِحَمْدِ رَبِّكَ وَٱسْتَغْفِرْهُ ۚ إِنَّهُۥ كَانَ تَوَّابًۢا",
@@ -124348,7 +124348,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 13,
-        width: 0,
+        width: 56,
       },
     ],
     content: " تَبَّتْ يَدَآ أَبِى لَهَبٍ وَتَبَّ",
@@ -124363,11 +124363,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 13,
-        width: 0,
+        width: 44,
       },
       {
         lineId: 14,
-        width: 0,
+        width: 30,
       },
     ],
     content: "مَآ أَغْنَىٰ عَنْهُ مَالُهُۥ وَمَا كَسَبَ",
@@ -124382,7 +124382,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 14,
-        width: 0,
+        width: 51,
       },
     ],
     content: "سَيَصْلَىٰ نَارًا ذَاتَ لَهَبٍ",
@@ -124397,11 +124397,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 14,
-        width: 0,
+        width: 19,
       },
       {
         lineId: 15,
-        width: 0,
+        width: 42,
       },
     ],
     content: "وَٱمْرَأَتُهُۥ حَمَّالَةَ ٱلْحَطَبِ",
@@ -124416,7 +124416,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 15,
-        width: 0,
+        width: 58,
       },
     ],
     content: "فِى جِيدِهَا حَبْلٌ مِّن مَّسَدٍۭ",
@@ -124431,7 +124431,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 3,
-        width: 0,
+        width: 45,
       },
     ],
     content: " قُلْ هُوَ ٱللَّهُ أَحَدٌ",
@@ -124446,7 +124446,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 3,
-        width: 0,
+        width: 35,
       },
     ],
     content: "ٱللَّهُ ٱلصَّمَدُ",
@@ -124461,11 +124461,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 3,
-        width: 0,
+        width: 20,
       },
       {
         lineId: 4,
-        width: 0,
+        width: 34,
       },
     ],
     content: "لَمْ يَلِدْ وَلَمْ يُولَدْ",
@@ -124480,7 +124480,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 4,
-        width: 0,
+        width: 66,
       },
     ],
     content: "وَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌۢ",
@@ -124495,7 +124495,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 7,
-        width: 0,
+        width: 51,
       },
     ],
     content: " قُلْ أَعُوذُ بِرَبِّ ٱلْفَلَقِ",
@@ -124510,7 +124510,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 7,
-        width: 0,
+        width: 37,
       },
     ],
     content: "مِن شَرِّ مَا خَلَقَ",
@@ -124525,11 +124525,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 7,
-        width: 0,
+        width: 12,
       },
       {
         lineId: 8,
-        width: 0,
+        width: 50,
       },
     ],
     content: "وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ",
@@ -124544,11 +124544,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 8,
-        width: 0,
+        width: 50,
       },
       {
         lineId: 9,
-        width: 0,
+        width: 34,
       },
     ],
     content: "وَمِن شَرِّ ٱلنَّفَّـٰثَـٰتِ فِى ٱلْعُقَدِ",
@@ -124563,7 +124563,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 9,
-        width: 0,
+        width: 55,
       },
     ],
     content: "وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ",
@@ -124578,7 +124578,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 12,
-        width: 0,
+        width: 50,
       },
     ],
     content: " قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ",
@@ -124593,7 +124593,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 12,
-        width: 0,
+        width: 35,
       },
     ],
     content: "مَلِكِ ٱلنَّاسِ",
@@ -124608,11 +124608,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 12,
-        width: 0,
+        width: 15,
       },
       {
         lineId: 13,
-        width: 0,
+        width: 28,
       },
     ],
     content: "إِلَـٰهِ ٱلنَّاسِ",
@@ -124627,7 +124627,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 13,
-        width: 0,
+        width: 57,
       },
     ],
     content: "مِن شَرِّ ٱلْوَسْوَاسِ ٱلْخَنَّاسِ",
@@ -124642,11 +124642,11 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 13,
-        width: 0,
+        width: 15,
       },
       {
         lineId: 14,
-        width: 0,
+        width: 100,
       },
     ],
     content: "ٱلَّذِى يُوَسْوِسُ فِى صُدُورِ ٱلنَّاسِ",
@@ -124661,7 +124661,7 @@ const QURAN = [
     coveredLines: [
       {
         lineId: 15,
-        width: 0,
+        width: 100,
       },
     ],
     content: "مِنَ ٱلْجِنَّةِ وَٱلنَّاسِ",
