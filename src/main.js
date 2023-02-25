@@ -516,13 +516,7 @@ const linesCustomStyles = {
 
   // p520l14: 'padding-top: 28%;',
 
-  // p520l14: 'padding-top: 28%;',
-
-  // p520l14: 'padding-top: 28%;',
-
-  // p520l14: 'padding-top: 28%;',
-
-  // p520l14: 'padding-top: 28%;',
+  p568l11: 'padding-top:  25%;',
 
   // p520l14: 'padding-top: 28%;',
 
@@ -712,7 +706,7 @@ const updatePage = (updateDisplay = true) => {
 
   bc.push({page: selectedPage - 1, width : ab })
   ab = []
-  // console.log(bc)
+  console.log(bc)
 
   // only for dev ended ///////////////////
   
@@ -1047,7 +1041,7 @@ filterParts.addEventListener("keyup", filterIndexCmd);
 
 // when click up down prevent the default scroll bar behavoir (so we can keep under the eye what the selected rawi)
 window.addEventListener("keydown", (e) => {
-  // return
+  return;/* TOBEREMVOED */
 
   if ((e.code == "ArrowUp" || e.code == "ArrowDown") && e.target !="input.range") {
     e.preventDefault();
@@ -1057,14 +1051,16 @@ window.addEventListener("keydown", (e) => {
 
 // when click on a button :
 window.addEventListener("keyup", (e) => {
-
+  
+  
   // right / left => change the page
   if (e.code == "ArrowRight") {
     privCB();
   } else if (e.code == "ArrowLeft") {
     nextCB();
   } 
-  // return
+  
+  return;/* TOBEREMVOED */
   
   // up down switch between Quran Versions / or riwiat / or rawis
   if (e.code == "ArrowDown") {
@@ -1255,7 +1251,6 @@ const updateGrid = (ayat) => {
 
 // updating the grid logic
 const updateGridDisplay = () => {
-  return;
   // show the grid
   if (quranGrid.classList.contains("quranGrid-closed")) {
     quranGrid.classList.remove("quranGrid-closed");
