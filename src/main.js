@@ -106,7 +106,7 @@ var arabicNormChar = {
 };
 
 // root folder for rawis folders
-const rootSource = 'data\\qurans';
+const rootSource = 'https:\\\\raw.githubusercontent.com\\ayoubnaceur\\dataset\\data\\data\\qurans';
 
 // Availaible Quran Versions (Riwaiat or Torok) : Configurations
 
@@ -675,16 +675,16 @@ const imageLoaded = () => {
 
   // TODO: to be cleaned later: pnly for test  
 
-  setTimeout(() => {
-    ctx.drawImage(currentImage,isMobile ? 40 : 0, 0, sWidth, sHeight, 0,0, sWidth,sHeight);
-    // close the loading block
-    toggleLoading(false)
-  }, 1000)
+  // setTimeout(() => {
+  //   ctx.drawImage(currentImage,isMobile ? 40 : 0, 0, sWidth, sHeight, 0,0, sWidth,sHeight);
+  //   // close the loading block
+  //   toggleLoading(false)
+  // }, 1000)
 
-  // ctx.drawImage(currentImage,isMobile ? 40 : 0, 0, sWidth, sHeight, 0,0, sWidth,sHeight);
+  ctx.drawImage(currentImage,isMobile ? 40 : 0, 0, sWidth, sHeight, 0,0, sWidth,sHeight);
 
-  // // close the loading block
-  // toggleLoading(false)
+  // close the loading block
+  toggleLoading(false)
 };
 
 
@@ -694,6 +694,7 @@ const imageCantBeLoaded = () => {
 
   // close the loading block
   toggleLoading(false)
+  quranGrid.classList.add("quranGrid-closed");
 };
 
 const updateImgDisplay = (type = null) => {
