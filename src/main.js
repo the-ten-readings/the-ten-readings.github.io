@@ -540,8 +540,8 @@ const linesCustomStyles = {
   p600l4: 'padding-top: 23%;',
   p600l12: 'padding-top: 23%;',
 
-  p601l3: 'padding-top: 24%;',
-  p601l7: 'padding-top: 22%;',
+  p601l3: 'padding-top: 25%;',
+  p601l7: 'padding-top: 24%;',
   p601l13: 'padding-top: 22%;',
 
   p602l3: 'padding-top: 24%;',
@@ -1217,9 +1217,11 @@ const lineTemplate = (lineNumber, ayaParts) => {
 }
 
 // ayaPart template
-const linePartTemplate = (data) => `<div  
+const linePartTemplate = (data) => 
+{
+  return `<div  
   id="${data.ayaId}-${data.ayaNumber}-${data.lineNumber}" 
-  ${(selectedAya && data.ayaNumber == selectedAya) && "class='aya-selected'"}
+  ${(selectedAya && data.ayaId == selectedAya) && "class='aya-selected'"}
   data-aya
   data-ayaId="${data.ayaId}" 
   data-ayaNumber="${data.ayaNumber}"
@@ -1227,6 +1229,7 @@ const linePartTemplate = (data) => `<div
   data-ayaLineNumber="${data.lineNumber}"
   data-ayaEndPosition="${data.lineWidth}">
 </div>`;
+}
 // <div class="meter">
 //   <input class="range" type='number' min="0" max="100" value="${data.lineWidth}">
 // </div>
