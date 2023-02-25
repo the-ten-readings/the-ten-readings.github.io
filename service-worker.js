@@ -1,5 +1,5 @@
 var APP_PREFIX = 'thethenreadings_';
-var VERSION = 'version_02_04_2023_2';
+var VERSION = 'version_02_25_2023';
 var CACHE_NAME = APP_PREFIX + VERSION
 var URLS = [    
   "/the-ten-readings/",
