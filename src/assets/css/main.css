@@ -69,7 +69,7 @@
   max-width: 100%;
   z-index: 0;
   object-fit: contain;
-  filter: contrast(0.5);
+  /* filter: contrast(0.5); */
   max-height: 100%;
 }
 
@@ -650,14 +650,15 @@ option:checked {
 .quran {
   display: flex;
   z-index: 1;
-  background-color: #120e0e70;
+  /* background-color: #120e0e70; */
   width: calc(100% - 23.7%);
   max-width: calc(100% - 23.7%);
   left: 3.6%;
   aspect-ratio: 2 / 3.13;
   position: absolute;
   flex-direction: column;
-  display: none;
+  /* display: none; */
+  /* box-shadow: inset -1px -1px 1px #000; */
 }
 
 .quran>div {
@@ -789,7 +790,8 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   /* background-color:#ff8a2b61 !important */
 }
 [data-aya]{
-  background-color:#ff8a2b61 !important
+  background-color:#ff8a2b61 !important;
+  /* background-color: transparent !important; */
 }
 .aya-selected {
   background-color: #43d50059 !important;
@@ -810,7 +812,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   border: 0;
   outline: 0;
   height: 100%;
-  background-color: #d3d3d34f;
+  background-color: transparent;
   text-align: center;
   font-weight: bold;
   box-sizing: border-box;

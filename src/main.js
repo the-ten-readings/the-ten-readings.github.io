@@ -398,8 +398,6 @@ const linesCustomStyles = {
   p349l14: 'padding-bottom: 15%;',
   p350l2: 'padding-top: 15%;',
 
-  p352l2: 'padding-top: 15%;',
-  
   p359l13: 'padding-top: 25%;',
 
   p366l14: 'padding-bottom: 15%;',
@@ -412,7 +410,7 @@ const linesCustomStyles = {
   
   p396l10: 'padding-top: 27%;',
 
-  p404l12: 'padding-top: 27%;',
+  p404l12: 'padding-top: 25%;',
   
   p411l3: 'padding-top: 28%;',
   
@@ -424,7 +422,7 @@ const linesCustomStyles = {
   
   p428l3: 'padding-top: 27%;',
 
-  p434l10: 'padding-top: 27%;',
+  p434l10: 'padding-top: 25%;',
 
   p440l6: 'padding-top: 27%;',
 
