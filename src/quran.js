@@ -107195,2144 +107195,6 @@ const QURAN = [
     contentSimple: "ومريم ابنت عمران التي احصنت فرجها فنفخنا فيه من روحنا وصدقت بكلمات ربها وكتبه وكانت من القانتين",
   },
   {
-    id: 5543,
-    number: 48,
-    suraNumber: 74,
-    suraName: "الملك",
-    pageNumber: 577,
-    coveredLines: [
-      {
-        lineId: 1,
-        width: 54,
-      },
-    ],
-    content: "فَمَا تَنفَعُهُمْ شَفَـٰعَةُ ٱلشَّـٰفِعِينَ",
-    contentSimple: "فما تنفعهم شفاعة الشافعين",
-  },
-  {
-    id: 5544,
-    number: 49,
-    suraNumber: 74,
-    suraName: "المدثر",
-    pageNumber: 577,
-    coveredLines: [
-      {
-        lineId: 1,
-        width: 46,
-      },
-      {
-        lineId: 2,
-        width: 11,
-      },
-    ],
-    content: "فَمَا لَهُمْ عَنِ ٱلتَّذْكِرَةِ مُعْرِضِينَ",
-    contentSimple: "فما لهم عن التذكرة معرضين",
-  },
-  {
-    id: 5545,
-    number: 50,
-    suraNumber: 74,
-    suraName: "المدثر",
-    pageNumber: 577,
-    coveredLines: [
-      {
-        lineId: 2,
-        width: 41,
-      },
-    ],
-    content: "كَأَنَّهُمْ حُمُرٌ مُّسْتَنفِرَةٌ",
-    contentSimple: "كانهم حمر مستنفرة",
-  },
-  {
-    id: 5546,
-    number: 51,
-    suraNumber: 74,
-    suraName: "المدثر",
-    pageNumber: 577,
-    coveredLines: [
-      {
-        lineId: 2,
-        width: 33,
-      },
-    ],
-    content: "فَرَّتْ مِن قَسْوَرَةٍۭ",
-    contentSimple: "فرت من قسورة",
-  },
-  {
-    id: 5547,
-    number: 52,
-    suraNumber: 74,
-    suraName: "المدثر",
-    pageNumber: 577,
-    coveredLines: [
-      {
-        lineId: 2,
-        width: 15,
-      },
-      {
-        lineId: 3,
-        width: 67,
-      },
-    ],
-    content: "بَلْ يُرِيدُ كُلُّ ٱمْرِئٍ مِّنْهُمْ أَن يُؤْتَىٰ صُحُفًا مُّنَشَّرَةً",
-    contentSimple: "بل يريد كل امرئ منهم ان يؤتى صحفا منشرة",
-  },
-  {
-    id: 5548,
-    number: 53,
-    suraNumber: 74,
-    suraName: "المدثر",
-    pageNumber: 577,
-    coveredLines: [
-      {
-        lineId: 3,
-        width: 33,
-      },
-      {
-        lineId: 4,
-        width: 23,
-      },
-    ],
-    content: "كَلَّا ۖ بَل لَّا يَخَافُونَ ٱلْـَٔاخِرَةَ",
-    contentSimple: "كلا بل لا يخافون الاخرة",
-  },
-  {
-    id: 5549,
-    number: 54,
-    suraNumber: 74,
-    suraName: "المدثر",
-    pageNumber: 577,
-    coveredLines: [
-      {
-        lineId: 4,
-        width: 37,
-      },
-    ],
-    content: "كَلَّآ إِنَّهُۥ تَذْكِرَةٌ",
-    contentSimple: "كلا انه تذكرة",
-  },
-  {
-    id: 5550,
-    number: 55,
-    suraNumber: 74,
-    suraName: "المدثر",
-    pageNumber: 577,
-    coveredLines: [
-      {
-        lineId: 4,
-        width: 40,
-      },
-    ],
-    content: "فَمَن شَآءَ ذَكَرَهُۥ",
-    contentSimple: "فمن شاء ذكره",
-  },
-  {
-    id: 5551,
-    number: 56,
-    suraNumber: 74,
-    suraName: "المدثر",
-    pageNumber: 577,
-    coveredLines: [
-      {
-        lineId: 5,
-        width: 100,
-      },
-    ],
-    content: "وَمَا يَذْكُرُونَ إِلَّآ أَن يَشَآءَ ٱللَّهُ ۚ هُوَ أَهْلُ ٱلتَّقْوَىٰ وَأَهْلُ ٱلْمَغْفِرَةِ",
-    contentSimple: "وما يذكرون الا ان يشاء الله هو اهل التقوى واهل المغفرة",
-  },
-  {
-    id: 5552,
-    number: 1,
-    suraNumber: 75,
-    suraName: "الملك",
-    pageNumber: 577,
-    coveredLines: [
-      {
-        lineId: 8,
-        width: 41,
-      },
-    ],
-    content: " لَآ أُقْسِمُ بِيَوْمِ ٱلْقِيَـٰمَةِ",
-    contentSimple: "لا اقسم بيوم القيامة",
-  },
-  {
-    id: 5553,
-    number: 2,
-    suraNumber: 75,
-    suraName: "الملك",
-    pageNumber: 577,
-    coveredLines: [
-      {
-        lineId: 8,
-        width: 44,
-      },
-    ],
-    content: "وَلَآ أُقْسِمُ بِٱلنَّفْسِ ٱللَّوَّامَةِ",
-    contentSimple: "ولا اقسم بالنفس اللوامة",
-  },
-  {
-    id: 5554,
-    number: 3,
-    suraNumber: 75,
-    suraName: "الملك",
-    pageNumber: 577,
-    coveredLines: [
-      {
-        lineId: 8,
-        width: 15,
-      },
-      {
-        lineId: 9,
-        width: 44,
-      },
-    ],
-    content: "أَيَحْسَبُ ٱلْإِنسَـٰنُ أَلَّن نَّجْمَعَ عِظَامَهُۥ",
-    contentSimple: "ايحسب الانسان الن نجمع عظامه",
-  },
-  {
-    id: 5555,
-    number: 4,
-    suraNumber: 75,
-    suraName: "الملك",
-    pageNumber: 577,
-    coveredLines: [
-      {
-        lineId: 9,
-        width: 49,
-      },
-    ],
-    content: "بَلَىٰ قَـٰدِرِينَ عَلَىٰٓ أَن نُّسَوِّىَ بَنَانَهُۥ",
-    contentSimple: "بلى قادرين على ان نسوي بنانه",
-  },
-  {
-    id: 5556,
-    number: 5,
-    suraNumber: 75,
-    suraName: "الملك",
-    pageNumber: 577,
-    coveredLines: [
-      {
-        lineId: 9,
-        width: 7,
-      },
-      {
-        lineId: 10,
-        width: 45,
-      },
-    ],
-    content: "بَلْ يُرِيدُ ٱلْإِنسَـٰنُ لِيَفْجُرَ أَمَامَهُۥ",
-    contentSimple: "بل يريد الانسان ليفجر امامه",
-  },
-  {
-    id: 5557,
-    number: 6,
-    suraNumber: 75,
-    suraName: "الملك",
-    pageNumber: 577,
-    coveredLines: [
-      {
-        lineId: 10,
-        width: 35,
-      },
-    ],
-    content: "يَسْـَٔلُ أَيَّانَ يَوْمُ ٱلْقِيَـٰمَةِ",
-    contentSimple: "يسال ايان يوم القيامة",
-  },
-  {
-    id: 5558,
-    number: 7,
-    suraNumber: 75,
-    suraName: "القلم",
-    pageNumber: 577,
-    coveredLines: [
-      {
-        lineId: 10,
-        width: 20,
-      },
-      {
-        lineId: 11,
-        width: 10,
-      },
-    ],
-    content: "فَإِذَا بَرِقَ ٱلْبَصَرُ",
-    contentSimple: "فاذا برق البصر",
-  },
-  {
-    id: 5559,
-    number: 8,
-    suraNumber: 75,
-    suraName: "القلم",
-    pageNumber: 577,
-    coveredLines: [
-      {
-        lineId: 11,
-        width: 29,
-      },
-    ],
-    content: "وَخَسَفَ ٱلْقَمَرُ",
-    contentSimple: "وخسف القمر",
-  },
-  {
-    id: 5560,
-    number: 9,
-    suraNumber: 75,
-    suraName: "القلم",
-    pageNumber: 577,
-    coveredLines: [
-      {
-        lineId: 11,
-        width: 34,
-      },
-    ],
-    content: "وَجُمِعَ ٱلشَّمْسُ وَٱلْقَمَرُ",
-    contentSimple: "وجمع الشمس والقمر",
-  },
-  {
-    id: 5561,
-    number: 10,
-    suraNumber: 75,
-    suraName: "القلم",
-    pageNumber: 577,
-    coveredLines: [
-      {
-        lineId: 11,
-        width: 27,
-      },
-      {
-        lineId: 12,
-        width: 21,
-      },
-    ],
-    content: "يَقُولُ ٱلْإِنسَـٰنُ يَوْمَئِذٍ أَيْنَ ٱلْمَفَرُّ",
-    contentSimple: "يقول الانسان يومئذ اين المفر",
-  },
-  {
-    id: 5562,
-    number: 11,
-    suraNumber: 75,
-    suraName: "القلم",
-    pageNumber: 577,
-    coveredLines: [
-      {
-        lineId: 12,
-        width: 24,
-      },
-    ],
-    content: "كَلَّا لَا وَزَرَ",
-    contentSimple: "كلا لا وزر",
-  },
-  {
-    id: 5563,
-    number: 12,
-    suraNumber: 75,
-    suraName: "القلم",
-    pageNumber: 577,
-    coveredLines: [
-      {
-        lineId: 12,
-        width: 36,
-      },
-    ],
-    content: "إِلَىٰ رَبِّكَ يَوْمَئِذٍ ٱلْمُسْتَقَرُّ",
-    contentSimple: "الى ربك يومئذ المستقر",
-  },
-  {
-    id: 5564,
-    number: 13,
-    suraNumber: 75,
-    suraName: "القلم",
-    pageNumber: 577,
-    coveredLines: [
-      {
-        lineId: 12,
-        width: 19,
-      },
-      {
-        lineId: 13,
-        width: 38,
-      },
-    ],
-    content: "يُنَبَّؤُا۟ ٱلْإِنسَـٰنُ يَوْمَئِذٍۭ بِمَا قَدَّمَ وَأَخَّرَ",
-    contentSimple: "ينبا الانسان يومئذ بما قدم واخر",
-  },
-  {
-    id: 5565,
-    number: 14,
-    suraNumber: 75,
-    suraName: "القلم",
-    pageNumber: 577,
-    coveredLines: [
-      {
-        lineId: 13,
-        width: 47,
-      },
-    ],
-    content: "بَلِ ٱلْإِنسَـٰنُ عَلَىٰ نَفْسِهِۦ بَصِيرَةٌ",
-    contentSimple: "بل الانسان على نفسه بصيرة",
-  },
-  {
-    id: 5566,
-    number: 15,
-    suraNumber: 75,
-    suraName: "القلم",
-    pageNumber: 577,
-    coveredLines: [
-      {
-        lineId: 13,
-        width: 15,
-      },
-      {
-        lineId: 14,
-        width: 23,
-      },
-    ],
-    content: "وَلَوْ أَلْقَىٰ مَعَاذِيرَهُۥ",
-    contentSimple: "ولو القى معاذيره",
-  },
-  {
-    id: 5567,
-    number: 16,
-    suraNumber: 75,
-    suraName: "القلم",
-    pageNumber: 577,
-    coveredLines: [
-      {
-        lineId: 14,
-        width: 52,
-      },
-    ],
-    content: "لَا تُحَرِّكْ بِهِۦ لِسَانَكَ لِتَعْجَلَ بِهِۦٓ",
-    contentSimple: "لا تحرك به لسانك لتعجل به",
-  },
-  {
-    id: 5568,
-    number: 17,
-    suraNumber: 75,
-    suraName: "القلم",
-    pageNumber: 577,
-    coveredLines: [
-      {
-        lineId: 14,
-        width: 25,
-      },
-      {
-        lineId: 15,
-        width: 22,
-      },
-    ],
-    content: "إِنَّ عَلَيْنَا جَمْعَهُۥ وَقُرْءَانَهُۥ",
-    contentSimple: "ان علينا جمعه وقرانه",
-  },
-  {
-    id: 5569,
-    number: 18,
-    suraNumber: 75,
-    suraName: "القلم",
-    pageNumber: 577,
-    coveredLines: [
-      {
-        lineId: 15,
-        width: 40,
-      },
-    ],
-    content: "فَإِذَا قَرَأْنَـٰهُ فَٱتَّبِعْ قُرْءَانَهُۥ",
-    contentSimple: "فاذا قراناه فاتبع قرانه",
-  },
-  {
-    id: 5570,
-    number: 19,
-    suraNumber: 75,
-    suraName: "القلم",
-    pageNumber: 577,
-    coveredLines: [
-      {
-        lineId: 15,
-        width: 38,
-      },
-    ],
-    content: "ثُمَّ إِنَّ عَلَيْنَا بَيَانَهُۥ",
-    contentSimple: "ثم ان علينا بيانه",
-  },
-  {
-    id: 5571,
-    number: 20,
-    suraNumber: 75,
-    suraName: "القلم",
-    pageNumber: 578,
-    coveredLines: [
-      {
-        lineId: 1,
-        width: 36,
-      },
-    ],
-    content: "كَلَّا بَلْ تُحِبُّونَ ٱلْعَاجِلَةَ",
-    contentSimple: "كلا بل تحبون العاجلة",
-  },
-  {
-    id: 5572,
-    number: 21,
-    suraNumber: 75,
-    suraName: "القلم",
-    pageNumber: 578,
-    coveredLines: [
-      {
-        lineId: 1,
-        width: 29,
-      },
-    ],
-    content: "وَتَذَرُونَ ٱلْـَٔاخِرَةَ",
-    contentSimple: "وتذرون الاخرة",
-  },
-  {
-    id: 5573,
-    number: 22,
-    suraNumber: 75,
-    suraName: "القلم",
-    pageNumber: 578,
-    coveredLines: [
-      {
-        lineId: 1,
-        width: 35,
-      },
-    ],
-    content: "وُجُوهٌ يَوْمَئِذٍ نَّاضِرَةٌ",
-    contentSimple: "وجوه يومئذ ناضرة",
-  },
-  {
-    id: 5574,
-    number: 23,
-    suraNumber: 75,
-    suraName: "القلم",
-    pageNumber: 578,
-    coveredLines: [
-      {
-        lineId: 2,
-        width: 28,
-      },
-    ],
-    content: "إِلَىٰ رَبِّهَا نَاظِرَةٌ",
-    contentSimple: "الى ربها ناظرة",
-  },
-  {
-    id: 5575,
-    number: 24,
-    suraNumber: 75,
-    suraName: "القلم",
-    pageNumber: 578,
-    coveredLines: [
-      {
-        lineId: 2,
-        width: 34,
-      },
-    ],
-    content: "وَوُجُوهٌ يَوْمَئِذٍۭ بَاسِرَةٌ",
-    contentSimple: "ووجوه يومئذ باسرة",
-  },
-  {
-    id: 5576,
-    number: 25,
-    suraNumber: 75,
-    suraName: "القلم",
-    pageNumber: 578,
-    coveredLines: [
-      {
-        lineId: 2,
-        width: 38,
-      },
-    ],
-    content: "تَظُنُّ أَن يُفْعَلَ بِهَا فَاقِرَةٌ",
-    contentSimple: "تظن ان يفعل بها فاقرة",
-  },
-  {
-    id: 5577,
-    number: 26,
-    suraNumber: 75,
-    suraName: "القلم",
-    pageNumber: 578,
-    coveredLines: [
-      {
-        lineId: 3,
-        width: 35,
-      },
-    ],
-    content: "كَلَّآ إِذَا بَلَغَتِ ٱلتَّرَاقِىَ",
-    contentSimple: "كلا اذا بلغت التراقي",
-  },
-  {
-    id: 5578,
-    number: 27,
-    suraNumber: 75,
-    suraName: "القلم",
-    pageNumber: 578,
-    coveredLines: [
-      {
-        lineId: 3,
-        width: 26,
-      },
-    ],
-    content: "وَقِيلَ مَنْ ۜ رَاقٍ",
-    contentSimple: "وقيل من راق",
-  },
-  {
-    id: 5579,
-    number: 28,
-    suraNumber: 75,
-    suraName: "القلم",
-    pageNumber: 578,
-    coveredLines: [
-      {
-        lineId: 3,
-        width: 27,
-      },
-    ],
-    content: "وَظَنَّ أَنَّهُ ٱلْفِرَاقُ",
-    contentSimple: "وظن انه الفراق",
-  },
-  {
-    id: 5580,
-    number: 29,
-    suraNumber: 75,
-    suraName: "القلم",
-    pageNumber: 578,
-    coveredLines: [
-      {
-        lineId: 3,
-        width: 12,
-      },
-      {
-        lineId: 4,
-        width: 30,
-      },
-    ],
-    content: "وَٱلْتَفَّتِ ٱلسَّاقُ بِٱلسَّاقِ",
-    contentSimple: "والتفت الساق بالساق",
-  },
-  {
-    id: 5581,
-    number: 30,
-    suraNumber: 75,
-    suraName: "القلم",
-    pageNumber: 578,
-    coveredLines: [
-      {
-        lineId: 4,
-        width: 44,
-      },
-    ],
-    content: "إِلَىٰ رَبِّكَ يَوْمَئِذٍ ٱلْمَسَاقُ",
-    contentSimple: "الى ربك يومئذ المساق",
-  },
-  {
-    id: 5582,
-    number: 31,
-    suraNumber: 75,
-    suraName: "القلم",
-    pageNumber: 578,
-    coveredLines: [
-      {
-        lineId: 4,
-        width: 26,
-      },
-      {
-        lineId: 5,
-        width: 11,
-      },
-    ],
-    content: "فَلَا صَدَّقَ وَلَا صَلَّىٰ",
-    contentSimple: "فلا صدق ولا صلى",
-  },
-  {
-    id: 5583,
-    number: 32,
-    suraNumber: 75,
-    suraName: "القلم",
-    pageNumber: 578,
-    coveredLines: [
-      {
-        lineId: 5,
-        width: 33,
-      },
-    ],
-    content: "وَلَـٰكِن كَذَّبَ وَتَوَلَّىٰ",
-    contentSimple: "ولكن كذب وتولى",
-  },
-  {
-    id: 5584,
-    number: 33,
-    suraNumber: 75,
-    suraName: "القلم",
-    pageNumber: 578,
-    coveredLines: [
-      {
-        lineId: 5,
-        width: 42,
-      },
-    ],
-    content: "ثُمَّ ذَهَبَ إِلَىٰٓ أَهْلِهِۦ يَتَمَطَّىٰٓ",
-    contentSimple: "ثم ذهب الى اهله يتمطى",
-  },
-  {
-    id: 5585,
-    number: 34,
-    suraNumber: 75,
-    suraName: "القلم",
-    pageNumber: 578,
-    coveredLines: [
-      {
-        lineId: 5,
-        width: 14,
-      },
-      {
-        lineId: 6,
-        width: 18,
-      },
-    ],
-    content: "أَوْلَىٰ لَكَ فَأَوْلَىٰ",
-    contentSimple: "اولى لك فاولى",
-  },
-  {
-    id: 5586,
-    number: 35,
-    suraNumber: 75,
-    suraName: "القلم",
-    pageNumber: 578,
-    coveredLines: [
-      {
-        lineId: 6,
-        width: 31,
-      },
-    ],
-    content: "ثُمَّ أَوْلَىٰ لَكَ فَأَوْلَىٰٓ",
-    contentSimple: "ثم اولى لك فاولى",
-  },
-  {
-    id: 5587,
-    number: 36,
-    suraNumber: 75,
-    suraName: "القلم",
-    pageNumber: 578,
-    coveredLines: [
-      {
-        lineId: 6,
-        width: 51,
-      },
-    ],
-    content: "أَيَحْسَبُ ٱلْإِنسَـٰنُ أَن يُتْرَكَ سُدًى",
-    contentSimple: "ايحسب الانسان ان يترك سدى",
-  },
-  {
-    id: 5588,
-    number: 37,
-    suraNumber: 75,
-    suraName: "القلم",
-    pageNumber: 578,
-    coveredLines: [
-      {
-        lineId: 7,
-        width: 43,
-      },
-    ],
-    content: "أَلَمْ يَكُ نُطْفَةً مِّن مَّنِىٍّ يُمْنَىٰ",
-    contentSimple: "الم يك نطفة من مني يمنى",
-  },
-  {
-    id: 5589,
-    number: 38,
-    suraNumber: 75,
-    suraName: "القلم",
-    pageNumber: 578,
-    coveredLines: [
-      {
-        lineId: 7,
-        width: 42,
-      },
-    ],
-    content: "ثُمَّ كَانَ عَلَقَةً فَخَلَقَ فَسَوَّىٰ",
-    contentSimple: "ثم كان علقة فخلق فسوى",
-  },
-  {
-    id: 5590,
-    number: 39,
-    suraNumber: 75,
-    suraName: "القلم",
-    pageNumber: 578,
-    coveredLines: [
-      {
-        lineId: 7,
-        width: 15,
-      },
-      {
-        lineId: 8,
-        width: 42,
-      },
-    ],
-    content: "فَجَعَلَ مِنْهُ ٱلزَّوْجَيْنِ ٱلذَّكَرَ وَٱلْأُنثَىٰٓ",
-    contentSimple: "فجعل منه الزوجين الذكر والانثى",
-  },
-  {
-    id: 5591,
-    number: 40,
-    suraNumber: 75,
-    suraName: "القلم",
-    pageNumber: 578,
-    coveredLines: [
-      {
-        lineId: 8,
-        width: 58,
-      },
-    ],
-    content: "أَلَيْسَ ذَٰلِكَ بِقَـٰدِرٍ عَلَىٰٓ أَن يُحْـِۧىَ ٱلْمَوْتَىٰ",
-    contentSimple: "اليس ذلك بقادر على ان يحيي الموتى",
-  },
-  {
-    id: 5592,
-    number: 1,
-    suraNumber: 76,
-    suraName: "القلم",
-    pageNumber: 578,
-    coveredLines: [
-      {
-        lineId: 11,
-        width: 100,
-      },
-    ],
-    content: " هَلْ أَتَىٰ عَلَى ٱلْإِنسَـٰنِ حِينٌ مِّنَ ٱلدَّهْرِ لَمْ يَكُن شَيْـًٔا مَّذْكُورًا",
-    contentSimple: "هل اتى على الانسان حين من الدهر لم يكن شيئا مذكورا",
-  },
-  {
-    id: 5593,
-    number: 2,
-    suraNumber: 76,
-    suraName: "القلم",
-    pageNumber: 578,
-    coveredLines: [
-      {
-        lineId: 12,
-        width: 100,
-      },
-      {
-        lineId: 13,
-        width: 20,
-      },
-    ],
-    content: "إِنَّا خَلَقْنَا ٱلْإِنسَـٰنَ مِن نُّطْفَةٍ أَمْشَاجٍ نَّبْتَلِيهِ فَجَعَلْنَـٰهُ سَمِيعًۢا بَصِيرًا",
-    contentSimple: "انا خلقنا الانسان من نطفة امشاج نبتليه فجعلناه سميعا بصيرا",
-  },
-  {
-    id: 5594,
-    number: 3,
-    suraNumber: 76,
-    suraName: "القلم",
-    pageNumber: 578,
-    coveredLines: [
-      {
-        lineId: 13,
-        width: 80,
-      },
-    ],
-    content: "إِنَّا هَدَيْنَـٰهُ ٱلسَّبِيلَ إِمَّا شَاكِرًا وَإِمَّا كَفُورًا",
-    contentSimple: "انا هديناه السبيل اما شاكرا واما كفورا",
-  },
-  {
-    id: 5595,
-    number: 4,
-    suraNumber: 76,
-    suraName: "القلم",
-    pageNumber: 578,
-    coveredLines: [
-      {
-        lineId: 14,
-        width: 93,
-      },
-    ],
-    content: "إِنَّآ أَعْتَدْنَا لِلْكَـٰفِرِينَ سَلَـٰسِلَا۟ وَأَغْلَـٰلًا وَسَعِيرًا",
-    contentSimple: "انا اعتدنا للكافرين سلاسل واغلالا وسعيرا",
-  },
-  {
-    id: 5596,
-    number: 5,
-    suraNumber: 76,
-    suraName: "القلم",
-    pageNumber: 578,
-    coveredLines: [
-      {
-        lineId: 14,
-        width: 7,
-      },
-      {
-        lineId: 15,
-        width: 100,
-      },
-    ],
-    content: "إِنَّ ٱلْأَبْرَارَ يَشْرَبُونَ مِن كَأْسٍ كَانَ مِزَاجُهَا كَافُورًا",
-    contentSimple: "ان الابرار يشربون من كاس كان مزاجها كافورا",
-  },
-  {
-    id: 5597,
-    number: 6,
-    suraNumber: 76,
-    suraName: "القلم",
-    pageNumber: 579,
-    coveredLines: [
-      {
-        lineId: 1,
-        width: 69,
-      },
-    ],
-    content: "عَيْنًا يَشْرَبُ بِهَا عِبَادُ ٱللَّهِ يُفَجِّرُونَهَا تَفْجِيرًا",
-    contentSimple: "عينا يشرب بها عباد الله يفجرونها تفجيرا",
-  },
-  {
-    id: 5598,
-    number: 7,
-    suraNumber: 76,
-    suraName: "القلم",
-    pageNumber: 579,
-    coveredLines: [
-      {
-        lineId: 1,
-        width: 31,
-      },
-      {
-        lineId: 2,
-        width: 44,
-      },
-    ],
-    content: "يُوفُونَ بِٱلنَّذْرِ وَيَخَافُونَ يَوْمًا كَانَ شَرُّهُۥ مُسْتَطِيرًا",
-    contentSimple: "يوفون بالنذر ويخافون يوما كان شره مستطيرا",
-  },
-  {
-    id: 5599,
-    number: 8,
-    suraNumber: 76,
-    suraName: "القلم",
-    pageNumber: 579,
-    coveredLines: [
-      {
-        lineId: 2,
-        width: 56,
-      },
-      {
-        lineId: 3,
-        width: 29,
-      },
-    ],
-    content: "وَيُطْعِمُونَ ٱلطَّعَامَ عَلَىٰ حُبِّهِۦ مِسْكِينًا وَيَتِيمًا وَأَسِيرًا",
-    contentSimple: "ويطعمون الطعام على حبه مسكينا ويتيما واسيرا",
-  },
-  {
-    id: 5600,
-    number: 9,
-    suraNumber: 76,
-    suraName: "القلم",
-    pageNumber: 579,
-    coveredLines: [
-      {
-        lineId: 3,
-        width: 71,
-      },
-      {
-        lineId: 4,
-        width: 11,
-      },
-    ],
-    content: "إِنَّمَا نُطْعِمُكُمْ لِوَجْهِ ٱللَّهِ لَا نُرِيدُ مِنكُمْ جَزَآءً وَلَا شُكُورًا",
-    contentSimple: "انما نطعمكم لوجه الله لا نريد منكم جزاء ولا شكورا",
-  },
-  {
-    id: 5601,
-    number: 10,
-    suraNumber: 76,
-    suraName: "القلم",
-    pageNumber: 579,
-    coveredLines: [
-      {
-        lineId: 4,
-        width: 58,
-      },
-    ],
-    content: "إِنَّا نَخَافُ مِن رَّبِّنَا يَوْمًا عَبُوسًا قَمْطَرِيرًا",
-    contentSimple: "انا نخاف من ربنا يوما عبوسا قمطريرا",
-  },
-  {
-    id: 5602,
-    number: 11,
-    suraNumber: 76,
-    suraName: "القلم",
-    pageNumber: 579,
-    coveredLines: [
-      {
-        lineId: 4,
-        width: 31,
-      },
-      {
-        lineId: 5,
-        width: 51,
-      },
-    ],
-    content: "فَوَقَىٰهُمُ ٱللَّهُ شَرَّ ذَٰلِكَ ٱلْيَوْمِ وَلَقَّىٰهُمْ نَضْرَةً وَسُرُورًا",
-    contentSimple: "فوقاهم الله شر ذلك اليوم ولقاهم نضرة وسرورا",
-  },
-  {
-    id: 5603,
-    number: 12,
-    suraNumber: 76,
-    suraName: "القلم",
-    pageNumber: 579,
-    coveredLines: [
-      {
-        lineId: 5,
-        width: 49,
-      },
-      {
-        lineId: 6,
-        width: 11,
-      },
-    ],
-    content: "وَجَزَىٰهُم بِمَا صَبَرُوا۟ جَنَّةً وَحَرِيرًا",
-    contentSimple: "وجزاهم بما صبروا جنة وحريرا",
-  },
-  {
-    id: 5604,
-    number: 13,
-    suraNumber: 76,
-    suraName: "القلم",
-    pageNumber: 579,
-    coveredLines: [
-      {
-        lineId: 6,
-        width: 89,
-      },
-    ],
-    content: "مُّتَّكِـِٔينَ فِيهَا عَلَى ٱلْأَرَآئِكِ ۖ لَا يَرَوْنَ فِيهَا شَمْسًا وَلَا زَمْهَرِيرًا",
-    contentSimple: "متكئين فيها على الارائك لا يرون فيها شمسا ولا زمهريرا",
-  },
-  {
-    id: 5605,
-    number: 14,
-    suraNumber: 76,
-    suraName: "القلم",
-    pageNumber: 579,
-    coveredLines: [
-      {
-        lineId: 7,
-        width: 71,
-      },
-    ],
-    content: "وَدَانِيَةً عَلَيْهِمْ ظِلَـٰلُهَا وَذُلِّلَتْ قُطُوفُهَا تَذْلِيلًا",
-    contentSimple: "ودانية عليهم ظلالها وذللت قطوفها تذليلا",
-  },
-  {
-    id: 5606,
-    number: 15,
-    suraNumber: 76,
-    suraName: "القلم",
-    pageNumber: 579,
-    coveredLines: [
-      {
-        lineId: 7,
-        width: 29,
-      },
-      {
-        lineId: 8,
-        width: 51,
-      },
-    ],
-    content: "وَيُطَافُ عَلَيْهِم بِـَٔانِيَةٍ مِّن فِضَّةٍ وَأَكْوَابٍ كَانَتْ قَوَارِيرَا۠",
-    contentSimple: "ويطاف عليهم بانية من فضة واكواب كانت قواريرا",
-  },
-  {
-    id: 5607,
-    number: 16,
-    suraNumber: 76,
-    suraName: "القلم",
-    pageNumber: 579,
-    coveredLines: [
-      {
-        lineId: 8,
-        width: 49,
-      },
-    ],
-    content: "قَوَارِيرَا۟ مِن فِضَّةٍ قَدَّرُوهَا تَقْدِيرًا",
-    contentSimple: "قوارير من فضة قدروها تقديرا",
-  },
-  {
-    id: 5608,
-    number: 17,
-    suraNumber: 76,
-    suraName: "القلم",
-    pageNumber: 579,
-    coveredLines: [
-      {
-        lineId: 9,
-        width: 65,
-      },
-    ],
-    content: "وَيُسْقَوْنَ فِيهَا كَأْسًا كَانَ مِزَاجُهَا زَنجَبِيلًا",
-    contentSimple: "ويسقون فيها كاسا كان مزاجها زنجبيلا",
-  },
-  {
-    id: 5609,
-    number: 18,
-    suraNumber: 76,
-    suraName: "القلم",
-    pageNumber: 579,
-    coveredLines: [
-      {
-        lineId: 9,
-        width: 35,
-      },
-      {
-        lineId: 10,
-        width: 11,
-      },
-    ],
-    content: "عَيْنًا فِيهَا تُسَمَّىٰ سَلْسَبِيلًا",
-    contentSimple: "عينا فيها تسمى سلسبيلا",
-  },
-  {
-    id: 5610,
-    number: 19,
-    suraNumber: 76,
-    suraName: "الحاقة",
-    pageNumber: 579,
-    coveredLines: [
-      {
-        lineId: 10,
-        width: 89,
-      },
-      {
-        lineId: 11,
-        width: 11,
-      },
-    ],
-    content: "۞ وَيَطُوفُ عَلَيْهِمْ وِلْدَٰنٌ مُّخَلَّدُونَ إِذَا رَأَيْتَهُمْ حَسِبْتَهُمْ لُؤْلُؤًا مَّنثُورًا",
-    contentSimple: "ويطوف عليهم ولدان مخلدون اذا رايتهم حسبتهم لؤلؤا منثورا",
-  },
-  {
-    id: 5611,
-    number: 20,
-    suraNumber: 76,
-    suraName: "الحاقة",
-    pageNumber: 579,
-    coveredLines: [
-      {
-        lineId: 11,
-        width: 59,
-      },
-    ],
-    content: "وَإِذَا رَأَيْتَ ثَمَّ رَأَيْتَ نَعِيمًا وَمُلْكًا كَبِيرًا",
-    contentSimple: "واذا رايت ثم رايت نعيما وملكا كبيرا",
-  },
-  {
-    id: 5612,
-    number: 21,
-    suraNumber: 76,
-    suraName: "الحاقة",
-    pageNumber: 579,
-    coveredLines: [
-      {
-        lineId: 11,
-        width: 30,
-      },
-      {
-        lineId: 12,
-        width: 100,
-      },
-      {
-        lineId: 13,
-        width: 21,
-      },
-    ],
-    content: "عَـٰلِيَهُمْ ثِيَابُ سُندُسٍ خُضْرٌ وَإِسْتَبْرَقٌ ۖ وَحُلُّوٓا۟ أَسَاوِرَ مِن فِضَّةٍ وَسَقَىٰهُمْ رَبُّهُمْ شَرَابًا طَهُورًا",
-    contentSimple: "عاليهم ثياب سندس خضر واستبرق وحلوا اساور من فضة وسقاهم ربهم شرابا طهورا",
-  },
-  {
-    id: 5613,
-    number: 22,
-    suraNumber: 76,
-    suraName: "الحاقة",
-    pageNumber: 579,
-    coveredLines: [
-      {
-        lineId: 13,
-        width: 72,
-      },
-    ],
-    content: "إِنَّ هَـٰذَا كَانَ لَكُمْ جَزَآءً وَكَانَ سَعْيُكُم مَّشْكُورًا",
-    contentSimple: "ان هذا كان لكم جزاء وكان سعيكم مشكورا",
-  },
-  {
-    id: 5614,
-    number: 23,
-    suraNumber: 76,
-    suraName: "الحاقة",
-    pageNumber: 579,
-    coveredLines: [
-      {
-        lineId: 13,
-        width: 7,
-      },
-      {
-        lineId: 14,
-        width: 58,
-      },
-    ],
-    content: "إِنَّا نَحْنُ نَزَّلْنَا عَلَيْكَ ٱلْقُرْءَانَ تَنزِيلًا",
-    contentSimple: "انا نحن نزلنا عليك القران تنزيلا",
-  },
-  {
-    id: 5615,
-    number: 24,
-    suraNumber: 76,
-    suraName: "الحاقة",
-    pageNumber: 579,
-    coveredLines: [
-      {
-        lineId: 14,
-        width: 42,
-      },
-      {
-        lineId: 15,
-        width: 40,
-      },
-    ],
-    content: "فَٱصْبِرْ لِحُكْمِ رَبِّكَ وَلَا تُطِعْ مِنْهُمْ ءَاثِمًا أَوْ كَفُورًا",
-    contentSimple: "فاصبر لحكم ربك ولا تطع منهم اثما او كفورا",
-  },
-  {
-    id: 5616,
-    number: 25,
-    suraNumber: 76,
-    suraName: "الحاقة",
-    pageNumber: 579,
-    coveredLines: [
-      {
-        lineId: 15,
-        width: 60,
-      },
-    ],
-    content: "وَٱذْكُرِ ٱسْمَ رَبِّكَ بُكْرَةً وَأَصِيلًا",
-    contentSimple: "واذكر اسم ربك بكرة واصيلا",
-  },
-  {
-    id: 5617,
-    number: 26,
-    suraNumber: 76,
-    suraName: "الحاقة",
-    pageNumber: 580,
-    coveredLines: [
-      {
-        lineId: 1,
-        width: 87,
-      },
-    ],
-    content: "وَمِنَ ٱلَّيْلِ فَٱسْجُدْ لَهُۥ وَسَبِّحْهُ لَيْلًا طَوِيلًا",
-    contentSimple: "ومن الليل فاسجد له وسبحه ليلا طويلا",
-  },
-  {
-    id: 5618,
-    number: 27,
-    suraNumber: 76,
-    suraName: "الحاقة",
-    pageNumber: 580,
-    coveredLines: [
-      {
-        lineId: 1,
-        width: 13,
-      },
-      {
-        lineId: 2,
-        width: 90,
-      },
-    ],
-    content: "إِنَّ هَـٰٓؤُلَآءِ يُحِبُّونَ ٱلْعَاجِلَةَ وَيَذَرُونَ وَرَآءَهُمْ يَوْمًا ثَقِيلًا",
-    contentSimple: "ان هؤلاء يحبون العاجلة ويذرون وراءهم يوما ثقيلا",
-  },
-  {
-    id: 5619,
-    number: 28,
-    suraNumber: 76,
-    suraName: "الحاقة",
-    pageNumber: 580,
-    coveredLines: [
-      {
-        lineId: 2,
-        width: 10,
-      },
-      {
-        lineId: 3,
-        width: 100,
-      },
-      {
-        lineId: 4,
-        width: 11,
-      },
-    ],
-    content: "نَّحْنُ خَلَقْنَـٰهُمْ وَشَدَدْنَآ أَسْرَهُمْ ۖ وَإِذَا شِئْنَا بَدَّلْنَآ أَمْثَـٰلَهُمْ تَبْدِيلًا",
-    contentSimple: "نحن خلقناهم وشددنا اسرهم واذا شئنا بدلنا امثالهم تبديلا",
-  },
-  {
-    id: 5620,
-    number: 29,
-    suraNumber: 76,
-    suraName: "الحاقة",
-    pageNumber: 580,
-    coveredLines: [
-      {
-        lineId: 4,
-        width: 89,
-      },
-    ],
-    content: "إِنَّ هَـٰذِهِۦ تَذْكِرَةٌ ۖ فَمَن شَآءَ ٱتَّخَذَ إِلَىٰ رَبِّهِۦ سَبِيلًا",
-    contentSimple: "ان هذه تذكرة فمن شاء اتخذ الى ربه سبيلا",
-  },
-  {
-    id: 5621,
-    number: 30,
-    suraNumber: 76,
-    suraName: "الحاقة",
-    pageNumber: 580,
-    coveredLines: [
-      {
-        lineId: 5,
-        width: 100,
-      },
-    ],
-    content: "وَمَا تَشَآءُونَ إِلَّآ أَن يَشَآءَ ٱللَّهُ ۚ إِنَّ ٱللَّهَ كَانَ عَلِيمًا حَكِيمًا",
-    contentSimple: "وما تشاءون الا ان يشاء الله ان الله كان عليما حكيما",
-  },
-  {
-    id: 5622,
-    number: 31,
-    suraNumber: 76,
-    suraName: "الحاقة",
-    pageNumber: 580,
-    coveredLines: [
-      {
-        lineId: 6,
-        width: 100,
-      },
-    ],
-    content: "يُدْخِلُ مَن يَشَآءُ فِى رَحْمَتِهِۦ ۚ وَٱلظَّـٰلِمِينَ أَعَدَّ لَهُمْ عَذَابًا أَلِيمًۢا",
-    contentSimple: "يدخل من يشاء في رحمته والظالمين اعد لهم عذابا اليما",
-  },
-  {
-    id: 5623,
-    number: 1,
-    suraNumber: 77,
-    suraName: "الحاقة",
-    pageNumber: 580,
-    coveredLines: [
-      {
-        lineId: 9,
-        width: 34,
-      },
-    ],
-    content: " وَٱلْمُرْسَلَـٰتِ عُرْفًا",
-    contentSimple: "والمرسلات عرفا",
-  },
-  {
-    id: 5624,
-    number: 2,
-    suraNumber: 77,
-    suraName: "الحاقة",
-    pageNumber: 580,
-    coveredLines: [
-      {
-        lineId: 9,
-        width: 34,
-      },
-    ],
-    content: "فَٱلْعَـٰصِفَـٰتِ عَصْفًا",
-    contentSimple: "فالعاصفات عصفا",
-  },
-  {
-    id: 5625,
-    number: 3,
-    suraNumber: 77,
-    suraName: "الحاقة",
-    pageNumber: 580,
-    coveredLines: [
-      {
-        lineId: 9,
-        width: 32,
-      },
-    ],
-    content: "وَٱلنَّـٰشِرَٰتِ نَشْرًا",
-    contentSimple: "والناشرات نشرا",
-  },
-  {
-    id: 5626,
-    number: 4,
-    suraNumber: 77,
-    suraName: "الحاقة",
-    pageNumber: 580,
-    coveredLines: [
-      {
-        lineId: 10,
-        width: 31,
-      },
-    ],
-    content: "فَٱلْفَـٰرِقَـٰتِ فَرْقًا",
-    contentSimple: "فالفارقات فرقا",
-  },
-  {
-    id: 5627,
-    number: 5,
-    suraNumber: 77,
-    suraName: "الحاقة",
-    pageNumber: 580,
-    coveredLines: [
-      {
-        lineId: 10,
-        width: 31,
-      },
-    ],
-    content: "فَٱلْمُلْقِيَـٰتِ ذِكْرًا",
-    contentSimple: "فالملقيات ذكرا",
-  },
-  {
-    id: 5628,
-    number: 6,
-    suraNumber: 77,
-    suraName: "الحاقة",
-    pageNumber: 580,
-    coveredLines: [
-      {
-        lineId: 10,
-        width: 28,
-      },
-    ],
-    content: "عُذْرًا أَوْ نُذْرًا",
-    contentSimple: "عذرا او نذرا",
-  },
-  {
-    id: 5629,
-    number: 7,
-    suraNumber: 77,
-    suraName: "الحاقة",
-    pageNumber: 580,
-    coveredLines: [
-      {
-        lineId: 10,
-        width: 10,
-      },
-      {
-        lineId: 11,
-        width: 31,
-      },
-    ],
-    content: "إِنَّمَا تُوعَدُونَ لَوَٰقِعٌ",
-    contentSimple: "انما توعدون لواقع",
-  },
-  {
-    id: 5630,
-    number: 8,
-    suraNumber: 77,
-    suraName: "الحاقة",
-    pageNumber: 580,
-    coveredLines: [
-      {
-        lineId: 11,
-        width: 39,
-      },
-    ],
-    content: "فَإِذَا ٱلنُّجُومُ طُمِسَتْ",
-    contentSimple: "فاذا النجوم طمست",
-  },
-  {
-    id: 5631,
-    number: 9,
-    suraNumber: 77,
-    suraName: "الحاقة",
-    pageNumber: 580,
-    coveredLines: [
-      {
-        lineId: 11,
-        width: 30,
-      },
-      {
-        lineId: 12,
-        width: 11,
-      },
-    ],
-    content: "وَإِذَا ٱلسَّمَآءُ فُرِجَتْ",
-    contentSimple: "واذا السماء فرجت",
-  },
-  {
-    id: 5632,
-    number: 10,
-    suraNumber: 77,
-    suraName: "الحاقة",
-    pageNumber: 580,
-    coveredLines: [
-      {
-        lineId: 12,
-        width: 34,
-      },
-    ],
-    content: "وَإِذَا ٱلْجِبَالُ نُسِفَتْ",
-    contentSimple: "واذا الجبال نسفت",
-  },
-  {
-    id: 5633,
-    number: 11,
-    suraNumber: 77,
-    suraName: "الحاقة",
-    pageNumber: 580,
-    coveredLines: [
-      {
-        lineId: 12,
-        width: 32,
-      },
-    ],
-    content: "وَإِذَا ٱلرُّسُلُ أُقِّتَتْ",
-    contentSimple: "واذا الرسل اقتت",
-  },
-  {
-    id: 5634,
-    number: 12,
-    suraNumber: 77,
-    suraName: "الحاقة",
-    pageNumber: 580,
-    coveredLines: [
-      {
-        lineId: 12,
-        width: 23,
-      },
-      {
-        lineId: 13,
-        width: 11,
-      },
-    ],
-    content: "لِأَىِّ يَوْمٍ أُجِّلَتْ",
-    contentSimple: "لاي يوم اجلت",
-  },
-  {
-    id: 5635,
-    number: 13,
-    suraNumber: 77,
-    suraName: "الحاقة",
-    pageNumber: 580,
-    coveredLines: [
-      {
-        lineId: 13,
-        width: 27,
-      },
-    ],
-    content: "لِيَوْمِ ٱلْفَصْلِ",
-    contentSimple: "ليوم الفصل",
-  },
-  {
-    id: 5636,
-    number: 14,
-    suraNumber: 77,
-    suraName: "الحاقة",
-    pageNumber: 580,
-    coveredLines: [
-      {
-        lineId: 13,
-        width: 46,
-      },
-    ],
-    content: "وَمَآ أَدْرَىٰكَ مَا يَوْمُ ٱلْفَصْلِ",
-    contentSimple: "وما ادراك ما يوم الفصل",
-  },
-  {
-    id: 5637,
-    number: 15,
-    suraNumber: 77,
-    suraName: "الحاقة",
-    pageNumber: 580,
-    coveredLines: [
-      {
-        lineId: 13,
-        width: 16,
-      },
-      {
-        lineId: 14,
-        width: 28,
-      },
-    ],
-    content: "وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ",
-    contentSimple: "ويل يومئذ للمكذبين",
-  },
-  {
-    id: 5638,
-    number: 16,
-    suraNumber: 77,
-    suraName: "الحاقة",
-    pageNumber: 580,
-    coveredLines: [
-      {
-        lineId: 14,
-        width: 37,
-      },
-    ],
-    content: "أَلَمْ نُهْلِكِ ٱلْأَوَّلِينَ",
-    contentSimple: "الم نهلك الاولين",
-  },
-  {
-    id: 5639,
-    number: 17,
-    suraNumber: 77,
-    suraName: "الحاقة",
-    pageNumber: 580,
-    coveredLines: [
-      {
-        lineId: 14,
-        width: 35,
-      },
-      {
-        lineId: 15,
-        width: 11,
-      },
-    ],
-    content: "ثُمَّ نُتْبِعُهُمُ ٱلْـَٔاخِرِينَ",
-    contentSimple: "ثم نتبعهم الاخرين",
-  },
-  {
-    id: 5640,
-    number: 18,
-    suraNumber: 77,
-    suraName: "الحاقة",
-    pageNumber: 580,
-    coveredLines: [
-      {
-        lineId: 15,
-        width: 47,
-      },
-    ],
-    content: "كَذَٰلِكَ نَفْعَلُ بِٱلْمُجْرِمِينَ",
-    contentSimple: "كذلك نفعل بالمجرمين",
-  },
-  {
-    id: 5641,
-    number: 19,
-    suraNumber: 77,
-    suraName: "الحاقة",
-    pageNumber: 580,
-    coveredLines: [
-      {
-        lineId: 15,
-        width: 42,
-      },
-    ],
-    content: "وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ",
-    contentSimple: "ويل يومئذ للمكذبين",
-  },
-  {
-    id: 5642,
-    number: 20,
-    suraNumber: 77,
-    suraName: "الحاقة",
-    pageNumber: 581,
-    coveredLines: [
-      {
-        lineId: 1,
-        width: 46,
-      },
-    ],
-    content: "أَلَمْ نَخْلُقكُّم مِّن مَّآءٍ مَّهِينٍ",
-    contentSimple: "الم نخلقكم من ماء مهين",
-  },
-  {
-    id: 5643,
-    number: 21,
-    suraNumber: 77,
-    suraName: "الحاقة",
-    pageNumber: 581,
-    coveredLines: [
-      {
-        lineId: 1,
-        width: 41,
-      },
-    ],
-    content: "فَجَعَلْنَـٰهُ فِى قَرَارٍ مَّكِينٍ",
-    contentSimple: "فجعلناه في قرار مكين",
-  },
-  {
-    id: 5644,
-    number: 22,
-    suraNumber: 77,
-    suraName: "الحاقة",
-    pageNumber: 581,
-    coveredLines: [
-      {
-        lineId: 1,
-        width: 13,
-      },
-      {
-        lineId: 2,
-        width: 21,
-      },
-    ],
-    content: "إِلَىٰ قَدَرٍ مَّعْلُومٍ",
-    contentSimple: "الى قدر معلوم",
-  },
-  {
-    id: 5645,
-    number: 23,
-    suraNumber: 77,
-    suraName: "الحاقة",
-    pageNumber: 581,
-    coveredLines: [
-      {
-        lineId: 2,
-        width: 39,
-      },
-    ],
-    content: "فَقَدَرْنَا فَنِعْمَ ٱلْقَـٰدِرُونَ",
-    contentSimple: "فقدرنا فنعم القادرون",
-  },
-  {
-    id: 5646,
-    number: 24,
-    suraNumber: 77,
-    suraName: "الحاقة",
-    pageNumber: 581,
-    coveredLines: [
-      {
-        lineId: 2,
-        width: 40,
-      },
-    ],
-    content: "وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ",
-    contentSimple: "ويل يومئذ للمكذبين",
-  },
-  {
-    id: 5647,
-    number: 25,
-    suraNumber: 77,
-    suraName: "الحاقة",
-    pageNumber: 581,
-    coveredLines: [
-      {
-        lineId: 3,
-        width: 42,
-      },
-    ],
-    content: "أَلَمْ نَجْعَلِ ٱلْأَرْضَ كِفَاتًا",
-    contentSimple: "الم نجعل الارض كفاتا",
-  },
-  {
-    id: 5648,
-    number: 26,
-    suraNumber: 77,
-    suraName: "الحاقة",
-    pageNumber: 581,
-    coveredLines: [
-      {
-        lineId: 3,
-        width: 29,
-      },
-    ],
-    content: "أَحْيَآءً وَأَمْوَٰتًا",
-    contentSimple: "احياء وامواتا",
-  },
-  {
-    id: 5649,
-    number: 27,
-    suraNumber: 77,
-    suraName: "الحاقة",
-    pageNumber: 581,
-    coveredLines: [
-      {
-        lineId: 3,
-        width: 29,
-      },
-      {
-        lineId: 4,
-        width: 56,
-      },
-    ],
-    content: "وَجَعَلْنَا فِيهَا رَوَٰسِىَ شَـٰمِخَـٰتٍ وَأَسْقَيْنَـٰكُم مَّآءً فُرَاتًا",
-    contentSimple: "وجعلنا فيها رواسي شامخات واسقيناكم ماء فراتا",
-  },
-  {
-    id: 5650,
-    number: 28,
-    suraNumber: 77,
-    suraName: "الحاقة",
-    pageNumber: 581,
-    coveredLines: [
-      {
-        lineId: 4,
-        width: 44,
-      },
-    ],
-    content: "وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ",
-    contentSimple: "ويل يومئذ للمكذبين",
-  },
-  {
-    id: 5651,
-    number: 29,
-    suraNumber: 77,
-    suraName: "الحاقة",
-    pageNumber: 581,
-    coveredLines: [
-      {
-        lineId: 5,
-        width: 58,
-      },
-    ],
-    content: "ٱنطَلِقُوٓا۟ إِلَىٰ مَا كُنتُم بِهِۦ تُكَذِّبُونَ",
-    contentSimple: "انطلقوا الى ما كنتم به تكذبون",
-  },
-  {
-    id: 5652,
-    number: 30,
-    suraNumber: 77,
-    suraName: "الحاقة",
-    pageNumber: 581,
-    coveredLines: [
-      {
-        lineId: 5,
-        width: 42,
-      },
-      {
-        lineId: 6,
-        width: 20,
-      },
-    ],
-    content: "ٱنطَلِقُوٓا۟ إِلَىٰ ظِلٍّ ذِى ثَلَـٰثِ شُعَبٍ",
-    contentSimple: "انطلقوا الى ظل ذي ثلاث شعب",
-  },
-  {
-    id: 5653,
-    number: 31,
-    suraNumber: 77,
-    suraName: "الحاقة",
-    pageNumber: 581,
-    coveredLines: [
-      {
-        lineId: 6,
-        width: 50,
-      },
-    ],
-    content: "لَّا ظَلِيلٍ وَلَا يُغْنِى مِنَ ٱللَّهَبِ",
-    contentSimple: "لا ظليل ولا يغني من اللهب",
-  },
-  {
-    id: 5654,
-    number: 32,
-    suraNumber: 77,
-    suraName: "الحاقة",
-    pageNumber: 581,
-    coveredLines: [
-      {
-        lineId: 6,
-        width: 30,
-      },
-      {
-        lineId: 7,
-        width: 22,
-      },
-    ],
-    content: "إِنَّهَا تَرْمِى بِشَرَرٍ كَٱلْقَصْرِ",
-    contentSimple: "انها ترمي بشرر كالقصر",
-  },
-  {
-    id: 5655,
-    number: 33,
-    suraNumber: 77,
-    suraName: "الحاقة",
-    pageNumber: 581,
-    coveredLines: [
-      {
-        lineId: 7,
-        width: 36,
-      },
-    ],
-    content: "كَأَنَّهُۥ جِمَـٰلَتٌ صُفْرٌ",
-    contentSimple: "كانه جمالت صفر",
-  },
-  {
-    id: 5656,
-    number: 34,
-    suraNumber: 77,
-    suraName: "الحاقة",
-    pageNumber: 581,
-    coveredLines: [
-      {
-        lineId: 7,
-        width: 42,
-      },
-    ],
-    content: "وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ",
-    contentSimple: "ويل يومئذ للمكذبين",
-  },
-  {
-    id: 5657,
-    number: 35,
-    suraNumber: 77,
-    suraName: "الحاقة",
-    pageNumber: 581,
-    coveredLines: [
-      {
-        lineId: 8,
-        width: 39,
-      },
-    ],
-    content: "هَـٰذَا يَوْمُ لَا يَنطِقُونَ",
-    contentSimple: "هذا يوم لا ينطقون",
-  },
-  {
-    id: 5658,
-    number: 36,
-    suraNumber: 77,
-    suraName: "الحاقة",
-    pageNumber: 581,
-    coveredLines: [
-      {
-        lineId: 8,
-        width: 44,
-      },
-    ],
-    content: "وَلَا يُؤْذَنُ لَهُمْ فَيَعْتَذِرُونَ",
-    contentSimple: "ولا يؤذن لهم فيعتذرون",
-  },
-  {
-    id: 5659,
-    number: 37,
-    suraNumber: 77,
-    suraName: "الحاقة",
-    pageNumber: 581,
-    coveredLines: [
-      {
-        lineId: 8,
-        width: 17,
-      },
-      {
-        lineId: 9,
-        width: 26,
-      },
-    ],
-    content: "وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ",
-    contentSimple: "ويل يومئذ للمكذبين",
-  },
-  {
-    id: 5660,
-    number: 38,
-    suraNumber: 77,
-    suraName: "الحاقة",
-    pageNumber: 581,
-    coveredLines: [
-      {
-        lineId: 9,
-        width: 60,
-      },
-    ],
-    content: "هَـٰذَا يَوْمُ ٱلْفَصْلِ ۖ جَمَعْنَـٰكُمْ وَٱلْأَوَّلِينَ",
-    contentSimple: "هذا يوم الفصل جمعناكم والاولين",
-  },
-  {
-    id: 5661,
-    number: 39,
-    suraNumber: 77,
-    suraName: "الحاقة",
-    pageNumber: 581,
-    coveredLines: [
-      {
-        lineId: 9,
-        width: 14,
-      },
-      {
-        lineId: 10,
-        width: 37,
-      },
-    ],
-    content: "فَإِن كَانَ لَكُمْ كَيْدٌ فَكِيدُونِ",
-    contentSimple: "فان كان لكم كيد فكيدون",
-  },
-  {
-    id: 5662,
-    number: 40,
-    suraNumber: 77,
-    suraName: "المعارج",
-    pageNumber: 581,
-    coveredLines: [
-      {
-        lineId: 10,
-        width: 38,
-      },
-    ],
-    content: "وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ",
-    contentSimple: "ويل يومئذ للمكذبين",
-  },
-  {
-    id: 5663,
-    number: 41,
-    suraNumber: 77,
-    suraName: "المعارج",
-    pageNumber: 581,
-    coveredLines: [
-      {
-        lineId: 10,
-        width: 25,
-      },
-      {
-        lineId: 11,
-        width: 31,
-      },
-    ],
-    content: "إِنَّ ٱلْمُتَّقِينَ فِى ظِلَـٰلٍ وَعُيُونٍ",
-    contentSimple: "ان المتقين في ظلال وعيون",
-  },
-  {
-    id: 5664,
-    number: 42,
-    suraNumber: 77,
-    suraName: "المعارج",
-    pageNumber: 581,
-    coveredLines: [
-      {
-        lineId: 11,
-        width: 38,
-      },
-    ],
-    content: "وَفَوَٰكِهَ مِمَّا يَشْتَهُونَ",
-    contentSimple: "وفواكه مما يشتهون",
-  },
-  {
-    id: 5665,
-    number: 43,
-    suraNumber: 77,
-    suraName: "المعارج",
-    pageNumber: 581,
-    coveredLines: [
-      {
-        lineId: 11,
-        width: 31,
-      },
-      {
-        lineId: 12,
-        width: 36,
-      },
-    ],
-    content: "كُلُوا۟ وَٱشْرَبُوا۟ هَنِيٓـًٔۢا بِمَا كُنتُمْ تَعْمَلُونَ",
-    contentSimple: "كلوا واشربوا هنيئا بما كنتم تعملون",
-  },
-  {
-    id: 5666,
-    number: 44,
-    suraNumber: 77,
-    suraName: "المعارج",
-    pageNumber: 581,
-    coveredLines: [
-      {
-        lineId: 12,
-        width: 47,
-      },
-    ],
-    content: "إِنَّا كَذَٰلِكَ نَجْزِى ٱلْمُحْسِنِينَ",
-    contentSimple: "انا كذلك نجزي المحسنين",
-  },
-  {
-    id: 5667,
-    number: 45,
-    suraNumber: 77,
-    suraName: "المعارج",
-    pageNumber: 581,
-    coveredLines: [
-      {
-        lineId: 12,
-        width: 17,
-      },
-      {
-        lineId: 13,
-        width: 26,
-      },
-    ],
-    content: "وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ",
-    contentSimple: "ويل يومئذ للمكذبين",
-  },
-  {
-    id: 5668,
-    number: 46,
-    suraNumber: 77,
-    suraName: "المعارج",
-    pageNumber: 581,
-    coveredLines: [
-      {
-        lineId: 13,
-        width: 55,
-      },
-    ],
-    content: "كُلُوا۟ وَتَمَتَّعُوا۟ قَلِيلًا إِنَّكُم مُّجْرِمُونَ",
-    contentSimple: "كلوا وتمتعوا قليلا انكم مجرمون",
-  },
-  {
-    id: 5669,
-    number: 47,
-    suraNumber: 77,
-    suraName: "المعارج",
-    pageNumber: 581,
-    coveredLines: [
-      {
-        lineId: 13,
-        width: 19,
-      },
-      {
-        lineId: 14,
-        width: 31,
-      },
-    ],
-    content: "وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ",
-    contentSimple: "ويل يومئذ للمكذبين",
-  },
-  {
-    id: 5670,
-    number: 48,
-    suraNumber: 77,
-    suraName: "المعارج",
-    pageNumber: 581,
-    coveredLines: [
-      {
-        lineId: 14,
-        width: 59,
-      },
-    ],
-    content: "وَإِذَا قِيلَ لَهُمُ ٱرْكَعُوا۟ لَا يَرْكَعُونَ",
-    contentSimple: "واذا قيل لهم اركعوا لا يركعون",
-  },
-  {
-    id: 5671,
-    number: 49,
-    suraNumber: 77,
-    suraName: "المعارج",
-    pageNumber: 581,
-    coveredLines: [
-      {
-        lineId: 14,
-        width: 10,
-      },
-      {
-        lineId: 15,
-        width: 37,
-      },
-    ],
-    content: "وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ",
-    contentSimple: "ويل يومئذ للمكذبين",
-  },
-  {
-    id: 5672,
-    number: 50,
-    suraNumber: 77,
-    suraName: "المعارج",
-    pageNumber: 581,
-    coveredLines: [
-      {
-        lineId: 15,
-        width: 63,
-      },
-    ],
-    content: "فَبِأَىِّ حَدِيثٍۭ بَعْدَهُۥ يُؤْمِنُونَ",
-    contentSimple: "فباي حديث بعده يؤمنون",
-  },
-  {
     id: 5242,
     number: 1,
     suraNumber: 67,
@@ -114247,7 +112109,6 @@ const QURAN = [
     content: "وَمَا جَعَلْنَآ أَصْحَـٰبَ ٱلنَّارِ إِلَّا مَلَـٰٓئِكَةً ۙ وَمَا جَعَلْنَا عِدَّتَهُمْ إِلَّا فِتْنَةً لِّلَّذِينَ كَفَرُوا۟ لِيَسْتَيْقِنَ ٱلَّذِينَ أُوتُوا۟ ٱلْكِتَـٰبَ وَيَزْدَادَ ٱلَّذِينَ ءَامَنُوٓا۟ إِيمَـٰنًا ۙ وَلَا يَرْتَابَ ٱلَّذِينَ أُوتُوا۟ ٱلْكِتَـٰبَ وَٱلْمُؤْمِنُونَ ۙ وَلِيَقُولَ ٱلَّذِينَ فِى قُلُوبِهِم مَّرَضٌ وَٱلْكَـٰفِرُونَ مَاذَآ أَرَادَ ٱللَّهُ بِهَـٰذَا مَثَلًا ۚ كَذَٰلِكَ يُضِلُّ ٱللَّهُ مَن يَشَآءُ وَيَهْدِى مَن يَشَآءُ ۚ وَمَا يَعْلَمُ جُنُودَ رَبِّكَ إِلَّا هُوَ ۚ وَمَا هِىَ إِلَّا ذِكْرَىٰ لِلْبَشَرِ",
     contentSimple: "وما جعلنا اصحاب النار الا ملائكة وما جعلنا عدتهم الا فتنة للذين كفروا ليستيقن الذين اوتوا الكتاب ويزداد الذين امنوا ايمانا ولا يرتاب الذين اوتوا الكتاب والمؤمنون وليقول الذين في قلوبهم مرض والكافرون ماذا اراد الله بهذا مثلا كذلك يضل الله من يشاء ويهدي من يشاء وما يعلم جنود ربك الا هو وما هي الا ذكرى للبشر",
   },
-   
   {
     id: 5527,
     number: 32,
@@ -114511,6 +112372,2144 @@ const QURAN = [
     ],
     content: "حَتَّىٰٓ أَتَىٰنَا ٱلْيَقِينُ",
     contentSimple: "حتى اتانا اليقين",
+  },
+  {
+    id: 5543,
+    number: 48,
+    suraNumber: 74,
+    suraName: "الملك",
+    pageNumber: 577,
+    coveredLines: [
+      {
+        lineId: 1,
+        width: 54,
+      },
+    ],
+    content: "فَمَا تَنفَعُهُمْ شَفَـٰعَةُ ٱلشَّـٰفِعِينَ",
+    contentSimple: "فما تنفعهم شفاعة الشافعين",
+  },
+  {
+    id: 5544,
+    number: 49,
+    suraNumber: 74,
+    suraName: "المدثر",
+    pageNumber: 577,
+    coveredLines: [
+      {
+        lineId: 1,
+        width: 46,
+      },
+      {
+        lineId: 2,
+        width: 11,
+      },
+    ],
+    content: "فَمَا لَهُمْ عَنِ ٱلتَّذْكِرَةِ مُعْرِضِينَ",
+    contentSimple: "فما لهم عن التذكرة معرضين",
+  },
+  {
+    id: 5545,
+    number: 50,
+    suraNumber: 74,
+    suraName: "المدثر",
+    pageNumber: 577,
+    coveredLines: [
+      {
+        lineId: 2,
+        width: 41,
+      },
+    ],
+    content: "كَأَنَّهُمْ حُمُرٌ مُّسْتَنفِرَةٌ",
+    contentSimple: "كانهم حمر مستنفرة",
+  },
+  {
+    id: 5546,
+    number: 51,
+    suraNumber: 74,
+    suraName: "المدثر",
+    pageNumber: 577,
+    coveredLines: [
+      {
+        lineId: 2,
+        width: 33,
+      },
+    ],
+    content: "فَرَّتْ مِن قَسْوَرَةٍۭ",
+    contentSimple: "فرت من قسورة",
+  },
+  {
+    id: 5547,
+    number: 52,
+    suraNumber: 74,
+    suraName: "المدثر",
+    pageNumber: 577,
+    coveredLines: [
+      {
+        lineId: 2,
+        width: 15,
+      },
+      {
+        lineId: 3,
+        width: 67,
+      },
+    ],
+    content: "بَلْ يُرِيدُ كُلُّ ٱمْرِئٍ مِّنْهُمْ أَن يُؤْتَىٰ صُحُفًا مُّنَشَّرَةً",
+    contentSimple: "بل يريد كل امرئ منهم ان يؤتى صحفا منشرة",
+  },
+  {
+    id: 5548,
+    number: 53,
+    suraNumber: 74,
+    suraName: "المدثر",
+    pageNumber: 577,
+    coveredLines: [
+      {
+        lineId: 3,
+        width: 33,
+      },
+      {
+        lineId: 4,
+        width: 23,
+      },
+    ],
+    content: "كَلَّا ۖ بَل لَّا يَخَافُونَ ٱلْـَٔاخِرَةَ",
+    contentSimple: "كلا بل لا يخافون الاخرة",
+  },
+  {
+    id: 5549,
+    number: 54,
+    suraNumber: 74,
+    suraName: "المدثر",
+    pageNumber: 577,
+    coveredLines: [
+      {
+        lineId: 4,
+        width: 37,
+      },
+    ],
+    content: "كَلَّآ إِنَّهُۥ تَذْكِرَةٌ",
+    contentSimple: "كلا انه تذكرة",
+  },
+  {
+    id: 5550,
+    number: 55,
+    suraNumber: 74,
+    suraName: "المدثر",
+    pageNumber: 577,
+    coveredLines: [
+      {
+        lineId: 4,
+        width: 40,
+      },
+    ],
+    content: "فَمَن شَآءَ ذَكَرَهُۥ",
+    contentSimple: "فمن شاء ذكره",
+  },
+  {
+    id: 5551,
+    number: 56,
+    suraNumber: 74,
+    suraName: "المدثر",
+    pageNumber: 577,
+    coveredLines: [
+      {
+        lineId: 5,
+        width: 100,
+      },
+    ],
+    content: "وَمَا يَذْكُرُونَ إِلَّآ أَن يَشَآءَ ٱللَّهُ ۚ هُوَ أَهْلُ ٱلتَّقْوَىٰ وَأَهْلُ ٱلْمَغْفِرَةِ",
+    contentSimple: "وما يذكرون الا ان يشاء الله هو اهل التقوى واهل المغفرة",
+  },
+  {
+    id: 5552,
+    number: 1,
+    suraNumber: 75,
+    suraName: "الملك",
+    pageNumber: 577,
+    coveredLines: [
+      {
+        lineId: 8,
+        width: 41,
+      },
+    ],
+    content: " لَآ أُقْسِمُ بِيَوْمِ ٱلْقِيَـٰمَةِ",
+    contentSimple: "لا اقسم بيوم القيامة",
+  },
+  {
+    id: 5553,
+    number: 2,
+    suraNumber: 75,
+    suraName: "الملك",
+    pageNumber: 577,
+    coveredLines: [
+      {
+        lineId: 8,
+        width: 44,
+      },
+    ],
+    content: "وَلَآ أُقْسِمُ بِٱلنَّفْسِ ٱللَّوَّامَةِ",
+    contentSimple: "ولا اقسم بالنفس اللوامة",
+  },
+  {
+    id: 5554,
+    number: 3,
+    suraNumber: 75,
+    suraName: "الملك",
+    pageNumber: 577,
+    coveredLines: [
+      {
+        lineId: 8,
+        width: 15,
+      },
+      {
+        lineId: 9,
+        width: 44,
+      },
+    ],
+    content: "أَيَحْسَبُ ٱلْإِنسَـٰنُ أَلَّن نَّجْمَعَ عِظَامَهُۥ",
+    contentSimple: "ايحسب الانسان الن نجمع عظامه",
+  },
+  {
+    id: 5555,
+    number: 4,
+    suraNumber: 75,
+    suraName: "الملك",
+    pageNumber: 577,
+    coveredLines: [
+      {
+        lineId: 9,
+        width: 49,
+      },
+    ],
+    content: "بَلَىٰ قَـٰدِرِينَ عَلَىٰٓ أَن نُّسَوِّىَ بَنَانَهُۥ",
+    contentSimple: "بلى قادرين على ان نسوي بنانه",
+  },
+  {
+    id: 5556,
+    number: 5,
+    suraNumber: 75,
+    suraName: "الملك",
+    pageNumber: 577,
+    coveredLines: [
+      {
+        lineId: 9,
+        width: 7,
+      },
+      {
+        lineId: 10,
+        width: 45,
+      },
+    ],
+    content: "بَلْ يُرِيدُ ٱلْإِنسَـٰنُ لِيَفْجُرَ أَمَامَهُۥ",
+    contentSimple: "بل يريد الانسان ليفجر امامه",
+  },
+  {
+    id: 5557,
+    number: 6,
+    suraNumber: 75,
+    suraName: "الملك",
+    pageNumber: 577,
+    coveredLines: [
+      {
+        lineId: 10,
+        width: 35,
+      },
+    ],
+    content: "يَسْـَٔلُ أَيَّانَ يَوْمُ ٱلْقِيَـٰمَةِ",
+    contentSimple: "يسال ايان يوم القيامة",
+  },
+  {
+    id: 5558,
+    number: 7,
+    suraNumber: 75,
+    suraName: "القلم",
+    pageNumber: 577,
+    coveredLines: [
+      {
+        lineId: 10,
+        width: 20,
+      },
+      {
+        lineId: 11,
+        width: 10,
+      },
+    ],
+    content: "فَإِذَا بَرِقَ ٱلْبَصَرُ",
+    contentSimple: "فاذا برق البصر",
+  },
+  {
+    id: 5559,
+    number: 8,
+    suraNumber: 75,
+    suraName: "القلم",
+    pageNumber: 577,
+    coveredLines: [
+      {
+        lineId: 11,
+        width: 29,
+      },
+    ],
+    content: "وَخَسَفَ ٱلْقَمَرُ",
+    contentSimple: "وخسف القمر",
+  },
+  {
+    id: 5560,
+    number: 9,
+    suraNumber: 75,
+    suraName: "القلم",
+    pageNumber: 577,
+    coveredLines: [
+      {
+        lineId: 11,
+        width: 34,
+      },
+    ],
+    content: "وَجُمِعَ ٱلشَّمْسُ وَٱلْقَمَرُ",
+    contentSimple: "وجمع الشمس والقمر",
+  },
+  {
+    id: 5561,
+    number: 10,
+    suraNumber: 75,
+    suraName: "القلم",
+    pageNumber: 577,
+    coveredLines: [
+      {
+        lineId: 11,
+        width: 27,
+      },
+      {
+        lineId: 12,
+        width: 21,
+      },
+    ],
+    content: "يَقُولُ ٱلْإِنسَـٰنُ يَوْمَئِذٍ أَيْنَ ٱلْمَفَرُّ",
+    contentSimple: "يقول الانسان يومئذ اين المفر",
+  },
+  {
+    id: 5562,
+    number: 11,
+    suraNumber: 75,
+    suraName: "القلم",
+    pageNumber: 577,
+    coveredLines: [
+      {
+        lineId: 12,
+        width: 24,
+      },
+    ],
+    content: "كَلَّا لَا وَزَرَ",
+    contentSimple: "كلا لا وزر",
+  },
+  {
+    id: 5563,
+    number: 12,
+    suraNumber: 75,
+    suraName: "القلم",
+    pageNumber: 577,
+    coveredLines: [
+      {
+        lineId: 12,
+        width: 36,
+      },
+    ],
+    content: "إِلَىٰ رَبِّكَ يَوْمَئِذٍ ٱلْمُسْتَقَرُّ",
+    contentSimple: "الى ربك يومئذ المستقر",
+  },
+  {
+    id: 5564,
+    number: 13,
+    suraNumber: 75,
+    suraName: "القلم",
+    pageNumber: 577,
+    coveredLines: [
+      {
+        lineId: 12,
+        width: 19,
+      },
+      {
+        lineId: 13,
+        width: 38,
+      },
+    ],
+    content: "يُنَبَّؤُا۟ ٱلْإِنسَـٰنُ يَوْمَئِذٍۭ بِمَا قَدَّمَ وَأَخَّرَ",
+    contentSimple: "ينبا الانسان يومئذ بما قدم واخر",
+  },
+  {
+    id: 5565,
+    number: 14,
+    suraNumber: 75,
+    suraName: "القلم",
+    pageNumber: 577,
+    coveredLines: [
+      {
+        lineId: 13,
+        width: 47,
+      },
+    ],
+    content: "بَلِ ٱلْإِنسَـٰنُ عَلَىٰ نَفْسِهِۦ بَصِيرَةٌ",
+    contentSimple: "بل الانسان على نفسه بصيرة",
+  },
+  {
+    id: 5566,
+    number: 15,
+    suraNumber: 75,
+    suraName: "القلم",
+    pageNumber: 577,
+    coveredLines: [
+      {
+        lineId: 13,
+        width: 15,
+      },
+      {
+        lineId: 14,
+        width: 23,
+      },
+    ],
+    content: "وَلَوْ أَلْقَىٰ مَعَاذِيرَهُۥ",
+    contentSimple: "ولو القى معاذيره",
+  },
+  {
+    id: 5567,
+    number: 16,
+    suraNumber: 75,
+    suraName: "القلم",
+    pageNumber: 577,
+    coveredLines: [
+      {
+        lineId: 14,
+        width: 52,
+      },
+    ],
+    content: "لَا تُحَرِّكْ بِهِۦ لِسَانَكَ لِتَعْجَلَ بِهِۦٓ",
+    contentSimple: "لا تحرك به لسانك لتعجل به",
+  },
+  {
+    id: 5568,
+    number: 17,
+    suraNumber: 75,
+    suraName: "القلم",
+    pageNumber: 577,
+    coveredLines: [
+      {
+        lineId: 14,
+        width: 25,
+      },
+      {
+        lineId: 15,
+        width: 22,
+      },
+    ],
+    content: "إِنَّ عَلَيْنَا جَمْعَهُۥ وَقُرْءَانَهُۥ",
+    contentSimple: "ان علينا جمعه وقرانه",
+  },
+  {
+    id: 5569,
+    number: 18,
+    suraNumber: 75,
+    suraName: "القلم",
+    pageNumber: 577,
+    coveredLines: [
+      {
+        lineId: 15,
+        width: 40,
+      },
+    ],
+    content: "فَإِذَا قَرَأْنَـٰهُ فَٱتَّبِعْ قُرْءَانَهُۥ",
+    contentSimple: "فاذا قراناه فاتبع قرانه",
+  },
+  {
+    id: 5570,
+    number: 19,
+    suraNumber: 75,
+    suraName: "القلم",
+    pageNumber: 577,
+    coveredLines: [
+      {
+        lineId: 15,
+        width: 38,
+      },
+    ],
+    content: "ثُمَّ إِنَّ عَلَيْنَا بَيَانَهُۥ",
+    contentSimple: "ثم ان علينا بيانه",
+  },
+  {
+    id: 5571,
+    number: 20,
+    suraNumber: 75,
+    suraName: "القلم",
+    pageNumber: 578,
+    coveredLines: [
+      {
+        lineId: 1,
+        width: 36,
+      },
+    ],
+    content: "كَلَّا بَلْ تُحِبُّونَ ٱلْعَاجِلَةَ",
+    contentSimple: "كلا بل تحبون العاجلة",
+  },
+  {
+    id: 5572,
+    number: 21,
+    suraNumber: 75,
+    suraName: "القلم",
+    pageNumber: 578,
+    coveredLines: [
+      {
+        lineId: 1,
+        width: 29,
+      },
+    ],
+    content: "وَتَذَرُونَ ٱلْـَٔاخِرَةَ",
+    contentSimple: "وتذرون الاخرة",
+  },
+  {
+    id: 5573,
+    number: 22,
+    suraNumber: 75,
+    suraName: "القلم",
+    pageNumber: 578,
+    coveredLines: [
+      {
+        lineId: 1,
+        width: 35,
+      },
+    ],
+    content: "وُجُوهٌ يَوْمَئِذٍ نَّاضِرَةٌ",
+    contentSimple: "وجوه يومئذ ناضرة",
+  },
+  {
+    id: 5574,
+    number: 23,
+    suraNumber: 75,
+    suraName: "القلم",
+    pageNumber: 578,
+    coveredLines: [
+      {
+        lineId: 2,
+        width: 28,
+      },
+    ],
+    content: "إِلَىٰ رَبِّهَا نَاظِرَةٌ",
+    contentSimple: "الى ربها ناظرة",
+  },
+  {
+    id: 5575,
+    number: 24,
+    suraNumber: 75,
+    suraName: "القلم",
+    pageNumber: 578,
+    coveredLines: [
+      {
+        lineId: 2,
+        width: 34,
+      },
+    ],
+    content: "وَوُجُوهٌ يَوْمَئِذٍۭ بَاسِرَةٌ",
+    contentSimple: "ووجوه يومئذ باسرة",
+  },
+  {
+    id: 5576,
+    number: 25,
+    suraNumber: 75,
+    suraName: "القلم",
+    pageNumber: 578,
+    coveredLines: [
+      {
+        lineId: 2,
+        width: 38,
+      },
+    ],
+    content: "تَظُنُّ أَن يُفْعَلَ بِهَا فَاقِرَةٌ",
+    contentSimple: "تظن ان يفعل بها فاقرة",
+  },
+  {
+    id: 5577,
+    number: 26,
+    suraNumber: 75,
+    suraName: "القلم",
+    pageNumber: 578,
+    coveredLines: [
+      {
+        lineId: 3,
+        width: 35,
+      },
+    ],
+    content: "كَلَّآ إِذَا بَلَغَتِ ٱلتَّرَاقِىَ",
+    contentSimple: "كلا اذا بلغت التراقي",
+  },
+  {
+    id: 5578,
+    number: 27,
+    suraNumber: 75,
+    suraName: "القلم",
+    pageNumber: 578,
+    coveredLines: [
+      {
+        lineId: 3,
+        width: 26,
+      },
+    ],
+    content: "وَقِيلَ مَنْ ۜ رَاقٍ",
+    contentSimple: "وقيل من راق",
+  },
+  {
+    id: 5579,
+    number: 28,
+    suraNumber: 75,
+    suraName: "القلم",
+    pageNumber: 578,
+    coveredLines: [
+      {
+        lineId: 3,
+        width: 27,
+      },
+    ],
+    content: "وَظَنَّ أَنَّهُ ٱلْفِرَاقُ",
+    contentSimple: "وظن انه الفراق",
+  },
+  {
+    id: 5580,
+    number: 29,
+    suraNumber: 75,
+    suraName: "القلم",
+    pageNumber: 578,
+    coveredLines: [
+      {
+        lineId: 3,
+        width: 12,
+      },
+      {
+        lineId: 4,
+        width: 30,
+      },
+    ],
+    content: "وَٱلْتَفَّتِ ٱلسَّاقُ بِٱلسَّاقِ",
+    contentSimple: "والتفت الساق بالساق",
+  },
+  {
+    id: 5581,
+    number: 30,
+    suraNumber: 75,
+    suraName: "القلم",
+    pageNumber: 578,
+    coveredLines: [
+      {
+        lineId: 4,
+        width: 44,
+      },
+    ],
+    content: "إِلَىٰ رَبِّكَ يَوْمَئِذٍ ٱلْمَسَاقُ",
+    contentSimple: "الى ربك يومئذ المساق",
+  },
+  {
+    id: 5582,
+    number: 31,
+    suraNumber: 75,
+    suraName: "القلم",
+    pageNumber: 578,
+    coveredLines: [
+      {
+        lineId: 4,
+        width: 26,
+      },
+      {
+        lineId: 5,
+        width: 11,
+      },
+    ],
+    content: "فَلَا صَدَّقَ وَلَا صَلَّىٰ",
+    contentSimple: "فلا صدق ولا صلى",
+  },
+  {
+    id: 5583,
+    number: 32,
+    suraNumber: 75,
+    suraName: "القلم",
+    pageNumber: 578,
+    coveredLines: [
+      {
+        lineId: 5,
+        width: 33,
+      },
+    ],
+    content: "وَلَـٰكِن كَذَّبَ وَتَوَلَّىٰ",
+    contentSimple: "ولكن كذب وتولى",
+  },
+  {
+    id: 5584,
+    number: 33,
+    suraNumber: 75,
+    suraName: "القلم",
+    pageNumber: 578,
+    coveredLines: [
+      {
+        lineId: 5,
+        width: 42,
+      },
+    ],
+    content: "ثُمَّ ذَهَبَ إِلَىٰٓ أَهْلِهِۦ يَتَمَطَّىٰٓ",
+    contentSimple: "ثم ذهب الى اهله يتمطى",
+  },
+  {
+    id: 5585,
+    number: 34,
+    suraNumber: 75,
+    suraName: "القلم",
+    pageNumber: 578,
+    coveredLines: [
+      {
+        lineId: 5,
+        width: 14,
+      },
+      {
+        lineId: 6,
+        width: 18,
+      },
+    ],
+    content: "أَوْلَىٰ لَكَ فَأَوْلَىٰ",
+    contentSimple: "اولى لك فاولى",
+  },
+  {
+    id: 5586,
+    number: 35,
+    suraNumber: 75,
+    suraName: "القلم",
+    pageNumber: 578,
+    coveredLines: [
+      {
+        lineId: 6,
+        width: 31,
+      },
+    ],
+    content: "ثُمَّ أَوْلَىٰ لَكَ فَأَوْلَىٰٓ",
+    contentSimple: "ثم اولى لك فاولى",
+  },
+  {
+    id: 5587,
+    number: 36,
+    suraNumber: 75,
+    suraName: "القلم",
+    pageNumber: 578,
+    coveredLines: [
+      {
+        lineId: 6,
+        width: 51,
+      },
+    ],
+    content: "أَيَحْسَبُ ٱلْإِنسَـٰنُ أَن يُتْرَكَ سُدًى",
+    contentSimple: "ايحسب الانسان ان يترك سدى",
+  },
+  {
+    id: 5588,
+    number: 37,
+    suraNumber: 75,
+    suraName: "القلم",
+    pageNumber: 578,
+    coveredLines: [
+      {
+        lineId: 7,
+        width: 43,
+      },
+    ],
+    content: "أَلَمْ يَكُ نُطْفَةً مِّن مَّنِىٍّ يُمْنَىٰ",
+    contentSimple: "الم يك نطفة من مني يمنى",
+  },
+  {
+    id: 5589,
+    number: 38,
+    suraNumber: 75,
+    suraName: "القلم",
+    pageNumber: 578,
+    coveredLines: [
+      {
+        lineId: 7,
+        width: 42,
+      },
+    ],
+    content: "ثُمَّ كَانَ عَلَقَةً فَخَلَقَ فَسَوَّىٰ",
+    contentSimple: "ثم كان علقة فخلق فسوى",
+  },
+  {
+    id: 5590,
+    number: 39,
+    suraNumber: 75,
+    suraName: "القلم",
+    pageNumber: 578,
+    coveredLines: [
+      {
+        lineId: 7,
+        width: 15,
+      },
+      {
+        lineId: 8,
+        width: 42,
+      },
+    ],
+    content: "فَجَعَلَ مِنْهُ ٱلزَّوْجَيْنِ ٱلذَّكَرَ وَٱلْأُنثَىٰٓ",
+    contentSimple: "فجعل منه الزوجين الذكر والانثى",
+  },
+  {
+    id: 5591,
+    number: 40,
+    suraNumber: 75,
+    suraName: "القلم",
+    pageNumber: 578,
+    coveredLines: [
+      {
+        lineId: 8,
+        width: 58,
+      },
+    ],
+    content: "أَلَيْسَ ذَٰلِكَ بِقَـٰدِرٍ عَلَىٰٓ أَن يُحْـِۧىَ ٱلْمَوْتَىٰ",
+    contentSimple: "اليس ذلك بقادر على ان يحيي الموتى",
+  },
+  {
+    id: 5592,
+    number: 1,
+    suraNumber: 76,
+    suraName: "القلم",
+    pageNumber: 578,
+    coveredLines: [
+      {
+        lineId: 11,
+        width: 100,
+      },
+    ],
+    content: " هَلْ أَتَىٰ عَلَى ٱلْإِنسَـٰنِ حِينٌ مِّنَ ٱلدَّهْرِ لَمْ يَكُن شَيْـًٔا مَّذْكُورًا",
+    contentSimple: "هل اتى على الانسان حين من الدهر لم يكن شيئا مذكورا",
+  },
+  {
+    id: 5593,
+    number: 2,
+    suraNumber: 76,
+    suraName: "القلم",
+    pageNumber: 578,
+    coveredLines: [
+      {
+        lineId: 12,
+        width: 100,
+      },
+      {
+        lineId: 13,
+        width: 20,
+      },
+    ],
+    content: "إِنَّا خَلَقْنَا ٱلْإِنسَـٰنَ مِن نُّطْفَةٍ أَمْشَاجٍ نَّبْتَلِيهِ فَجَعَلْنَـٰهُ سَمِيعًۢا بَصِيرًا",
+    contentSimple: "انا خلقنا الانسان من نطفة امشاج نبتليه فجعلناه سميعا بصيرا",
+  },
+  {
+    id: 5594,
+    number: 3,
+    suraNumber: 76,
+    suraName: "القلم",
+    pageNumber: 578,
+    coveredLines: [
+      {
+        lineId: 13,
+        width: 80,
+      },
+    ],
+    content: "إِنَّا هَدَيْنَـٰهُ ٱلسَّبِيلَ إِمَّا شَاكِرًا وَإِمَّا كَفُورًا",
+    contentSimple: "انا هديناه السبيل اما شاكرا واما كفورا",
+  },
+  {
+    id: 5595,
+    number: 4,
+    suraNumber: 76,
+    suraName: "القلم",
+    pageNumber: 578,
+    coveredLines: [
+      {
+        lineId: 14,
+        width: 93,
+      },
+    ],
+    content: "إِنَّآ أَعْتَدْنَا لِلْكَـٰفِرِينَ سَلَـٰسِلَا۟ وَأَغْلَـٰلًا وَسَعِيرًا",
+    contentSimple: "انا اعتدنا للكافرين سلاسل واغلالا وسعيرا",
+  },
+  {
+    id: 5596,
+    number: 5,
+    suraNumber: 76,
+    suraName: "القلم",
+    pageNumber: 578,
+    coveredLines: [
+      {
+        lineId: 14,
+        width: 7,
+      },
+      {
+        lineId: 15,
+        width: 100,
+      },
+    ],
+    content: "إِنَّ ٱلْأَبْرَارَ يَشْرَبُونَ مِن كَأْسٍ كَانَ مِزَاجُهَا كَافُورًا",
+    contentSimple: "ان الابرار يشربون من كاس كان مزاجها كافورا",
+  },
+  {
+    id: 5597,
+    number: 6,
+    suraNumber: 76,
+    suraName: "القلم",
+    pageNumber: 579,
+    coveredLines: [
+      {
+        lineId: 1,
+        width: 69,
+      },
+    ],
+    content: "عَيْنًا يَشْرَبُ بِهَا عِبَادُ ٱللَّهِ يُفَجِّرُونَهَا تَفْجِيرًا",
+    contentSimple: "عينا يشرب بها عباد الله يفجرونها تفجيرا",
+  },
+  {
+    id: 5598,
+    number: 7,
+    suraNumber: 76,
+    suraName: "القلم",
+    pageNumber: 579,
+    coveredLines: [
+      {
+        lineId: 1,
+        width: 31,
+      },
+      {
+        lineId: 2,
+        width: 44,
+      },
+    ],
+    content: "يُوفُونَ بِٱلنَّذْرِ وَيَخَافُونَ يَوْمًا كَانَ شَرُّهُۥ مُسْتَطِيرًا",
+    contentSimple: "يوفون بالنذر ويخافون يوما كان شره مستطيرا",
+  },
+  {
+    id: 5599,
+    number: 8,
+    suraNumber: 76,
+    suraName: "القلم",
+    pageNumber: 579,
+    coveredLines: [
+      {
+        lineId: 2,
+        width: 56,
+      },
+      {
+        lineId: 3,
+        width: 29,
+      },
+    ],
+    content: "وَيُطْعِمُونَ ٱلطَّعَامَ عَلَىٰ حُبِّهِۦ مِسْكِينًا وَيَتِيمًا وَأَسِيرًا",
+    contentSimple: "ويطعمون الطعام على حبه مسكينا ويتيما واسيرا",
+  },
+  {
+    id: 5600,
+    number: 9,
+    suraNumber: 76,
+    suraName: "القلم",
+    pageNumber: 579,
+    coveredLines: [
+      {
+        lineId: 3,
+        width: 71,
+      },
+      {
+        lineId: 4,
+        width: 11,
+      },
+    ],
+    content: "إِنَّمَا نُطْعِمُكُمْ لِوَجْهِ ٱللَّهِ لَا نُرِيدُ مِنكُمْ جَزَآءً وَلَا شُكُورًا",
+    contentSimple: "انما نطعمكم لوجه الله لا نريد منكم جزاء ولا شكورا",
+  },
+  {
+    id: 5601,
+    number: 10,
+    suraNumber: 76,
+    suraName: "القلم",
+    pageNumber: 579,
+    coveredLines: [
+      {
+        lineId: 4,
+        width: 58,
+      },
+    ],
+    content: "إِنَّا نَخَافُ مِن رَّبِّنَا يَوْمًا عَبُوسًا قَمْطَرِيرًا",
+    contentSimple: "انا نخاف من ربنا يوما عبوسا قمطريرا",
+  },
+  {
+    id: 5602,
+    number: 11,
+    suraNumber: 76,
+    suraName: "القلم",
+    pageNumber: 579,
+    coveredLines: [
+      {
+        lineId: 4,
+        width: 31,
+      },
+      {
+        lineId: 5,
+        width: 51,
+      },
+    ],
+    content: "فَوَقَىٰهُمُ ٱللَّهُ شَرَّ ذَٰلِكَ ٱلْيَوْمِ وَلَقَّىٰهُمْ نَضْرَةً وَسُرُورًا",
+    contentSimple: "فوقاهم الله شر ذلك اليوم ولقاهم نضرة وسرورا",
+  },
+  {
+    id: 5603,
+    number: 12,
+    suraNumber: 76,
+    suraName: "القلم",
+    pageNumber: 579,
+    coveredLines: [
+      {
+        lineId: 5,
+        width: 49,
+      },
+      {
+        lineId: 6,
+        width: 11,
+      },
+    ],
+    content: "وَجَزَىٰهُم بِمَا صَبَرُوا۟ جَنَّةً وَحَرِيرًا",
+    contentSimple: "وجزاهم بما صبروا جنة وحريرا",
+  },
+  {
+    id: 5604,
+    number: 13,
+    suraNumber: 76,
+    suraName: "القلم",
+    pageNumber: 579,
+    coveredLines: [
+      {
+        lineId: 6,
+        width: 89,
+      },
+    ],
+    content: "مُّتَّكِـِٔينَ فِيهَا عَلَى ٱلْأَرَآئِكِ ۖ لَا يَرَوْنَ فِيهَا شَمْسًا وَلَا زَمْهَرِيرًا",
+    contentSimple: "متكئين فيها على الارائك لا يرون فيها شمسا ولا زمهريرا",
+  },
+  {
+    id: 5605,
+    number: 14,
+    suraNumber: 76,
+    suraName: "القلم",
+    pageNumber: 579,
+    coveredLines: [
+      {
+        lineId: 7,
+        width: 71,
+      },
+    ],
+    content: "وَدَانِيَةً عَلَيْهِمْ ظِلَـٰلُهَا وَذُلِّلَتْ قُطُوفُهَا تَذْلِيلًا",
+    contentSimple: "ودانية عليهم ظلالها وذللت قطوفها تذليلا",
+  },
+  {
+    id: 5606,
+    number: 15,
+    suraNumber: 76,
+    suraName: "القلم",
+    pageNumber: 579,
+    coveredLines: [
+      {
+        lineId: 7,
+        width: 29,
+      },
+      {
+        lineId: 8,
+        width: 51,
+      },
+    ],
+    content: "وَيُطَافُ عَلَيْهِم بِـَٔانِيَةٍ مِّن فِضَّةٍ وَأَكْوَابٍ كَانَتْ قَوَارِيرَا۠",
+    contentSimple: "ويطاف عليهم بانية من فضة واكواب كانت قواريرا",
+  },
+  {
+    id: 5607,
+    number: 16,
+    suraNumber: 76,
+    suraName: "القلم",
+    pageNumber: 579,
+    coveredLines: [
+      {
+        lineId: 8,
+        width: 49,
+      },
+    ],
+    content: "قَوَارِيرَا۟ مِن فِضَّةٍ قَدَّرُوهَا تَقْدِيرًا",
+    contentSimple: "قوارير من فضة قدروها تقديرا",
+  },
+  {
+    id: 5608,
+    number: 17,
+    suraNumber: 76,
+    suraName: "القلم",
+    pageNumber: 579,
+    coveredLines: [
+      {
+        lineId: 9,
+        width: 65,
+      },
+    ],
+    content: "وَيُسْقَوْنَ فِيهَا كَأْسًا كَانَ مِزَاجُهَا زَنجَبِيلًا",
+    contentSimple: "ويسقون فيها كاسا كان مزاجها زنجبيلا",
+  },
+  {
+    id: 5609,
+    number: 18,
+    suraNumber: 76,
+    suraName: "القلم",
+    pageNumber: 579,
+    coveredLines: [
+      {
+        lineId: 9,
+        width: 35,
+      },
+      {
+        lineId: 10,
+        width: 11,
+      },
+    ],
+    content: "عَيْنًا فِيهَا تُسَمَّىٰ سَلْسَبِيلًا",
+    contentSimple: "عينا فيها تسمى سلسبيلا",
+  },
+  {
+    id: 5610,
+    number: 19,
+    suraNumber: 76,
+    suraName: "الحاقة",
+    pageNumber: 579,
+    coveredLines: [
+      {
+        lineId: 10,
+        width: 89,
+      },
+      {
+        lineId: 11,
+        width: 11,
+      },
+    ],
+    content: "۞ وَيَطُوفُ عَلَيْهِمْ وِلْدَٰنٌ مُّخَلَّدُونَ إِذَا رَأَيْتَهُمْ حَسِبْتَهُمْ لُؤْلُؤًا مَّنثُورًا",
+    contentSimple: "ويطوف عليهم ولدان مخلدون اذا رايتهم حسبتهم لؤلؤا منثورا",
+  },
+  {
+    id: 5611,
+    number: 20,
+    suraNumber: 76,
+    suraName: "الحاقة",
+    pageNumber: 579,
+    coveredLines: [
+      {
+        lineId: 11,
+        width: 59,
+      },
+    ],
+    content: "وَإِذَا رَأَيْتَ ثَمَّ رَأَيْتَ نَعِيمًا وَمُلْكًا كَبِيرًا",
+    contentSimple: "واذا رايت ثم رايت نعيما وملكا كبيرا",
+  },
+  {
+    id: 5612,
+    number: 21,
+    suraNumber: 76,
+    suraName: "الحاقة",
+    pageNumber: 579,
+    coveredLines: [
+      {
+        lineId: 11,
+        width: 30,
+      },
+      {
+        lineId: 12,
+        width: 100,
+      },
+      {
+        lineId: 13,
+        width: 21,
+      },
+    ],
+    content: "عَـٰلِيَهُمْ ثِيَابُ سُندُسٍ خُضْرٌ وَإِسْتَبْرَقٌ ۖ وَحُلُّوٓا۟ أَسَاوِرَ مِن فِضَّةٍ وَسَقَىٰهُمْ رَبُّهُمْ شَرَابًا طَهُورًا",
+    contentSimple: "عاليهم ثياب سندس خضر واستبرق وحلوا اساور من فضة وسقاهم ربهم شرابا طهورا",
+  },
+  {
+    id: 5613,
+    number: 22,
+    suraNumber: 76,
+    suraName: "الحاقة",
+    pageNumber: 579,
+    coveredLines: [
+      {
+        lineId: 13,
+        width: 72,
+      },
+    ],
+    content: "إِنَّ هَـٰذَا كَانَ لَكُمْ جَزَآءً وَكَانَ سَعْيُكُم مَّشْكُورًا",
+    contentSimple: "ان هذا كان لكم جزاء وكان سعيكم مشكورا",
+  },
+  {
+    id: 5614,
+    number: 23,
+    suraNumber: 76,
+    suraName: "الحاقة",
+    pageNumber: 579,
+    coveredLines: [
+      {
+        lineId: 13,
+        width: 7,
+      },
+      {
+        lineId: 14,
+        width: 58,
+      },
+    ],
+    content: "إِنَّا نَحْنُ نَزَّلْنَا عَلَيْكَ ٱلْقُرْءَانَ تَنزِيلًا",
+    contentSimple: "انا نحن نزلنا عليك القران تنزيلا",
+  },
+  {
+    id: 5615,
+    number: 24,
+    suraNumber: 76,
+    suraName: "الحاقة",
+    pageNumber: 579,
+    coveredLines: [
+      {
+        lineId: 14,
+        width: 42,
+      },
+      {
+        lineId: 15,
+        width: 40,
+      },
+    ],
+    content: "فَٱصْبِرْ لِحُكْمِ رَبِّكَ وَلَا تُطِعْ مِنْهُمْ ءَاثِمًا أَوْ كَفُورًا",
+    contentSimple: "فاصبر لحكم ربك ولا تطع منهم اثما او كفورا",
+  },
+  {
+    id: 5616,
+    number: 25,
+    suraNumber: 76,
+    suraName: "الحاقة",
+    pageNumber: 579,
+    coveredLines: [
+      {
+        lineId: 15,
+        width: 60,
+      },
+    ],
+    content: "وَٱذْكُرِ ٱسْمَ رَبِّكَ بُكْرَةً وَأَصِيلًا",
+    contentSimple: "واذكر اسم ربك بكرة واصيلا",
+  },
+  {
+    id: 5617,
+    number: 26,
+    suraNumber: 76,
+    suraName: "الحاقة",
+    pageNumber: 580,
+    coveredLines: [
+      {
+        lineId: 1,
+        width: 87,
+      },
+    ],
+    content: "وَمِنَ ٱلَّيْلِ فَٱسْجُدْ لَهُۥ وَسَبِّحْهُ لَيْلًا طَوِيلًا",
+    contentSimple: "ومن الليل فاسجد له وسبحه ليلا طويلا",
+  },
+  {
+    id: 5618,
+    number: 27,
+    suraNumber: 76,
+    suraName: "الحاقة",
+    pageNumber: 580,
+    coveredLines: [
+      {
+        lineId: 1,
+        width: 13,
+      },
+      {
+        lineId: 2,
+        width: 90,
+      },
+    ],
+    content: "إِنَّ هَـٰٓؤُلَآءِ يُحِبُّونَ ٱلْعَاجِلَةَ وَيَذَرُونَ وَرَآءَهُمْ يَوْمًا ثَقِيلًا",
+    contentSimple: "ان هؤلاء يحبون العاجلة ويذرون وراءهم يوما ثقيلا",
+  },
+  {
+    id: 5619,
+    number: 28,
+    suraNumber: 76,
+    suraName: "الحاقة",
+    pageNumber: 580,
+    coveredLines: [
+      {
+        lineId: 2,
+        width: 10,
+      },
+      {
+        lineId: 3,
+        width: 100,
+      },
+      {
+        lineId: 4,
+        width: 11,
+      },
+    ],
+    content: "نَّحْنُ خَلَقْنَـٰهُمْ وَشَدَدْنَآ أَسْرَهُمْ ۖ وَإِذَا شِئْنَا بَدَّلْنَآ أَمْثَـٰلَهُمْ تَبْدِيلًا",
+    contentSimple: "نحن خلقناهم وشددنا اسرهم واذا شئنا بدلنا امثالهم تبديلا",
+  },
+  {
+    id: 5620,
+    number: 29,
+    suraNumber: 76,
+    suraName: "الحاقة",
+    pageNumber: 580,
+    coveredLines: [
+      {
+        lineId: 4,
+        width: 89,
+      },
+    ],
+    content: "إِنَّ هَـٰذِهِۦ تَذْكِرَةٌ ۖ فَمَن شَآءَ ٱتَّخَذَ إِلَىٰ رَبِّهِۦ سَبِيلًا",
+    contentSimple: "ان هذه تذكرة فمن شاء اتخذ الى ربه سبيلا",
+  },
+  {
+    id: 5621,
+    number: 30,
+    suraNumber: 76,
+    suraName: "الحاقة",
+    pageNumber: 580,
+    coveredLines: [
+      {
+        lineId: 5,
+        width: 100,
+      },
+    ],
+    content: "وَمَا تَشَآءُونَ إِلَّآ أَن يَشَآءَ ٱللَّهُ ۚ إِنَّ ٱللَّهَ كَانَ عَلِيمًا حَكِيمًا",
+    contentSimple: "وما تشاءون الا ان يشاء الله ان الله كان عليما حكيما",
+  },
+  {
+    id: 5622,
+    number: 31,
+    suraNumber: 76,
+    suraName: "الحاقة",
+    pageNumber: 580,
+    coveredLines: [
+      {
+        lineId: 6,
+        width: 100,
+      },
+    ],
+    content: "يُدْخِلُ مَن يَشَآءُ فِى رَحْمَتِهِۦ ۚ وَٱلظَّـٰلِمِينَ أَعَدَّ لَهُمْ عَذَابًا أَلِيمًۢا",
+    contentSimple: "يدخل من يشاء في رحمته والظالمين اعد لهم عذابا اليما",
+  },
+  {
+    id: 5623,
+    number: 1,
+    suraNumber: 77,
+    suraName: "الحاقة",
+    pageNumber: 580,
+    coveredLines: [
+      {
+        lineId: 9,
+        width: 34,
+      },
+    ],
+    content: " وَٱلْمُرْسَلَـٰتِ عُرْفًا",
+    contentSimple: "والمرسلات عرفا",
+  },
+  {
+    id: 5624,
+    number: 2,
+    suraNumber: 77,
+    suraName: "الحاقة",
+    pageNumber: 580,
+    coveredLines: [
+      {
+        lineId: 9,
+        width: 34,
+      },
+    ],
+    content: "فَٱلْعَـٰصِفَـٰتِ عَصْفًا",
+    contentSimple: "فالعاصفات عصفا",
+  },
+  {
+    id: 5625,
+    number: 3,
+    suraNumber: 77,
+    suraName: "الحاقة",
+    pageNumber: 580,
+    coveredLines: [
+      {
+        lineId: 9,
+        width: 32,
+      },
+    ],
+    content: "وَٱلنَّـٰشِرَٰتِ نَشْرًا",
+    contentSimple: "والناشرات نشرا",
+  },
+  {
+    id: 5626,
+    number: 4,
+    suraNumber: 77,
+    suraName: "الحاقة",
+    pageNumber: 580,
+    coveredLines: [
+      {
+        lineId: 10,
+        width: 31,
+      },
+    ],
+    content: "فَٱلْفَـٰرِقَـٰتِ فَرْقًا",
+    contentSimple: "فالفارقات فرقا",
+  },
+  {
+    id: 5627,
+    number: 5,
+    suraNumber: 77,
+    suraName: "الحاقة",
+    pageNumber: 580,
+    coveredLines: [
+      {
+        lineId: 10,
+        width: 31,
+      },
+    ],
+    content: "فَٱلْمُلْقِيَـٰتِ ذِكْرًا",
+    contentSimple: "فالملقيات ذكرا",
+  },
+  {
+    id: 5628,
+    number: 6,
+    suraNumber: 77,
+    suraName: "الحاقة",
+    pageNumber: 580,
+    coveredLines: [
+      {
+        lineId: 10,
+        width: 28,
+      },
+    ],
+    content: "عُذْرًا أَوْ نُذْرًا",
+    contentSimple: "عذرا او نذرا",
+  },
+  {
+    id: 5629,
+    number: 7,
+    suraNumber: 77,
+    suraName: "الحاقة",
+    pageNumber: 580,
+    coveredLines: [
+      {
+        lineId: 10,
+        width: 10,
+      },
+      {
+        lineId: 11,
+        width: 31,
+      },
+    ],
+    content: "إِنَّمَا تُوعَدُونَ لَوَٰقِعٌ",
+    contentSimple: "انما توعدون لواقع",
+  },
+  {
+    id: 5630,
+    number: 8,
+    suraNumber: 77,
+    suraName: "الحاقة",
+    pageNumber: 580,
+    coveredLines: [
+      {
+        lineId: 11,
+        width: 39,
+      },
+    ],
+    content: "فَإِذَا ٱلنُّجُومُ طُمِسَتْ",
+    contentSimple: "فاذا النجوم طمست",
+  },
+  {
+    id: 5631,
+    number: 9,
+    suraNumber: 77,
+    suraName: "الحاقة",
+    pageNumber: 580,
+    coveredLines: [
+      {
+        lineId: 11,
+        width: 30,
+      },
+      {
+        lineId: 12,
+        width: 11,
+      },
+    ],
+    content: "وَإِذَا ٱلسَّمَآءُ فُرِجَتْ",
+    contentSimple: "واذا السماء فرجت",
+  },
+  {
+    id: 5632,
+    number: 10,
+    suraNumber: 77,
+    suraName: "الحاقة",
+    pageNumber: 580,
+    coveredLines: [
+      {
+        lineId: 12,
+        width: 34,
+      },
+    ],
+    content: "وَإِذَا ٱلْجِبَالُ نُسِفَتْ",
+    contentSimple: "واذا الجبال نسفت",
+  },
+  {
+    id: 5633,
+    number: 11,
+    suraNumber: 77,
+    suraName: "الحاقة",
+    pageNumber: 580,
+    coveredLines: [
+      {
+        lineId: 12,
+        width: 32,
+      },
+    ],
+    content: "وَإِذَا ٱلرُّسُلُ أُقِّتَتْ",
+    contentSimple: "واذا الرسل اقتت",
+  },
+  {
+    id: 5634,
+    number: 12,
+    suraNumber: 77,
+    suraName: "الحاقة",
+    pageNumber: 580,
+    coveredLines: [
+      {
+        lineId: 12,
+        width: 23,
+      },
+      {
+        lineId: 13,
+        width: 11,
+      },
+    ],
+    content: "لِأَىِّ يَوْمٍ أُجِّلَتْ",
+    contentSimple: "لاي يوم اجلت",
+  },
+  {
+    id: 5635,
+    number: 13,
+    suraNumber: 77,
+    suraName: "الحاقة",
+    pageNumber: 580,
+    coveredLines: [
+      {
+        lineId: 13,
+        width: 27,
+      },
+    ],
+    content: "لِيَوْمِ ٱلْفَصْلِ",
+    contentSimple: "ليوم الفصل",
+  },
+  {
+    id: 5636,
+    number: 14,
+    suraNumber: 77,
+    suraName: "الحاقة",
+    pageNumber: 580,
+    coveredLines: [
+      {
+        lineId: 13,
+        width: 46,
+      },
+    ],
+    content: "وَمَآ أَدْرَىٰكَ مَا يَوْمُ ٱلْفَصْلِ",
+    contentSimple: "وما ادراك ما يوم الفصل",
+  },
+  {
+    id: 5637,
+    number: 15,
+    suraNumber: 77,
+    suraName: "الحاقة",
+    pageNumber: 580,
+    coveredLines: [
+      {
+        lineId: 13,
+        width: 16,
+      },
+      {
+        lineId: 14,
+        width: 28,
+      },
+    ],
+    content: "وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ",
+    contentSimple: "ويل يومئذ للمكذبين",
+  },
+  {
+    id: 5638,
+    number: 16,
+    suraNumber: 77,
+    suraName: "الحاقة",
+    pageNumber: 580,
+    coveredLines: [
+      {
+        lineId: 14,
+        width: 37,
+      },
+    ],
+    content: "أَلَمْ نُهْلِكِ ٱلْأَوَّلِينَ",
+    contentSimple: "الم نهلك الاولين",
+  },
+  {
+    id: 5639,
+    number: 17,
+    suraNumber: 77,
+    suraName: "الحاقة",
+    pageNumber: 580,
+    coveredLines: [
+      {
+        lineId: 14,
+        width: 35,
+      },
+      {
+        lineId: 15,
+        width: 11,
+      },
+    ],
+    content: "ثُمَّ نُتْبِعُهُمُ ٱلْـَٔاخِرِينَ",
+    contentSimple: "ثم نتبعهم الاخرين",
+  },
+  {
+    id: 5640,
+    number: 18,
+    suraNumber: 77,
+    suraName: "الحاقة",
+    pageNumber: 580,
+    coveredLines: [
+      {
+        lineId: 15,
+        width: 47,
+      },
+    ],
+    content: "كَذَٰلِكَ نَفْعَلُ بِٱلْمُجْرِمِينَ",
+    contentSimple: "كذلك نفعل بالمجرمين",
+  },
+  {
+    id: 5641,
+    number: 19,
+    suraNumber: 77,
+    suraName: "الحاقة",
+    pageNumber: 580,
+    coveredLines: [
+      {
+        lineId: 15,
+        width: 42,
+      },
+    ],
+    content: "وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ",
+    contentSimple: "ويل يومئذ للمكذبين",
+  },
+  {
+    id: 5642,
+    number: 20,
+    suraNumber: 77,
+    suraName: "الحاقة",
+    pageNumber: 581,
+    coveredLines: [
+      {
+        lineId: 1,
+        width: 46,
+      },
+    ],
+    content: "أَلَمْ نَخْلُقكُّم مِّن مَّآءٍ مَّهِينٍ",
+    contentSimple: "الم نخلقكم من ماء مهين",
+  },
+  {
+    id: 5643,
+    number: 21,
+    suraNumber: 77,
+    suraName: "الحاقة",
+    pageNumber: 581,
+    coveredLines: [
+      {
+        lineId: 1,
+        width: 41,
+      },
+    ],
+    content: "فَجَعَلْنَـٰهُ فِى قَرَارٍ مَّكِينٍ",
+    contentSimple: "فجعلناه في قرار مكين",
+  },
+  {
+    id: 5644,
+    number: 22,
+    suraNumber: 77,
+    suraName: "الحاقة",
+    pageNumber: 581,
+    coveredLines: [
+      {
+        lineId: 1,
+        width: 13,
+      },
+      {
+        lineId: 2,
+        width: 21,
+      },
+    ],
+    content: "إِلَىٰ قَدَرٍ مَّعْلُومٍ",
+    contentSimple: "الى قدر معلوم",
+  },
+  {
+    id: 5645,
+    number: 23,
+    suraNumber: 77,
+    suraName: "الحاقة",
+    pageNumber: 581,
+    coveredLines: [
+      {
+        lineId: 2,
+        width: 39,
+      },
+    ],
+    content: "فَقَدَرْنَا فَنِعْمَ ٱلْقَـٰدِرُونَ",
+    contentSimple: "فقدرنا فنعم القادرون",
+  },
+  {
+    id: 5646,
+    number: 24,
+    suraNumber: 77,
+    suraName: "الحاقة",
+    pageNumber: 581,
+    coveredLines: [
+      {
+        lineId: 2,
+        width: 40,
+      },
+    ],
+    content: "وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ",
+    contentSimple: "ويل يومئذ للمكذبين",
+  },
+  {
+    id: 5647,
+    number: 25,
+    suraNumber: 77,
+    suraName: "الحاقة",
+    pageNumber: 581,
+    coveredLines: [
+      {
+        lineId: 3,
+        width: 42,
+      },
+    ],
+    content: "أَلَمْ نَجْعَلِ ٱلْأَرْضَ كِفَاتًا",
+    contentSimple: "الم نجعل الارض كفاتا",
+  },
+  {
+    id: 5648,
+    number: 26,
+    suraNumber: 77,
+    suraName: "الحاقة",
+    pageNumber: 581,
+    coveredLines: [
+      {
+        lineId: 3,
+        width: 29,
+      },
+    ],
+    content: "أَحْيَآءً وَأَمْوَٰتًا",
+    contentSimple: "احياء وامواتا",
+  },
+  {
+    id: 5649,
+    number: 27,
+    suraNumber: 77,
+    suraName: "الحاقة",
+    pageNumber: 581,
+    coveredLines: [
+      {
+        lineId: 3,
+        width: 29,
+      },
+      {
+        lineId: 4,
+        width: 56,
+      },
+    ],
+    content: "وَجَعَلْنَا فِيهَا رَوَٰسِىَ شَـٰمِخَـٰتٍ وَأَسْقَيْنَـٰكُم مَّآءً فُرَاتًا",
+    contentSimple: "وجعلنا فيها رواسي شامخات واسقيناكم ماء فراتا",
+  },
+  {
+    id: 5650,
+    number: 28,
+    suraNumber: 77,
+    suraName: "الحاقة",
+    pageNumber: 581,
+    coveredLines: [
+      {
+        lineId: 4,
+        width: 44,
+      },
+    ],
+    content: "وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ",
+    contentSimple: "ويل يومئذ للمكذبين",
+  },
+  {
+    id: 5651,
+    number: 29,
+    suraNumber: 77,
+    suraName: "الحاقة",
+    pageNumber: 581,
+    coveredLines: [
+      {
+        lineId: 5,
+        width: 58,
+      },
+    ],
+    content: "ٱنطَلِقُوٓا۟ إِلَىٰ مَا كُنتُم بِهِۦ تُكَذِّبُونَ",
+    contentSimple: "انطلقوا الى ما كنتم به تكذبون",
+  },
+  {
+    id: 5652,
+    number: 30,
+    suraNumber: 77,
+    suraName: "الحاقة",
+    pageNumber: 581,
+    coveredLines: [
+      {
+        lineId: 5,
+        width: 42,
+      },
+      {
+        lineId: 6,
+        width: 20,
+      },
+    ],
+    content: "ٱنطَلِقُوٓا۟ إِلَىٰ ظِلٍّ ذِى ثَلَـٰثِ شُعَبٍ",
+    contentSimple: "انطلقوا الى ظل ذي ثلاث شعب",
+  },
+  {
+    id: 5653,
+    number: 31,
+    suraNumber: 77,
+    suraName: "الحاقة",
+    pageNumber: 581,
+    coveredLines: [
+      {
+        lineId: 6,
+        width: 50,
+      },
+    ],
+    content: "لَّا ظَلِيلٍ وَلَا يُغْنِى مِنَ ٱللَّهَبِ",
+    contentSimple: "لا ظليل ولا يغني من اللهب",
+  },
+  {
+    id: 5654,
+    number: 32,
+    suraNumber: 77,
+    suraName: "الحاقة",
+    pageNumber: 581,
+    coveredLines: [
+      {
+        lineId: 6,
+        width: 30,
+      },
+      {
+        lineId: 7,
+        width: 22,
+      },
+    ],
+    content: "إِنَّهَا تَرْمِى بِشَرَرٍ كَٱلْقَصْرِ",
+    contentSimple: "انها ترمي بشرر كالقصر",
+  },
+  {
+    id: 5655,
+    number: 33,
+    suraNumber: 77,
+    suraName: "الحاقة",
+    pageNumber: 581,
+    coveredLines: [
+      {
+        lineId: 7,
+        width: 36,
+      },
+    ],
+    content: "كَأَنَّهُۥ جِمَـٰلَتٌ صُفْرٌ",
+    contentSimple: "كانه جمالت صفر",
+  },
+  {
+    id: 5656,
+    number: 34,
+    suraNumber: 77,
+    suraName: "الحاقة",
+    pageNumber: 581,
+    coveredLines: [
+      {
+        lineId: 7,
+        width: 42,
+      },
+    ],
+    content: "وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ",
+    contentSimple: "ويل يومئذ للمكذبين",
+  },
+  {
+    id: 5657,
+    number: 35,
+    suraNumber: 77,
+    suraName: "الحاقة",
+    pageNumber: 581,
+    coveredLines: [
+      {
+        lineId: 8,
+        width: 39,
+      },
+    ],
+    content: "هَـٰذَا يَوْمُ لَا يَنطِقُونَ",
+    contentSimple: "هذا يوم لا ينطقون",
+  },
+  {
+    id: 5658,
+    number: 36,
+    suraNumber: 77,
+    suraName: "الحاقة",
+    pageNumber: 581,
+    coveredLines: [
+      {
+        lineId: 8,
+        width: 44,
+      },
+    ],
+    content: "وَلَا يُؤْذَنُ لَهُمْ فَيَعْتَذِرُونَ",
+    contentSimple: "ولا يؤذن لهم فيعتذرون",
+  },
+  {
+    id: 5659,
+    number: 37,
+    suraNumber: 77,
+    suraName: "الحاقة",
+    pageNumber: 581,
+    coveredLines: [
+      {
+        lineId: 8,
+        width: 17,
+      },
+      {
+        lineId: 9,
+        width: 26,
+      },
+    ],
+    content: "وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ",
+    contentSimple: "ويل يومئذ للمكذبين",
+  },
+  {
+    id: 5660,
+    number: 38,
+    suraNumber: 77,
+    suraName: "الحاقة",
+    pageNumber: 581,
+    coveredLines: [
+      {
+        lineId: 9,
+        width: 60,
+      },
+    ],
+    content: "هَـٰذَا يَوْمُ ٱلْفَصْلِ ۖ جَمَعْنَـٰكُمْ وَٱلْأَوَّلِينَ",
+    contentSimple: "هذا يوم الفصل جمعناكم والاولين",
+  },
+  {
+    id: 5661,
+    number: 39,
+    suraNumber: 77,
+    suraName: "الحاقة",
+    pageNumber: 581,
+    coveredLines: [
+      {
+        lineId: 9,
+        width: 14,
+      },
+      {
+        lineId: 10,
+        width: 37,
+      },
+    ],
+    content: "فَإِن كَانَ لَكُمْ كَيْدٌ فَكِيدُونِ",
+    contentSimple: "فان كان لكم كيد فكيدون",
+  },
+  {
+    id: 5662,
+    number: 40,
+    suraNumber: 77,
+    suraName: "المعارج",
+    pageNumber: 581,
+    coveredLines: [
+      {
+        lineId: 10,
+        width: 38,
+      },
+    ],
+    content: "وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ",
+    contentSimple: "ويل يومئذ للمكذبين",
+  },
+  {
+    id: 5663,
+    number: 41,
+    suraNumber: 77,
+    suraName: "المعارج",
+    pageNumber: 581,
+    coveredLines: [
+      {
+        lineId: 10,
+        width: 25,
+      },
+      {
+        lineId: 11,
+        width: 31,
+      },
+    ],
+    content: "إِنَّ ٱلْمُتَّقِينَ فِى ظِلَـٰلٍ وَعُيُونٍ",
+    contentSimple: "ان المتقين في ظلال وعيون",
+  },
+  {
+    id: 5664,
+    number: 42,
+    suraNumber: 77,
+    suraName: "المعارج",
+    pageNumber: 581,
+    coveredLines: [
+      {
+        lineId: 11,
+        width: 38,
+      },
+    ],
+    content: "وَفَوَٰكِهَ مِمَّا يَشْتَهُونَ",
+    contentSimple: "وفواكه مما يشتهون",
+  },
+  {
+    id: 5665,
+    number: 43,
+    suraNumber: 77,
+    suraName: "المعارج",
+    pageNumber: 581,
+    coveredLines: [
+      {
+        lineId: 11,
+        width: 31,
+      },
+      {
+        lineId: 12,
+        width: 36,
+      },
+    ],
+    content: "كُلُوا۟ وَٱشْرَبُوا۟ هَنِيٓـًٔۢا بِمَا كُنتُمْ تَعْمَلُونَ",
+    contentSimple: "كلوا واشربوا هنيئا بما كنتم تعملون",
+  },
+  {
+    id: 5666,
+    number: 44,
+    suraNumber: 77,
+    suraName: "المعارج",
+    pageNumber: 581,
+    coveredLines: [
+      {
+        lineId: 12,
+        width: 47,
+      },
+    ],
+    content: "إِنَّا كَذَٰلِكَ نَجْزِى ٱلْمُحْسِنِينَ",
+    contentSimple: "انا كذلك نجزي المحسنين",
+  },
+  {
+    id: 5667,
+    number: 45,
+    suraNumber: 77,
+    suraName: "المعارج",
+    pageNumber: 581,
+    coveredLines: [
+      {
+        lineId: 12,
+        width: 17,
+      },
+      {
+        lineId: 13,
+        width: 26,
+      },
+    ],
+    content: "وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ",
+    contentSimple: "ويل يومئذ للمكذبين",
+  },
+  {
+    id: 5668,
+    number: 46,
+    suraNumber: 77,
+    suraName: "المعارج",
+    pageNumber: 581,
+    coveredLines: [
+      {
+        lineId: 13,
+        width: 55,
+      },
+    ],
+    content: "كُلُوا۟ وَتَمَتَّعُوا۟ قَلِيلًا إِنَّكُم مُّجْرِمُونَ",
+    contentSimple: "كلوا وتمتعوا قليلا انكم مجرمون",
+  },
+  {
+    id: 5669,
+    number: 47,
+    suraNumber: 77,
+    suraName: "المعارج",
+    pageNumber: 581,
+    coveredLines: [
+      {
+        lineId: 13,
+        width: 19,
+      },
+      {
+        lineId: 14,
+        width: 31,
+      },
+    ],
+    content: "وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ",
+    contentSimple: "ويل يومئذ للمكذبين",
+  },
+  {
+    id: 5670,
+    number: 48,
+    suraNumber: 77,
+    suraName: "المعارج",
+    pageNumber: 581,
+    coveredLines: [
+      {
+        lineId: 14,
+        width: 59,
+      },
+    ],
+    content: "وَإِذَا قِيلَ لَهُمُ ٱرْكَعُوا۟ لَا يَرْكَعُونَ",
+    contentSimple: "واذا قيل لهم اركعوا لا يركعون",
+  },
+  {
+    id: 5671,
+    number: 49,
+    suraNumber: 77,
+    suraName: "المعارج",
+    pageNumber: 581,
+    coveredLines: [
+      {
+        lineId: 14,
+        width: 10,
+      },
+      {
+        lineId: 15,
+        width: 37,
+      },
+    ],
+    content: "وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ",
+    contentSimple: "ويل يومئذ للمكذبين",
+  },
+  {
+    id: 5672,
+    number: 50,
+    suraNumber: 77,
+    suraName: "المعارج",
+    pageNumber: 581,
+    coveredLines: [
+      {
+        lineId: 15,
+        width: 63,
+      },
+    ],
+    content: "فَبِأَىِّ حَدِيثٍۭ بَعْدَهُۥ يُؤْمِنُونَ",
+    contentSimple: "فباي حديث بعده يؤمنون",
   },
   {
     id: 5959,
