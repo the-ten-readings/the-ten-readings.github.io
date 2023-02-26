@@ -505,6 +505,7 @@ body::-webkit-scrollbar {
 
 .searchbox > .results {
   max-height: calc(100% - 43px);
+  height: calc(100% - 43px);
   overflow-y: scroll;
   margin: 5px 1px 0 1px;
 }
@@ -529,21 +530,19 @@ body::-webkit-scrollbar {
 
 .results p {
   font-size: 14px;
+  line-height: 1.5em;
+  padding: 6px 0;
 }
 
 .results span {
   font-size: 12px;
-  border: 1px solid;
-  padding: 3px;
-  line-height: 35px;
+  padding: 0 3px;
 }
 
 .results button {
   font-size: 14px;
-  padding: 3px;
   border: 1px solid #303030;
   width: 100%;
-  margin-top: 4px;
 }
 
 /**/
@@ -651,7 +650,6 @@ option:checked {
 .quran {
   display: flex;
   z-index: 1;
-  /* background-color: #120e0e70; */
   width: calc(100% - 23.7%);
   max-width: calc(100% - 23.7%);
   left: 3.6%;
@@ -660,6 +658,13 @@ option:checked {
   flex-direction: column;
   /* display: none; */
   /* box-shadow: inset -1px -1px 1px #000; */
+}
+
+.expanded {
+  left: 0;
+  width: 100%;
+  max-width: 100%;
+  aspect-ratio: 2 / 3.16;
 }
 
 .quran>div {

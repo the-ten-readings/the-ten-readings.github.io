@@ -69,7 +69,13 @@ document.addEventListener('swiped-right', function(e) {
 function handleLeftMenuToggle(evt){
   left.classList.toggle("open-left-desktp");
 }
+function handleExpandToggle (evt){
+  isExpanded = !isExpanded;
+  quranGrid.classList.toggle("expanded");
+  imageLoaded();
+}
 document.getElementById("left-menu-button").addEventListener('click', handleLeftMenuToggle, false);
+document.getElementById("expan-toggle-button").addEventListener('click', handleExpandToggle, false);
 
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -499,7 +505,9 @@ const linesCustomStyles = {
   p564l8: 'padding-top: 25%;',
 
   p566l11: 'padding-top: 25%;',
-
+  
+  p568l11: 'padding-top:  25%;',
+ 
   p570l7: 'padding-top: 25%;',
   
   p572l3: 'padding-top: 26%;',
@@ -513,12 +521,30 @@ const linesCustomStyles = {
   p578l11: 'padding-top: 25%;',
   
   p580l9: 'padding-top: 25%;',
+  
+  p582l3: 'padding-top: 28%;',
+  
+  p582l3: 'padding-top: 28%;',
+ 
+  p583l10: 'padding-top: 26%;',
 
-  // p520l14: 'padding-top: 28%;',
+  p584l14: 'padding-bottom: 15%;',
 
-  p568l11: 'padding-top:  25%;',
+  p585l2: 'padding-top: 15%;',
+  
+  p586l3: 'padding-top: 25.5%;',
+  p586l14: 'padding-bottom: 15%;',
+  
+  p587l2: 'padding-top: 14%;',
+  p587l13: 'padding-top: 25%;',
 
-  // p520l14: 'padding-top: 28%;',
+  p589l4: 'padding-top: 26%;',
+
+  p590l3: 'padding-top: 26%;',
+  p590l14: 'padding-bottom: 15%;',
+
+  p591l2: 'padding-top: 14%;',
+  p591l10: 'padding-top: 23%;',
 
   p592l5: 'padding-top: 25%;',
   p593l3: 'padding-top: 25%;',
@@ -603,8 +629,8 @@ const selectedRawiLabel = document.getElementById("selectedRawiLabel");
 var isPageLoaded = false;
 var selectedRawi = "R111";
 var selectedPage = -3//;79; // -3
-var selectedSuran = null;
 var isSearchOpen = true;
+var isExpanded = false;
 
 // METHODS  ///////////////////////////////////////////////////////////////////
 
@@ -665,9 +691,8 @@ const toggleLoading = (status) => {
 }
 
 const imageLoaded = () => {
-  const isMobile = false;
-  const sWidth = isMobile ? 776 : 1025
-  const sHeight = isMobile ? 1264 : 1305
+  const sWidth = isExpanded ? 776 : 1025
+  const sHeight = 1305
   ctx.canvas.width = sWidth
   ctx.canvas.height = sHeight
 
@@ -682,7 +707,7 @@ const imageLoaded = () => {
   //   toggleLoading(false)
   // }, 1000)
 
-  ctx.drawImage(currentImage,isMobile ? 40 : 0, 0, sWidth, sHeight, 0,0, sWidth,sHeight);
+  ctx.drawImage(currentImage, isExpanded ? 40 : 0, 0, sWidth, sHeight, 0,0, sWidth,sHeight);
 
   // close the loading block
   toggleLoading(false)
@@ -944,11 +969,8 @@ const searchAya = (text) => {
         "beforeend",
         `
       <div>
-        <p>${line.content}</p>
-        <span>صفحة <b>${line.pageNumber}</b></span>  
-        <span>سورة <b>${line.suraName}</b></span>  
-        <span>آية <b>${line.number}</b></span>  
-        <button class="result_button" data-page="${line.pageNumber}" data-targetAya="${line.id}">إنتقل</button>
+        <p><b>{</b> ${line.content} <b>}</b> [<span>${chapters['c'+line.suraNumber].name}</span> - <span>${line.number}</span>]</p>
+        <button class="result_button" data-page="${line.pageNumber}" data-targetAya="${line.id}">إنتقل للصفحة <span>${line.pageNumber}</span> </button>
       </div>
       `
       );
@@ -977,7 +999,7 @@ const searchboxInputUpdatedCmd = (e) => {
     }
   }
 
-  if (!value || value.length < 3) {
+  if (!value || value.length < 5) {
     return;
   }
   // search
