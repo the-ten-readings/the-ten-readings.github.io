@@ -112,7 +112,7 @@ var arabicNormChar = {
 };
 
 // root folder for rawis folders
-const rootSource = 'https:\\\\raw.githubusercontent.com\\ayoubnaceur\\dataset\\data\\data\\qurans';
+const rootSource = 'https:\\\\raw.githubusercontent.com\\the-ten-readings\\dataset\\data\\data\\qurans';
 
 // Availaible Quran Versions (Riwaiat or Torok) : Configurations
 
