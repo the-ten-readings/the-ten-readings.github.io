@@ -624,6 +624,7 @@ const quranGrid = document.getElementById("quran-grid");
 
 // advanced work
 const selectedRawiLabel = document.getElementById("selectedRawiLabel");
+const alert = document.getElementById("alert");
 
 ///////////////////////////////////////////////////////////////////////////////
 // MODULE 02 : Init App  //////////////////////////////////////////////////////
@@ -791,6 +792,9 @@ const updatePage = (updateDisplay = true) => {
       option.selected = true;
     }
   }
+
+  // update the alert mail data
+  alert.href = `mailto:info@bhr-q.com?subject=الإبلاغ عن مشكل (من موقع the-ten-readings.github.io) &body=مصحف: ${rawis[selectedRawi].label} - الصفحة: ${selectedPage}%0D%0A______________%0D%0Aأريد أن أبلغ أن: %0D%0A-`
 };
 
 const nextCB = () => {

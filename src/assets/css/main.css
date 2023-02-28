@@ -283,6 +283,11 @@ main.main {
   border: 1px solid #6c6c6c;
 }
 
+.main-navigation-l-menu a {
+  background-color: orange;
+  padding: 2px 4px;
+}
+
 .main-navigation-r-menu, .main-navigation-l-menu #left-menu-button {
   display: none !important;
 }
