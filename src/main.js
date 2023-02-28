@@ -74,8 +74,13 @@ function handleExpandToggle (evt){
   quranGrid.classList.toggle("expanded");
   imageLoaded();
 }
+
+function handleNightToggle (evt){
+  imge.classList.toggle("night");
+}
 document.getElementById("left-menu-button").addEventListener('click', handleLeftMenuToggle, false);
 document.getElementById("expan-toggle-button").addEventListener('click', handleExpandToggle, false);
+document.getElementById("night-toggle-button").addEventListener('click', handleNightToggle, false);
 
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -112,7 +117,7 @@ var arabicNormChar = {
 };
 
 // root folder for rawis folders
-const rootSource = 'https:\\\\raw.githubusercontent.com\\the-ten-readings\\dataset\\data\\data\\qurans';
+const rootSource = 'https:\\\\raw.githubusercontent.com\\the-ten-readings\\dataset\\data\\  qurans';
 
 // Availaible Quran Versions (Riwaiat or Torok) : Configurations
 
@@ -691,7 +696,7 @@ const toggleLoading = (status) => {
 }
 
 const imageLoaded = () => {
-  const sWidth = isExpanded ? 776 : 1025
+  const sWidth = isExpanded ? 781 : 1025
   const sHeight = 1305
   ctx.canvas.width = sWidth
   ctx.canvas.height = sHeight
@@ -707,7 +712,7 @@ const imageLoaded = () => {
   //   toggleLoading(false)
   // }, 1000)
 
-  ctx.drawImage(currentImage, isExpanded ? 40 : 0, 0, sWidth, sHeight, 0,0, sWidth,sHeight);
+  ctx.drawImage(currentImage, isExpanded ? 37 : 0, 0, sWidth, sHeight, 0,0, sWidth,sHeight);
 
   // close the loading block
   toggleLoading(false)
@@ -969,7 +974,7 @@ const searchAya = (text) => {
         "beforeend",
         `
       <div>
-        <p><b>{</b> ${line.content} <b>}</b> [<span>${chapters['c'+line.suraNumber].name}</span> - <span>${line.number}</span>]</p>
+        <p><b>⦑</b> ${line.content} <b>⦒</b> <br><span>(${chapters['c'+line.suraNumber].name}</span>:<span>${line.number})</span></p>
         <button class="result_button" data-page="${line.pageNumber}" data-targetAya="${line.id}">إنتقل للصفحة <span>${line.pageNumber}</span> </button>
       </div>
       `
@@ -1088,7 +1093,7 @@ filterParts.addEventListener("keyup", filterIndexCmd);
 
 // when click up down prevent the default scroll bar behavoir (so we can keep under the eye what the selected rawi)
 window.addEventListener("keydown", (e) => {
-  return;/* TOBEREMVOED */
+  // return;/* TOBEREMVOED */
 
   if ((e.code == "ArrowUp" || e.code == "ArrowDown") && e.target !="input.range") {
     e.preventDefault();
@@ -1099,7 +1104,17 @@ window.addEventListener("keydown", (e) => {
 // when click on a button :
 window.addEventListener("keyup", (e) => {
   
+  // close the left menu search in non large desktops if it was opened
+  if (e.code == "Escape") {
+    left.classList.remove("open-left-desktp");
+  }
   
+  // open search 
+  if (e.code == "KeyF" && !left.classList.contains("open-left-desktop")) {
+    left.classList.add("open-left-desktp");
+    searchboxInput.focus();
+  }
+
   // right / left => change the page
   if (e.code == "ArrowRight") {
     privCB();
@@ -1107,7 +1122,7 @@ window.addEventListener("keyup", (e) => {
     nextCB();
   } 
   
-  return;/* TOBEREMVOED */
+  // return;/* TOBEREMVOED */
   
   // up down switch between Quran Versions / or riwiat / or rawis
   if (e.code == "ArrowDown") {
