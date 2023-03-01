@@ -241,10 +241,16 @@ main.main {
   padding: 0px var(--spacing);
   justify-content: center;
   align-items: center;
+  gap: 5px;
 }
 
 .as-m {
-    flex: 0.5;
+    flex: 0.5 !important;
+    min-width: 100px;
+}
+
+.as-b > div > div:last-child {
+  background-color: red;
 }
 
 .main-navigation > * {
@@ -266,9 +272,8 @@ main.main {
   text-align: center;
   height: 100%;
   border: 0;
-  border-top: 1px solid #6c6c6c;
-  border-radius: 0;
-  border-bottom: 1px solid #6c6c6c;
+  border: 1px solid #6c6c6c;
+  border-radius: var(--radius);
   outline: 0;
 }
 
@@ -290,6 +295,7 @@ main.main {
   align-items: center;
   border-radius: 0;
   border: 1px solid #6c6c6c;
+  border-radius: var(--radius);
 }
 
 .main-navigation-l-menu a {
@@ -298,6 +304,7 @@ main.main {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 5px;
 }
 
 .main-navigation-r-menu, .main-navigation-l-menu #left-menu-button {
