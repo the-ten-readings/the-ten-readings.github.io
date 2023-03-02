@@ -24,6 +24,10 @@ button {
   outline: 0;
 }
 
+button > * {
+  pointer-events: none;
+}
+
 :root{
   --absBackGroundColor: #6c6c6c;
   --backGroundColor: #dddcd9;
@@ -35,7 +39,7 @@ button {
 
 html {
   direction: rtl;
-  font-size: 12px;
+  font-size: 1em;
 }
 
 .loading-layer, .selected-rawi-label {
@@ -57,7 +61,7 @@ html {
   top: 2px;
   padding: 0px 10px;
   border-radius: var(--radius);
-  font-size: 12px;
+  font-size: 1em;
   opacity: 0;
 }
 
@@ -110,7 +114,7 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  font-size: 16px;
+  font-size: 1em;
   text-align: center;
   padding: var(--spacing);
   display: none;
@@ -130,7 +134,13 @@ html {
   overflow-y: auto;
   /* padding-left: var(--spacing); */
   scroll-behavior: smooth;
+  border-radius: var(--spacing);
 }
+
+.left-sidebar .tool{
+  /* margin-left: var(--spacing); */
+}
+
 .main-menu-tools {
   flex: 1;
 }
@@ -187,10 +197,10 @@ main.main {
   justify-content: space-between;
   background-color: #dddcd9;
   border-radius: var(--spacing)  var(--spacing) 0 0;
-  padding: var(--spacing);
+  padding: 2px var(--spacing);
   /* border-bottom: 1px solid var(--headingsBGC); */
   color: #000;
-  /* border-bottom: 0px solid #6c6c6c; */
+  border-bottom: 1px solid #6c6c6c;
 }
 
 .tool-actions {
@@ -199,20 +209,30 @@ main.main {
 
 .tool-collapse {
   margin: 0 1px;
-  background-color: #646262;
+  border: 1px solid #6c6c6c;
   border-radius: 3px;
-  padding: 3px;
+  padding: 0 var(--spacing);
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2px 0;
 }
 
 .tool {
   background-color: var(--backGroundColor);
   margin-bottom: var(--spacing);
   border-radius: var(--spacing);
-  height: calc(50% - 2px);
   overflow: hidden;
   scroll-behavior: smooth;
   display: flex;
   flex-direction: column;
+  max-height: calc(100% - 43px);
+  transition: all 0.5s;
+}
+
+.tool-closed{
+  height: 38px !important;
 }
 
 /* .tool-title {
@@ -225,6 +245,11 @@ main.main {
   flex: 1;
   display: flex;
   flex-direction: column;
+}
+
+.tafsir {
+    padding: 5px;
+    height: 100%;
 }
 
 
@@ -245,8 +270,8 @@ main.main {
 }
 
 .as-m {
-    flex: 0.5 !important;
-    min-width: 100px;
+    flex: 0 !important;
+    min-width: 70px;
 }
 
 .as-b > div > div:last-child {
@@ -317,7 +342,7 @@ main.main {
   }
   .left-sidebar {
     position: absolute;
-    background-color: #dddcd9;
+    /* background-color: #dddcd9; */
     border-radius: var(--spacing);
     z-index: 0;
     left: 0;
@@ -348,8 +373,8 @@ main.main {
     position: absolute;
     background-color: #0000008c;
     z-index: 1;
-    height: calc(100% - 51px);
-    border-radius: 4px;
+    height: calc(100% - 52px);
+    border-radius: 0;
   }
   .left-sidebar {
     width: 0px;
@@ -387,6 +412,7 @@ main.main {
   .quran-container {
     margin-bottom: 2px;
     overflow: hidden;
+    border-radius: 0;
   }
 
   .selected-rawi-label {
@@ -403,7 +429,7 @@ main.main {
 .open-right {
   right: 80px;
   width: calc(100% - 80px);
-  height: calc(100% - 51px);
+  height: calc(100% - 52px);
   right: 0;
   width: 100%;
   opacity: 1;
@@ -419,7 +445,7 @@ main.main {
   width: 300px;
   z-index: 1;
   opacity: 1;
-  background-color: #6c6c6c;
+  background-color: #6c6c6cc7;
 }
 
 /* --------------------------------------------------------------------------------------- */
@@ -489,7 +515,8 @@ body::-webkit-scrollbar {
 }
 
 .raw-selected {
-  background-color: #b796e7!important;
+  background-color: #4359c1!important;
+  color: #fff;
 }
 
 
@@ -515,7 +542,7 @@ body::-webkit-scrollbar {
   height: 25px;
   border-radius: 3px;
   padding: 0px 10px;
-  font-size: 16px;
+  font-size: 1em;
 }
 
 .searchbox {display: flex;flex-direction: column;flex: 1;overflow-y: hidden;}
@@ -536,7 +563,7 @@ body::-webkit-scrollbar {
   max-height: calc(100% - 43px);
   height: calc(100% - 43px);
   overflow-y: scroll;
-  margin: var(--spacing) 1px 0 1px;
+  /* margin: var(--spacing) 1px 0 1px; */
 }
 
 .searchbox > .results > div:last-child {
@@ -548,7 +575,7 @@ body::-webkit-scrollbar {
   /* padding: var(--spacing); */
   color: #000;
   text-align: right;
-  margin-bottom: var(--spacing);
+  margin-top: var(--spacing);
   /* border-radius: 3px; */
 }
 
@@ -557,22 +584,22 @@ body::-webkit-scrollbar {
 }
 
 .results p {
-  font-size: 14px;
+  font-size: 0.9em;
   line-height: 1.5em;
   padding: 6px;
-  border: 1px solid #303030;
+  border: 1px solid #757575;
   border-bottom: 0;
   margin-bottom: -4px;
 }
 
 .results span {
-  font-size: 12px;
+  font-size: 1em;
   padding: 0 3px;
 }
 
 .results button {
-  font-size: 14px;
-  border: 1px solid #303030;
+  font-size: -0.1em;
+  border: 1px solid #6c6c6c;
   width: 100%;
   margin-top: 0;
 }
@@ -583,14 +610,14 @@ body::-webkit-scrollbar {
 .filter {flex: 1;padding: 1px;/* overflow: hidden; */}
 
 .filter-closed{
-  display: none
+  display: none;
 }
 
 .f_part {
   direction: rtl;
   text-align: right;
   padding: var(--spacing) 0;
-  font-size: 15px;
+  font-size: 1em;
 }
 
 .filter_filter {
@@ -617,7 +644,7 @@ body::-webkit-scrollbar {
   outline: 0;
   padding: 0 var(--spacing);
   /* font-family: tahoma; */
-  /* font-size: 16px; */
+  /* font-size: 1em; */
   margin: 0 -2px  0  0;
 }
 
@@ -637,7 +664,7 @@ body::-webkit-scrollbar {
 
 
 option  {
-  font-size: 14px;
+  font-size: 1em;
   padding: 2px var(--spacing);
 }
 option[data-part="juza"] {

@@ -23,13 +23,15 @@
       </div>
       <div class="right-sidebar">
         <div class="tools">
-          <div class="tool" style="height: 100%;">
+          <div class="tool" >
             <div class="tool-header">
               <div class="tool-title" title="مصاحف القراء العشرة ورواتهم من طريقي الشاطبية والدرة">
                 مصاحف القراء العشرة ورواتهم
               </div>
               <div class="tool-actions">
-                <!-- <div class="tool-collapse"></div> -->
+                <button class="expander tool-collapse" >
+                  <?xml version="1.0" ?><svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><polygon points="12 19.24 7.05 14.29 5.64 15.71 12 22.07 18.36 15.71 16.95 14.29 12 19.24"/><polygon points="5.64 8.29 7.05 9.71 12 4.76 16.95 9.71 18.36 8.29 12 1.93 5.64 8.29"/></svg>
+                </button>
               </div>
             </div>
             <div class="tool-body" style="padding: 0;">
@@ -269,6 +271,22 @@
 
             </div>
           </div>
+          <div class="tool tool-closed" style="height: calc(100% - 5px );"> 
+            <div class="tool-header">
+              <div class="tool-title" title="تفسير السعدي">
+                  تفسير السعدي
+              </div>
+              <div class="tool-actions">
+                <button class="expander tool-collapse" >
+                  <?xml version="1.0" ?><svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><polygon points="12 19.24 7.05 14.29 5.64 15.71 12 22.07 18.36 15.71 16.95 14.29 12 19.24"/><polygon points="5.64 8.29 7.05 9.71 12 4.76 16.95 9.71 18.36 8.29 12 1.93 5.64 8.29"/></svg>
+                </button>
+              </div>
+            </div>
+            <div class="tool-body" style="padding: 0;">
+              <div id="tafsir" class="tafsir">
+              </div>
+            </div>
+          </div>
           
         </div>
       </div>
@@ -298,13 +316,13 @@
             </div>
             <div><button id="privouos">➡️ السابقة</button></div>
           </div>
-          <div class="as-m"><input inputmode="numeric" type="search" placeholder="رقم الصفحة"min="-3" id="page"></div>
+          <div class="as-m"><input id="page" inputmode="numeric" type="search" placeholder="الصفحة"min="-3" ></div>
           <div class="as-a">
             <div><button id="next">التالـيـة ⬅️</button></div>
             <div></div>
             <div class="main-navigation-l-menu">
               
-              <button id="left-menu-button" title="إظهار(F) و إخفاء (Esc) محرك البحث" >
+              <button id="left-menu-button" title="إظهار و إخفاء القائمة اليسرى (Shift)" >
                 <!--?xml version="1.0" ?--><svg height="28" id="svg8" version="1.1" viewBox="0 0 12.7 12.7" width="28" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg"><defs id="defs2"></defs><g id="layer1" transform="translate(0,-284.29998)"><path d="m 4.9388885,287.12215 4.9388893,-2e-5 v 0.7056 H 4.9388885 Z" id="path4487" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.70555556px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"></path><path d="m 4.9388888,288.53327 4.9388892,-2e-5 v 0.7056 H 4.9388888 Z" id="path4507" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.70555556px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"></path><path d="m 4.9388888,289.94442 0.7055559,-5e-5 v 0.70557 l -0.7055559,8e-5 z" id="path4511" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.70555556px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"></path><path d="m 4.9388888,291.35554 h 0.7055559 v 0.70555 H 4.9388888 Z" id="path4513" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.70555556px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"></path><path d="m 4.9388888,292.76661 h 0.7055559 v 0.70557 H 4.9388888 Z" id="path4517" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.70555556px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"></path><path d="m 2.8222225,287.12213 h 1.4111108 v 0.70552 H 2.8222225 Z" id="rect4537" style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.70555556px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"></path><path d="m 2.8222225,288.53325 h 1.4111108 v 0.70554 H 2.8222225 Z" id="path4540" style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.70555556px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"></path><path d="m 2.8222225,289.94442 h 1.4111108 v 0.70552 H 2.8222225 Z" id="path4544" style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.70555556px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"></path><path d="m 2.8222225,291.35554 h 1.4111108 v 0.70552 H 2.8222225 Z" id="path4546" style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.70555556px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"></path><path d="m 2.8222225,292.76666 h 1.4111108 v 0.70552 H 2.8222225 Z" id="path4548" style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.70555556px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"></path><path d="M 10.301112,293.89583 9.1722226,292.7669" id="path4562" style="fill:none;stroke:#000000;stroke-width:0.70555556px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"></path><path d="m 8.1138888,289.94471 a 1.7638888,1.7638888 0 0 0 -1.7638887,1.76387 1.7638888,1.7638888 0 0 0 1.7638887,1.76389 1.7638888,1.7638888 0 0 0 1.7638892,-1.76389 1.7638888,1.7638888 0 0 0 -1.7638892,-1.76387 z m 0,0.70552 a 1.0583334,1.0583334 0 0 1 1.0583336,1.05835 1.0583334,1.0583334 0 0 1 -1.0583336,1.05832 1.0583334,1.0583334 0 0 1 -1.0583332,-1.05832 1.0583334,1.0583334 0 0 1 1.0583332,-1.05835 z" id="path4564" style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.70555556px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"></path><rect height="0.70555556" id="rect4599" style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.37647059;stroke:none;stroke-width:0.70555556px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" width="0.70555556" x="4.2333331" y="287.1221"></rect><rect height="0.70555556" id="rect4601" style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.37647059;stroke:none;stroke-width:0.70555556px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" width="0.70555556" x="4.2333331" y="288.53323"></rect><rect height="0.70555556" id="rect4605" style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.37647059;stroke:none;stroke-width:0.70555556px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" width="0.70555556" x="4.2333331" y="289.94437"></rect><rect height="0.70555556" id="rect4607" style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.37647059;stroke:none;stroke-width:0.70555556px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" width="0.70555556" x="4.2333331" y="291.3555"></rect><rect height="0.70555556" id="rect4609" style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.37647059;stroke:none;stroke-width:0.70555556px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" width="0.70555556" x="4.2333331" y="292.76663"></rect></g></svg>
               </button>
               <a id="alert" href="#" target="_blank" title="بلغ عن خطأ في المصحف">
@@ -318,11 +336,13 @@
         <div class="tools">
 
           <!-- finder (search tool) -->
-          <div class="tool" style="height: 100%;">
+          <div class="tool" >
             <div class="tool-header">
               <div class="tool-title">محرك البحث</div>
               <div class="tool-actions">
-                <!-- <div class="tool-collapse"></div> -->
+                <button class="expander tool-collapse">
+                  <?xml version="1.0" ?><svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><polygon points="12 19.24 7.05 14.29 5.64 15.71 12 22.07 18.36 15.71 16.95 14.29 12 19.24"/><polygon points="5.64 8.29 7.05 9.71 12 4.76 16.95 9.71 18.36 8.29 12 1.93 5.64 8.29"/></svg>
+                </button>
               </div>
             </div>
             <div class="tool-body">
@@ -331,6 +351,24 @@
                 <label hidden>searchbox-input</label>
                 <input placeholder="البحث في المصحف، 5 أحرف أو أكثر" id="searchbox-input" type="search" />
                 
+                <!-- Search result -->
+                <div class="results" id="results"></div>
+              </div>
+
+            </div>
+          </div>
+          <!-- finder (search tool) -->
+          <div class="tool" style="height: calc(100% - 84px);">
+            <div class="tool-header">
+              <div class="tool-title">الفهرس</div>
+              <div class="tool-actions">
+                <button class="expander tool-collapse">
+                  <?xml version="1.0" ?><svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><polygon points="12 19.24 7.05 14.29 5.64 15.71 12 22.07 18.36 15.71 16.95 14.29 12 19.24"/><polygon points="5.64 8.29 7.05 9.71 12 4.76 16.95 9.71 18.36 8.29 12 1.93 5.64 8.29"/></svg>
+                </button>
+              </div>
+            </div>
+            <div class="tool-body">
+              <div class="searchbox" id="searchbox">
                 <!-- fahrass + filter -->
                 <div class="filter" id="filter">
                   <!-- checkboxes -->
@@ -593,6 +631,7 @@
 
     <script src="./src/swiped-events.min.js" type="text/javascript"></script>
     <script src="./src/quran.js" type="text/javascript"></script>
+    <script src="./src/tafsir.js" type="text/javascript"></script>
     <script src="./src/main.js" type="text/javascript"></script>
   </body>
 </html>

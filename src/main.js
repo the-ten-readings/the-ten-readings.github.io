@@ -27,6 +27,10 @@ window.addEventListener('resize', () => {
   document.documentElement.style.setProperty('--vh', `${vh}px`);
 });
 
+const toggleExpanderTool = (expander) => {
+ expander.target.parentNode.parentNode.parentNode.classList.toggle('tool-closed')
+}
+
 
 // COPIED-PASTED
 // SWIPE ACTIONS (Mobile) /////////////////////////////////////////////////////
@@ -35,6 +39,11 @@ let currentScreen = "main";
 const mainMenu = document.getElementsByClassName("main-menu")[0];
 const right = document.getElementsByClassName("right-sidebar")[0];
 const left = document.getElementsByClassName("left-sidebar")[0];
+const expanders = document.getElementsByClassName("expander");
+
+for (expander of expanders) {
+  expander.addEventListener("click", toggleExpanderTool);
+}
 
 document.addEventListener('swiped-left', function(e) {
   if (currentScreen == "main") {
@@ -625,6 +634,7 @@ const quranGrid = document.getElementById("quran-grid");
 // advanced work
 const selectedRawiLabel = document.getElementById("selectedRawiLabel");
 const alert = document.getElementById("alert");
+const tafsirElement = document.getElementById("tafsir");
 
 ///////////////////////////////////////////////////////////////////////////////
 // MODULE 02 : Init App  //////////////////////////////////////////////////////
@@ -720,6 +730,15 @@ const imageLoaded = () => {
 };
 
 
+const handelSelectedAya = (targetAyaKey) => {
+  tafsir.forEach((i)=>{
+    if(i.id === targetAyaKey){
+      tafsirElement.innerHTML = i.tafsir
+      return
+    }
+    tafsirElement.innerHTML = "هذه الأداة في طور التجربة، لم تهيئ بشكل كلي بعد"
+  })
+}
 
 const imageCantBeLoaded = () => {
   updateImgDisplay('404')
@@ -855,6 +874,7 @@ const goToPageFromSearchCmd = (e) => {
   if (page >= -3 && page <= lPage) {
     selectedPage = page;
     selectedAya = aya;
+    handelSelectedAya(e.target.dataset.targetayakey)
   }
   // if the input is empty told the user
   else if (isNaN(page) || page == "" || page == "-"){
@@ -979,7 +999,7 @@ const searchAya = (text) => {
         `
       <div>
         <p><b>⦑</b> ${line.content} <b>⦒</b> <br><span>(${chapters['c'+line.suraNumber].name}</span>:<span>${line.number})</span></p>
-        <button class="result_button" data-page="${line.pageNumber}" data-targetAya="${line.id}">إنتقل للصفحة <span>${line.pageNumber}</span> </button>
+        <button class="result_button" data-page="${line.pageNumber}" data-targetAya="${line.id}" data-targetAyaKey="${line.suraNumber}:${line.number}">إنتقل للصفحة <span>${line.pageNumber}</span> </button>
       </div>
       `
       );
@@ -989,26 +1009,12 @@ const searchAya = (text) => {
 
 // write search string and control search string and add click (links) events in the result
 const searchboxInputUpdatedCmd = (e) => {
+  // console.log("ok", e)
   const value = !e ? null : e.target.value;
   // validation : we will escape it for now
-  if (!value || value.length == 0) {
-    // open glassory or let it open
-    if (filter.classList.contains("filter-closed")) {
-      filter.classList.remove("filter-closed");
-    }
-    if (!results.classList.contains("filter-closed")) {
-      results.classList.add("filter-closed");
-    }
-  } else {
-    if (!filter.classList.contains("filter-closed")) {
-      filter.classList.add("filter-closed");
-    }
-    if (results.classList.contains("filter-closed")) {
-      results.classList.remove("filter-closed");
-    }
-  }
-
+  
   if (!value || value.length < 5) {
+    searchboxInputCleanCmd()
     return;
   }
   // search
@@ -1018,6 +1024,10 @@ const searchboxInputUpdatedCmd = (e) => {
     resultButton.addEventListener("click", goToPageFromSearchCmd);
   }
 };
+
+const searchboxInputCleanCmd = (e) => {
+  results.innerHTML = "";
+}
 
 // filtering search request //
 
@@ -1072,9 +1082,11 @@ const filterIndexCmd = (e) => {
   }
 };
 
-// Adding Events Listeners  ///////////////////////////////////////////////////
+// Adding Events Listeners && handlers  ///////////////////////////////////////////////////
 
-searchboxInput.addEventListener("keyup", searchboxInputUpdatedCmd);
+
+searchboxInput.addEventListener("input", searchboxInputUpdatedCmd);
+searchboxInput.onsearch  = searchboxInputCleanCmd;
 filterAndSelector.addEventListener("change", goToPageCmd);
 isJuzaChecked.addEventListener("change", filterIndexCmd);
 isHizbChecked.addEventListener("change", filterIndexCmd);
@@ -1113,10 +1125,13 @@ window.addEventListener("keyup", (e) => {
     left.classList.remove("open-left-desktp");
   }
   
+  // console.log(e.code)
   // open search 
-  if (e.code == "KeyF" && !left.classList.contains("open-left-desktop")) {
-    left.classList.add("open-left-desktp");
-    searchboxInput.focus();
+  if ((e.code == "ShiftLeft" || e.code == "ShiftRight")) {
+    left.classList.toggle("open-left-desktp");
+    if (!left.classList.contains("open-left-desktp")){
+      searchboxInput.focus();
+    }
   }
 
   // right / left => change the page
@@ -1234,6 +1249,7 @@ const handelAyaPart = (element) => {
           }
         });
         selectedAya = aya.dataset.ayaid;
+        handelSelectedAya(`${e.target.dataset.ayasuranumber}:${e.target.dataset.ayanumber}`)
       }
     });
   });

@@ -8,6 +8,7 @@ var URLS = [
   "/src/assets/fonts/Noto_Sans_Arabic.woff2",
   "/src/swiped-events.min.js",
   "/src/quran.js",
+  "/src/tafsir.js",
   "/src/main.js",
   "/src/assets/images/be-patient.jpg",
   "/src/assets/images/peace-be-upon-him.jpg",
