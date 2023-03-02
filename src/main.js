@@ -731,13 +731,19 @@ const imageLoaded = () => {
 
 
 const handelSelectedAya = (targetAyaKey) => {
+  let result = ''
   tafsir.forEach((i)=>{
     if(i.id === targetAyaKey){
-      tafsirElement.innerHTML = i.tafsir
+      result = i.tafsir
       return
     }
-    tafsirElement.innerHTML = "هذه الأداة في طور التجربة، لم تهيئ بشكل كلي بعد"
   })
+
+  if (result != '') {
+    tafsirElement.innerHTML = result
+  } else {
+    tafsirElement.innerHTML = "هذه الأداة في طور التجربة، لم تهيئ بشكل كلي بعد"
+  }
 }
 
 const imageCantBeLoaded = () => {

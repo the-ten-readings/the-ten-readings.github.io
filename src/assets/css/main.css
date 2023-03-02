@@ -61,7 +61,7 @@ html {
   top: 2px;
   padding: 0px 10px;
   border-radius: var(--radius);
-  font-size: 1em;
+  font-size: 0.9em;
   opacity: 0;
 }
 
@@ -212,7 +212,7 @@ main.main {
   border: 1px solid #6c6c6c;
   border-radius: 3px;
   padding: 0 var(--spacing);
-  width: 30px;
+  /* width: 30px; */
   display: flex;
   justify-content: center;
   align-items: center;
