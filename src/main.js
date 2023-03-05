@@ -819,7 +819,7 @@ const updatePage = (updateDisplay = true) => {
   }
 
   // update the alert mail data
-  alert.href = `mailto:info@bhr-q.com?subject=الإبلاغ عن مشكل (من موقع the-ten-readings.github.io) &body=مصحف: ${rawis[selectedRawi].label} - الصفحة: ${selectedPage}%0D%0A______________%0D%0Aأريد أن أبلغ أن: %0D%0A-`
+  alert.href = `mailto:info@bhr-q.com;nooralhouda.contact@gmail.com?subject=بريد تواصل (من موقع the-ten-readings.github.io) &body=مصحف: ${rawis[selectedRawi].label} - الصفحة: ${selectedPage}%0D%0A______________%0D%0A`
 };
 
 const nextCB = () => {

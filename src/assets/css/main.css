@@ -892,3 +892,33 @@ div#quran > div > div:first-child .meter {
 }
 
 /* *** moshaf image grid end *** */
+
+.contact-us {
+  
+padding: 5px;
+}
+
+.contact {
+    /* border-bottom: 1px solid #262626; */
+}
+
+.contact-options {
+    border: 1px solid;
+    border-radius: var(--radius);
+}
+
+.contact-options > div {
+    border-bottom: 1px solid #262626;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    align-items: center;
+}
+
+.contact-options > div:last-child {
+    border-bottom: 0;
+}
+
+.contact:last-child {
+    border-bottom: none;
+}
