@@ -183,7 +183,7 @@ main.main {
 }
 
 .left-sidebar,.right-sidebar {
-  width: 370px;
+  width: 364px;
   /* color: #fff; */
   padding: var(--spacing);
   border-radius: var(--spacing);
@@ -200,7 +200,9 @@ main.main {
   padding: 2px var(--spacing);
   /* border-bottom: 1px solid var(--headingsBGC); */
   color: #000;
-  border-bottom: 1px solid #6c6c6c;
+  /* border-bottom: 1px solid #6c6c6c; */
+  background-color: #262626;
+  color: #fff;
 }
 
 .tool-actions {
@@ -209,7 +211,7 @@ main.main {
 
 .tool-collapse {
   margin: 0 1px;
-  border: 1px solid #6c6c6c;
+  border: 0;
   border-radius: 3px;
   padding: 0 var(--spacing);
   /* width: 30px; */
@@ -467,16 +469,16 @@ main.main {
   /* width: 70px;
   min-width: 70px;
   max-width: 70px; */
-  width: 25%;
-  min-width: 15%;
-  max-width: 30%;
+  width: 40%;
+  /* min-width: 15%; */
+  /* max-width: 40%; */
 }
 
 .imam-subs {
   display: flex;
   flex-direction: column;
   gap: 2px;
-  width: calc(100% - 50px);
+  width: 60%;
 }
 
 .imam-sub {
@@ -486,8 +488,11 @@ main.main {
   overflow-x: scroll;
 }
 
+
+
 .imam-sub button {
   flex: 1;
+  text-align: right;
 }
 
 .imam button {
@@ -497,6 +502,7 @@ main.main {
   height: 100%;
   border: 0;
   background-color: var(--backGroundColor);
+  font-size: 0.9em;
 }
 
 .imam button[disabled] {
