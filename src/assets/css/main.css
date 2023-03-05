@@ -216,7 +216,7 @@ main.main {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 2px 0;
+  margin: 4px 0px;
 }
 
 .tool {
@@ -483,7 +483,7 @@ main.main {
   display: flex;
   justify-content: center;
   gap: 2px;
-  overflow-x: scroll;
+  overflow: hidden;
 }
 
 .imam-sub button {
