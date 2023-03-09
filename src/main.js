@@ -698,7 +698,7 @@ window.addEventListener("DOMContentLoaded", (e) => {
 
   // restore saved settings : rootSource
   let savedRootSource = window.localStorage.getItem('rootSource')
-  if (savedRootSource != null && savedRootSource != ''){
+  if (savedRootSource != null && savedRootSource != '' && savedRootSource != defaultRootSource){
     rootSource = savedRootSource
     settingMushafsFolder.value = savedRootSource
   }
