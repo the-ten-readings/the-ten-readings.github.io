@@ -27,22 +27,32 @@ window.addEventListener('resize', () => {
   document.documentElement.style.setProperty('--vh', `${vh}px`);
 });
 
-const toggleExpanderTool = (expander) => {
- expander.target.parentNode.parentNode.parentNode.classList.toggle('tool-closed')
+
+const toggleExpanderTool = (toolExpander) => {
+  toolExpander.target.parentNode.parentNode.parentNode.classList.toggle('tool-closed')
 }
 
+const toggleSettingTool = (settingToggler) => {
+  settingToggler.target.parentNode.parentElement.nextElementSibling.classList.toggle('settings-closed')
+}
+ 
 
-// COPIED-PASTED
+
 // SWIPE ACTIONS (Mobile) /////////////////////////////////////////////////////
 
 let currentScreen = "main";
 const mainMenu = document.getElementsByClassName("main-menu")[0];
 const right = document.getElementsByClassName("right-sidebar")[0];
 const left = document.getElementsByClassName("left-sidebar")[0];
-const expanders = document.getElementsByClassName("expander");
+const expanders = document.getElementsByClassName("tool-collapse");
+const settings = document.getElementsByClassName("tool-setting");
 
 for (expander of expanders) {
   expander.addEventListener("click", toggleExpanderTool);
+}
+
+for (setting of settings) {
+  setting.addEventListener("click", toggleSettingTool);
 }
 
 document.addEventListener('swiped-left', function(e) {
@@ -126,7 +136,8 @@ var arabicNormChar = {
 };
 
 // root folder for rawis folders
-const rootSource = 'https:\\\\raw.githubusercontent.com\\the-ten-readings\\dataset\\data\\qurans';
+const defaultRootSource = 'https:\\\\raw.githubusercontent.com\\the-ten-readings\\dataset\\data\\qurans';
+var rootSource = defaultRootSource;
 
 // Availaible Quran Versions (Riwaiat or Torok) : Configurations
 
@@ -633,8 +644,11 @@ const quranGrid = document.getElementById("quran-grid");
 
 // advanced work
 const selectedRawiLabel = document.getElementById("selectedRawiLabel");
+
+// tools
 const alert = document.getElementById("alert");
 const tafsirElement = document.getElementById("tafsir");
+const settingMushafsFolder = document.getElementById("setting-mushafs-folder");
 
 ///////////////////////////////////////////////////////////////////////////////
 // MODULE 02 : Init App  //////////////////////////////////////////////////////
@@ -681,6 +695,13 @@ window.addEventListener("DOMContentLoaded", (e) => {
 
   // update the selected rawi label
   selectedRawiLabel.innerHTML = rawis[selectedRawi].label
+
+  // restore saved settings : rootSource
+  let savedRootSource = window.localStorage.getItem('rootSource')
+  if (savedRootSource != null && savedRootSource != ''){
+    rootSource = savedRootSource
+    settingMushafsFolder.value = savedRootSource
+  }
 
   updatePage();
 });
@@ -823,8 +844,6 @@ const updatePage = (updateDisplay = true) => {
 };
 
 const nextCB = () => {
-  //debugger;
-
   if (selectedPage == getLastPageForRawiOrCurrentOne()) {
     selectedPage = -3;
   } else {
@@ -1187,14 +1206,6 @@ window.addEventListener("keyup", (e) => {
 });
 
 ///////////////////////////////////////////////////////////////////////////////
-/////////////////////////// END OF WORKING FUATURES ///////////////////////////
-///////////////////////////////////////////////////////////////////////////////
-
-///////////////////////////////////////////////////////////////////////////////
-///////////////////////// NEW MODULES : IN DEV PHASE //////////////////////////
-///////////////////////////////////////////////////////////////////////////////
-
-///////////////////////////////////////////////////////////////////////////////
 // MODULE 04 : Page Grid Overlay  /////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////
 
@@ -1371,3 +1382,40 @@ const updateGridDisplay = () => {
     handelAyaPart(ayaOrAyaPart);
   }
 };
+
+
+///////////////////////////////////////////////////////////////////////////////
+/////////////////////////// END OF WORKING FUATURES ///////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+///////////////////////// NEW MODULES : IN DEV PHASE //////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// MODULE 05 : Tools  ////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+
+// VARIABLES  /////////////////////////////////////////////////////////////////
+
+// const settingMushafsFolder
+
+
+// METHODS  ///////////////////////////////////////////////////////////////////
+
+const settingMushafsFolderUpdated = (e) => {
+  const newRootSource = e.target.value;
+
+  if (newRootSource === ''){
+    rootSource = defaultRootSource;
+  }else {
+    rootSource = newRootSource;
+  }
+  window.localStorage.setItem('rootSource', rootSource)
+  updateImgDisplay()
+}
+
+// Adding Events Listeners  ///////////////////////////////////////////////////
+
+settingMushafsFolder.addEventListener("input", settingMushafsFolderUpdated);
+// settingMushafsFolder.onsearch  = searchboxInputCleanCmd;
