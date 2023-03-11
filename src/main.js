@@ -46,6 +46,7 @@ const right = document.getElementsByClassName("right-sidebar")[0];
 const left = document.getElementsByClassName("left-sidebar")[0];
 const expanders = document.getElementsByClassName("tool-collapse");
 const settings = document.getElementsByClassName("tool-setting");
+const secondPage = document.getElementById("second-page");
 
 for (expander of expanders) {
   expander.addEventListener("click", toggleExpanderTool);
@@ -91,16 +92,25 @@ function handleLeftMenuToggle(evt){
 function handleExpandToggle (evt){
   isExpanded = !isExpanded;
   quranGrid.classList.toggle("expanded");
+  quranGrid2.classList.toggle("expanded");
   imageLoaded();
 }
 
 function handleNightToggle (evt){
   imge.classList.toggle("night");
+  imge2.classList.toggle("night");
 }
+
+function handleMushafViewToggle (evt){
+  isMoshafView = !isMoshafView  
+  secondPage.classList.toggle("mushaf-view-closed");
+  updateImgDisplay()
+}
+
 document.getElementById("left-menu-button").addEventListener('click', handleLeftMenuToggle, false);
 document.getElementById("expan-toggle-button").addEventListener('click', handleExpandToggle, false);
 document.getElementById("night-toggle-button").addEventListener('click', handleNightToggle, false);
-
+document.getElementById("mushafview-toggle-button").addEventListener('click', handleMushafViewToggle, false);
 
 ///////////////////////////////////////////////////////////////////////////////
 // MODULE 01 - 02 //  Configs diff  ///////////////////////////////////////////
@@ -618,6 +628,7 @@ const page = document.getElementById("page");
 
 const raw = document.getElementsByClassName("raw");
 const imge = document.getElementById("imge");
+const imge2 = document.getElementById("imge-2");
 
 // search : controls
 const search = document.getElementById("search");
@@ -641,6 +652,7 @@ const imamsList = document.getElementById("imams-list");
 
 // quran grid layout
 const quranGrid = document.getElementById("quran-grid");
+const quranGrid2 = document.getElementById("quran-grid-2");
 
 // advanced work
 const selectedRawiLabel = document.getElementById("selectedRawiLabel");
@@ -661,6 +673,7 @@ var selectedRawi = "R111";
 var selectedPage = -3//;79; // -3
 var isSearchOpen = true;
 var isExpanded = false;
+var isMoshafView = false;
 
 // METHODS  ///////////////////////////////////////////////////////////////////
 
@@ -669,9 +682,43 @@ const updateElement = (element, prop, value) => {
   if (element) element[prop] = value;
 };
 
-const getPath = () => {
-  var decalage = parseInt(selectedPage) + 4;
-  return `${rootSource}\\${rawis[selectedRawi].folder}\\${("0000" + decalage).slice(-4)}.jpg`;
+
+const getThePagePaire = () => {
+  return(!(selectedPage%2 == 0)  ? getNextCBNumber() : getPrivCBNumber())
+}
+
+const getPath = (second) => {
+
+  // don't try even to understand hhh 
+
+  var decalage = 4;
+
+  const p = parseInt(selectedPage) + decalage;
+
+  if(!isMoshafView){
+    return `${rootSource}\\${rawis[selectedRawi].folder}\\${("0000" + p).slice(-4)}.jpg`;
+  }
+
+  // 2 pages view handeling
+
+  const p1 = parseInt((selectedPage%2 == 0) ? selectedPage - 1 : selectedPage) + decalage;
+  const p2 = parseInt((getThePagePaire()%2) != 0 ? getThePagePaire()+1 : getThePagePaire()) + decalage;
+
+
+  if (selectedPage == -3 || selectedPage == getLastPageForRawiOrCurrentOne()){
+    if (second == true){
+      return '.\\src\\assets\\images\\peace-be-upon-him.jpg'
+    }
+    return `${rootSource}\\${rawis[selectedRawi].folder}\\${("0000" + p1).slice(-4)}.jpg`;
+  }
+
+  // if it's a paire page there 
+  if (second) {
+    return `${rootSource}\\${rawis[selectedRawi].folder}\\${("0000" + p2).slice(-4)}.jpg`;
+  } else {
+    return `${rootSource}\\${rawis[selectedRawi].folder}\\${("0000" + p1).slice(-4)}.jpg`;
+  }
+
 };
 
 // Adding Events Listeners  ///////////////////////////////////////////////////
@@ -718,12 +765,14 @@ const toggleLoading = (status) => {
     // loading tag :
     loading.classList.add("loading-on")
     quranGrid.classList.add("quranGrid-closed");
+    quranGrid2.classList.add("quranGrid-closed");
   }
   // loading off
   else{
     // loading tag :
     loading.classList.remove("loading-on")
     quranGrid.classList.remove("quranGrid-closed");
+    quranGrid2.classList.remove("quranGrid-closed");
   }
 }
 
@@ -732,6 +781,9 @@ const imageLoaded = () => {
   const sHeight = 1305
   ctx.canvas.width = sWidth
   ctx.canvas.height = sHeight
+
+  ctx2.canvas.width = sWidth
+  ctx2.canvas.height = sHeight
 
   // quranGrid.style.height = sHeight / 100 + "px"
   // quranGrid.style.width = sWidth / 100 + "px"
@@ -745,6 +797,10 @@ const imageLoaded = () => {
   // }, 1000)
 
   ctx.drawImage(currentImage, isExpanded ? 37 : 0, 0, sWidth, sHeight, 0,0, sWidth,sHeight);
+
+  if(isMoshafView){
+    ctx2.drawImage(currentImage2, isExpanded ? 37 : 0, 0, sWidth, sHeight, 0,0, sWidth,sHeight);
+  }
 
   // close the loading block
   toggleLoading(false)
@@ -773,16 +829,19 @@ const imageCantBeLoaded = () => {
   // close the loading block
   toggleLoading(false)
   quranGrid.classList.add("quranGrid-closed");
+  quranGrid2.classList.add("quranGrid-closed");
 };
 
 const updateImgDisplay = (type = null) => {
   if (type == "404") {
     currentImage.src = ".\\src\\assets\\images\\peace-be-upon-him.jpg"
+    if (isMoshafView) { currentImage2.src = ".\\src\\assets\\images\\peace-be-upon-him.jpg" }
     toggleLoading(true)
     return;
   }
   toggleLoading(true)
   currentImage.src = getPath();
+  currentImage2.src = getPath(true);
 };
 
 
@@ -843,23 +902,30 @@ const updatePage = (updateDisplay = true) => {
   alert.href = `mailto:info@bhr-q.com;nooralhouda.contact@gmail.com?subject=بريد تواصل (من موقع the-ten-readings.github.io) &body=مصحف: ${rawis[selectedRawi].label} - الصفحة: ${selectedPage}%0D%0A______________%0D%0A`
 };
 
-const nextCB = () => {
+const getNextCBNumber = () => {
   if (selectedPage == getLastPageForRawiOrCurrentOne()) {
-    selectedPage = -3;
+    return -3;
   } else {
-    selectedPage = parseInt(selectedPage) + 1;
+    return parseInt(selectedPage) + 1;
   }
+};
+
+const getPrivCBNumber = () => {
+  // if the page is the last page of the current Rawi Moshaf version then :
+  if (selectedPage == -3) {
+    return getLastPageForRawiOrCurrentOne();
+  } else {
+    return selectedPage - 1;
+  }
+};
+
+const nextCB = () => {
+  selectedPage  = getNextCBNumber();
   updatePage();
 };
 
 const privCB = () => {
-
-  // if the page is the last page of the current Rawi Moshaf version then :
-  if (selectedPage == -3) {
-    selectedPage = getLastPageForRawiOrCurrentOne();
-  } else {
-    selectedPage = selectedPage - 1;
-  }
+  selectedPage = getPrivCBNumber();
   updatePage();
 };
 
@@ -904,6 +970,7 @@ const goToPageFromSearchCmd = (e) => {
   // if the input is empty told the user
   else if (isNaN(page) || page == "" || page == "-"){
     updateElement(imge, "src", "404.jpg");
+    updateElement(imge2, "src", "404.jpg");
     selectedPage = -3;
     updateGridDisplay()
     return;
@@ -979,10 +1046,15 @@ page.addEventListener("keyup", goToPageCmd);
 // VARIABLES  /////////////////////////////////////////////////////////////////
 const loading = document.getElementById("loading");
 const currentImage = new Image();
+const currentImage2 = new Image();
 currentImage.onload = imageLoaded;
 currentImage.onerror = imageCantBeLoaded;
 
+currentImage2.onload = imageLoaded;
+currentImage2.onerror = imageCantBeLoaded;
+
 const ctx = document.getElementById("imge").getContext("2d");
+const ctx2 = document.getElementById("imge-2").getContext("2d");
 
 
 
@@ -1283,9 +1355,9 @@ const handelAyaPart = (element) => {
 
 // METHODS  ///////////////////////////////////////////////////////////////////
 // line template
-const lineTemplate = (lineNumber, ayaParts) => {
-  let cs = linesCustomStyles[`p${selectedPage}l${lineNumber}`]
-           &&  linesCustomStyles[`p${selectedPage}l${lineNumber}`]
+const lineTemplate = (lineNumber, ayaParts, page) => {
+  let cs = linesCustomStyles[`p${page}l${lineNumber}`]
+           &&  linesCustomStyles[`p${page}l${lineNumber}`]
   return cs ? `<div id="${lineNumber}" style="${cs}">${ayaParts}</div>`:
    `<div id="${lineNumber}">${ayaParts}</div>`;
 }
@@ -1309,10 +1381,10 @@ const linePartTemplate = (data) =>
 // </div>
 
 // update the Grid UI
-const updateGrid = (ayat) => {
+const updateGrid = (ayat, quranGridID, page) => {
 
   // reset template content
-  quranGrid.innerHTML = "";
+  quranGridID.innerHTML = "";
 
   const newLines = {};
 
@@ -1333,7 +1405,7 @@ const updateGrid = (ayat) => {
       lineParts += linePartTemplate(lineParte);
     }
     // insertion
-    quranGrid.insertAdjacentHTML("beforeend", lineTemplate(line, lineParts));
+    quranGridID.insertAdjacentHTML("beforeend", lineTemplate(line, lineParts, page));
   }
 
   /*
@@ -1367,16 +1439,40 @@ const updateGridDisplay = () => {
   if (!quranGrid.classList.contains("quranGrid-closed")) {
     quranGrid.classList.add("quranGrid-closed");
   }
-  
-  // update the grid layout for the current page ayat
+
   const ayat = QURAN.filter((aya) => {
-    return aya.pageNumber == selectedPage;
+    return aya.pageNumber == selectedPage
   });
+
+  updateGrid(ayat, quranGrid, selectedPage);
+
+  // handle mushaf view  
+
+  if(isMoshafView) {
+    if (!quranGrid2.classList.contains("quranGrid-closed")) {
+      quranGrid2.classList.add("quranGrid-closed");
+    }
+    
+    // update the grid layout for the current page ayat
+    const p1 = ((selectedPage%2 == 0) ? selectedPage - 1 : selectedPage);
+    const p2 = ((getThePagePaire()%2) != 0 ? getThePagePaire()+1 : getThePagePaire());
+
+    const ayat = QURAN.filter((aya) => {
+      return aya.pageNumber == p1
+    });
+  
+    const ayat2 = QURAN.filter((aya) => {
+      return aya.pageNumber == p2
+    });
+
+    updateGrid(ayat, quranGrid, p1);
+    updateGrid(ayat2, quranGrid2, p2);
+  }
 
   // remove the check on ayat number in order to reset the content only one time in one place 
   // also in case of ayat.lenght is 0 loops will turn on 0 ! 
   // the grid display is handeled by the toggleLoading func
-  updateGrid(ayat);
+
   currentPageAyats = document.querySelectorAll("[data-aya]");
   for (ayaOrAyaPart of currentPageAyats) {
     handelAyaPart(ayaOrAyaPart);

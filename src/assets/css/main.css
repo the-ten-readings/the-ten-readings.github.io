@@ -693,6 +693,10 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+.mushaf-view-closed {
+  display: none;
+}
+
 .filter_filter, .filter_filter>div {
   display: flex;
 }
