@@ -139,9 +139,9 @@ html {
   border-radius: var(--spacing);
 }
 
-.left-sidebar .tool {
-  /* margin-left: var(--spacing); */
-}
+/* .left-sidebar .tool {
+  margin-left: var(--spacing); 
+} */
 
 .main-menu-tools {
   flex: 1;
@@ -966,7 +966,7 @@ input::-webkit-inner-spin-button {
   box-shadow: inset 1px 1px 1px #000;
 }
 
-div#quran>div>div:first-child .meter {}
+/* div#quran>div>div:first-child .meter {} */
 
 /* *** moshaf image grid end *** */
 
@@ -974,8 +974,8 @@ div#quran>div>div:first-child .meter {}
   padding: 5px;
 }
 
-.contact {
-}
+/* .contact {
+} */
 
 .contact-options {
   border: 1px solid;
