@@ -1224,7 +1224,7 @@ window.addEventListener("keyup", (e) => {
   
   // console.log(e.code)
   // open search 
-  if ((e.code == "ShiftLeft" || e.code == "ShiftRight")) {
+  if ((e.code == "ControlLeft" || e.code == "ControlRight")) {
     left.classList.toggle("open-left-desktp");
     if (!left.classList.contains("open-left-desktp")){
       searchboxInput.focus();
