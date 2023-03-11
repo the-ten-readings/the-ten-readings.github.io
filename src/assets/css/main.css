@@ -208,6 +208,12 @@ main.main {
   border-bottom: 2px solid #6c6c6c;
 }
 
+.tool-title {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing);
+}
+
 .tool-actions {
   display: flex;
   gap: 0;
@@ -260,12 +266,14 @@ main.main {
 .tool-settings {
   height: 0;
   transition: all 0.5s;
+  /* display: none; */
 }
 
 .settings-closed {
   height: auto;
   border-bottom: 2px solid #6c6c6c;
   padding: var(--spacing);
+  /* display: initial; */
 }
 
 .setting-header {
@@ -292,6 +300,7 @@ main.main {
   flex: 1;
   display: flex;
   flex-direction: column;
+  background-color: var(--backGroundColor);
 }
 
 .tafsir {
@@ -622,6 +631,7 @@ body::-webkit-scrollbar {
   text-align: right;
   border: 1px solid #6c6c6c;
   outline: 0;
+  border-radius: var(--radius);
 }
 
 .searchbox>.results {
@@ -674,47 +684,33 @@ body::-webkit-scrollbar {
 
 .filter {
   flex: 1;
-  padding: 1px;
-  /* overflow: hidden; */
+  margin: 0;
+  padding: 0;
 }
 
 .filter-closed {
   display: none;
 }
 
-.f_part {
-  direction: rtl;
-  text-align: right;
-  padding: var(--spacing) 0;
-  font-size: 1em;
-}
-
-.filter_filter {
+.filter_filter, .filter_filter>div {
   display: flex;
-  direction: rtl;
-  justify-content: space-between;
 }
-
 
 .filter_filter>div:first-child {
-  width: 70%;
+  /* width: 70%; */
   width: 100% !important;
 }
 
 .filter_filter>div:last-child {
-  width: calc(30% - 1px);
-  margin-right: 1px;
+  /* width: calc(30% - 1px); */
 }
 
 .filter_filter>*>* {
-  width: calc(100% + 3px);
-  height: 100%;
+  width: 100%;
   border: 1px solid #6c6c6c;
   outline: 0;
   padding: 0 var(--spacing);
-  /* font-family: tahoma; */
-  /* font-size: 1em; */
-  margin: 0 -2px 0 0;
+  border-radius: var(--radius);
 }
 
 
@@ -725,8 +721,7 @@ body::-webkit-scrollbar {
   border: 0;
   outline: 0;
   margin-top: var(--spacing);
-  /* padding-left: var(--spacing); */
-  height: calc(100% - 70px);
+  height: calc(100% - 35px);
   overflow-y: auto;
 }
 
@@ -756,6 +751,10 @@ option[data-part="fahrs"] {
   background-color: #9985b5eb;
 }
 
+option:last-child {
+  margin: 0;
+}
+
 
 option:checked {
   background: #4359c1 linear-gradient(0deg, #4359c1 0%, #4359c1 100%);
@@ -766,7 +765,20 @@ option:checked {
   line-height: 20px;
   display: flex;
   align-items: center;
-  gap: 3px;
+  gap: 5px;
+  direction: rtl;
+  text-align: right;
+  font-size: 1em;
+  margin-top: var(--spacing);
+}
+
+.f_part > div {
+    border: 1px solid #6c6c6c;
+    padding: 2px var(--spacing);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-radius: var(--radius);
 }
 
 .hide {
