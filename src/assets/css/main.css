@@ -205,7 +205,8 @@ main.main {
   padding: 2px var(--spacing);
   /* border-bottom: 1px solid var(--headingsBGC); */
   color: #000;
-  border-bottom: 2px solid #6c6c6c;
+  border-bottom: 1px solid #6c6c6c;
+  background-color: #f7f7f7;
 }
 
 .tool-title {
@@ -260,13 +261,15 @@ main.main {
 }
 
 .tool-closed {
-  height: 38px !important;
+  height: 37px !important;
+  border: 0;
 }
 
 .tool-settings {
   height: 0;
   transition: all 0.5s;
   /* display: none; */
+  background-color: #f7f7f7;
 }
 
 .settings-closed {
