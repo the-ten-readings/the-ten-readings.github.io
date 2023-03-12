@@ -39,12 +39,21 @@
             </div>
             <div class="tool-settings">
               <div class="setting">
-                <div class="setting-header">
-                  مصدر مجلد المصاحف (أترك القيمة فارغة من أجل إستخدام القيمة الإفتراضية)
+                <div class="setting-header"> 
+                  إعداد المصدر المحلي للمصاحف : 
+                  <span style="text-decoration: dashed red underline;">
+                    خاصية تجريبية تعمل فقط مع الإصدارات الحديثة من متصفحات الحاسوب
+                  </span>
                 </div>
                 <div class="setting-body">
-                  <button id="open">اختر مجلد محلي تتواجد به المصاحف</button>
-                  <input hidden class="setting-mushaf-url" id="setting-mushafs-folder" type="url" placeholder="file:///D:/quran/qurans/" >
+                  <div class="f_part" style="margin-top: 0">
+                    <div>
+                      <input type="checkbox" id="internal-source" />
+                      <label for="internal-srouce">تشغيل الخاصية</label>
+                    </div>
+                  </div>
+                  إذا واجهت مشكلة "جاري التحميل" غير الصفحة رجاءا
+                  <button id="open">اختر مجلد محلي تتواجد به المصاحف، (إذا كان المجلد فارغا، يتحمل فيه كل وجه تم تصفحه)</button>
                 </div>
               </div>
             </div>
@@ -339,7 +348,9 @@
       <main class="main">
         <div class="quran-container">
           <div id="selectedRawiLabel" class="selected-rawi-label"></div>
-          <div id="loading" class="loading-layer">جاري التحميل</div>
+          <div id="loading" class="loading-layer">
+            جاري التحميل
+          </div>
 
           <div class="quran-wrapper">
             <div id="quran-grid" class="quran"></div>

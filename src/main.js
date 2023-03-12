@@ -104,6 +104,7 @@ function handleMushafViewToggle (evt){
   isMoshafView = !isMoshafView  
   secondPage.classList.toggle("mushaf-view-closed");
   updateImgDisplay()
+  updateGridDisplay()
 }
 
 document.getElementById("left-menu-button").addEventListener('click', handleLeftMenuToggle, false);
@@ -147,6 +148,7 @@ var arabicNormChar = {
 // root folder for rawis folders
 const defaultRootSource = 'https:\\\\raw.githubusercontent.com\\the-ten-readings\\dataset\\data\\qurans';
 var rootSource = defaultRootSource;
+var fileSystemSource;
 
 // Availaible Quran Versions (Riwaiat or Torok) : Configurations
 
@@ -641,6 +643,7 @@ const filterParts = document.getElementById("filter-parts");
 const isJuzaChecked = document.getElementById("part-juza");
 const isHizbChecked = document.getElementById("part-hizb");
 const isSuraChecked = document.getElementById("mart-sura");
+const internalSourceChecked = document.getElementById("internal-source");
 
 // search : results
 const results = document.getElementById("results");
@@ -659,7 +662,6 @@ const selectedRawiLabel = document.getElementById("selectedRawiLabel");
 // tools
 const alert = document.getElementById("alert");
 const tafsirElement = document.getElementById("tafsir");
-const settingMushafsFolder = document.getElementById("setting-mushafs-folder");
 
 ///////////////////////////////////////////////////////////////////////////////
 // MODULE 02 : Init App  //////////////////////////////////////////////////////
@@ -673,6 +675,7 @@ var selectedPage = -3//;79; // -3
 var isSearchOpen = true;
 var isExpanded = false;
 var isMoshafView = false;
+var isAnInternalSource = false;
 
 // METHODS  ///////////////////////////////////////////////////////////////////
 
@@ -686,9 +689,7 @@ const getThePagePaire = () => {
   return(!(selectedPage%2 == 0)  ? getNextCBNumber() : getPrivCBNumber())
 }
 
-const getPath = async (second) => {
-
-
+const getPath = (second = false, local = false) => {
 
   // don't try even to understand hhh 
 
@@ -697,6 +698,9 @@ const getPath = async (second) => {
   const p = parseInt(selectedPage) + decalage;
 
   if(!isMoshafView){
+    if(local){
+      return `${("0000" + (parseInt(selectedPage) + decalage)).slice(-4)}.jpg`
+    }
     return `${rootSource}\\${rawis[selectedRawi].folder}\\${("0000" + p).slice(-4)}.jpg`;
   }
 
@@ -710,13 +714,22 @@ const getPath = async (second) => {
     if (second == true){
       return '.\\src\\assets\\images\\peace-be-upon-him.jpg'
     }
+    if (local == true){
+      return `${("0000" + p1).slice(-4)}.jpg`
+    }
     return `${rootSource}\\${rawis[selectedRawi].folder}\\${("0000" + p1).slice(-4)}.jpg`;
   }
 
   // if it's a paire page there 
   if (second) {
+    if (local == true){
+      return `${("0000" + p2).slice(-4)}.jpg`
+    }
     return `${rootSource}\\${rawis[selectedRawi].folder}\\${("0000" + p2).slice(-4)}.jpg`;
   } else {
+    if (local == true){
+      return `${("0000" + p1).slice(-4)}.jpg`
+    }
     return `${rootSource}\\${rawis[selectedRawi].folder}\\${("0000" + p1).slice(-4)}.jpg`;
   }
 
@@ -729,6 +742,8 @@ window.addEventListener("DOMContentLoaded", (e) => {
   isPageLoaded = true;
   filterIndexCmd(); // To hide the lines showed based on DOM loaded elements based on the checked options
   
+
+
   // restore saved settings : rawi and page
   let savedRawi = window.localStorage.getItem('rawi')
   if (savedRawi != null && savedRawi != ''){
@@ -744,13 +759,22 @@ window.addEventListener("DOMContentLoaded", (e) => {
   // update the selected rawi label
   selectedRawiLabel.innerHTML = rawis[selectedRawi].label
 
-  // restore saved settings : rootSource
-  let savedRootSource = window.localStorage.getItem('rootSource')
-  if (savedRootSource != null && savedRootSource != '' && savedRootSource != defaultRootSource){
-    rootSource = savedRootSource
-    settingMushafsFolder.value = savedRootSource
+  var savedIsAnInternalSource = window.localStorage.getItem('isAnInternalSource')
+  if (savedIsAnInternalSource != null && savedIsAnInternalSource != ''){
+    savedIsAnInternalSource = savedIsAnInternalSource == 'true' ? true:false
+    
+    isAnInternalSource = savedIsAnInternalSource
+
+    if (isAnInternalSource) {
+      internalSourceChecked.checked = true
+      openFolder.classList.remove("hidden")
+    }else{
+      internalSourceChecked.checked = false
+      openFolder.classList.add("hidden")
+    }
   }
 
+ 
   updatePage();
 });
 
@@ -833,6 +857,52 @@ const imageCantBeLoaded = () => {
   quranGrid2.classList.add("quranGrid-closed");
 };
 
+const internalSourceDisplay = async (image, secondPage = false) =>{
+
+  try {
+    fileSystemSource = await get('fileSystemSource')
+    if (fileSystemSource == undefined){
+      await handelOpen()
+    }else {
+      const permetted = await verifyPermission(fileSystemSource);
+      if (!permetted){
+        console.log("not permitted")
+        return;
+      }
+
+      const newDirectoryHandle = await fileSystemSource.getDirectoryHandle(rawis[selectedRawi].folder, { create: true })
+      const myFileHandle = await newDirectoryHandle.getFileHandle(getPath(secondPage, true))
+      const imageObject = await myFileHandle.getFile()
+     
+      // load the image
+      image.src = URL.createObjectURL(imageObject)
+    }
+    
+  } catch (error) {
+     // if image does not exists
+     if(error.name == 'NotFoundError'){
+      try {
+        const createdDirectoryHandle = await fileSystemSource.getDirectoryHandle(rawis[selectedRawi].folder)
+        const newFileHandle = await createdDirectoryHandle.getFileHandle(getPath(secondPage, true), {create: true})
+        const writable = await newFileHandle.createWritable();
+
+        const response = await fetch(getPath(secondPage));
+        console.log("RSPONSE")
+        await response.body.pipeTo(writable);
+
+        const imageObject = await newFileHandle.getFile()
+
+        image.src = URL.createObjectURL(imageObject)
+      } catch (error) {
+        console.log("internal error: ", error)
+      }
+    }
+    console.log("eroor: ", error.name)
+  } finally{
+    return
+  }
+}
+
 const updateImgDisplay = async (type = null) => {
   if (type == "404") {
     currentImage.src = ".\\src\\assets\\images\\peace-be-upon-him.jpg"
@@ -840,34 +910,15 @@ const updateImgDisplay = async (type = null) => {
     toggleLoading(true)
     return;
   }
+
   toggleLoading(true)
-  try {
-    const folder = await get("folder")
-    if (folder == null){
-      await handelOpen()
-    }else {
-      console.log("folder exists folder", folder)
 
-      const permetted = await verifyPermission(folder);
-
-      if (!permetted){
-        console.log("not permitted")
-        return;
-      }
-
-      const newDirectoryHandle = await folder.getDirectoryHandle(rawis[selectedRawi].folder)
-      const a = `${("0000" + (parseInt(selectedPage) + 4)).slice(-4)}.jpg`
-      console.log(a)
-      const newFileHandle = await newDirectoryHandle.getFileHandle(a)
-      const file = await newFileHandle.getFile()
-      currentImage.src = URL.createObjectURL(file)
-      console.log('file',file)
-
-      return
+  if(isAnInternalSource){
+    await internalSourceDisplay(currentImage, false)
+    if(isMoshafView){
+      await internalSourceDisplay(currentImage2, true)
     }
-    
-  } catch (error) {
-    console.log("eroor: ", error)
+    return
   }
 
   currentImage.src = getPath();
@@ -1498,7 +1549,9 @@ const updateGridDisplay = () => {
     });
 
     updateGrid(ayat, quranGrid, p1);
-    updateGrid(ayat2, quranGrid2, p2);
+    if(isMoshafView){
+      updateGrid(ayat2, quranGrid2, p2);
+    }
   }
 
   // remove the check on ayat number in order to reset the content only one time in one place 
@@ -1528,23 +1581,26 @@ const updateGridDisplay = () => {
 
 // const settingMushafsFolder
 
+const openFolder = document.getElementById("open")
 
 // METHODS  ///////////////////////////////////////////////////////////////////
 
-const settingMushafsFolderUpdated = (e) => {
-  const newRootSource = e.target.value;
+const internalSourceCmd = (e) => {
 
-  if (newRootSource === ''){
-    rootSource = defaultRootSource;
-  }else {
-    rootSource = newRootSource;
+  window.localStorage.setItem("isAnInternalSource", internalSourceChecked.checked)
+  if (internalSourceChecked.checked) {
+    openFolder.classList.remove("hidden")
+  }else{
+    openFolder.classList.add("hidden")
   }
-  window.localStorage.setItem('rootSource', rootSource)
-  updateImgDisplay()
+
+  isAnInternalSource = internalSourceChecked.checked
+
+  // updateImgDisplay()
 }
 
 
-const  verifyPermission = async (fileHandle, readWrite = false) => {
+const  verifyPermission = async (fileHandle, readWrite = true) => {
   const options = {};
   if (readWrite) {
     options.mode = 'readwrite';
@@ -1565,22 +1621,16 @@ const  verifyPermission = async (fileHandle, readWrite = false) => {
 const handelOpen = async (e) => {
 
   try {
-
-    const folder = await get("folder")
-    console.log("setting folder", folder)
     const pickedFolder = await window.showDirectoryPicker();
-    console.log(pickedFolder)
-    await set("folder", pickedFolder)
+    await set("fileSystemSource", pickedFolder)
     
   } catch (error) {
-    console.log("eroor: ", error)
+    console.log("error during picking the folder: ", error)
   }
   
 }
 
 // Adding Events Listeners  ///////////////////////////////////////////////////
 
-settingMushafsFolder.addEventListener("input", settingMushafsFolderUpdated);
-const open = document.getElementById("open").addEventListener('click', handelOpen, false);
-
-// settingMushafsFolder.onsearch  = searchboxInputCleanCmd;
+openFolder.addEventListener('click', handelOpen, false);
+internalSourceChecked.addEventListener("change", internalSourceCmd);

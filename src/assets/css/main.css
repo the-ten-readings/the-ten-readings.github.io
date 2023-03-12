@@ -49,13 +49,14 @@ html {
   z-index: 1;
   opacity: 0;
   transition: 1s;
+  text-align: center;
 }
 
 .loading-layer {
   border-radius: var(--radius);
   padding: var(--spacing);
   opacity: 0;
-  display: none;
+  align-self: center;
 }
 
 .selected-rawi-label {
@@ -69,7 +70,6 @@ html {
 .loading-on {
   opacity: 1;
   padding: 10;
-  display: inherit;
 }
 
 .global-container {
@@ -291,6 +291,7 @@ main.main {
   background-color: #0003;
   border-radius: var(--radius);
   padding: var(--spacing);
+  margin-bottom: var(--spacing);
 }
 /* 
 .setting-body {
@@ -597,7 +598,9 @@ body::-webkit-scrollbar {
   color: #fff;
 }
 
-
+.hidden {
+  display: none
+}
 /* end list */
 
 /* --------------------------------------------------------------------------------------- */
