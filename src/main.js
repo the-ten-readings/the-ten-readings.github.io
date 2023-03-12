@@ -923,7 +923,9 @@ const updateImgDisplay = async (type = null) => {
   }
 
   currentImage.src = getPath();
-  currentImage2.src = getPath(true);
+  if(isMoshafView){
+    currentImage2.src = getPath(true);
+  }
 };
 
 
