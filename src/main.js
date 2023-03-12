@@ -1,3 +1,4 @@
+
 ///////////////////////////////////////////////////////////////////////////////
 // MODULE xx : MODULE TEMPLATE  ///////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////
@@ -801,7 +802,7 @@ const toggleLoading = (status) => {
   }
 }
 
-const imageLoaded = async () => {
+const imageLoaded = () => {
   const sWidth = isExpanded ? 781 : 1025
   const sHeight = 1305
   ctx.canvas.width = sWidth
@@ -922,9 +923,7 @@ const updateImgDisplay = async (type = null) => {
   }
 
   currentImage.src = getPath();
-  if(isMoshafView){
-    currentImage2.src = getPath(true);
-  }
+  currentImage2.src = getPath(true);
 };
 
 
