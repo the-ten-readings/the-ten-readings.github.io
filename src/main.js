@@ -1582,7 +1582,7 @@ const updateGridDisplay = () => {
 
 // const settingMushafsFolder
 
-const openFolder = document.getElementById("open")
+const openFolder = document.getElementById("openFolder")
 
 // METHODS  ///////////////////////////////////////////////////////////////////
 
