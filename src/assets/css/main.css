@@ -197,12 +197,6 @@ main.main {
   resize: horizontal;
 }
 
-.left-sidebar {
-  width: 0;
-  padding-left: var(--spacing);
-  padding-right : 0
-}
-
 .tool-header {
   display: flex;
   justify-content: space-between;
@@ -397,7 +391,8 @@ main.main {
   border-radius: 5px;
 }
 
-.main-navigation-r-menu{
+.main-navigation-r-menu,
+.main-navigation-l-menu #left-menu-button {
   display: none !important;
 }
 
@@ -518,7 +513,6 @@ main.main {
   z-index: 1;
   opacity: 1;
   background-color: #6c6c6cc7;
-  padding-right: var(--spacing);
 }
 
 /* --------------------------------------------------------------------------------------- */

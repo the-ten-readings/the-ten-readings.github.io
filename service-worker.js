@@ -7,7 +7,6 @@ var URLS = [
   "/src/assets/css/main.css",
   "/src/assets/fonts/Noto_Sans_Arabic.woff2",
   "/src/swiped-events.min.js",
-  "/src/indexedDB.js",
   "/src/quran.js",
   "/src/tafsir.js",
   "/src/main.js",
