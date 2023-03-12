@@ -1,4 +1,3 @@
-
 ///////////////////////////////////////////////////////////////////////////////
 // MODULE xx : MODULE TEMPLATE  ///////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////
@@ -687,7 +686,9 @@ const getThePagePaire = () => {
   return(!(selectedPage%2 == 0)  ? getNextCBNumber() : getPrivCBNumber())
 }
 
-const getPath = (second) => {
+const getPath = async (second) => {
+
+
 
   // don't try even to understand hhh 
 
@@ -776,7 +777,7 @@ const toggleLoading = (status) => {
   }
 }
 
-const imageLoaded = () => {
+const imageLoaded = async () => {
   const sWidth = isExpanded ? 781 : 1025
   const sHeight = 1305
   ctx.canvas.width = sWidth
@@ -832,7 +833,7 @@ const imageCantBeLoaded = () => {
   quranGrid2.classList.add("quranGrid-closed");
 };
 
-const updateImgDisplay = (type = null) => {
+const updateImgDisplay = async (type = null) => {
   if (type == "404") {
     currentImage.src = ".\\src\\assets\\images\\peace-be-upon-him.jpg"
     if (isMoshafView) { currentImage2.src = ".\\src\\assets\\images\\peace-be-upon-him.jpg" }
@@ -840,8 +841,39 @@ const updateImgDisplay = (type = null) => {
     return;
   }
   toggleLoading(true)
+  try {
+    const folder = await get("folder")
+    if (folder == null){
+      await handelOpen()
+    }else {
+      console.log("folder exists folder", folder)
+
+      const permetted = await verifyPermission(folder);
+
+      if (!permetted){
+        console.log("not permitted")
+        return;
+      }
+
+      const newDirectoryHandle = await folder.getDirectoryHandle(rawis[selectedRawi].folder)
+      const a = `${("0000" + (parseInt(selectedPage) + 4)).slice(-4)}.jpg`
+      console.log(a)
+      const newFileHandle = await newDirectoryHandle.getFileHandle(a)
+      const file = await newFileHandle.getFile()
+      currentImage.src = URL.createObjectURL(file)
+      console.log('file',file)
+
+      return
+    }
+    
+  } catch (error) {
+    console.log("eroor: ", error)
+  }
+
   currentImage.src = getPath();
-  currentImage2.src = getPath(true);
+  if(isMoshafView){
+    currentImage2.src = getPath(true);
+  }
 };
 
 
@@ -1511,7 +1543,44 @@ const settingMushafsFolderUpdated = (e) => {
   updateImgDisplay()
 }
 
+
+const  verifyPermission = async (fileHandle, readWrite = false) => {
+  const options = {};
+  if (readWrite) {
+    options.mode = 'readwrite';
+  }
+  // Check if permission was already granted. If so, return true.
+  if ((await fileHandle.queryPermission(options)) === 'granted') {
+    return true;
+  }
+  // Request permission. If the user grants permission, return true.
+  if ((await fileHandle.requestPermission(options)) === 'granted') {
+    return true;
+  }
+  // The user didn't grant permission, so return false.
+  return false;
+}
+
+
+const handelOpen = async (e) => {
+
+  try {
+
+    const folder = await get("folder")
+    console.log("setting folder", folder)
+    const pickedFolder = await window.showDirectoryPicker();
+    console.log(pickedFolder)
+    await set("folder", pickedFolder)
+    
+  } catch (error) {
+    console.log("eroor: ", error)
+  }
+  
+}
+
 // Adding Events Listeners  ///////////////////////////////////////////////////
 
 settingMushafsFolder.addEventListener("input", settingMushafsFolderUpdated);
+const open = document.getElementById("open").addEventListener('click', handelOpen, false);
+
 // settingMushafsFolder.onsearch  = searchboxInputCleanCmd;
