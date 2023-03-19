@@ -28,6 +28,11 @@ button>* {
   pointer-events: none;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 0px;
+}
+
 :root {
   --absBackGroundColor: #6c6c6c;
   --backGroundColor: #dddcd9;
@@ -171,6 +176,7 @@ html {
   margin-bottom: var(--spacing);
   height: calc(100% - 43px);
   display: flex;
+  position: relative;
 }
 
 main.main {
@@ -184,6 +190,7 @@ main.main {
   display: flex;
   flex-direction: column;
   z-index: 0;
+  position: relative;
 }
 
 .left-sidebar,
@@ -292,11 +299,25 @@ main.main {
   border-radius: var(--radius);
   padding: var(--spacing);
   margin-bottom: var(--spacing);
+  display: flex;
+  gap: var(--spacing);
+}
+
+.setting-body {
+  line-height: 1em;
+  font-size: 0.9em;
+  display: flex;
+  flex-direction: column;
+  gap: calc(2 * var(--spacing));
 }
 /* 
 .setting-body {
   margin-top: var(--spacing);
 } */
+
+.setting {
+  margin-bottom: var(--spacing);
+}
 
 
 
@@ -325,7 +346,7 @@ main.main {
 
 .main-navigation {
   background-color: var(--backGroundColor);
-  height: 50px;
+  height: 38px;
   width: 100%;
   border-radius: var(--radius);
   display: flex;
@@ -351,9 +372,13 @@ main.main {
   height: calc(100% - 10px);
 }
 
-.main-navigation>div>div {
+.main-navigation>div>div, .settings-display {
   display: flex;
   gap: 4px;
+}
+
+.settings-display {
+  height: 30px;
 }
 
 .main-navigation input {
@@ -375,7 +400,7 @@ main.main {
   margin: 0;
 }
 
-.main-navigation button {
+.main-navigation button, .settings-display button {
   height: 100%;
   padding: 0 var(--spacing);
   min-width: 30px;
@@ -398,9 +423,9 @@ main.main {
   border-radius: 5px;
 }
 
-.main-navigation-r-menu{
-  display: none !important;
-}
+
+
+
 
 @media only screen and (max-width: 1285px) {
   .main {
@@ -462,9 +487,6 @@ main.main {
     padding-left: 0;
   }
 
-  /* .main-navigation-r-menu {
-    display: flex !important;
-  } */
 
   .main-navigation {
     border-end-end-radius: 0;
@@ -599,7 +621,11 @@ body::-webkit-scrollbar {
 }
 
 .hidden {
-  display: none
+  display: none !important
+}
+
+.showRawi {
+  opacity: 1;
 }
 /* end list */
 
@@ -1032,4 +1058,23 @@ input::-webkit-inner-spin-button {
   padding: 0 var(--spacing);
   direction: ltr;
   margin: 0;
+}
+
+.permission {
+  position: absolute;
+  background-color: #dddcd9;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius);
+  gap: calc(2 * var(--spacing));
+  color: #000;
+}
+
+.comparison-selector {
+
 }

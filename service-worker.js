@@ -1,5 +1,5 @@
 var APP_PREFIX = 'thethenreadings_';
-var VERSION = 'version_03_12_2023';
+var VERSION = 'version_03_19_2023';
 var CACHE_NAME = APP_PREFIX + VERSION
 var URLS = [    
   "/",
@@ -11,7 +11,6 @@ var URLS = [
   "/src/quran.js",
   "/src/tafsir.js",
   "/src/main.js",
-  "/src/assets/images/be-patient.jpg",
   "/src/assets/images/peace-be-upon-him.jpg",
 ]
 

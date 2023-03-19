@@ -102,6 +102,10 @@ function handleNightToggle (evt){
 }
 
 function handleMushafViewToggle (evt){
+  if(comparisonModeChecked.checked){
+    return
+  }
+
   isMoshafView = !isMoshafView  
   secondPage.classList.toggle("mushaf-view-closed");
   updateImgDisplay()
@@ -645,6 +649,7 @@ const isJuzaChecked = document.getElementById("part-juza");
 const isHizbChecked = document.getElementById("part-hizb");
 const isSuraChecked = document.getElementById("mart-sura");
 const internalSourceChecked = document.getElementById("internal-source");
+const comparisonModeChecked = document.getElementById("comparison-mode");
 
 // search : results
 const results = document.getElementById("results");
@@ -659,6 +664,7 @@ const quranGrid2 = document.getElementById("quran-grid-2");
 
 // advanced work
 const selectedRawiLabel = document.getElementById("selectedRawiLabel");
+const selectedRawiLabel2 = document.getElementById("selectedRawiLabel2");
 
 // tools
 const alert = document.getElementById("alert");
@@ -672,11 +678,13 @@ const tafsirElement = document.getElementById("tafsir");
 
 var isPageLoaded = false;
 var selectedRawi = "R111";
+var selectedRawi2 = "R111";
 var selectedPage = -3//;79; // -3
 var isSearchOpen = true;
 var isExpanded = false;
 var isMoshafView = false;
 var isAnInternalSource = false;
+var isComparisonMode = false;
 
 // METHODS  ///////////////////////////////////////////////////////////////////
 
@@ -692,7 +700,7 @@ const getThePagePaire = () => {
 
 const getPath = (second = false, local = false) => {
 
-  // don't try even to understand hhh 
+  // don't even try even to understand hhh 
 
   var decalage = 4;
 
@@ -710,7 +718,6 @@ const getPath = (second = false, local = false) => {
   const p1 = parseInt((selectedPage%2 == 0) ? selectedPage - 1 : selectedPage) + decalage;
   const p2 = parseInt((getThePagePaire()%2) != 0 ? getThePagePaire()+1 : getThePagePaire()) + decalage;
 
-
   if (selectedPage == -3 || selectedPage == getLastPageForRawiOrCurrentOne()){
     if (second == true){
       return '.\\src\\assets\\images\\peace-be-upon-him.jpg'
@@ -724,14 +731,14 @@ const getPath = (second = false, local = false) => {
   // if it's a paire page there 
   if (second) {
     if (local == true){
-      return `${("0000" + p2).slice(-4)}.jpg`
+      return `${"0000" + p2.slice(-4)}.jpg`
     }
     return `${rootSource}\\${rawis[selectedRawi].folder}\\${("0000" + p2).slice(-4)}.jpg`;
   } else {
     if (local == true){
-      return `${("0000" + p1).slice(-4)}.jpg`
+      return isComparisonMode ?  `${("0000" + p).slice(-4)}.jpg` : `${("0000" + p1).slice(-4)}.jpg`
     }
-    return `${rootSource}\\${rawis[selectedRawi].folder}\\${("0000" + p1).slice(-4)}.jpg`;
+    return `${rootSource}\\${rawis[selectedRawi].folder}\\${isComparisonMode ? p :(("0000" + p1).slice(-4))}.jpg`;
   }
 
 };
@@ -752,6 +759,13 @@ window.addEventListener("DOMContentLoaded", (e) => {
   }
   raw[selectedRawi].classList.add("raw-selected");
 
+  let savedRawi2 = window.localStorage.getItem('rawi2')
+  if (savedRawi2 != null && savedRawi2 != ''){
+    selectedRawi2 = savedRawi2
+  }
+
+  comparisonSelector.value = selectedRawi2
+
   let savedPage = window.localStorage.getItem('page')
   if (savedPage){
     selectedPage = savedPage
@@ -759,6 +773,8 @@ window.addEventListener("DOMContentLoaded", (e) => {
 
   // update the selected rawi label
   selectedRawiLabel.innerHTML = rawis[selectedRawi].label
+
+  selectedRawiLabel2.innerHTML = rawis[selectedRawi2].label
 
   var savedIsAnInternalSource = window.localStorage.getItem('isAnInternalSource')
   if (savedIsAnInternalSource != null && savedIsAnInternalSource != ''){
@@ -775,8 +791,59 @@ window.addEventListener("DOMContentLoaded", (e) => {
     }
   }
 
- 
+  var savedIsComparisonMode = window.localStorage.getItem('isComparisonMode')
+  if (savedIsComparisonMode != null && savedIsComparisonMode != ''){
+    savedIsComparisonMode = savedIsComparisonMode == 'true' ? true:false
+    
+    isComparisonMode = savedIsComparisonMode
+
+    if (isComparisonMode) {
+      // restore checkbox state
+      comparisonModeChecked.checked = true
+      // handel view
+      isMoshafView = true
+      secondPage.classList.remove("mushaf-view-closed");
+      // show labels
+      selectedRawiLabel.classList.add('showRawi')
+      selectedRawiLabel2.classList.add('showRawi')
+      selectedRawiLabel2.classList.remove('hidden')
+      comparisonSelector.parentElement.classList.remove('hidden')
+
+
+    }else{
+      // restore checkbox state
+      comparisonModeChecked.checked = false
+      // hide labels
+      selectedRawiLabel.classList.remove('showRawi')
+      selectedRawiLabel2.classList.remove('showRawi')
+      selectedRawiLabel2.classList.add('hidden')
+      comparisonSelector.parentElement.classList.add('hidden')
+
+    }
+  
+  }
+
   updatePage();
+
+  // if there is no permission the request it
+  let isAnInternalSourceCheck = localStorage.getItem('isAnInternalSource') == 'true' ? true : false
+  if (!isAnInternalSourceCheck){
+    permission.parentElement.classList.add("hidden")
+  }
+  else {
+    get('fileSystemSource').then((fileSystemSource)=>{
+      verifyPermission(fileSystemSource, false, false).then((permitted)=> {
+        console.log('permitted',permitted)
+        if (permitted){
+          permission.classList.remove("hidden")
+        }
+      }).catch((e)=>{
+        console.log('e2',e)
+      })
+    }).catch((e)=>{
+      console.log('e1',e)
+    })
+  }
 });
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -871,8 +938,8 @@ const internalSourceDisplay = async (image, secondPage = false) =>{
         return;
       }
 
-      const newDirectoryHandle = await fileSystemSource.getDirectoryHandle(rawis[selectedRawi].folder, { create: true })
-      const myFileHandle = await newDirectoryHandle.getFileHandle(getPath(secondPage, true))
+      const newDirectoryHandle = await fileSystemSource.getDirectoryHandle(rawis[(isComparisonMode && secondPage)?selectedRawi2:selectedRawi].folder, { create: true })
+      const myFileHandle = await newDirectoryHandle.getFileHandle(getPath((isComparisonMode && secondPage)?false:secondPage, true))
       const imageObject = await myFileHandle.getFile()
      
       // load the image
@@ -899,6 +966,7 @@ const internalSourceDisplay = async (image, secondPage = false) =>{
       }
     }
     console.log("eroor: ", error.name)
+    console.log("eroor: ", error)
   } finally{
     return
   }
@@ -1551,7 +1619,7 @@ const updateGridDisplay = () => {
 
     updateGrid(ayat, quranGrid, p1);
     if(isMoshafView){
-      updateGrid(ayat2, quranGrid2, p2);
+      updateGrid(isComparisonMode ? ayat: ayat2, quranGrid2, isComparisonMode ? p1: p2);
     }
   }
 
@@ -1583,6 +1651,8 @@ const updateGridDisplay = () => {
 // const settingMushafsFolder
 
 const openFolder = document.getElementById("openFolder")
+const permission = document.getElementById("permission")
+const comparisonSelector = document.getElementById("comparisonSelector");
 
 // METHODS  ///////////////////////////////////////////////////////////////////
 
@@ -1591,8 +1661,10 @@ const internalSourceCmd = (e) => {
   window.localStorage.setItem("isAnInternalSource", internalSourceChecked.checked)
   if (internalSourceChecked.checked) {
     openFolder.classList.remove("hidden")
+    permission.parentElement.classList.remove('hidden')
   }else{
     openFolder.classList.add("hidden")
+    permission.parentElement.classList.add('hidden')
   }
 
   isAnInternalSource = internalSourceChecked.checked
@@ -1601,7 +1673,36 @@ const internalSourceCmd = (e) => {
 }
 
 
-const  verifyPermission = async (fileHandle, readWrite = true) => {
+const comparisonModeCmd = (e) => {
+
+  window.localStorage.setItem("isComparisonMode", comparisonModeChecked.checked)
+
+  if (comparisonModeChecked.checked) {
+    // handel view
+    isMoshafView = true
+    secondPage.classList.remove("mushaf-view-closed");
+
+    // show labels
+    selectedRawiLabel.classList.add('showRawi')
+    selectedRawiLabel2.classList.add('showRawi')
+    selectedRawiLabel2.classList.remove('hidden')
+    comparisonSelector.parentElement.classList.remove('hidden')
+
+
+  }else{
+    // hide labels
+    selectedRawiLabel.classList.remove('showRawi')
+    selectedRawiLabel2.classList.remove('showRawi')
+    selectedRawiLabel2.classList.add('hidden')
+    comparisonSelector.parentElement.classList.add('hidden')
+
+  }
+  
+  isComparisonMode = comparisonModeChecked.checked
+  updatePage();
+}
+
+const  verifyPermission = async (fileHandle, readWrite = true, request = true) => {
   const options = {};
   if (readWrite) {
     options.mode = 'readwrite';
@@ -1610,10 +1711,14 @@ const  verifyPermission = async (fileHandle, readWrite = true) => {
   if ((await fileHandle.queryPermission(options)) === 'granted') {
     return true;
   }
-  // Request permission. If the user grants permission, return true.
-  if ((await fileHandle.requestPermission(options)) === 'granted') {
-    return true;
+  
+  if (request) {
+    // Request permission. If the user grants permission, return true.
+    if ((await fileHandle.requestPermission(options)) === 'granted') {
+      return true;
+    }
   }
+
   // The user didn't grant permission, so return false.
   return false;
 }
@@ -1631,7 +1736,34 @@ const handelOpen = async (e) => {
   
 }
 
+const handelPermissionButton =  async (e) => {
+  try {
+    fileSystemSource = await get('fileSystemSource')
+    if (fileSystemSource == undefined){
+      await handelOpen()
+    }else {
+      const permetted = await verifyPermission(fileSystemSource);
+      if(permetted){
+        updateImgDisplay()
+        permission.parentNode.classList.add('hidden')
+      }
+    }
+  } catch (error){
+    console.log('error:aa ', error)
+  }
+}
+
+const comparisonSelectorUpdated = (e) => {
+  selectedRawi2 = comparisonSelector.value
+  window.localStorage.setItem('rawi2', selectedRawi2)
+  selectedRawiLabel2.innerHTML = rawis[selectedRawi2].label
+  updatePage();
+}
+
 // Adding Events Listeners  ///////////////////////////////////////////////////
 
 openFolder.addEventListener('click', handelOpen, false);
+permission.addEventListener('click', handelPermissionButton, false);
 internalSourceChecked.addEventListener("change", internalSourceCmd);
+comparisonModeChecked.addEventListener("change", comparisonModeCmd);
+comparisonSelector.addEventListener("change", comparisonSelectorUpdated);
