@@ -703,7 +703,6 @@ const getPath = (second = false, local = false) => {
   // don't even try even to understand hhh 
 
   var decalage = 4;
-
   const p = parseInt(selectedPage) + decalage;
 
   if(!isMoshafView){
@@ -731,7 +730,7 @@ const getPath = (second = false, local = false) => {
   // if it's a paire page there 
   if (second) {
     if (local == true){
-      return `${"0000" + p2.slice(-4)}.jpg`
+      return `${("0000" + p2).slice(-4)}.jpg`
     }
     return `${rootSource}\\${rawis[selectedRawi].folder}\\${("0000" + p2).slice(-4)}.jpg`;
   } else {
@@ -1598,9 +1597,15 @@ const updateGridDisplay = () => {
 
   updateGrid(ayat, quranGrid, selectedPage);
 
+
+  if(isComparisonMode){
+
+    updateGrid(ayat, quranGrid2, selectedPage);
+  }
+
   // handle mushaf view  
 
-  if(isMoshafView) {
+  if(isMoshafView && !isComparisonMode) {
     if (!quranGrid2.classList.contains("quranGrid-closed")) {
       quranGrid2.classList.add("quranGrid-closed");
     }
@@ -1619,7 +1624,7 @@ const updateGridDisplay = () => {
 
     updateGrid(ayat, quranGrid, p1);
     if(isMoshafView){
-      updateGrid(isComparisonMode ? ayat: ayat2, quranGrid2, isComparisonMode ? p1: p2);
+      updateGrid(ayat2, quranGrid2, p2);
     }
   }
 
