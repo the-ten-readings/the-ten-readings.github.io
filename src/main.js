@@ -151,7 +151,7 @@ var arabicNormChar = {
 };
 
 // root folder for rawis folders
-const defaultRootSource = 'file:///d:/quran/qurans';
+const defaultRootSource = 'https:\\\\raw.githubusercontent.com\\the-ten-readings\\dataset\\data\\qurans';
 var rootSource = defaultRootSource;
 var fileSystemSource;
 
