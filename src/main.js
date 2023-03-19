@@ -151,7 +151,7 @@ var arabicNormChar = {
 };
 
 // root folder for rawis folders
-const defaultRootSource = 'https:\\\\raw.githubusercontent.com\\the-ten-readings\\dataset\\data\\qurans';
+const defaultRootSource = 'file:///d:/quran/qurans';
 var rootSource = defaultRootSource;
 var fileSystemSource;
 
@@ -701,13 +701,13 @@ const getThePagePaire = () => {
 const getPath = (second = false, local = false) => {
 
   // don't even try even to understand hhh 
-
+  
   var decalage = 4;
   const p = parseInt(selectedPage) + decalage;
 
   if(!isMoshafView){
     if(local){
-      return `${("0000" + (parseInt(selectedPage) + decalage)).slice(-4)}.jpg`
+      return `${("0000" + p).slice(-4)}.jpg`
     }
     return `${rootSource}\\${rawis[selectedRawi].folder}\\${("0000" + p).slice(-4)}.jpg`;
   }
@@ -718,13 +718,13 @@ const getPath = (second = false, local = false) => {
   const p2 = parseInt((getThePagePaire()%2) != 0 ? getThePagePaire()+1 : getThePagePaire()) + decalage;
 
   if (selectedPage == -3 || selectedPage == getLastPageForRawiOrCurrentOne()){
-    if (second == true){
+    if (second == true && !isComparisonMode){
       return '.\\src\\assets\\images\\peace-be-upon-him.jpg'
     }
     if (local == true){
       return `${("0000" + p1).slice(-4)}.jpg`
     }
-    return `${rootSource}\\${rawis[selectedRawi].folder}\\${("0000" + p1).slice(-4)}.jpg`;
+    return `${rootSource}\\${rawis[isComparisonMode && second ? selectedRawi2 : selectedRawi].folder}\\${isComparisonMode && second? ("0000" + p).slice(-4) :("0000" + p1).slice(-4)}.jpg`;
   }
 
   // if it's a paire page there 
@@ -732,12 +732,12 @@ const getPath = (second = false, local = false) => {
     if (local == true){
       return `${("0000" + p2).slice(-4)}.jpg`
     }
-    return `${rootSource}\\${rawis[selectedRawi].folder}\\${("0000" + p2).slice(-4)}.jpg`;
+    return `${rootSource}\\${rawis[isComparisonMode ? selectedRawi2 : selectedRawi].folder}\\${isComparisonMode ? ("0000" + p).slice(-4) :("0000" + p2).slice(-4)}.jpg`;
   } else {
     if (local == true){
       return isComparisonMode ?  `${("0000" + p).slice(-4)}.jpg` : `${("0000" + p1).slice(-4)}.jpg`
     }
-    return `${rootSource}\\${rawis[selectedRawi].folder}\\${isComparisonMode ? p :(("0000" + p1).slice(-4))}.jpg`;
+    return `${rootSource}\\${rawis[selectedRawi].folder}\\${isComparisonMode ? ("0000" + p).slice(-4) :("0000" + p1).slice(-4)}.jpg`;
   }
 
 };
@@ -1586,6 +1586,7 @@ const updateGrid = (ayat, quranGridID, page) => {
 // updating the grid logic
 const updateGridDisplay = () => {
   
+  // debugger
   // by default : no grid (turn the light off, nothing to select) 
   if (!quranGrid.classList.contains("quranGrid-closed")) {
     quranGrid.classList.add("quranGrid-closed");
@@ -1599,7 +1600,6 @@ const updateGridDisplay = () => {
 
 
   if(isComparisonMode){
-
     updateGrid(ayat, quranGrid2, selectedPage);
   }
 
