@@ -911,7 +911,7 @@ const handelSelectedAya = (targetAyaKey) => {
   if (result != '') {
     tafsirElement.innerHTML = result
   } else {
-    tafsirElement.innerHTML = "هذه الأداة في طور التجربة، لم تهيئ بشكل كلي بعد"
+    tafsirElement.innerHTML = ""
   }
 }
 
