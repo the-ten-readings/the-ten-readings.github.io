@@ -838,10 +838,10 @@ option:checked {
 .quran {
   display: flex;
   z-index: 1;
-  width: calc(100% - 23.7%);
-  max-width: calc(100% - 23.7%);
-  left: 3.6%;
-  aspect-ratio: 2 / 3.13;
+  width: calc(100% - 24.5%);
+  max-width: calc(100% - 24.5%);
+  left: 4%;
+  aspect-ratio: 2 / 3.15;
   position: absolute;
   flex-direction: column;
   /* display: none; */
@@ -983,7 +983,7 @@ input::-webkit-inner-spin-button {
 
 
 .memo>div>div {
-  background-color: #e4a301;
+  background-color: #fffffb;
 }
 
 .line-selected {
