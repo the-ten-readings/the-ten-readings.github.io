@@ -991,15 +991,19 @@ input::-webkit-inner-spin-button {
 }
 
 .aya-hovered {
-  background-color: #43d50040 !important
+  background-color: #43d50040 !important;
+  transition:all 0.3s
 }
+
+
 
 /* [data-aya]{
   background-color:#ff8a2b61 !important;
 } */
 .aya-selected {
-  /* box-shadow: inset 2px 2px 0px #ddab25, inset -2px 0px 0px #ddab25, 0px 2px 0px #ddab25; */
+  /* box-shadow: inset 0px -1px 0px #ddab23, inset -1px 0px 0px #ddab25, 1px -1px 0px #ddab25; */
   background-color: #ddab2550 !important;
+  transition:all 0.5s
 }
 
 .quranGrid-closed {
