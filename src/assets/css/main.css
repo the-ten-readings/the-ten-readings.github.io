@@ -982,6 +982,10 @@ input::-webkit-inner-spin-button {
 [data-ayaEndPosition='100'] { width: 100%; }
 
 
+.memo>div>div {
+  background-color: #e4a301;
+}
+
 .line-selected {
   background-color: #86fff561 !important
 }

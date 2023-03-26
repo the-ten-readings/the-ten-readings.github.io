@@ -101,6 +101,11 @@ function handleNightToggle (evt){
   imge2.classList.toggle("night");
 }
 
+function handleMemoToggle (evt){
+  quranGrid.classList.toggle("memo")
+  quranGrid2.classList.toggle("memo");
+}
+
 function handleMushafViewToggle (evt){
   if(comparisonModeChecked.checked){
     return
@@ -115,6 +120,7 @@ function handleMushafViewToggle (evt){
 document.getElementById("left-menu-button").addEventListener('click', handleLeftMenuToggle, false);
 document.getElementById("expan-toggle-button").addEventListener('click', handleExpandToggle, false);
 document.getElementById("night-toggle-button").addEventListener('click', handleNightToggle, false);
+document.getElementById("memo-toggle-button").addEventListener('click', handleMemoToggle, false);
 document.getElementById("mushafview-toggle-button").addEventListener('click', handleMushafViewToggle, false);
 
 ///////////////////////////////////////////////////////////////////////////////
