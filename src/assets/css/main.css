@@ -392,8 +392,8 @@ main.main {
   border: 1px solid #6c6c6c;
   border-radius: var(--radius);
   outline: 0;
-  border-bottom-left-radius: 0;
-  border-top-left-radius: 0;
+  /* border-bottom-left-radius: 0; */
+  /* border-top-left-radius: 0; */
 }
 
 .main-navigation svg {
