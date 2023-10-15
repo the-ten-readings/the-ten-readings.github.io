@@ -107,7 +107,7 @@ function handleMemoToggle (evt){
 }
 
 function handleMushafViewToggle (evt){
-  if(comparisonModeChecked.checked){
+  if(isComparisonMode){
     return
   }
 
@@ -117,11 +117,39 @@ function handleMushafViewToggle (evt){
   updateGridDisplay()
 }
 
+const handleComparisonModeToggle = (e) => {
+  isComparisonMode = !isComparisonMode
+
+  if (isComparisonMode) {
+    // handel view
+    isMoshafView = true
+    secondPage.classList.remove("mushaf-view-closed");
+
+    // show labels
+    selectedRawiLabel.classList.add('showRawi')
+    selectedRawiLabel2.classList.add('showRawi')
+    selectedRawiLabel2.classList.remove('hidden')
+    comparisonSelector.parentElement.classList.remove('hidden')
+  }else{
+    // hide labels
+    selectedRawiLabel.classList.remove('showRawi')
+    selectedRawiLabel2.classList.remove('showRawi')
+    selectedRawiLabel2.classList.add('hidden')
+    comparisonSelector.parentElement.classList.add('hidden')
+
+  }
+  
+  updatePage();
+}
+
 document.getElementById("left-menu-button").addEventListener('click', handleLeftMenuToggle, false);
 document.getElementById("expan-toggle-button").addEventListener('click', handleExpandToggle, false);
 document.getElementById("night-toggle-button").addEventListener('click', handleNightToggle, false);
 document.getElementById("memo-toggle-button").addEventListener('click', handleMemoToggle, false);
 document.getElementById("mushafview-toggle-button").addEventListener('click', handleMushafViewToggle, false);
+document.getElementById("comparison-mode-toggle-button").addEventListener('click', handleComparisonModeToggle, false);
+
+
 
 ///////////////////////////////////////////////////////////////////////////////
 // MODULE 01 - 02 //  Configs diff  ///////////////////////////////////////////
@@ -655,6 +683,7 @@ const isJuzaChecked = document.getElementById("part-juza");
 const isHizbChecked = document.getElementById("part-hizb");
 const isSuraChecked = document.getElementById("mart-sura");
 const internalSourceChecked = document.getElementById("internal-source");
+
 const comparisonModeChecked = document.getElementById("comparison-mode");
 
 // search : results
@@ -803,8 +832,6 @@ window.addEventListener("DOMContentLoaded", (e) => {
     isComparisonMode = savedIsComparisonMode
 
     if (isComparisonMode) {
-      // restore checkbox state
-      comparisonModeChecked.checked = true
       // handel view
       isMoshafView = true
       secondPage.classList.remove("mushaf-view-closed");
@@ -816,8 +843,6 @@ window.addEventListener("DOMContentLoaded", (e) => {
 
 
     }else{
-      // restore checkbox state
-      comparisonModeChecked.checked = false
       // hide labels
       selectedRawiLabel.classList.remove('showRawi')
       selectedRawiLabel2.classList.remove('showRawi')
@@ -1684,34 +1709,7 @@ const internalSourceCmd = (e) => {
 }
 
 
-const comparisonModeCmd = (e) => {
 
-  window.localStorage.setItem("isComparisonMode", comparisonModeChecked.checked)
-
-  if (comparisonModeChecked.checked) {
-    // handel view
-    isMoshafView = true
-    secondPage.classList.remove("mushaf-view-closed");
-
-    // show labels
-    selectedRawiLabel.classList.add('showRawi')
-    selectedRawiLabel2.classList.add('showRawi')
-    selectedRawiLabel2.classList.remove('hidden')
-    comparisonSelector.parentElement.classList.remove('hidden')
-
-
-  }else{
-    // hide labels
-    selectedRawiLabel.classList.remove('showRawi')
-    selectedRawiLabel2.classList.remove('showRawi')
-    selectedRawiLabel2.classList.add('hidden')
-    comparisonSelector.parentElement.classList.add('hidden')
-
-  }
-  
-  isComparisonMode = comparisonModeChecked.checked
-  updatePage();
-}
 
 const  verifyPermission = async (fileHandle, readWrite = true, request = true) => {
   const options = {};
@@ -1776,5 +1774,4 @@ const comparisonSelectorUpdated = (e) => {
 openFolder.addEventListener('click', handelOpen, false);
 permission.addEventListener('click', handelPermissionButton, false);
 internalSourceChecked.addEventListener("change", internalSourceCmd);
-comparisonModeChecked.addEventListener("change", comparisonModeCmd);
 comparisonSelector.addEventListener("change", comparisonSelectorUpdated);
