@@ -1,4 +1,3 @@
-
 ///////////////////////////////////////////////////////////////////////////////
 // MODULE xx : MODULE TEMPLATE  ///////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////
@@ -18,25 +17,22 @@
 // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
 let vh = window.innerHeight * 0.01;
 // Then we set the value in the --vh custom property to the root of the document
-document.documentElement.style.setProperty('--vh', `${vh}px`);
+document.documentElement.style.setProperty("--vh", `${vh}px`);
 
 // We listen to the resize event
-window.addEventListener('resize', () => {
+window.addEventListener("resize", () => {
   // We execute the same script as before
   let vh = window.innerHeight * 0.01;
-  document.documentElement.style.setProperty('--vh', `${vh}px`);
+  document.documentElement.style.setProperty("--vh", `${vh}px`);
 });
 
-
 const toggleExpanderTool = (toolExpander) => {
-  toolExpander.target.parentNode.parentNode.parentNode.classList.toggle('tool-closed')
-}
+  toolExpander.target.parentNode.parentNode.parentNode.classList.toggle("tool-closed");
+};
 
 const toggleSettingTool = (settingToggler) => {
-  settingToggler.target.parentNode.parentElement.nextElementSibling.classList.toggle('settings-closed')
-}
- 
-
+  settingToggler.target.parentNode.parentElement.nextElementSibling.classList.toggle("settings-closed");
+};
 
 // SWIPE ACTIONS (Mobile) /////////////////////////////////////////////////////
 
@@ -56,100 +52,95 @@ for (setting of settings) {
   setting.addEventListener("click", toggleSettingTool);
 }
 
-document.addEventListener('swiped-left', function(e) {
+document.addEventListener("swiped-left", function (e) {
   if (currentScreen == "main") {
-    mainMenu.classList.add("open-main-menu")
-    right.classList.add("open-right")
+    mainMenu.classList.add("open-main-menu");
+    right.classList.add("open-right");
 
-    currentScreen = "right"
-    
+    currentScreen = "right";
   } else if (currentScreen == "left") {
-    left.classList.remove("open-left")
+    left.classList.remove("open-left");
 
-    currentScreen = "main"
+    currentScreen = "main";
   }
 });
 
-document.addEventListener('swiped-right', function(e) {
+document.addEventListener("swiped-right", function (e) {
   if (currentScreen == "main") {
-    left.classList.add("open-left")
+    left.classList.add("open-left");
 
-    currentScreen = "left"
-  
+    currentScreen = "left";
   } else if (currentScreen == "right") {
-    right.classList.remove("open-right")
+    right.classList.remove("open-right");
     //mainMenu.classList.remove("open-main-menu")
-    
-    currentScreen = "main"
+
+    currentScreen = "main";
   }
 });
 
 // TOGGLE LEFT MENU
 
-function handleLeftMenuToggle(evt){
+function handleLeftMenuToggle(evt) {
   left.classList.toggle("open-left-desktp");
 }
-function handleExpandToggle (evt){
+function handleExpandToggle(evt) {
   isExpanded = !isExpanded;
   quranGrid.classList.toggle("expanded");
   quranGrid2.classList.toggle("expanded");
   imageLoaded();
 }
 
-function handleNightToggle (evt){
+function handleNightToggle(evt) {
   imge.classList.toggle("night");
   imge2.classList.toggle("night");
 }
 
-function handleMemoToggle (evt){
-  quranGrid.classList.toggle("memo")
+function handleMemoToggle(evt) {
+  quranGrid.classList.toggle("memo");
   quranGrid2.classList.toggle("memo");
 }
 
-function handleMushafViewToggle (evt){
-  if(isComparisonMode){
-    return
+function handleMushafViewToggle(evt) {
+  if (isComparisonMode) {
+    return;
   }
 
-  isMoshafView = !isMoshafView  
+  isMoshafView = !isMoshafView;
   secondPage.classList.toggle("mushaf-view-closed");
-  updateImgDisplay()
-  updateGridDisplay()
+  updateImgDisplay();
+  updateGridDisplay();
 }
 
 const handleComparisonModeToggle = (e) => {
-  isComparisonMode = !isComparisonMode
+  isComparisonMode = !isComparisonMode;
 
   if (isComparisonMode) {
     // handel view
-    isMoshafView = true
+    isMoshafView = true;
     secondPage.classList.remove("mushaf-view-closed");
 
     // show labels
-    selectedRawiLabel.classList.add('showRawi')
-    selectedRawiLabel2.classList.add('showRawi')
-    selectedRawiLabel2.classList.remove('hidden')
-    comparisonSelector.parentElement.classList.remove('hidden')
-  }else{
+    selectedRawiLabel.classList.add("showRawi");
+    selectedRawiLabel2.classList.add("showRawi");
+    selectedRawiLabel2.classList.remove("hidden");
+    comparisonSelector.parentElement.classList.remove("hidden");
+  } else {
     // hide labels
-    selectedRawiLabel.classList.remove('showRawi')
-    selectedRawiLabel2.classList.remove('showRawi')
-    selectedRawiLabel2.classList.add('hidden')
-    comparisonSelector.parentElement.classList.add('hidden')
-
+    selectedRawiLabel.classList.remove("showRawi");
+    selectedRawiLabel2.classList.remove("showRawi");
+    selectedRawiLabel2.classList.add("hidden");
+    comparisonSelector.parentElement.classList.add("hidden");
   }
-  
+
   updatePage();
-}
+};
 
-document.getElementById("left-menu-button").addEventListener('click', handleLeftMenuToggle, false);
-document.getElementById("expan-toggle-button").addEventListener('click', handleExpandToggle, false);
-document.getElementById("night-toggle-button").addEventListener('click', handleNightToggle, false);
-document.getElementById("memo-toggle-button").addEventListener('click', handleMemoToggle, false);
-document.getElementById("mushafview-toggle-button").addEventListener('click', handleMushafViewToggle, false);
-document.getElementById("comparison-mode-toggle-button").addEventListener('click', handleComparisonModeToggle, false);
-
-
+document.getElementById("left-menu-button").addEventListener("click", handleLeftMenuToggle, false);
+document.getElementById("expan-toggle-button").addEventListener("click", handleExpandToggle, false);
+document.getElementById("night-toggle-button").addEventListener("click", handleNightToggle, false);
+document.getElementById("memo-toggle-button").addEventListener("click", handleMemoToggle, false);
+document.getElementById("mushafview-toggle-button").addEventListener("click", handleMushafViewToggle, false);
+document.getElementById("comparison-mode-toggle-button").addEventListener("click", handleComparisonModeToggle, false);
 
 ///////////////////////////////////////////////////////////////////////////////
 // MODULE 01 - 02 //  Configs diff  ///////////////////////////////////////////
@@ -185,7 +176,7 @@ var arabicNormChar = {
 };
 
 // root folder for rawis folders
-const defaultRootSource = 'https:\\\\raw.githubusercontent.com\\the-ten-readings\\dataset\\data\\qurans';
+const defaultRootSource = "https:\\\\raw.githubusercontent.com\\the-ten-readings\\dataset\\data\\qurans";
 var rootSource = defaultRootSource;
 var fileSystemSource;
 
@@ -238,7 +229,7 @@ const rawis = {
     folder: "IbnKatheerQunbol",
     lastPage: 630,
   },
-  
+
   R3: {
     label: "أبي عمرو البصري",
     folder: "AlBasri",
@@ -322,7 +313,7 @@ const rawis = {
     folder: "HamzaKhallad2",
     lastPage: 634,
   },
-  
+
   R71: {
     label: "الكسائي بالمذهب الإجمالي",
     folder: "ALKisaai1",
@@ -406,258 +397,257 @@ const rawis = {
     folder: "Khalaf10Idrees2",
     lastPage: 627,
   },
-}
+};
 
 // Availaible Quran Versions (Riwaiat or Torok) : Configurations - Up/Down Navigations
 const rawArr = ["R111", "R112", "R113", "R114", "R121", "R122", "R2", "R21", "R22", "R3", "R311", "R312", "R32", "R4", "R41", "R42", "R5", "R51", "R521", "R522", "R6", "R611", "R612", "R621", "R622", "R71", "R711", "R712", "R72", "R721", "R722", "R8", "R81", "R82", "R9", "R91", "R92", "R10", "R101", "R1021", "R1022"];
 
 const linesCustomStyles = {
-  p1l2: 'padding: 41.2% 23% 0 24%;',
-  p1l3: 'padding: 0 16% ;',
-  p1l4: 'padding: 0 11% ;',
-  p1l5: 'padding: 0 9% ;',
-  p1l6: 'padding: 0 12% ;',
-  p1l7: 'padding: 0 21% ;',
-  p1l8: 'padding: 0 34% 44% 34%',
+  p1l2: "padding: 41.2% 23% 0 24%;",
+  p1l3: "padding: 0 16% ;",
+  p1l4: "padding: 0 11% ;",
+  p1l5: "padding: 0 9% ;",
+  p1l6: "padding: 0 12% ;",
+  p1l7: "padding: 0 21% ;",
+  p1l8: "padding: 0 34% 44% 34%",
 
-  p2l3: 'padding: 50% 15% 0;',
-  p2l4: 'padding: 0 11% 0 ;',
-  p2l5: 'padding: 0 10% ;',
-  p2l6: 'padding: 0 13% ;',
-  p2l7: 'padding: 0 22% ;',
-  p2l8: 'padding: 0 35% 42% 35%',
-  
-  p50l3: 'padding-top: 28.5%;',
-  
-  p76l14: 'padding-bottom: 15%',
-  p77l2: 'padding-top: 15.5%;',
-  p106l8: 'padding-top: 25.3%;', // middle sura + basmala
-  
-  p128l3: 'padding-top: 28.5%;', // header sura + basmala
+  p2l3: "padding: 50% 15% 0;",
+  p2l4: "padding: 0 11% 0 ;",
+  p2l5: "padding: 0 10% ;",
+  p2l6: "padding: 0 13% ;",
+  p2l7: "padding: 0 22% ;",
+  p2l8: "padding: 0 35% 42% 35%",
 
-  p151l3: 'padding-top: 28.5%;',
+  p50l3: "padding-top: 28.5%;",
 
-  p177l3: 'padding-top: 27.5%;',
+  p76l14: "padding-bottom: 15%",
+  p77l2: "padding-top: 15.5%;",
+  p106l8: "padding-top: 25.3%;", // middle sura + basmala
 
-  p187l2: 'padding-top: 15.5%;',
+  p128l3: "padding-top: 28.5%;", // header sura + basmala
 
-  p207l14: 'padding-bottom: 15.5%;', // header at the buttom
+  p151l3: "padding-top: 28.5%;",
 
-  p208l2: 'padding-top: 15%;', // basmala at the header
+  p177l3: "padding-top: 27.5%;",
 
-  p221l6: 'padding-bottom: 10%;', 
+  p187l2: "padding-top: 15.5%;",
 
-  p221l9 : 'padding-top: 16%;', 
+  p207l14: "padding-bottom: 15.5%;", // header at the buttom
 
-  p235l8 : 'padding-bottom: 16.5%;', 
-  p235l11 : 'padding-top: 8.5%;', 
+  p208l2: "padding-top: 15%;", // basmala at the header
 
-  p249l3: 'padding-top: 28%;',
-  
-  p255l5: 'padding-top: 26%;',
-  
-  p262l3: 'padding-top: 27%;',
-  
-  p267l9: 'padding-top: 25%;',
+  p221l6: "padding-bottom: 10%;",
 
-  p282l3: 'padding-top: 28%;',
+  p221l9: "padding-top: 16%;",
 
-  p293l9: 'padding-bottom: 26%;',
+  p235l8: "padding-bottom: 16.5%;",
+  p235l11: "padding-top: 8.5%;",
 
-  p305l3: 'padding-top: 27%;',
-  
-  p312l7: 'padding-top: 27%;',
-  
-  p322l3: 'padding-top: 28%;',
+  p249l3: "padding-top: 28%;",
 
-  p331l14: 'padding-bottom: 15%;',
-  p332l2: 'padding-top: 15%;',
-  
-  p341l14: 'padding-bottom: 15%;',
-  p342l2: 'padding-top: 15%;',
+  p255l5: "padding-top: 26%;",
 
-  p349l14: 'padding-bottom: 15%;',
-  p350l2: 'padding-top: 15%;',
+  p262l3: "padding-top: 27%;",
 
-  p359l13: 'padding-top: 25%;',
+  p267l9: "padding-top: 25%;",
 
-  p366l14: 'padding-bottom: 15%;',
-  p367l2: 'padding-top: 15%;',
-  
-  p376l14: 'padding-bottom: 15%;',
-  p377l2: 'padding-top: 15%;',
-  
-  p385l10: 'padding-top: 27%;',
-  
-  p396l10: 'padding-top: 27%;',
+  p282l3: "padding-top: 28%;",
 
-  p404l12: 'padding-top: 25%;',
-  
-  p411l3: 'padding-top: 28%;',
-  
-  p414l14: 'padding-bottom: 15%;',
-  p415l2: 'padding-top: 15%;',
-  
-  p417l14: 'padding-bottom: 13.7%;',
-  p418l2: 'padding-top: 15%;',
-  
-  p428l3: 'padding-top: 27%;',
+  p293l9: "padding-bottom: 26%;",
 
-  p434l10: 'padding-top: 25%;',
+  p305l3: "padding-top: 27%;",
 
-  p440l6: 'padding-top: 27%;',
+  p312l7: "padding-top: 27%;",
 
-  p445l14: 'padding-bottom: 15%;',
-  p446l2: 'padding-top: 15%;',
+  p322l3: "padding-top: 28%;",
 
-  p452l14: 'padding-bottom: 15%;',
-  p453l2: 'padding-top: 15%;',
+  p331l14: "padding-bottom: 15%;",
+  p332l2: "padding-top: 15%;",
 
-  p458l6: 'padding-top: 26%;',
-  
-  p467l5: 'padding-top: 27%;',
+  p341l14: "padding-bottom: 15%;",
+  p342l2: "padding-top: 15%;",
 
-  p477l3: 'padding-top: 28%;',
+  p349l14: "padding-bottom: 15%;",
+  p350l2: "padding-top: 15%;",
 
-  p483l3: 'padding-top: 28%;',
-  
-  p489l7: 'padding-top: 27.4%;',
+  p359l13: "padding-top: 25%;",
 
-  p496l3: 'padding-top: 28%;',
+  p366l14: "padding-bottom: 15%;",
+  p367l2: "padding-top: 15%;",
 
-  p498l14: 'padding-bottom: 15%;',
-  p499l2: 'padding-top: 15%;',
+  p376l14: "padding-bottom: 15%;",
+  p377l2: "padding-top: 15%;",
 
-  p502l9: 'padding-top: 27.4%;',
+  p385l10: "padding-top: 27%;",
 
-  p506l14: 'padding-bottom: 15%;',
-  p507l2: 'padding-top: 15%;',
+  p396l10: "padding-top: 27%;",
 
-  p511l3: 'padding-top: 28%;',
+  p404l12: "padding-top: 25%;",
 
-  p515l9: 'padding-top: 26%;',
+  p411l3: "padding-top: 28%;",
 
-  p518l3: 'padding-top: 28%;',
-  
-  p520l14: 'padding-top: 28%;',
-  
-  p523l10: 'padding-top: 25%;',
+  p414l14: "padding-bottom: 15%;",
+  p415l2: "padding-top: 15%;",
 
-  p525l14: 'padding-bottom: 15%;',
-  p526l2: 'padding-top: 15%;',
+  p417l14: "padding-bottom: 13.7%;",
+  p418l2: "padding-top: 15%;",
 
-  p528l11: 'padding-top: 26%;',
+  p428l3: "padding-top: 27%;",
 
-  p531l7: 'padding-top: 26%;',
-  
-  p534l9: 'padding-top: 26%;',
-  
-  p537l13: 'padding-top: 26%;',
+  p434l10: "padding-top: 25%;",
 
-  p542l3: 'padding-top: 27%;',
+  p440l6: "padding-top: 27%;",
 
-  p545l9: 'padding-top: 25%;',
+  p445l14: "padding-bottom: 15%;",
+  p446l2: "padding-top: 15%;",
 
-  p548l14: 'padding-bottom: 15%;',
-  p549l2: 'padding-top: 15%;',
+  p452l14: "padding-bottom: 15%;",
+  p453l2: "padding-top: 15%;",
 
-  p551l9: 'padding-top: 26%;',
+  p458l6: "padding-top: 26%;",
 
-  p553l3: 'padding-top: 27%;',
+  p467l5: "padding-top: 27%;",
 
-  p554l9: 'padding-top: 24%;',
+  p477l3: "padding-top: 28%;",
 
-  p555l14: 'padding-bottom: 15%;',
-  p556l2: 'padding-top: 15%;',
+  p483l3: "padding-top: 28%;",
 
-  p557l14: 'padding-bottom: 15%;',
-  p558l2: 'padding-top: 14%;',
+  p489l7: "padding-top: 27.4%;",
 
-  p560l3: 'padding-top: 27%;',
-  
-  p562l3: 'padding-top: 26%;',
+  p496l3: "padding-top: 28%;",
 
-  p564l8: 'padding-top: 25%;',
+  p498l14: "padding-bottom: 15%;",
+  p499l2: "padding-top: 15%;",
 
-  p566l11: 'padding-top: 25%;',
-  
-  p568l11: 'padding-top:  25%;',
- 
-  p570l7: 'padding-top: 25%;',
-  
-  p572l3: 'padding-top: 26%;',
-  
-  p574l3: 'padding-top: 26%;',
-  
-  p575l10: 'padding-top: 25%;',
+  p502l9: "padding-top: 27.4%;",
 
-  p577l8: 'padding-top: 26%;',
-  
-  p578l11: 'padding-top: 25%;',
-  
-  p580l9: 'padding-top: 25%;',
-  
-  p582l3: 'padding-top: 28%;',
-  
-  p582l3: 'padding-top: 28%;',
- 
-  p583l10: 'padding-top: 26%;',
+  p506l14: "padding-bottom: 15%;",
+  p507l2: "padding-top: 15%;",
 
-  p584l14: 'padding-bottom: 15%;',
+  p511l3: "padding-top: 28%;",
 
-  p585l2: 'padding-top: 15%;',
-  
-  p586l3: 'padding-top: 25.5%;',
-  p586l14: 'padding-bottom: 15%;',
-  
-  p587l2: 'padding-top: 14%;',
-  p587l13: 'padding-top: 25%;',
+  p515l9: "padding-top: 26%;",
 
-  p589l4: 'padding-top: 26%;',
+  p518l3: "padding-top: 28%;",
 
-  p590l3: 'padding-top: 26%;',
-  p590l14: 'padding-bottom: 15%;',
+  p520l14: "padding-top: 28%;",
 
-  p591l2: 'padding-top: 14%;',
-  p591l10: 'padding-top: 23%;',
+  p523l10: "padding-top: 25%;",
 
-  p592l5: 'padding-top: 25%;',
-  p593l3: 'padding-top: 25%;',
-  p594l6: 'padding-top: 24%;',
-  p594l14: 'padding-bottom: 13%;',
-  p595l2: 'padding-top: 13%;',
-  p595l11: 'padding-top: 23%;',
-  p596l6: 'padding-top: 22%;',
-  p596l13: 'padding-top: 22%;',
-  p597l3: 'padding-top: 25%;',
-  p597l9: 'padding-top: 25%;',
-  
-  p598l3: 'padding-top: 27%;',
-  p598l8: 'padding-top: 24%;',
+  p525l14: "padding-bottom: 15%;",
+  p526l2: "padding-top: 15%;",
 
-  p599l5: 'padding-top: 23%;',
-  p599l12: 'padding-top: 24%;',
+  p528l11: "padding-top: 26%;",
 
-  p600l4: 'padding-top: 23%;',
-  p600l12: 'padding-top: 23%;',
+  p531l7: "padding-top: 26%;",
 
-  p601l3: 'padding-top: 25%;',
-  p601l7: 'padding-top: 24%;',
-  p601l13: 'padding-top: 22%;',
+  p534l9: "padding-top: 26%;",
 
-  p602l3: 'padding-top: 24%;',
-  p602l8: 'padding-top: 22%;',
-  p602l14: 'padding-top: 22%;',
+  p537l13: "padding-top: 26%;",
 
-  p603l3: 'padding-top: 23%;',
-  p603l8: 'padding-top: 22%;',
-  p603l13: 'padding-top: 22%;',
-  
-  p604l3: 'padding-top: 25%;',
-  p604l7: 'padding-top: 22%;',
-  p604l12: 'padding-top: 22%;',
-  
-}
+  p542l3: "padding-top: 27%;",
+
+  p545l9: "padding-top: 25%;",
+
+  p548l14: "padding-bottom: 15%;",
+  p549l2: "padding-top: 15%;",
+
+  p551l9: "padding-top: 26%;",
+
+  p553l3: "padding-top: 27%;",
+
+  p554l9: "padding-top: 24%;",
+
+  p555l14: "padding-bottom: 15%;",
+  p556l2: "padding-top: 15%;",
+
+  p557l14: "padding-bottom: 15%;",
+  p558l2: "padding-top: 14%;",
+
+  p560l3: "padding-top: 27%;",
+
+  p562l3: "padding-top: 26%;",
+
+  p564l8: "padding-top: 25%;",
+
+  p566l11: "padding-top: 25%;",
+
+  p568l11: "padding-top:  25%;",
+
+  p570l7: "padding-top: 25%;",
+
+  p572l3: "padding-top: 26%;",
+
+  p574l3: "padding-top: 26%;",
+
+  p575l10: "padding-top: 25%;",
+
+  p577l8: "padding-top: 26%;",
+
+  p578l11: "padding-top: 25%;",
+
+  p580l9: "padding-top: 25%;",
+
+  p582l3: "padding-top: 28%;",
+
+  p582l3: "padding-top: 28%;",
+
+  p583l10: "padding-top: 26%;",
+
+  p584l14: "padding-bottom: 15%;",
+
+  p585l2: "padding-top: 15%;",
+
+  p586l3: "padding-top: 25.5%;",
+  p586l14: "padding-bottom: 15%;",
+
+  p587l2: "padding-top: 14%;",
+  p587l13: "padding-top: 25%;",
+
+  p589l4: "padding-top: 26%;",
+
+  p590l3: "padding-top: 26%;",
+  p590l14: "padding-bottom: 15%;",
+
+  p591l2: "padding-top: 14%;",
+  p591l10: "padding-top: 23%;",
+
+  p592l5: "padding-top: 25%;",
+  p593l3: "padding-top: 25%;",
+  p594l6: "padding-top: 24%;",
+  p594l14: "padding-bottom: 13%;",
+  p595l2: "padding-top: 13%;",
+  p595l11: "padding-top: 23%;",
+  p596l6: "padding-top: 22%;",
+  p596l13: "padding-top: 22%;",
+  p597l3: "padding-top: 25%;",
+  p597l9: "padding-top: 25%;",
+
+  p598l3: "padding-top: 27%;",
+  p598l8: "padding-top: 24%;",
+
+  p599l5: "padding-top: 23%;",
+  p599l12: "padding-top: 24%;",
+
+  p600l4: "padding-top: 23%;",
+  p600l12: "padding-top: 23%;",
+
+  p601l3: "padding-top: 25%;",
+  p601l7: "padding-top: 24%;",
+  p601l13: "padding-top: 22%;",
+
+  p602l3: "padding-top: 24%;",
+  p602l8: "padding-top: 22%;",
+  p602l14: "padding-top: 22%;",
+
+  p603l3: "padding-top: 23%;",
+  p603l8: "padding-top: 22%;",
+  p603l13: "padding-top: 22%;",
+
+  p604l3: "padding-top: 25%;",
+  p604l7: "padding-top: 22%;",
+  p604l12: "padding-top: 22%;",
+};
 
 // HTML DOM CONNECTION  ///////////////////////////////////////////////////////
 
@@ -714,7 +704,7 @@ const tafsirElement = document.getElementById("tafsir");
 var isPageLoaded = false;
 var selectedRawi = "R111";
 var selectedRawi2 = "R111";
-var selectedPage = -3//;79; // -3
+var selectedPage = -3; //;79; // -3
 var isSearchOpen = true;
 var isExpanded = false;
 var isMoshafView = false;
@@ -728,53 +718,50 @@ const updateElement = (element, prop, value) => {
   if (element) element[prop] = value;
 };
 
-
 const getThePagePaire = () => {
-  return(!(selectedPage%2 == 0)  ? getNextCBNumber() : getPrivCBNumber())
-}
+  return !(selectedPage % 2 == 0) ? getNextCBNumber() : getPrivCBNumber();
+};
 
 const getPath = (second = false, local = false) => {
+  // don't even try even to understand hhh
 
-  // don't even try even to understand hhh 
-  
   var decalage = 4;
   const p = parseInt(selectedPage) + decalage;
 
-  if(!isMoshafView){
-    if(local){
-      return `${("0000" + p).slice(-4)}.jpg`
+  if (!isMoshafView) {
+    if (local) {
+      return `${("0000" + p).slice(-4)}.jpg`;
     }
     return `${rootSource}\\${rawis[selectedRawi].folder}\\${("0000" + p).slice(-4)}.jpg`;
   }
 
   // 2 pages view handeling
 
-  const p1 = parseInt((selectedPage%2 == 0) ? selectedPage - 1 : selectedPage) + decalage;
-  const p2 = parseInt((getThePagePaire()%2) != 0 ? getThePagePaire()+1 : getThePagePaire()) + decalage;
+  const p1 = parseInt(selectedPage % 2 == 0 ? selectedPage - 1 : selectedPage) + decalage;
+  const p2 = parseInt(getThePagePaire() % 2 != 0 ? getThePagePaire() + 1 : getThePagePaire()) + decalage;
 
-  if (selectedPage == -3 || selectedPage == getLastPageForRawiOrCurrentOne()){
-    if (second == true && !isComparisonMode){
-      return '.\\src\\assets\\images\\peace-be-upon-him.jpg'
+  if (selectedPage == -3 || selectedPage == getLastPageForRawiOrCurrentOne()) {
+    if (second == true && !isComparisonMode) {
+      return ".\\src\\assets\\images\\peace-be-upon-him.jpg";
     }
-    if (local == true){
-      return `${("0000" + p1).slice(-4)}.jpg`
+    if (local == true) {
+      return `${("0000" + p1).slice(-4)}.jpg`;
     }
-    return `${rootSource}\\${rawis[isComparisonMode && second ? selectedRawi2 : selectedRawi].folder}\\${isComparisonMode && second? ("0000" + p).slice(-4) :("0000" + p1).slice(-4)}.jpg`;
+    return `${rootSource}\\${rawis[isComparisonMode && second ? selectedRawi2 : selectedRawi].folder}\\${isComparisonMode && second ? ("0000" + p).slice(-4) : ("0000" + p1).slice(-4)}.jpg`;
   }
 
-  // if it's a paire page there 
+  // if it's a paire page there
   if (second) {
-    if (local == true){
-      return `${("0000" + p2).slice(-4)}.jpg`
+    if (local == true) {
+      return `${("0000" + p2).slice(-4)}.jpg`;
     }
-    return `${rootSource}\\${rawis[isComparisonMode ? selectedRawi2 : selectedRawi].folder}\\${isComparisonMode ? ("0000" + p).slice(-4) :("0000" + p2).slice(-4)}.jpg`;
+    return `${rootSource}\\${rawis[isComparisonMode ? selectedRawi2 : selectedRawi].folder}\\${isComparisonMode ? ("0000" + p).slice(-4) : ("0000" + p2).slice(-4)}.jpg`;
   } else {
-    if (local == true){
-      return isComparisonMode ?  `${("0000" + p).slice(-4)}.jpg` : `${("0000" + p1).slice(-4)}.jpg`
+    if (local == true) {
+      return isComparisonMode ? `${("0000" + p).slice(-4)}.jpg` : `${("0000" + p1).slice(-4)}.jpg`;
     }
-    return `${rootSource}\\${rawis[selectedRawi].folder}\\${isComparisonMode ? ("0000" + p).slice(-4) :("0000" + p1).slice(-4)}.jpg`;
+    return `${rootSource}\\${rawis[selectedRawi].folder}\\${isComparisonMode ? ("0000" + p).slice(-4) : ("0000" + p1).slice(-4)}.jpg`;
   }
-
 };
 
 // Adding Events Listeners  ///////////////////////////////////////////////////
@@ -783,96 +770,93 @@ const getPath = (second = false, local = false) => {
 window.addEventListener("DOMContentLoaded", (e) => {
   isPageLoaded = true;
   filterIndexCmd(); // To hide the lines showed based on DOM loaded elements based on the checked options
-  
-
 
   // restore saved settings : rawi and page
-  let savedRawi = window.localStorage.getItem('rawi')
-  if (savedRawi != null && savedRawi != ''){
-    selectedRawi = savedRawi
+  let savedRawi = window.localStorage.getItem("rawi");
+  if (savedRawi != null && savedRawi != "") {
+    selectedRawi = savedRawi;
   }
   raw[selectedRawi].classList.add("raw-selected");
 
-  let savedRawi2 = window.localStorage.getItem('rawi2')
-  if (savedRawi2 != null && savedRawi2 != ''){
-    selectedRawi2 = savedRawi2
+  let savedRawi2 = window.localStorage.getItem("rawi2");
+  if (savedRawi2 != null && savedRawi2 != "") {
+    selectedRawi2 = savedRawi2;
   }
 
-  comparisonSelector.value = selectedRawi2
+  comparisonSelector.value = selectedRawi2;
 
-  let savedPage = window.localStorage.getItem('page')
-  if (savedPage){
-    selectedPage = savedPage
+  let savedPage = window.localStorage.getItem("page");
+  if (savedPage) {
+    selectedPage = savedPage;
   }
 
   // update the selected rawi label
-  selectedRawiLabel.innerHTML = rawis[selectedRawi].label
+  selectedRawiLabel.innerHTML = rawis[selectedRawi].label;
 
-  selectedRawiLabel2.innerHTML = rawis[selectedRawi2].label
+  selectedRawiLabel2.innerHTML = rawis[selectedRawi2].label;
 
-  var savedIsAnInternalSource = window.localStorage.getItem('isAnInternalSource')
-  if (savedIsAnInternalSource != null && savedIsAnInternalSource != ''){
-    savedIsAnInternalSource = savedIsAnInternalSource == 'true' ? true:false
-    
-    isAnInternalSource = savedIsAnInternalSource
+  var savedIsAnInternalSource = window.localStorage.getItem("isAnInternalSource");
+  if (savedIsAnInternalSource != null && savedIsAnInternalSource != "") {
+    savedIsAnInternalSource = savedIsAnInternalSource == "true" ? true : false;
+
+    isAnInternalSource = savedIsAnInternalSource;
 
     if (isAnInternalSource) {
-      internalSourceChecked.checked = true
-      openFolder.classList.remove("hidden")
-    }else{
-      internalSourceChecked.checked = false
-      openFolder.classList.add("hidden")
+      internalSourceChecked.checked = true;
+      openFolder.classList.remove("hidden");
+    } else {
+      internalSourceChecked.checked = false;
+      openFolder.classList.add("hidden");
     }
   }
 
-  var savedIsComparisonMode = window.localStorage.getItem('isComparisonMode')
-  if (savedIsComparisonMode != null && savedIsComparisonMode != ''){
-    savedIsComparisonMode = savedIsComparisonMode == 'true' ? true:false
-    
-    isComparisonMode = savedIsComparisonMode
+  var savedIsComparisonMode = window.localStorage.getItem("isComparisonMode");
+  if (savedIsComparisonMode != null && savedIsComparisonMode != "") {
+    savedIsComparisonMode = savedIsComparisonMode == "true" ? true : false;
+
+    isComparisonMode = savedIsComparisonMode;
 
     if (isComparisonMode) {
       // handel view
-      isMoshafView = true
+      isMoshafView = true;
       secondPage.classList.remove("mushaf-view-closed");
       // show labels
-      selectedRawiLabel.classList.add('showRawi')
-      selectedRawiLabel2.classList.add('showRawi')
-      selectedRawiLabel2.classList.remove('hidden')
-      comparisonSelector.parentElement.classList.remove('hidden')
-
-
-    }else{
+      selectedRawiLabel.classList.add("showRawi");
+      selectedRawiLabel2.classList.add("showRawi");
+      selectedRawiLabel2.classList.remove("hidden");
+      comparisonSelector.parentElement.classList.remove("hidden");
+    } else {
       // hide labels
-      selectedRawiLabel.classList.remove('showRawi')
-      selectedRawiLabel2.classList.remove('showRawi')
-      selectedRawiLabel2.classList.add('hidden')
-      comparisonSelector.parentElement.classList.add('hidden')
-
+      selectedRawiLabel.classList.remove("showRawi");
+      selectedRawiLabel2.classList.remove("showRawi");
+      selectedRawiLabel2.classList.add("hidden");
+      comparisonSelector.parentElement.classList.add("hidden");
     }
-  
   }
 
   updatePage();
 
   // if there is no permission the request it
-  let isAnInternalSourceCheck = localStorage.getItem('isAnInternalSource') == 'true' ? true : false
-  if (!isAnInternalSourceCheck){
-    permission.parentElement.classList.add("hidden")
-  }
-  else {
-    get('fileSystemSource').then((fileSystemSource)=>{
-      verifyPermission(fileSystemSource, false, false).then((permitted)=> {
-        console.log('permitted',permitted)
-        if (permitted){
-          permission.classList.remove("hidden")
-        }
-      }).catch((e)=>{
-        console.log('e2',e)
+  let isAnInternalSourceCheck = localStorage.getItem("isAnInternalSource") == "true" ? true : false;
+  if (!isAnInternalSourceCheck) {
+    permission.parentElement.classList.add("hidden");
+  } else {
+    get("fileSystemSource")
+      .then((fileSystemSource) => {
+        verifyPermission(fileSystemSource, false, false)
+          .then((permitted) => {
+            console.log("permitted", permitted);
+            if (permitted) {
+              permission.classList.remove("hidden");
+            }
+          })
+          .catch((e) => {
+            console.log("e2", e);
+          });
       })
-    }).catch((e)=>{
-      console.log('e1',e)
-    })
+      .catch((e) => {
+        console.log("e1", e);
+      });
   }
 });
 
@@ -884,34 +868,34 @@ window.addEventListener("DOMContentLoaded", (e) => {
 
 const toggleLoading = (status) => {
   // loading on
-  if (status == true){
+  if (status == true) {
     // loading tag :
-    loading.classList.add("loading-on")
+    loading.classList.add("loading-on");
     quranGrid.classList.add("quranGrid-closed");
     quranGrid2.classList.add("quranGrid-closed");
   }
   // loading off
-  else{
+  else {
     // loading tag :
-    loading.classList.remove("loading-on")
+    loading.classList.remove("loading-on");
     quranGrid.classList.remove("quranGrid-closed");
     quranGrid2.classList.remove("quranGrid-closed");
   }
-}
+};
 
 const imageLoaded = () => {
-  const sWidth = isExpanded ? 781 : 1025
-  const sHeight = 1305
-  ctx.canvas.width = sWidth
-  ctx.canvas.height = sHeight
+  const sWidth = isExpanded ? 781 : 1025;
+  const sHeight = 1305;
+  ctx.canvas.width = sWidth;
+  ctx.canvas.height = sHeight;
 
-  ctx2.canvas.width = sWidth
-  ctx2.canvas.height = sHeight
+  ctx2.canvas.width = sWidth;
+  ctx2.canvas.height = sHeight;
 
   // quranGrid.style.height = sHeight / 100 + "px"
   // quranGrid.style.width = sWidth / 100 + "px"
 
-  // TODO: to be cleaned later: pnly for test  
+  // TODO: to be cleaned later: pnly for test
 
   // setTimeout(() => {
   //   ctx.drawImage(currentImage,isMobile ? 40 : 0, 0, sWidth, sHeight, 0,0, sWidth,sHeight);
@@ -919,127 +903,123 @@ const imageLoaded = () => {
   //   toggleLoading(false)
   // }, 1000)
 
-  ctx.drawImage(currentImage, isExpanded ? 37 : 0, 0, sWidth, sHeight, 0,0, sWidth,sHeight);
+  ctx.drawImage(currentImage, isExpanded ? 37 : 0, 0, sWidth, sHeight, 0, 0, sWidth, sHeight);
 
-  if(isMoshafView){
-    ctx2.drawImage(currentImage2, isExpanded ? 37 : 0, 0, sWidth, sHeight, 0,0, sWidth,sHeight);
+  if (isMoshafView) {
+    ctx2.drawImage(currentImage2, isExpanded ? 37 : 0, 0, sWidth, sHeight, 0, 0, sWidth, sHeight);
   }
 
   // close the loading block
-  toggleLoading(false)
+  toggleLoading(false);
 };
 
-
 const handelSelectedAya = (targetAyaKey) => {
-  let result = ''
-  tafsir.forEach((i)=>{
-    if(i.id === targetAyaKey){
-      result = i.tafsir
-      return
+  let result = "";
+  tafsir.forEach((i) => {
+    if (i.id === targetAyaKey) {
+      result = i.tafsir;
+      return;
     }
-  })
+  });
 
-  if (result != '') {
-    tafsirElement.innerHTML = result
+  if (result != "") {
+    tafsirElement.innerHTML = result;
   } else {
-    tafsirElement.innerHTML = ""
+    tafsirElement.innerHTML = "";
   }
-}
+};
 
 const imageCantBeLoaded = () => {
-  updateImgDisplay('404')
+  updateImgDisplay("404");
 
   // close the loading block
-  toggleLoading(false)
+  toggleLoading(false);
   quranGrid.classList.add("quranGrid-closed");
   quranGrid2.classList.add("quranGrid-closed");
 };
 
-const internalSourceDisplay = async (image, secondPage = false) =>{
-
+const internalSourceDisplay = async (image, secondPage = false) => {
   try {
-    fileSystemSource = await get('fileSystemSource')
-    if (fileSystemSource == undefined){
-      await handelOpen()
-    }else {
+    fileSystemSource = await get("fileSystemSource");
+    if (fileSystemSource == undefined) {
+      await handelOpen();
+    } else {
       const permetted = await verifyPermission(fileSystemSource);
-      if (!permetted){
-        console.log("not permitted")
+      if (!permetted) {
+        console.log("not permitted");
         return;
       }
 
-      const newDirectoryHandle = await fileSystemSource.getDirectoryHandle(rawis[(isComparisonMode && secondPage)?selectedRawi2:selectedRawi].folder, { create: true })
-      const myFileHandle = await newDirectoryHandle.getFileHandle(getPath((isComparisonMode && secondPage)?false:secondPage, true))
-      const imageObject = await myFileHandle.getFile()
-     
+      const newDirectoryHandle = await fileSystemSource.getDirectoryHandle(rawis[isComparisonMode && secondPage ? selectedRawi2 : selectedRawi].folder, { create: true });
+      const myFileHandle = await newDirectoryHandle.getFileHandle(getPath(isComparisonMode && secondPage ? false : secondPage, true));
+      const imageObject = await myFileHandle.getFile();
+
       // load the image
-      image.src = URL.createObjectURL(imageObject)
+      image.src = URL.createObjectURL(imageObject);
     }
-    
   } catch (error) {
-     // if image does not exists
-     if(error.name == 'NotFoundError'){
+    // if image does not exists
+    if (error.name == "NotFoundError") {
       try {
-        const createdDirectoryHandle = await fileSystemSource.getDirectoryHandle(rawis[selectedRawi].folder)
-        const newFileHandle = await createdDirectoryHandle.getFileHandle(getPath(secondPage, true), {create: true})
+        const createdDirectoryHandle = await fileSystemSource.getDirectoryHandle(rawis[selectedRawi].folder);
+        const newFileHandle = await createdDirectoryHandle.getFileHandle(getPath(secondPage, true), { create: true });
         const writable = await newFileHandle.createWritable();
 
         const response = await fetch(getPath(secondPage));
-        console.log("RSPONSE")
+        console.log("RSPONSE");
         await response.body.pipeTo(writable);
 
-        const imageObject = await newFileHandle.getFile()
+        const imageObject = await newFileHandle.getFile();
 
-        image.src = URL.createObjectURL(imageObject)
+        image.src = URL.createObjectURL(imageObject);
       } catch (error) {
-        console.log("internal error: ", error)
+        console.log("internal error: ", error);
       }
     }
-    console.log("eroor: ", error.name)
-    console.log("eroor: ", error)
-  } finally{
-    return
+    console.log("eroor: ", error.name);
+    console.log("eroor: ", error);
+  } finally {
+    return;
   }
-}
+};
 
 const updateImgDisplay = async (type = null) => {
   if (type == "404") {
-    currentImage.src = ".\\src\\assets\\images\\peace-be-upon-him.jpg"
-    if (isMoshafView) { currentImage2.src = ".\\src\\assets\\images\\peace-be-upon-him.jpg" }
-    toggleLoading(true)
+    currentImage.src = ".\\src\\assets\\images\\peace-be-upon-him.jpg";
+    if (isMoshafView) {
+      currentImage2.src = ".\\src\\assets\\images\\peace-be-upon-him.jpg";
+    }
+    toggleLoading(true);
     return;
   }
 
-  toggleLoading(true)
+  toggleLoading(true);
 
-  if(isAnInternalSource){
-    await internalSourceDisplay(currentImage, false)
-    if(isMoshafView){
-      await internalSourceDisplay(currentImage2, true)
+  if (isAnInternalSource) {
+    await internalSourceDisplay(currentImage, false);
+    if (isMoshafView) {
+      await internalSourceDisplay(currentImage2, true);
     }
-    return
+    return;
   }
 
   currentImage.src = getPath();
-  if(isMoshafView){
+  if (isMoshafView) {
     currentImage2.src = getPath(true);
   }
 };
 
-
-
 const getLastPageForRawiOrCurrentOne = (rawi = null) => {
-  if (rawi != null){
-    return rawis[rawi].lastPage - 4
+  if (rawi != null) {
+    return rawis[rawi].lastPage - 4;
   }
-  return rawis[selectedRawi].lastPage - 4
-}
+  return rawis[selectedRawi].lastPage - 4;
+};
 
-var ab = []
-const bc = []
+var ab = [];
+const bc = [];
 
 const updatePage = (updateDisplay = true) => {
-
   // only for div /////////////////////////
 
   // for (a of document.getElementsByClassName("range")){
@@ -1051,9 +1031,9 @@ const updatePage = (updateDisplay = true) => {
   // console.log(bc)
 
   // only for dev ended ///////////////////
-  
+
   // save data
-  window.localStorage.setItem('page', selectedPage);
+  window.localStorage.setItem("page", selectedPage);
 
   /* -!- */
 
@@ -1072,16 +1052,16 @@ const updatePage = (updateDisplay = true) => {
 
   // update fahras selections according the current page
   for (option of filterAndSelector.options) {
-    if(option.selected && option.value != selectedPage) {
+    if (option.selected && option.value != selectedPage) {
       option.selected = false;
     }
-    if(!option.selected && option.value == selectedPage) {
+    if (!option.selected && option.value == selectedPage) {
       option.selected = true;
     }
   }
 
   // update the alert mail data
-  alert.href = `mailto:info@bhr-q.com;nooralhouda.contact@gmail.com?subject=بريد تواصل (من موقع the-ten-readings.github.io) &body=مصحف: ${rawis[selectedRawi].label} - الصفحة: ${selectedPage}%0D%0A______________%0D%0A`
+  alert.href = `mailto:info@bhr-q.com;nooralhouda.contact@gmail.com?subject=بريد تواصل (من موقع the-ten-readings.github.io) &body=مصحف: ${rawis[selectedRawi].label} - الصفحة: ${selectedPage}%0D%0A______________%0D%0A`;
 };
 
 const getNextCBNumber = () => {
@@ -1102,7 +1082,7 @@ const getPrivCBNumber = () => {
 };
 
 const nextCB = () => {
-  selectedPage  = getNextCBNumber();
+  selectedPage = getNextCBNumber();
   updatePage();
 };
 
@@ -1113,25 +1093,25 @@ const privCB = () => {
 
 const goToPageCmd = (e) => {
   const value = parseFloat(e.target.value);
-  const lPage = getLastPageForRawiOrCurrentOne()
+  const lPage = getLastPageForRawiOrCurrentOne();
 
   // ! update the page if the user don't play with the input ie : if not let the last correct displayed page
   if (value >= -3 && value <= lPage) {
     selectedPage = value;
   }
   // if the input is empty told the user
-  else if (isNaN(value) || value == "" || value == "-"){
-    updateImgDisplay("404")
+  else if (isNaN(value) || value == "" || value == "-") {
+    updateImgDisplay("404");
     selectedPage = -3;
-    updateGridDisplay()
+    updateGridDisplay();
     return;
   }
 
-  // if the request comes from the left menu (when chooseing something from fahras) 
-  // and we are in a mobile screen then close the bar 
-  if (e.code == undefined && left.classList.contains("open-left") && currentScreen == "left"){
-    currentScreen = "main"
-    left.classList.remove("open-left")
+  // if the request comes from the left menu (when chooseing something from fahras)
+  // and we are in a mobile screen then close the bar
+  if (e.code == undefined && left.classList.contains("open-left") && currentScreen == "left") {
+    currentScreen = "main";
+    left.classList.remove("open-left");
   }
 
   updatePage();
@@ -1140,28 +1120,28 @@ const goToPageCmd = (e) => {
 const goToPageFromSearchCmd = (e) => {
   const page = parseFloat(e.target.dataset.page);
   const aya = parseFloat(e.target.dataset.targetaya);
-  const lPage = getLastPageForRawiOrCurrentOne()
+  const lPage = getLastPageForRawiOrCurrentOne();
 
   // even if we assume the the glassory values are correct but I will check the values !
-  
+
   if (page >= -3 && page <= lPage) {
     selectedPage = page;
     selectedAya = aya;
-    handelSelectedAya(e.target.dataset.targetayakey)
+    handelSelectedAya(e.target.dataset.targetayakey);
   }
   // if the input is empty told the user
-  else if (isNaN(page) || page == "" || page == "-"){
+  else if (isNaN(page) || page == "" || page == "-") {
     updateElement(imge, "src", "404.jpg");
     updateElement(imge2, "src", "404.jpg");
     selectedPage = -3;
-    updateGridDisplay()
+    updateGridDisplay();
     return;
   }
 
-  // close the left side bar where the page updated from search 
-  if(left.classList.contains("open-left") && currentScreen == "left"){
-    currentScreen = "main"
-    left.classList.remove("open-left")
+  // close the left side bar where the page updated from search
+  if (left.classList.contains("open-left") && currentScreen == "left") {
+    currentScreen = "main";
+    left.classList.remove("open-left");
   }
 
   updatePage();
@@ -1173,28 +1153,27 @@ const updateRawCmd = (e) => {
   // if selected page for the old rawi is sup then the last page for new rawi
   // (that means the new rawi does not have the equivalent number page)
   // then change the page number
-  let lpfNewRawi = getLastPageForRawiOrCurrentOne(newRawId)
-  if (selectedPage > lpfNewRawi){
-    selectedPage = lpfNewRawi
-    updatePage(null,false) // we will update the Image only once using the updateImgDisplay() func
+  let lpfNewRawi = getLastPageForRawiOrCurrentOne(newRawId);
+  if (selectedPage > lpfNewRawi) {
+    selectedPage = lpfNewRawi;
+    updatePage(null, false); // we will update the Image only once using the updateImgDisplay() func
   }
 
   // remove privous selected effect
   raw[selectedRawi].classList.remove("raw-selected");
   selectedRawi = newRawId;
-  window.localStorage.setItem('rawi', newRawId)
+  window.localStorage.setItem("rawi", newRawId);
   // add selected effect
   raw[selectedRawi].classList.add("raw-selected");
 
   // update the selected rawi label
-  selectedRawiLabel.innerHTML = rawis[selectedRawi].label
+  selectedRawiLabel.innerHTML = rawis[selectedRawi].label;
 
   // close the riht side bar where the rawi have been choosed
-  if(right.classList.contains("open-right") && currentScreen == "right"){
-    currentScreen = "main"
-    right.classList.remove("open-right")
+  if (right.classList.contains("open-right") && currentScreen == "right") {
+    currentScreen = "main";
+    right.classList.remove("open-right");
   }
-
 
   updateImgDisplay();
 };
@@ -1202,11 +1181,11 @@ const updateRawCmd = (e) => {
 const updateRawArrICmd = (newRaw) => {
   raw[selectedRawi].classList.remove("raw-selected");
   selectedRawi = newRaw;
-  window.localStorage.setItem('rawi', newRaw)
+  window.localStorage.setItem("rawi", newRaw);
   raw[selectedRawi].classList.add("raw-selected");
 
   // update the selected rawi label
-  selectedRawiLabel.innerHTML = rawis[selectedRawi].label
+  selectedRawiLabel.innerHTML = rawis[selectedRawi].label;
 
   updateImgDisplay();
 };
@@ -1238,9 +1217,6 @@ currentImage2.onerror = imageCantBeLoaded;
 const ctx = document.getElementById("imge").getContext("2d");
 const ctx2 = document.getElementById("imge-2").getContext("2d");
 
-
-
-
 ///////////////////////////////////////////////////////////////////////////////
 // MODULE 03 : Search & Filter search request  ////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////
@@ -1248,7 +1224,6 @@ const ctx2 = document.getElementById("imge-2").getContext("2d");
 // VARIABLES  /////////////////////////////////////////////////////////////////
 
 // METHODS  ///////////////////////////////////////////////////////////////////
-
 
 // simplify text before using it in search
 const simplifyArabic = (str) => {
@@ -1277,7 +1252,7 @@ const searchAya = (text) => {
         "beforeend",
         `
       <div>
-        <p><b>⦑</b> ${line.content} <b>⦒</b> <br><span>(${chapters['c'+line.suraNumber].name}</span>:<span>${line.number})</span></p>
+        <p><b>⦑</b> ${line.content} <b>⦒</b> <br><span>(${chapters["c" + line.suraNumber].name}</span>:<span>${line.number})</span></p>
         <button class="result_button" data-page="${line.pageNumber}" data-targetAya="${line.id}" data-targetAyaKey="${line.suraNumber}:${line.number}">إنتقل للصفحة <span>${line.pageNumber}</span> </button>
       </div>
       `
@@ -1291,9 +1266,9 @@ const searchboxInputUpdatedCmd = (e) => {
   // console.log("ok", e)
   const value = !e ? null : e.target.value;
   // validation : we will escape it for now
-  
+
   if (!value || value.length < 5) {
-    searchboxInputCleanCmd()
+    searchboxInputCleanCmd();
     return;
   }
   // search
@@ -1306,7 +1281,7 @@ const searchboxInputUpdatedCmd = (e) => {
 
 const searchboxInputCleanCmd = (e) => {
   results.innerHTML = "";
-}
+};
 
 // filtering search request //
 
@@ -1363,9 +1338,8 @@ const filterIndexCmd = (e) => {
 
 // Adding Events Listeners && handlers  ///////////////////////////////////////////////////
 
-
 searchboxInput.addEventListener("input", searchboxInputUpdatedCmd);
-searchboxInput.onsearch  = searchboxInputCleanCmd;
+searchboxInput.onsearch = searchboxInputCleanCmd;
 filterAndSelector.addEventListener("change", goToPageCmd);
 isJuzaChecked.addEventListener("change", filterIndexCmd);
 isHizbChecked.addEventListener("change", filterIndexCmd);
@@ -1388,29 +1362,28 @@ filterParts.addEventListener("keyup", filterIndexCmd);
 
 // when click up down prevent the default scroll bar behavoir (so we can keep under the eye what the selected rawi)
 window.addEventListener("keydown", (e) => {
-  // return;/* TOBEREMVOED */
+  console.log("event", e);
+  // Check if the Control key and 'f' key are pressed
+  if (e.ctrlKey && e.code === "KeyF") {
+    // Your custom code here
+    left.classList.toggle("open-left-desktp");
+    if (!left.classList.contains("open-left-desktp")) {
+      searchboxInput.focus();
+    }
+    e.preventDefault(); // Prevent the default "Find" behavior
+  }
 
-  if ((e.code == "ArrowUp" || e.code == "ArrowDown") && e.target !="input.range") {
-    e.preventDefault();
+  if ((e.code == "ArrowUp" || e.code == "ArrowDown") && e.target != "input.range") {
     imamsList.scroll(0, raw[selectedRawi].getBoundingClientRect().top);
+    e.preventDefault();
   }
 });
 
 // when click on a button :
 window.addEventListener("keyup", (e) => {
-  
   // close the left menu search in non large desktops if it was opened
   if (e.code == "Escape") {
     left.classList.remove("open-left-desktp");
-  }
-  
-  // console.log(e.code)
-  // open search 
-  if ((e.code == "ControlLeft" || e.code == "ControlRight")) {
-    left.classList.toggle("open-left-desktp");
-    if (!left.classList.contains("open-left-desktp")){
-      searchboxInput.focus();
-    }
   }
 
   // right / left => change the page
@@ -1418,10 +1391,10 @@ window.addEventListener("keyup", (e) => {
     privCB();
   } else if (e.code == "ArrowLeft") {
     nextCB();
-  } 
-  
+  }
+
   // return;/* TOBEREMVOED */
-  
+
   // up down switch between Quran Versions / or riwiat / or rawis
   if (e.code == "ArrowDown") {
     // get the following rawi
@@ -1520,7 +1493,7 @@ const handelAyaPart = (element) => {
           }
         });
         selectedAya = aya.dataset.ayaid;
-        handelSelectedAya(`${e.target.dataset.ayasuranumber}:${e.target.dataset.ayanumber}`)
+        handelSelectedAya(`${e.target.dataset.ayasuranumber}:${e.target.dataset.ayanumber}`);
       }
     });
   });
@@ -1538,18 +1511,15 @@ const handelAyaPart = (element) => {
 // METHODS  ///////////////////////////////////////////////////////////////////
 // line template
 const lineTemplate = (lineNumber, ayaParts, page) => {
-  let cs = linesCustomStyles[`p${page}l${lineNumber}`]
-           &&  linesCustomStyles[`p${page}l${lineNumber}`]
-  return cs ? `<div id="${lineNumber}" style="${cs}">${ayaParts}</div>`:
-   `<div id="${lineNumber}">${ayaParts}</div>`;
-}
+  let cs = linesCustomStyles[`p${page}l${lineNumber}`] && linesCustomStyles[`p${page}l${lineNumber}`];
+  return cs ? `<div id="${lineNumber}" style="${cs}">${ayaParts}</div>` : `<div id="${lineNumber}">${ayaParts}</div>`;
+};
 
 // ayaPart template
-const linePartTemplate = (data) => 
-{
+const linePartTemplate = (data) => {
   return `<div  
   id="${data.ayaId}-${data.ayaNumber}-${data.lineNumber}" 
-  ${(selectedAya && data.ayaId == selectedAya) && "class='aya-selected'"}
+  ${selectedAya && data.ayaId == selectedAya && "class='aya-selected'"}
   data-aya
   data-ayaId="${data.ayaId}" 
   data-ayaNumber="${data.ayaNumber}"
@@ -1557,14 +1527,13 @@ const linePartTemplate = (data) =>
   data-ayaLineNumber="${data.lineNumber}"
   data-ayaEndPosition="${data.lineWidth}">
 </div>`;
-}
+};
 // <div class="meter">
 //   <input class="range" type='number' min="0" max="100" value="${data.lineWidth}">
 // </div>
 
 // update the Grid UI
 const updateGrid = (ayat, quranGridID, page) => {
-
   // reset template content
   quranGridID.innerHTML = "";
 
@@ -1616,51 +1585,49 @@ const updateGrid = (ayat, quranGridID, page) => {
 
 // updating the grid logic
 const updateGridDisplay = () => {
-  
   // debugger
-  // by default : no grid (turn the light off, nothing to select) 
+  // by default : no grid (turn the light off, nothing to select)
   if (!quranGrid.classList.contains("quranGrid-closed")) {
     quranGrid.classList.add("quranGrid-closed");
   }
 
   const ayat = QURAN.filter((aya) => {
-    return aya.pageNumber == selectedPage
+    return aya.pageNumber == selectedPage;
   });
 
   updateGrid(ayat, quranGrid, selectedPage);
 
-
-  if(isComparisonMode){
+  if (isComparisonMode) {
     updateGrid(ayat, quranGrid2, selectedPage);
   }
 
-  // handle mushaf view  
+  // handle mushaf view
 
-  if(isMoshafView && !isComparisonMode) {
+  if (isMoshafView && !isComparisonMode) {
     if (!quranGrid2.classList.contains("quranGrid-closed")) {
       quranGrid2.classList.add("quranGrid-closed");
     }
-    
+
     // update the grid layout for the current page ayat
-    const p1 = ((selectedPage%2 == 0) ? selectedPage - 1 : selectedPage);
-    const p2 = ((getThePagePaire()%2) != 0 ? getThePagePaire()+1 : getThePagePaire());
+    const p1 = selectedPage % 2 == 0 ? selectedPage - 1 : selectedPage;
+    const p2 = getThePagePaire() % 2 != 0 ? getThePagePaire() + 1 : getThePagePaire();
 
     const ayat = QURAN.filter((aya) => {
-      return aya.pageNumber == p1
+      return aya.pageNumber == p1;
     });
-  
+
     const ayat2 = QURAN.filter((aya) => {
-      return aya.pageNumber == p2
+      return aya.pageNumber == p2;
     });
 
     updateGrid(ayat, quranGrid, p1);
-    if(isMoshafView){
+    if (isMoshafView) {
       updateGrid(ayat2, quranGrid2, p2);
     }
   }
 
-  // remove the check on ayat number in order to reset the content only one time in one place 
-  // also in case of ayat.lenght is 0 loops will turn on 0 ! 
+  // remove the check on ayat number in order to reset the content only one time in one place
+  // also in case of ayat.lenght is 0 loops will turn on 0 !
   // the grid display is handeled by the toggleLoading func
 
   currentPageAyats = document.querySelectorAll("[data-aya]");
@@ -1668,7 +1635,6 @@ const updateGridDisplay = () => {
     handelAyaPart(ayaOrAyaPart);
   }
 };
-
 
 ///////////////////////////////////////////////////////////////////////////////
 /////////////////////////// END OF WORKING FUATURES ///////////////////////////
@@ -1686,92 +1652,84 @@ const updateGridDisplay = () => {
 
 // const settingMushafsFolder
 
-const openFolder = document.getElementById("openFolder")
-const permission = document.getElementById("permission")
+const openFolder = document.getElementById("openFolder");
+const permission = document.getElementById("permission");
 const comparisonSelector = document.getElementById("comparisonSelector");
 
 // METHODS  ///////////////////////////////////////////////////////////////////
 
 const internalSourceCmd = (e) => {
-
-  window.localStorage.setItem("isAnInternalSource", internalSourceChecked.checked)
+  window.localStorage.setItem("isAnInternalSource", internalSourceChecked.checked);
   if (internalSourceChecked.checked) {
-    openFolder.classList.remove("hidden")
-    permission.parentElement.classList.remove('hidden')
-  }else{
-    openFolder.classList.add("hidden")
-    permission.parentElement.classList.add('hidden')
+    openFolder.classList.remove("hidden");
+    permission.parentElement.classList.remove("hidden");
+  } else {
+    openFolder.classList.add("hidden");
+    permission.parentElement.classList.add("hidden");
   }
 
-  isAnInternalSource = internalSourceChecked.checked
+  isAnInternalSource = internalSourceChecked.checked;
 
   // updateImgDisplay()
-}
+};
 
-
-
-
-const  verifyPermission = async (fileHandle, readWrite = true, request = true) => {
+const verifyPermission = async (fileHandle, readWrite = true, request = true) => {
   const options = {};
   if (readWrite) {
-    options.mode = 'readwrite';
+    options.mode = "readwrite";
   }
   // Check if permission was already granted. If so, return true.
-  if ((await fileHandle.queryPermission(options)) === 'granted') {
+  if ((await fileHandle.queryPermission(options)) === "granted") {
     return true;
   }
-  
+
   if (request) {
     // Request permission. If the user grants permission, return true.
-    if ((await fileHandle.requestPermission(options)) === 'granted') {
+    if ((await fileHandle.requestPermission(options)) === "granted") {
       return true;
     }
   }
 
   // The user didn't grant permission, so return false.
   return false;
-}
-
+};
 
 const handelOpen = async (e) => {
-
   try {
     const pickedFolder = await window.showDirectoryPicker();
-    await set("fileSystemSource", pickedFolder)
-    
+    await set("fileSystemSource", pickedFolder);
   } catch (error) {
-    console.log("error during picking the folder: ", error)
+    console.log("error during picking the folder: ", error);
   }
-  
-}
+};
 
-const handelPermissionButton =  async (e) => {
+const handelPermissionButton = async (e) => {
   try {
-    fileSystemSource = await get('fileSystemSource')
-    if (fileSystemSource == undefined){
-      await handelOpen()
-    }else {
+    fileSystemSource = await get("fileSystemSource");
+    if (fileSystemSource == undefined) {
+      await handelOpen();
+    } else {
       const permetted = await verifyPermission(fileSystemSource);
-      if(permetted){
-        updateImgDisplay()
-        permission.parentNode.classList.add('hidden')
+      if (permetted) {
+        updateImgDisplay();
+        permission.parentNode.classList.add("hidden");
       }
     }
-  } catch (error){
-    console.log('error:aa ', error)
+  } catch (error) {
+    console.log("error:aa ", error);
   }
-}
+};
 
 const comparisonSelectorUpdated = (e) => {
-  selectedRawi2 = comparisonSelector.value
-  window.localStorage.setItem('rawi2', selectedRawi2)
-  selectedRawiLabel2.innerHTML = rawis[selectedRawi2].label
+  selectedRawi2 = comparisonSelector.value;
+  window.localStorage.setItem("rawi2", selectedRawi2);
+  selectedRawiLabel2.innerHTML = rawis[selectedRawi2].label;
   updatePage();
-}
+};
 
 // Adding Events Listeners  ///////////////////////////////////////////////////
 
-openFolder.addEventListener('click', handelOpen, false);
-permission.addEventListener('click', handelPermissionButton, false);
+openFolder.addEventListener("click", handelOpen, false);
+permission.addEventListener("click", handelPermissionButton, false);
 internalSourceChecked.addEventListener("change", internalSourceCmd);
 comparisonSelector.addEventListener("change", comparisonSelectorUpdated);
