@@ -1052,12 +1052,18 @@ const updatePage = (updateDisplay = true) => {
   updateGridDisplay();
 
   // update fahras selections according the current page
-  for (option of filterAndSelector.options) {
-    if (option.selected && option.value != selectedPage) {
-      option.selected = false;
+  for (let option of filterAndSelector.children) {
+    if (
+      option.classList.contains("checked") &&
+      option.dataset.value != selectedPage
+    ) {
+      option.classList.remove("checked");
     }
-    if (!option.selected && option.value == selectedPage) {
-      option.selected = true;
+    if (
+      !option.classList.contains("checked") &&
+      option.dataset.value == selectedPage
+    ) {
+      option.classList.add("checked");
     }
   }
 
