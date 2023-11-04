@@ -1053,16 +1053,10 @@ const updatePage = (updateDisplay = true) => {
 
   // update fahras selections according the current page
   for (let option of filterAndSelector.children) {
-    if (
-      option.classList.contains("checked") &&
-      option.dataset.value != selectedPage
-    ) {
+    if (option.classList.contains("checked") && option.dataset.value != selectedPage) {
       option.classList.remove("checked");
     }
-    if (
-      !option.classList.contains("checked") &&
-      option.dataset.value == selectedPage
-    ) {
+    if (!option.classList.contains("checked") && option.dataset.value == selectedPage) {
       option.classList.add("checked");
     }
   }
@@ -1098,8 +1092,8 @@ const privCB = () => {
   updatePage();
 };
 
-const goToPageCmd = (e) => {
-  const value = parseFloat(e.target.value);
+const goToPageCmd = (pageNumber, isFromFahras = false) => {
+  const value = parseFloat(pageNumber);
   const lPage = getLastPageForRawiOrCurrentOne();
 
   // ! update the page if the user don't play with the input ie : if not let the last correct displayed page
@@ -1200,7 +1194,7 @@ const updateRawArrICmd = (newRaw) => {
 // Adding Events Listeners  ///////////////////////////////////////////////////
 
 // rawi of rawis when click declanch updateRawCmd
-for (rawi of raw) {
+for (let rawi of raw) {
   rawi.addEventListener("click", updateRawCmd);
 }
 
@@ -1209,7 +1203,7 @@ privouos.addEventListener("click", privCB);
 next.addEventListener("click", nextCB);
 
 // when write new page in buttom page bar
-page.addEventListener("keyup", goToPageCmd);
+page.addEventListener("keyup", (e) => goToPageCmd(e.target.value));
 
 // VARIABLES  /////////////////////////////////////////////////////////////////
 const loading = document.getElementById("loading");
@@ -1306,9 +1300,9 @@ const matchFilter = (string, keyword) => {
 // Hide/show the index lines based on the checked options
 const filterIndexCmd = (e) => {
   for (let option of filterAndSelector.children) {
-  // reset : show every line
-      option.classList.remove("hide");
-  // hide based on checkboses statues
+    // reset : show every line
+    option.classList.remove("hide");
+    // hide based on checkboses statues
     if (option.dataset.part == "juza" && !isJuzaChecked.checked) {
       option.classList.add("hide");
     }
@@ -1318,12 +1312,9 @@ const filterIndexCmd = (e) => {
     if (option.dataset.part == "sura" && !isSuraChecked.checked) {
       option.classList.add("hide");
     }
-  // hide based on text
-    if (
-      filterParts.value &&
-      !matchFilter(option.innerHTML, filterParts.value)
-    ) {
-        option.classList.add("hide");
+    // hide based on text
+    if (filterParts.value && !matchFilter(option.innerHTML, filterParts.value)) {
+      option.classList.add("hide");
     }
   }
 };
@@ -1338,9 +1329,7 @@ isSuraChecked.addEventListener("change", filterIndexCmd);
 filterParts.addEventListener("keyup", filterIndexCmd);
 
 for (let option of filterAndSelector.children) {
-  option.addEventListener("click", (e) =>
-    goToPageCmd(e.target.dataset.value, true)
-  );
+  option.addEventListener("click", (e) => goToPageCmd(e.target.dataset.value, true));
 }
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -1359,7 +1348,6 @@ for (let option of filterAndSelector.children) {
 
 // when click up down prevent the default scroll bar behavoir (so we can keep under the eye what the selected rawi)
 window.addEventListener("keydown", (e) => {
-  console.log("event", e);
   // Check if the Control key and 'f' key are pressed
   if (e.ctrlKey && e.code === "KeyF") {
     // Your custom code here
@@ -1564,10 +1552,7 @@ const updateGrid = (ayat, quranGridID, page) => {
       lineParts += linePartTemplate(lineParte);
     }
     // insertion
-    quranGridID.insertAdjacentHTML(
-      "beforeend",
-      lineTemplate(line, lineParts, page)
-    );
+    quranGridID.insertAdjacentHTML("beforeend", lineTemplate(line, lineParts, page));
   }
 
   /*
@@ -1596,7 +1581,7 @@ const updateGrid = (ayat, quranGridID, page) => {
 
 // updating the grid logic
 const updateGridDisplay = () => {
-    // by default : no grid (turn the light off, nothing to select)
+  // by default : no grid (turn the light off, nothing to select)
   if (!quranGrid.classList.contains("quranGrid-closed")) {
     quranGrid.classList.add("quranGrid-closed");
   }
