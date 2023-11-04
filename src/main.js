@@ -43,12 +43,13 @@ const left = document.getElementsByClassName("left-sidebar")[0];
 const expanders = document.getElementsByClassName("tool-collapse");
 const settings = document.getElementsByClassName("tool-setting");
 const secondPage = document.getElementById("second-page");
+const body = document.body;
 
-for (expander of expanders) {
+for (let expander of expanders) {
   expander.addEventListener("click", toggleExpanderTool);
 }
 
-for (setting of settings) {
+for (let setting of settings) {
   setting.addEventListener("click", toggleSettingTool);
 }
 
@@ -83,6 +84,7 @@ document.addEventListener("swiped-right", function (e) {
 function handleLeftMenuToggle(evt) {
   left.classList.toggle("open-left-desktp");
 }
+
 function handleExpandToggle(evt) {
   isExpanded = !isExpanded;
   quranGrid.classList.toggle("expanded");
@@ -93,6 +95,7 @@ function handleExpandToggle(evt) {
 function handleNightToggle(evt) {
   imge.classList.toggle("night");
   imge2.classList.toggle("night");
+  body.classList.toggle("dark-mode");
 }
 
 function handleMemoToggle(evt) {
@@ -587,8 +590,6 @@ const linesCustomStyles = {
   p578l11: "padding-top: 25%;",
 
   p580l9: "padding-top: 25%;",
-
-  p582l3: "padding-top: 28%;",
 
   p582l3: "padding-top: 28%;",
 
@@ -1298,40 +1299,25 @@ const matchFilter = (string, keyword) => {
 
 // Hide/show the index lines based on the checked options
 const filterIndexCmd = (e) => {
-  // when check and unckeck
-
+  for (let option of filterAndSelector.children) {
   // reset : show every line
-  for (option of filterAndSelector.options) {
-    option.classList.remove("hide");
-  }
-
-  // hide / show
-  for (option of filterAndSelector.options) {
+      option.classList.remove("hide");
+  // hide based on checkboses statues
     if (option.dataset.part == "juza" && !isJuzaChecked.checked) {
       option.classList.add("hide");
     }
-
     if (option.dataset.part == "hizb" && !isHizbChecked.checked) {
       option.classList.add("hide");
     }
-
     if (option.dataset.part == "sura" && !isSuraChecked.checked) {
       option.classList.add("hide");
     }
-  }
-
-  // when search using keyboard
-
-  if (e && e.type == "keyup") {
-    // if text is null or empty
-    if (!e.target.value) {
-      return;
-    }
-    // after passing by checkbox filter, in this pipe we filter the rest by checking if its match the text
-    for (option of filterAndSelector.options) {
-      if (!option.classList.contains("hide") && !matchFilter(option.innerHTML, e.target.value)) {
+  // hide based on text
+    if (
+      filterParts.value &&
+      !matchFilter(option.innerHTML, filterParts.value)
+    ) {
         option.classList.add("hide");
-      }
     }
   }
 };
@@ -1340,11 +1326,16 @@ const filterIndexCmd = (e) => {
 
 searchboxInput.addEventListener("input", searchboxInputUpdatedCmd);
 searchboxInput.onsearch = searchboxInputCleanCmd;
-filterAndSelector.addEventListener("change", goToPageCmd);
 isJuzaChecked.addEventListener("change", filterIndexCmd);
 isHizbChecked.addEventListener("change", filterIndexCmd);
 isSuraChecked.addEventListener("change", filterIndexCmd);
 filterParts.addEventListener("keyup", filterIndexCmd);
+
+for (let option of filterAndSelector.children) {
+  option.addEventListener("click", (e) =>
+    goToPageCmd(e.target.dataset.value, true)
+  );
+}
 
 ///////////////////////////////////////////////////////////////////////////////
 // MODULE 03 : Quran Versions / Riwaiat filter  ///////////////////////////////
@@ -1374,8 +1365,8 @@ window.addEventListener("keydown", (e) => {
   }
 
   if ((e.code == "ArrowUp" || e.code == "ArrowDown") && e.target != "input.range") {
-    imamsList.scroll(0, raw[selectedRawi].getBoundingClientRect().top);
     e.preventDefault();
+    imamsList.scroll(0, raw[selectedRawi].getBoundingClientRect().top);
   }
 });
 
@@ -1426,9 +1417,6 @@ window.addEventListener("keyup", (e) => {
   } else {
     /* -!- */
     // need to detec the zone when its have been writed if not a text box => search in Quran
-    // if (isSearchOpen){
-    //     searchboxInput.focus();
-    // }
   }
 });
 
@@ -1539,24 +1527,41 @@ const updateGrid = (ayat, quranGridID, page) => {
 
   const newLines = {};
 
-  for (aya of ayat) {
-    for (coveredLine of aya.coveredLines) {
+  for (let aya of ayat) {
+    for (let coveredLine of aya.coveredLines) {
       if (!newLines[coveredLine.lineId]) {
-        newLines[coveredLine.lineId] = [{ ayaId: aya.id, ayaNumber: aya.number, suraNumber: aya.suraNumber, lineNumber: coveredLine.lineId, lineWidth: coveredLine.width }];
+        newLines[coveredLine.lineId] = [
+          {
+            ayaId: aya.id,
+            ayaNumber: aya.number,
+            suraNumber: aya.suraNumber,
+            lineNumber: coveredLine.lineId,
+            lineWidth: coveredLine.width,
+          },
+        ];
       } else {
-        newLines[coveredLine.lineId].push({ ayaId: aya.id, ayaNumber: aya.number, suraNumber: aya.suraNumber, lineNumber: coveredLine.lineId, lineWidth: coveredLine.width });
+        newLines[coveredLine.lineId].push({
+          ayaId: aya.id,
+          ayaNumber: aya.number,
+          suraNumber: aya.suraNumber,
+          lineNumber: coveredLine.lineId,
+          lineWidth: coveredLine.width,
+        });
       }
     }
   }
 
   // prepare html to render
-  for (const line in newLines) {
+  for (let line in newLines) {
     var lineParts = "";
-    for (lineParte of newLines[line]) {
+    for (let lineParte of newLines[line]) {
       lineParts += linePartTemplate(lineParte);
     }
     // insertion
-    quranGridID.insertAdjacentHTML("beforeend", lineTemplate(line, lineParts, page));
+    quranGridID.insertAdjacentHTML(
+      "beforeend",
+      lineTemplate(line, lineParts, page)
+    );
   }
 
   /*
@@ -1564,7 +1569,7 @@ const updateGrid = (ayat, quranGridID, page) => {
   var lineNumber = null;
   var lineParts = ''
 
-  for (aya of ayat) {
+  for (let aya of ayat) {
     // if we detect that we passed to a new line, therefore insert the current line
     if(lineNumber != aya.lineNumber && lineNumber != null){
       // insertion
@@ -1585,8 +1590,7 @@ const updateGrid = (ayat, quranGridID, page) => {
 
 // updating the grid logic
 const updateGridDisplay = () => {
-  // debugger
-  // by default : no grid (turn the light off, nothing to select)
+    // by default : no grid (turn the light off, nothing to select)
   if (!quranGrid.classList.contains("quranGrid-closed")) {
     quranGrid.classList.add("quranGrid-closed");
   }
@@ -1631,7 +1635,7 @@ const updateGridDisplay = () => {
   // the grid display is handeled by the toggleLoading func
 
   currentPageAyats = document.querySelectorAll("[data-aya]");
-  for (ayaOrAyaPart of currentPageAyats) {
+  for (let ayaOrAyaPart of currentPageAyats) {
     handelAyaPart(ayaOrAyaPart);
   }
 };
