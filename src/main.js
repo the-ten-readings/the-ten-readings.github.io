@@ -1110,7 +1110,11 @@ const goToPageCmd = (pageNumber, isFromFahras = false) => {
 
   // if the request comes from the left menu (when chooseing something from fahras)
   // and we are in a mobile screen then close the bar
-  if (e.code == undefined && left.classList.contains("open-left") && currentScreen == "left") {
+  if (
+    isFromFahras &&
+    left.classList.contains("open-left") &&
+    currentScreen == "left"
+  ) {
     currentScreen = "main";
     left.classList.remove("open-left");
   }
