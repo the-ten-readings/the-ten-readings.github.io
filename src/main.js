@@ -54,35 +54,43 @@ for (let setting of settings) {
 }
 
 document.addEventListener("swiped-left", function (e) {
-  if (currentScreen == "main") {
-    mainMenu.classList.add("open-main-menu");
-    right.classList.add("open-right");
-
-    currentScreen = "right";
-  } else if (currentScreen == "left") {
-    left.classList.remove("open-left");
-
-    currentScreen = "main";
-  }
+  privCB();
 });
 
 document.addEventListener("swiped-right", function (e) {
-  if (currentScreen == "main") {
-    left.classList.add("open-left");
-
-    currentScreen = "left";
-  } else if (currentScreen == "right") {
-    right.classList.remove("open-right");
-    //mainMenu.classList.remove("open-main-menu")
-
-    currentScreen = "main";
-  }
+  nextCB();
 });
 
 // TOGGLE LEFT MENU
 
 function handleLeftMenuToggle(evt) {
-  left.classList.toggle("open-left-desktp");
+  if (currentScreen == "main") {
+    left.classList.add("open-left");
+    currentScreen = "left";
+  } else if (currentScreen == "right") {
+    right.classList.remove("open-right");
+    left.classList.add("open-left");
+    currentScreen = "left";
+  } else if (currentScreen == "left") {
+    left.classList.remove("open-left");
+    currentScreen = "main";
+  }
+}
+
+// TOGGLE RIGHT MENU
+
+function handleRightMenuToggle(evt) {
+  if (currentScreen == "main") {
+    right.classList.add("open-right");
+    currentScreen = "right";
+  } else if (currentScreen == "left") {
+    left.classList.remove("open-left");
+    right.classList.add("open-right");
+    currentScreen = "right";
+  } else if (currentScreen == "right") {
+    right.classList.remove("open-right");
+    currentScreen = "main";
+  }
 }
 
 function handleExpandToggle(evt) {
@@ -138,6 +146,7 @@ const handleComparisonModeToggle = (e) => {
   updatePage();
 };
 
+document.getElementById("right-menu-button").addEventListener("click", handleRightMenuToggle, false);
 document.getElementById("left-menu-button").addEventListener("click", handleLeftMenuToggle, false);
 document.getElementById("expan-toggle-button").addEventListener("click", handleExpandToggle, false);
 document.getElementById("night-toggle-button").addEventListener("click", handleNightToggle, false);
@@ -656,6 +665,8 @@ const linesCustomStyles = {
 const privouos = document.getElementById("privouos");
 const next = document.getElementById("next");
 const page = document.getElementById("page");
+const goPage = document.getElementById("go-page");
+const resetPage = document.getElementById("reset-page");
 
 const raw = document.getElementsByClassName("raw");
 const imge = document.getElementById("imge");
@@ -1100,21 +1111,10 @@ const goToPageCmd = (pageNumber, isFromFahras = false) => {
   if (value >= -3 && value <= lPage) {
     selectedPage = value;
   }
-  // if the input is empty told the user
-  else if (isNaN(value) || value == "" || value == "-") {
-    updateImgDisplay("404");
-    selectedPage = -3;
-    updateGridDisplay();
-    return;
-  }
 
   // if the request comes from the left menu (when chooseing something from fahras)
   // and we are in a mobile screen then close the bar
-  if (
-    isFromFahras &&
-    left.classList.contains("open-left") &&
-    currentScreen == "left"
-  ) {
+  if (isFromFahras && left.classList.contains("open-left") && currentScreen == "left") {
     currentScreen = "main";
     left.classList.remove("open-left");
   }
@@ -1205,9 +1205,8 @@ for (let rawi of raw) {
 privouos.addEventListener("click", privCB);
 // when click on next button
 next.addEventListener("click", nextCB);
-
-// when write new page in buttom page bar
-page.addEventListener("keyup", (e) => goToPageCmd(e.target.value));
+goPage.addEventListener("click", (e) => goToPageCmd(page.value));
+resetPage.addEventListener("click", (e) => goToPageCmd());
 
 // VARIABLES  /////////////////////////////////////////////////////////////////
 const loading = document.getElementById("loading");
@@ -1355,8 +1354,8 @@ window.addEventListener("keydown", (e) => {
   // Check if the Control key and 'f' key are pressed
   if (e.ctrlKey && e.code === "KeyF") {
     // Your custom code here
-    left.classList.toggle("open-left-desktp");
-    if (!left.classList.contains("open-left-desktp")) {
+    left.classList.toggle("open-left");
+    if (!left.classList.contains("open-left")) {
       searchboxInput.focus();
     }
     e.preventDefault(); // Prevent the default "Find" behavior
@@ -1372,7 +1371,7 @@ window.addEventListener("keydown", (e) => {
 window.addEventListener("keyup", (e) => {
   // close the left menu search in non large desktops if it was opened
   if (e.code == "Escape") {
-    left.classList.remove("open-left-desktp");
+    left.classList.remove("open-left");
   }
 
   // right / left => change the page
@@ -1380,6 +1379,11 @@ window.addEventListener("keyup", (e) => {
     privCB();
   } else if (e.code == "ArrowLeft") {
     nextCB();
+  }
+
+  // Enter event listener
+  if (e.code == "Enter") {
+    goToPageCmd(page.value);
   }
 
   // return;/* TOBEREMVOED */
