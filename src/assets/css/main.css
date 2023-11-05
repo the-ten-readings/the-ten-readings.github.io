@@ -485,7 +485,12 @@ main.main {
   }
 
   .open-left {
+    padding-right: 25% !important;
     width: 100% !important;
+  }
+
+  .open-right {
+    padding-left: 20%;
   }
 
   
@@ -668,20 +673,35 @@ body::-webkit-scrollbar {
   overflow-y: hidden;
 }
 
+.searchbox>div:first-child {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
 .searchbox-closed {
   display: none;
 }
 
-.searchbox>input {
+.searchbox>div:first-child>input {
   padding: 0 var(--spacing);
   width: 100%;
   text-align: right;
   border: 1px solid #6c6c6c;
   outline: 0;
-  border-radius: var(--radius);
+  border-radius: 0 var(--radius) var(--radius) 0;
 }
 
-.searchbox>.results {
+.searchbox>div:first-child>button {
+  border-radius: var(--radius) 0 0 var(--radius);
+  width: 31px;
+  border: 1px solid #6c6c6c;
+  margin-right: -1px;
+  display: flex;
+  justify-content: center;
+  padding: 4px;
+}
+
+.searchbox .results {
   max-height: calc(100% - 43px);
   height: calc(100% - 43px);
   overflow-y: scroll;

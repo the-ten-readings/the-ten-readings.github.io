@@ -93,6 +93,26 @@ function handleRightMenuToggle(evt) {
   }
 }
 
+function handleLeftClick(evt) {
+  if (evt.target != this){
+    return
+  }
+  if (currentScreen == "left") {
+    left.classList.remove("open-left");
+    currentScreen = "main";
+  }
+}
+
+function handleRightClick(evt) {
+  if (evt.target != this){
+    return
+  }
+  if (currentScreen == "right") {
+    right.classList.remove("open-right");
+    currentScreen = "main";
+  }
+}
+
 function handleExpandToggle(evt) {
   isExpanded = !isExpanded;
   quranGrid.classList.toggle("expanded");
@@ -146,6 +166,8 @@ const handleComparisonModeToggle = (e) => {
   updatePage();
 };
 
+left.addEventListener("click", handleLeftClick, true);
+right.addEventListener("click", handleRightClick, true);
 document.getElementById("right-menu-button").addEventListener("click", handleRightMenuToggle, false);
 document.getElementById("left-menu-button").addEventListener("click", handleLeftMenuToggle, false);
 document.getElementById("expan-toggle-button").addEventListener("click", handleExpandToggle, false);
@@ -676,6 +698,7 @@ const imge2 = document.getElementById("imge-2");
 const search = document.getElementById("search");
 const searchbox = document.getElementById("searchbox");
 const searchboxInput = document.getElementById("searchbox-input");
+const goSearch = document.getElementById("go-search");
 
 // search : filter
 const filter = document.getElementById("filter");
@@ -1266,12 +1289,12 @@ const searchAya = (text) => {
 };
 
 // write search string and control search string and add click (links) events in the result
-const searchboxInputUpdatedCmd = (e) => {
-  // console.log("ok", e)
-  const value = !e ? null : e.target.value;
+const goSearchCmd = (e) => {
+  console.log("ok", e)
+  const value = !searchboxInput ? null : searchboxInput.value;
   // validation : we will escape it for now
 
-  if (!value || value.length < 5) {
+  if (!value || value.length < 3) {
     searchboxInputCleanCmd();
     return;
   }
@@ -1324,7 +1347,7 @@ const filterIndexCmd = (e) => {
 
 // Adding Events Listeners && handlers  ///////////////////////////////////////////////////
 
-searchboxInput.addEventListener("input", searchboxInputUpdatedCmd);
+goSearch.addEventListener("click", goSearchCmd,true)
 searchboxInput.onsearch = searchboxInputCleanCmd;
 isJuzaChecked.addEventListener("change", filterIndexCmd);
 isHizbChecked.addEventListener("change", filterIndexCmd);
