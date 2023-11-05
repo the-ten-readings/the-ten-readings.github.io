@@ -10,7 +10,7 @@
     <link rel="manifest" href="manifest.json" />
     <title>القرءان العظيم</title>
   </head>
-  <body data-swipe-threshold="100">
+  <body>
     <div class="global-container">
       <div class="main-menu">
         <div class="main-menu-tools">
@@ -439,7 +439,7 @@
           </div>
         </div>
       </div>
-      <main class="main">
+      <main class="main" data-swipe-threshold="100">
         <div class="quran-container">
           <div class="permission">
             تجديد إمداد الصلاحية
@@ -470,6 +470,14 @@
         <div class="main-navigation">
           <div class="as-b">
             <div>
+              <button id="right-menu-button" title="إظهار و إخفاء القائمة اليمنى">
+                <svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6 8H18" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                  <path d="M6 12H18" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                  <path d="M6 16H18" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                </svg>
+              </button>
+
               <button id="mushafview-toggle-button" title="تشغيل و إيقاف وضع المصحف الورقي">
                 <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
                   <path d="M466.61,170.49a6.24,6.24,0,0,0-1.49-4c-1.66-2-41.61-48-118.46-48-55.82,0-80.67,24.25-90.66,39-10-14.73-34.84-39-90.66-39-76.84,0-116.8,46-118.46,48a6.24,6.24,0,0,0-1.49,4V387.26a6,6,0,0,0,1,3.2,5,5,0,0,0,.41.61,6.05,6.05,0,0,0,2.58,2s.06.06.1.07.24,0,.36,0a6,6,0,0,0,1.8.36h408.7a6.2,6.2,0,0,0,2.16-.39s.05-.05.08-.06a6.07,6.07,0,0,0,2.62-2,5.87,5.87,0,0,0,.39-.58,6.12,6.12,0,0,0,1-3.21ZM346.66,131c63,0,99.78,34.09,107.43,41.95V372.62c-16.85-14.15-52.82-37.38-107.43-37.38-46.47,0-71.54,16.86-84.39,31V171.68C264.91,165.48,282.49,131,346.66,131Zm97.72,250H266.5c8.31-12.15,29.93-33.23,80.16-33.23C395.31,347.77,428.34,368.12,444.38,381ZM57.91,172.94C65.52,165.08,102.12,131,165.34,131c64.17,0,81.76,34.48,84.4,40.68V366.24c-12.85-14.14-37.92-31-84.4-31-54.6,0-90.58,23.23-107.43,37.38ZM245.51,381H67.56c16-12.88,48.92-33.23,97.78-33.23C215.59,347.77,237.21,368.86,245.51,381Z" />
@@ -482,13 +490,31 @@
                 </svg>
               </button>
             </div>
-            <div><button id="privouos">➡️ السابقة</button></div>
+            <div></div>
           </div>
           <div class="as-m">
-            <input id="page" inputmode="numeric" type="search" placeholder="الصفحة" min="-3" />
+            <button id="privouos">➡️</button>
+            <button id="reset-page">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16">
+                <g clip-path="url(#clip0)">
+                  <path fill="#000" fill-rule="evenodd" d="M2.5 0a.5.5 0 01.5.5V5h4.5a.5.5 0 010 1h-5a.5.5 0 01-.5-.5v-5a.5.5 0 01.5-.5z" clip-rule="evenodd" />
+                  <path fill="#000" fill-rule="evenodd" d="M8.515.226A5 5 0 0113.2 8.843l-8.377 7.04a.5.5 0 11-.644-.766l8.38-7.041.001-.002a4 4 0 00-5.118-6.148L2.948 5.67a.5.5 0 01-.64-.768L6.8 1.157A5.001 5.001 0 018.515.226z" clip-rule="evenodd" />
+                </g>
+                <defs>
+                  <clipPath id="clip0">
+                    <path fill="#fff" d="M0 0h16v16H0z" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </button>
+            <input id="page" inputmode="numeric" type="text" placeholder="الصفحة" min="-3" />
+            <button id="go-page">
+              <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="m12 2c-5.5 0-10 4.5-10 10s4.5 10 10 10c2.2 0 4.3-.7 6-2l9 10 3-3-10-9c1.3-1.7 2-3.8 2-6 0-5.5-4.5-10-10-10zm0 3c3.9 0 7 3.1 7 7s-3.1 7-7 7-7-3.1-7-7 3.1-7 7-7z" /></svg>
+            </button>
+            <button id="next">⬅️</button>
           </div>
           <div class="as-a">
-            <div><button id="next">التالـيـة ⬅️</button></div>
+            <div></div>
             <div class="main-navigation-l-menu">
               <button id="night-toggle-button" title="تشغيل و إيقاف الوضع المظلم">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="20" height="20" viewBox="0 0 256 256" xml:space="preserve">
@@ -543,9 +569,13 @@
             </div>
             <div class="tool-body">
               <div class="searchbox" id="searchbox">
-                <!-- search input  -->
-                <label hidden>searchbox-input</label>
-                <input placeholder="البحث في المصحف، 5 أحرف أو أكثر" id="searchbox-input" type="search" />
+                <div>
+                  <label hidden>searchbox-input</label>
+                  <button id="go-search">
+                    <svg width="20px" height="20px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="m12 2c-5.5 0-10 4.5-10 10s4.5 10 10 10c2.2 0 4.3-.7 6-2l9 10 3-3-10-9c1.3-1.7 2-3.8 2-6 0-5.5-4.5-10-10-10zm0 3c3.9 0 7 3.1 7 7s-3.1 7-7 7-7-3.1-7-7 3.1-7 7-7z" /></svg>
+                  </button>
+                  <input placeholder="البحث في المصحف، 5 أحرف أو أكثر" id="searchbox-input" type="search" />
+                </div>
 
                 <!-- Search result -->
                 <div class="results" id="results"></div>
@@ -553,7 +583,7 @@
             </div>
           </div>
           <!-- finder (search tool) -->
-          <div class="tool" style="height: calc(100% - 85px)">
+          <div class="tool" style="height: calc(100% - 84px)">
             <div class="tool-header">
               <div class="tool-title">الفهرس</div>
               <div class="tool-actions">
