@@ -37,7 +37,6 @@ const toggleSettingTool = (settingToggler) => {
 // SWIPE ACTIONS (Mobile) /////////////////////////////////////////////////////
 
 let currentScreen = "main";
-const mainMenu = document.getElementsByClassName("main-menu")[0];
 const right = document.getElementsByClassName("right-sidebar")[0];
 const left = document.getElementsByClassName("left-sidebar")[0];
 const expanders = document.getElementsByClassName("tool-collapse");
@@ -730,6 +729,11 @@ const selectedRawiLabel2 = document.getElementById("selectedRawiLabel2");
 const alert = document.getElementById("alert");
 const tafsirElement = document.getElementById("tafsir");
 
+const khatamatList = document.getElementById("khatamat-list");
+const addKhatma = document.getElementById("add-khatma");
+const khatmaInput = document.getElementById("khatma-input");
+const syncKhatma = document.getElementById("sync-khatma");
+
 ///////////////////////////////////////////////////////////////////////////////
 // MODULE 02 : Init App  //////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////
@@ -740,6 +744,7 @@ var isPageLoaded = false;
 var selectedRawi = "R111";
 var selectedRawi2 = "R111";
 var selectedPage = -3; //;79; // -3
+var khatamat = [];
 var isSearchOpen = true;
 var isExpanded = false;
 var isMoshafView = false;
@@ -799,7 +804,75 @@ const getPath = (second = false, local = false) => {
   }
 };
 
+
+const goToKhatma = (e) => {
+  goToPageCmd(e.target.dataset.value, false)
+  let newKhatamat = [...khatamat.map(k => {if (k == khatamat[e.target.dataset.id]) {k.selected = true }else {k.selected = false }; return k})]
+  updateKhatamat(newKhatamat)
+}
+
+const deleteKhatma = (e) => {
+  let newKhatamat = [...khatamat.filter(k => k != khatamat[e.target.dataset.id])]
+  updateKhatamat(newKhatamat)
+}
+
+
+const updateKhatamat = (kha) => {
+  khatamat = kha
+  window.localStorage.setItem("khatamat", JSON.stringify(khatamat))
+
+  // form : [{id: 1, name: "test", page: 50, selected: null}, {id: 1, name: "test", page: 50, selected: true}];
+  // prepare display
+
+  khatamatList.innerHTML = "";
+
+  // console.log(line)
+  for(let i = 0; i< khatamat.length ; i++) {
+    let k = khatamat[i]
+    khatamatList.insertAdjacentHTML(
+      "beforeend",
+      `<div class=general-item title="${k.rawiLabel}">
+        <div class="item ${k.selected ? 'checked':''}" data-id="${i}" data-value="${k.page}" data-part="khatma">
+          <div class="level"></div>
+          <div class="title">${k.name}</div>
+          <div class="page">صحفة ${k.page}</div>
+        </div>
+        <button data-id="${i}">
+        <svg width="26" height="26" viewBox="0 0 16 16" fill="#000" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00001 8.70711L11.6465 12.3536L12.3536 11.6465L8.70711 8.00001L12.3536 4.35356L11.6465 3.64645L8.00001 7.2929L4.35356 3.64645L3.64645 4.35356L7.2929 8.00001L3.64645 11.6465L4.35356 12.3536L8.00001 8.70711Z" fill="#424242"/>
+        </svg>
+        </button>
+      </div>`);
+  }
+
+  for (let k of khatamatList.children) {
+    k.children[0].addEventListener("click", (e) =>goToKhatma(e))
+    k.children[1].addEventListener("click", (e) =>deleteKhatma(e))
+  }
+};
+
+
+
+const addKhatamatCmd = (evt) => {
+  if (!khatmaInput.value || khatmaInput.value.length < 3 ){
+    return
+  }
+  // form : [{id: 1, name: "test", page: 50, selected: null}, {id: 1, name: "test", page: 50, selected: true}];
+  khatamat = [...khatamat.map(k => {k.selected = false; return k}), { name: khatmaInput.value, rawiLabel : rawis[selectedRawi].label , page: selectedPage, selected: true}]
+  updateKhatamat(khatamat)
+  khatmaInput.value = ''
+};
+
+const syncKhatmaCmd = (evt) => {
+  khatamat = [...khatamat.map(k => {if (k.selected) k.page = selectedPage; return k})]
+  updateKhatamat(khatamat)
+}
+
+
 // Adding Events Listeners  ///////////////////////////////////////////////////
+
+addKhatma.addEventListener("click", addKhatamatCmd, true)
+syncKhatma.addEventListener("click", syncKhatmaCmd, true)
 
 // Dom loaded
 window.addEventListener("DOMContentLoaded", (e) => {
@@ -823,6 +896,14 @@ window.addEventListener("DOMContentLoaded", (e) => {
   let savedPage = window.localStorage.getItem("page");
   if (savedPage) {
     selectedPage = savedPage;
+  }
+
+  
+  let savedKhatamat = JSON.parse(window.localStorage.getItem("khatamat"));
+  if (savedKhatamat) {
+    updateKhatamat(savedKhatamat);
+  } else {
+    window.localStorage.setItem("khatamat", JSON.stringify(khatamat));
   }
 
   // update the selected rawi label
@@ -1229,7 +1310,6 @@ privouos.addEventListener("click", privCB);
 // when click on next button
 next.addEventListener("click", nextCB);
 goPage.addEventListener("click", (e) => goToPageCmd(page.value));
-resetPage.addEventListener("click", (e) => goToPageCmd());
 
 // VARIABLES  /////////////////////////////////////////////////////////////////
 const loading = document.getElementById("loading");

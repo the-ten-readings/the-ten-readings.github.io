@@ -12,17 +12,52 @@
   </head>
   <body>
     <div class="global-container">
-      <div class="main-menu">
-        <div class="main-menu-tools">
-          <div class="main-menu-tool">الأدوات</div>
-        </div>
-        <div class="main-menu-settings">
-          <div class="main-menu-setting">تحميلات</div>
-          <div class="main-menu-setting">إعدادات</div>
-        </div>
-      </div>
       <div class="right-sidebar">
         <div class="tools">
+          <div class="tool">
+            <div class="tool-header">
+              <div class="tool-title" title="">الختمات</div>
+              <div class="tool-actions">
+                <button class="tool-action tool-collapse">
+                  <svg
+                    height="20"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <polygon
+                      points="12 19.24 7.05 14.29 5.64 15.71 12 22.07 18.36 15.71 16.95 14.29 12 19.24"
+                    />
+                    <polygon
+                      points="5.64 8.29 7.05 9.71 12 4.76 16.95 9.71 18.36 8.29 12 1.93 5.64 8.29"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="tool-body">
+              <div class="khatamat">
+                <div>
+                  <label hidden>searchbox-input</label>
+                  <button id="add-khatma">
+                    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                      <path d="m2 2v28l10-10 4 4c.4-3.4 2.7-6.3 6-7.5v-14.5z" />
+                      <path
+                        d="m25 18c-3.9 0-7 3.1-7 7s3.1 7 7 7 7-3.1 7-7-3.1-7-7-7zm-5 6h4v-4h2v4h4v2h-4v4h-2v-4h-4z"
+                      />
+                    </svg>
+                  </button>
+                  <input
+                    placeholder="إسم الختمة"
+                    id="khatma-input"
+                    type="text"
+                  />
+                </div>
+                <div class="items" id="khatamat-list">
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="tool">
             <div class="tool-header">
               <div class="tool-title" title="مصاحف القراء العشرة ورواتهم من طريقي الشاطبية والدرة">مصاحف القراء العشرة ورواتهم</div>
@@ -490,31 +525,26 @@
                 </svg>
               </button>
             </div>
-            <div></div>
+            <div><button id="privouos">➡️</button></div>
           </div>
           <div class="as-m">
-            <button id="privouos">➡️</button>
-            <button id="reset-page">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16">
-                <g clip-path="url(#clip0)">
-                  <path fill="#000" fill-rule="evenodd" d="M2.5 0a.5.5 0 01.5.5V5h4.5a.5.5 0 010 1h-5a.5.5 0 01-.5-.5v-5a.5.5 0 01.5-.5z" clip-rule="evenodd" />
-                  <path fill="#000" fill-rule="evenodd" d="M8.515.226A5 5 0 0113.2 8.843l-8.377 7.04a.5.5 0 11-.644-.766l8.38-7.041.001-.002a4 4 0 00-5.118-6.148L2.948 5.67a.5.5 0 01-.64-.768L6.8 1.157A5.001 5.001 0 018.515.226z" clip-rule="evenodd" />
-                </g>
-                <defs>
-                  <clipPath id="clip0">
-                    <path fill="#fff" d="M0 0h16v16H0z" />
-                  </clipPath>
-                </defs>
+            <button id="sync-khatma" title="تحديث الختمة">
+              <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+
+                <path d="m2 2v28l10-10 4 4c.4-3.4 2.7-6.3 6-7.5v-14.5z" />
+              
+                <path fill="#000"  d="M33 18a.5.5 0 01.5.5v4a.5.5 0 01-.5.5h-4a.5.5 0 010-1" clip-rule="evenodd"/>
+                <path fill="#000" d="M25 18a7 7 0 107 7 .5.5 0 011 0 8 8 0 11-1.365-4.47.5.5 0 01-.829.56" clip-rule="evenodd"/>
               </svg>
-            </button>
+          </button>
             <input id="page" inputmode="numeric" type="text" placeholder="الصفحة" min="-3" />
             <button id="go-page">
               <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="m12 2c-5.5 0-10 4.5-10 10s4.5 10 10 10c2.2 0 4.3-.7 6-2l9 10 3-3-10-9c1.3-1.7 2-3.8 2-6 0-5.5-4.5-10-10-10zm0 3c3.9 0 7 3.1 7 7s-3.1 7-7 7-7-3.1-7-7 3.1-7 7-7z" /></svg>
             </button>
-            <button id="next">⬅️</button>
+            
           </div>
           <div class="as-a">
-            <div></div>
+            <div><button id="next">⬅️</button></div>
             <div class="main-navigation-l-menu">
               <button id="night-toggle-button" title="تشغيل و إيقاف الوضع المظلم">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="20" height="20" viewBox="0 0 256 256" xml:space="preserve">

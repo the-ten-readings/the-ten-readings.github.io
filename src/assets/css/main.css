@@ -119,25 +119,6 @@ html {
   justify-content: center;
 }
 
-.main-menu {
-  width: 80px;
-  background-color: #628fc3;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  font-size: 1em;
-  text-align: center;
-  padding: var(--spacing);
-  display: none;
-}
-
-.main-menu-tool {
-  background-color: #000;
-  border-radius: var(--spacing);
-  color: #fff;
-  line-height: 20px;
-  padding: var(--spacing);
-}
 
 .tools {
   height: 100%;
@@ -145,26 +126,6 @@ html {
   overflow-y: auto;
   /* padding-left: var(--spacing); */
   scroll-behavior: smooth;
-  border-radius: var(--spacing);
-}
-
-.main-menu-tools {
-  flex: 1;
-}
-
-.main-menu-setting {
-  background-color: #000;
-  color: #fff;
-}
-
-.main-menu-setting:first-child {
-  margin-bottom: var(--spacing);
-}
-
-/* .main-menu-settings {
-} */
-
-.main-menu-setting {
   border-radius: var(--spacing);
 }
 
@@ -364,7 +325,7 @@ main.main {
 
 .as-m {
   flex: 0 !important;
-  min-width: 180px;
+  min-width: 120px;
 }
 
 .as-b>div>div:last-child {
@@ -468,12 +429,6 @@ main.main {
 
 
 @media only screen and (max-width: 950px) {
-  .main-menu {
-    position: absolute;
-    right: -80px;
-    z-index: 3;
-  }
-
   .left-sidebar,
   .right-sidebar {
     position: absolute;
@@ -533,11 +488,6 @@ main.main {
     display: block;
   }
 
-}
-
-
-.open-main-menu {
-  right: 0;
 }
 
 .open-right {
@@ -666,22 +616,20 @@ body::-webkit-scrollbar {
   font-size: 1em;
 }
 
-.searchbox {
+.searchbox,.khatamat {
   display: flex;
   flex-direction: column;
   flex: 1;
   overflow-y: hidden;
 }
 
+.khatamat>div:first-child,
 .searchbox>div:first-child {
   display: flex;
   flex-direction: row-reverse;
 }
 
-.searchbox-closed {
-  display: none;
-}
-
+.khatamat>div:first-child>input,
 .searchbox>div:first-child>input {
   padding: 0 var(--spacing);
   width: 100%;
@@ -691,6 +639,7 @@ body::-webkit-scrollbar {
   border-radius: 0 var(--radius) var(--radius) 0;
 }
 
+.khatamat>div:first-child>button,
 .searchbox>div:first-child>button {
   border-radius: var(--radius) 0 0 var(--radius);
   width: 31px;
@@ -777,6 +726,7 @@ height: 100%;
 
 /* ************************************* */
 
+.khatamat .items,
 .filter .items {
   margin-top: var(--spacing);
   height: calc(100% - 65px);
@@ -785,6 +735,7 @@ height: 100%;
   font-size: 0.9em;
 }
 
+.khatamat .items .checked,
 .filter .items .checked {
   background: #4359c1 linear-gradient(0deg, #4359c1 0%, #4359c1 100%);
   color: #fff;
@@ -803,15 +754,36 @@ height: 100%;
 }
 
 
+.khatamat .item[data-part="khatma"]{
+  background-color: #87b1ffdd;
+}
 
+.khatamat .checked .level{
+  background-color: #fff;
+}
+
+.khatamat .level,
 .filter .level {
   width: 5px;
   border-radius: 4px;
 }
 
 
+.khatamat .general-item{
+  display: flex
+}
+
+
+.khatamat .general-item>button {
+  margin-right: 5px;
+  height: 30px;
+  width: 30px;
+}
+
+.khatamat .item,
 .filter .item {
   display: flex;
+  flex: 1;
   height: 30px;
   line-height: 26px;
   padding: 3px;
@@ -823,28 +795,34 @@ height: 100%;
   margin-bottom: 2px;
 }
 
+.khatamat .item>*,
 .filter .item>* {
   pointer-events: none;
 }
 
+.khatamat .item:hover,
 .filter .item:hover {
   transition: 0.3s all linear;
   background-color: #4359c1;
   color: #fff;
 }
 
+.khatamat .item:hover .level,
 .filter .item:hover .level {
   background-color: #fff;
 }
 
+.khatamat .item:last-child,
 .filter .item:last-child {
   margin-bottom: 0;
 }
 
+.khatamat .title,
 .filter .title {
   flex: 1;
 }
 
+.khatamat .page,
 .filter .page {
   font-size: 0.9em;
 }
