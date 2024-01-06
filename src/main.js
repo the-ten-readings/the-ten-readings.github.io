@@ -1000,8 +1000,8 @@ const toggleLoading = (status) => {
 };
 
 const imageLoaded = () => {
-  const sWidth = isExpanded ? 781 : 1025;
-  const sHeight = 1305;
+  const sWidth = isExpanded ? 816 : 1067;
+  const sHeight = 1359;
   ctx.canvas.width = sWidth;
   ctx.canvas.height = sHeight;
 
@@ -1310,6 +1310,7 @@ privouos.addEventListener("click", privCB);
 // when click on next button
 next.addEventListener("click", nextCB);
 goPage.addEventListener("click", (e) => goToPageCmd(page.value));
+page.addEventListener("search", (e) => goToPageCmd(page.value));
 
 // VARIABLES  /////////////////////////////////////////////////////////////////
 const loading = document.getElementById("loading");
@@ -1429,6 +1430,7 @@ const filterIndexCmd = (e) => {
 
 goSearch.addEventListener("click", goSearchCmd,true)
 searchboxInput.onsearch = searchboxInputCleanCmd;
+searchboxInput.addEventListener('search',goSearchCmd );
 isJuzaChecked.addEventListener("change", filterIndexCmd);
 isHizbChecked.addEventListener("change", filterIndexCmd);
 isSuraChecked.addEventListener("change", filterIndexCmd);

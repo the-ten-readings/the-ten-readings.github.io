@@ -69,11 +69,16 @@ html {
 }
 
 .selected-rawi-label {
-  top: 2px;
-  padding: 0px 10px;
-  border-radius: var(--radius);
-  font-size: 0.85em;
+  top: 0.2%;
+  margin-left: -16.5%;
+  padding: 0px 4px;
+  border-radius: 23px;
+  font-size: 0.8em;
   opacity: 0;
+  height: 2.7%;
+  border: 1px solid #726a58;
+  background-color: #ffffe1;
+  color: #000;
 }
 
 .loading-on {
