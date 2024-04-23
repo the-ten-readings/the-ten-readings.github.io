@@ -806,6 +806,7 @@ const getPath = (second = false, local = false) => {
 
 
 const goToKhatma = (e) => {
+  updateRaw(e.target.dataset.rawi)
   goToPageCmd(e.target.dataset.value, false)
   let newKhatamat = [...khatamat.map(k => {if (k == khatamat[e.target.dataset.id]) {k.selected = true }else {k.selected = false }; return k})]
   updateKhatamat(newKhatamat)
@@ -831,10 +832,11 @@ const updateKhatamat = (kha) => {
     let k = khatamat[i]
     khatamatList.insertAdjacentHTML(
       "beforeend",
-      `<div class=general-item title="${k.rawiLabel}">
-        <div class="item ${k.selected ? 'checked':''}" data-id="${i}" data-value="${k.page}" data-part="khatma">
+        `<div class="general-item" title="${rawis[k.rawiID].label}" >
+        <div class="item ${k.selected ? 'checked':''}" data-id="${i}" data-value="${k.page}" data-rawi="${k.rawiID}" data-part="khatma">
           <div class="level"></div>
           <div class="title">${k.name}</div>
+          <div >${rawis[k.rawiID].label.split(' ')[0]}</div> |
           <div class="page">صحفة ${k.page}</div>
         </div>
         <button data-id="${i}">
@@ -858,13 +860,19 @@ const addKhatamatCmd = (evt) => {
     return
   }
   // form : [{id: 1, name: "test", page: 50, selected: null}, {id: 1, name: "test", page: 50, selected: true}];
-  khatamat = [...khatamat.map(k => {k.selected = false; return k}), { name: khatmaInput.value, rawiLabel : rawis[selectedRawi].label , page: selectedPage, selected: true}]
+  khatamat = [...khatamat.map(k => {k.selected = false; return k}), { name: khatmaInput.value, rawiID : selectedRawi , page: selectedPage, selected: true}]
   updateKhatamat(khatamat)
   khatmaInput.value = ''
 };
 
 const syncKhatmaCmd = (evt) => {
-  khatamat = [...khatamat.map(k => {if (k.selected) k.page = selectedPage; return k})]
+  khatamat = [...khatamat.map(k => {
+    if (k.selected) {
+      k.page = selectedPage;
+      k.rawiID = selectedRawi
+    }
+    return k
+  })]
   updateKhatamat(khatamat)
 }
 
@@ -1257,8 +1265,9 @@ const goToPageFromSearchCmd = (e) => {
 };
 
 const updateRawCmd = (e) => {
-  const newRawId = e.target.id;
-
+  updateRaw(e.target.id)
+}
+const updateRaw = (newRawId) => {
   // if selected page for the old rawi is sup then the last page for new rawi
   // (that means the new rawi does not have the equivalent number page)
   // then change the page number

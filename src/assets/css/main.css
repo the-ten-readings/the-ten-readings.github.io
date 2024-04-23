@@ -1328,6 +1328,10 @@ input::-webkit-inner-spin-button {
   background-color: #fffffb;
 }
 
+.dark-mode .memo>div>div {
+  background-color: #222222;
+}
+
 .line-selected {
   background-color: #86fff561 !important
 }
